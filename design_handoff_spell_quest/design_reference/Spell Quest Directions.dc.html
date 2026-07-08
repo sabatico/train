@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f0eee9;font-family:'Lexend',system-ui,sans-serif}
+a{color:#1a1a1a}a:hover{color:#2a78d6}
+.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}
+.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}
+.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}
+.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}
+.dv-opts{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}
+.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}
+.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.55)}
+.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);overflow:hidden}
+.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}
+.dv-next{margin:22px 0 0;font:12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.5)}
+@keyframes sq-pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.25);opacity:.75}}
+@keyframes sq-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</helmet>
+
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">Committed to <a class="dv-oid" href="#1c">1c</a> pink + yellow · rest of the kid core loop · name: Katie</span></div>
+<div class="dv-opts">
+
+<!-- ============ 2a TEACH CARD S3 ============ -->
+<div class="dv-opt" id="2a">
+<div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>S3 Teach card — the mini-lesson before practice</div>
+<div class="dv-card" style="width:1280px" data-screen-label="2a Teach S3">
+  <div style="width:1280px;height:800px;background:#FBF4EC;display:flex;flex-direction:column;align-items:center;position:relative;color:#3A2E38;letter-spacing:0.02em">
+    <div style="display:flex;gap:18px;align-items:center;padding-top:34px">
+      <span style="width:20px;height:20px;border-radius:50%;background:#EE6FA0;display:inline-block;animation:sq-pulse 1.4s ease-in-out infinite"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+    </div>
+    <button style="position:absolute;top:26px;right:30px;width:44px;height:44px;border-radius:50%;border:none;background:transparent;color:#C4B3A4;font-size:22px;cursor:pointer" style-hover="background:#F5E7D8">⏸</button>
+    <div style="flex:1;display:flex;align-items:center;justify-content:center;width:100%">
+      <div style="background:#FFF6D9;border:3px solid #F9C74F;border-radius:28px;box-shadow:0 10px 0 rgba(249,199,79,0.28);padding:56px 84px 44px;display:flex;flex-direction:column;align-items:center;gap:30px;min-width:800px">
+        <div style="display:flex;align-items:center;gap:18px">
+          <div style="font-size:52px;font-weight:600;line-height:1.4">The Magic e</div>
+          <div style="font-size:56px;transform:rotate(8deg)">🪄</div>
+        </div>
+        <div style="font-size:30px;line-height:1.6;color:#6B5A64;text-align:center;max-width:640px">Magic e is silent — it makes the vowel say its name!</div>
+        <div style="display:flex;align-items:center;gap:34px">
+          <div style="display:flex;align-items:baseline;gap:2px;background:#FFFDF8;border-radius:20px;padding:20px 30px;font-size:48px;font-weight:500;border:3px solid #F6D8B8">h<span style="color:#EE6FA0;font-weight:600">o</span>p</div>
+          <div style="font-size:38px;color:#C4A55A">→</div>
+          <div style="display:flex;align-items:baseline;gap:2px;background:#FFFDF8;border-radius:20px;padding:20px 30px;font-size:48px;font-weight:500;border:3px solid #EE6FA0;transform:rotate(-1.5deg)">h<span style="color:#EE6FA0;font-weight:600">o</span>p<span style="color:#EE6FA0;font-weight:600;position:relative">e<span style="position:absolute;top:-26px;left:2px;font-size:22px">✨</span></span></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:24px;margin-top:6px">
+          <button style="font-family:'Lexend',sans-serif;width:76px;height:76px;border-radius:50%;border:none;background:#F9C74F;color:#6B4E0E;font-size:32px;cursor:pointer;box-shadow:0 5px 0 #D9A62E" style-hover="transform:translateY(2px);box-shadow:0 3px 0 #D9A62E">🔊</button>
+          <button style="font-family:'Lexend',sans-serif;font-size:30px;font-weight:600;color:#fff;background:#EE6FA0;border:none;border-radius:999px;padding:22px 76px;box-shadow:0 7px 0 #C94F80;cursor:pointer;letter-spacing:0.04em" style-hover="transform:translateY(2px);box-shadow:0 5px 0 #C94F80">Got it!</button>
+        </div>
+      </div>
+    </div>
+    <svg width="110" height="103" viewBox="0 0 150 140" style="position:absolute;left:36px;bottom:26px">
+      <ellipse cx="42" cy="30" rx="21" ry="23" fill="#C15A45"></ellipse><ellipse cx="108" cy="30" rx="21" ry="23" fill="#C15A45"></ellipse>
+      <ellipse cx="42" cy="33" rx="11" ry="12" fill="#FDEFE0"></ellipse><ellipse cx="108" cy="33" rx="11" ry="12" fill="#FDEFE0"></ellipse>
+      <circle cx="75" cy="72" r="52" fill="#E5764F"></circle>
+      <ellipse cx="49" cy="86" rx="20" ry="24" fill="#FDEFE0"></ellipse><ellipse cx="101" cy="86" rx="20" ry="24" fill="#FDEFE0"></ellipse>
+      <ellipse cx="75" cy="96" rx="22" ry="18" fill="#FDEFE0"></ellipse>
+      <circle cx="55" cy="72" r="6.5" fill="#3A2A2E"></circle><circle cx="95" cy="72" r="6.5" fill="#3A2A2E"></circle>
+      <circle cx="57" cy="70" r="2" fill="#fff"></circle><circle cx="97" cy="70" r="2" fill="#fff"></circle>
+      <ellipse cx="75" cy="88" rx="7" ry="5.5" fill="#3A2A2E"></ellipse>
+      <path d="M63 100 Q75 110 87 100" stroke="#3A2A2E" stroke-width="4" fill="none" stroke-linecap="round"></path>
+    </svg>
+  </div>
+</div>
+</div>
+
+<!-- ============ 2b WORD BUILDER E1 ============ -->
+<div class="dv-opt" id="2b">
+<div class="dv-olabel"><a class="dv-oid" href="#2b">2b</a>E1 word_builder — sound boxes + letter tiles, "sh" is one wide tile</div>
+<div class="dv-card" style="width:1280px" data-screen-label="2b Word builder E1">
+  <div style="width:1280px;height:800px;background:#FBF4EC;display:flex;flex-direction:column;align-items:center;position:relative;color:#3A2E38;letter-spacing:0.02em">
+    <div style="display:flex;gap:18px;align-items:center;padding-top:34px">
+      <span style="font-size:26px;transform:rotate(-8deg);display:inline-block">⭐</span>
+      <span style="width:20px;height:20px;border-radius:50%;background:#EE6FA0;display:inline-block;animation:sq-pulse 1.4s ease-in-out infinite"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+    </div>
+    <button style="position:absolute;top:26px;right:30px;width:44px;height:44px;border-radius:50%;border:none;background:transparent;color:#C4B3A4;font-size:22px;cursor:pointer" style-hover="background:#F5E7D8">⏸</button>
+    <div style="flex:1;display:flex;align-items:center;justify-content:center;width:100%">
+      <div style="background:#FFFDF8;border-radius:28px;box-shadow:0 10px 0 rgba(238,111,160,0.16);padding:46px 72px 38px;display:flex;flex-direction:column;align-items:center;gap:30px;min-width:800px;border:3px solid #F6D8B8">
+        <div style="display:flex;align-items:center;gap:14px;font-size:24px;color:#6B5A64">🧩 <span>Build the word</span></div>
+        <div style="display:flex;align-items:center;gap:26px">
+          <div style="font-size:80px;line-height:1">🐟</div>
+          <button style="width:84px;height:84px;border-radius:50%;border:none;background:#EE6FA0;color:#fff;font-size:36px;cursor:pointer;box-shadow:0 6px 0 #C94F80" style-hover="transform:translateY(2px);box-shadow:0 4px 0 #C94F80">🔊</button>
+        </div>
+        <div style="display:flex;gap:16px;align-items:flex-end">
+          <div style="width:82px;height:92px;border-radius:18px;background:#FDF0F5;border:3px solid #EE6FA0;display:flex;align-items:center;justify-content:center;font-size:46px;font-weight:500">f</div>
+          <div style="width:82px;height:92px;border-radius:18px;background:#fff;border:3px dashed #E8D4C0"></div>
+          <div style="width:128px;height:92px;border-radius:18px;background:#fff;border:3px dashed #E8D4C0"></div>
+        </div>
+        <div style="display:flex;gap:14px;background:#FBF4EC;border-radius:22px;padding:18px 24px;border:3px solid #F0DCC4">
+          <div style="width:74px;height:82px;border-radius:16px;background:#FFF6D9;border:3px solid #F9C74F;display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:500;cursor:pointer;box-shadow:0 4px 0 #E5C367;transform:rotate(-2deg)" style-hover="transform:translateY(-4px)">i</div>
+          <div style="width:118px;height:82px;border-radius:16px;background:#FFF6D9;border:3px solid #F9C74F;display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:500;cursor:pointer;box-shadow:0 4px 0 #E5C367;transform:rotate(1.5deg)" style-hover="transform:translateY(-4px)">sh</div>
+          <div style="width:74px;height:82px;border-radius:16px;background:#FFF6D9;border:3px solid #F9C74F;display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:500;cursor:pointer;box-shadow:0 4px 0 #E5C367;transform:rotate(2deg)" style-hover="transform:translateY(-4px)">b</div>
+          <div style="width:74px;height:82px;border-radius:16px;background:#FFF6D9;border:3px solid #F9C74F;display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:500;cursor:pointer;box-shadow:0 4px 0 #E5C367;transform:rotate(-1deg)" style-hover="transform:translateY(-4px)">a</div>
+          <div style="width:74px;height:82px;border-radius:16px;background:#F5E7D8;border:3px solid #F0DCC4;display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:500;color:#C4B3A4">f</div>
+        </div>
+        <button style="font-family:'Lexend',sans-serif;align-self:flex-end;font-size:26px;font-weight:600;color:#fff;background:#E8D4C0;border:none;border-radius:999px;padding:16px 52px;cursor:not-allowed;letter-spacing:0.04em">Done</button>
+      </div>
+    </div>
+    <svg width="96" height="90" viewBox="0 0 150 140" style="position:absolute;left:36px;bottom:26px">
+      <ellipse cx="42" cy="30" rx="21" ry="23" fill="#C15A45"></ellipse><ellipse cx="108" cy="30" rx="21" ry="23" fill="#C15A45"></ellipse>
+      <ellipse cx="42" cy="33" rx="11" ry="12" fill="#FDEFE0"></ellipse><ellipse cx="108" cy="33" rx="11" ry="12" fill="#FDEFE0"></ellipse>
+      <circle cx="75" cy="72" r="52" fill="#E5764F"></circle>
+      <ellipse cx="49" cy="86" rx="20" ry="24" fill="#FDEFE0"></ellipse><ellipse cx="101" cy="86" rx="20" ry="24" fill="#FDEFE0"></ellipse>
+      <ellipse cx="75" cy="96" rx="22" ry="18" fill="#FDEFE0"></ellipse>
+      <circle cx="55" cy="72" r="6.5" fill="#3A2A2E"></circle><circle cx="95" cy="72" r="6.5" fill="#3A2A2E"></circle>
+      <ellipse cx="75" cy="88" rx="7" ry="5.5" fill="#3A2A2E"></ellipse>
+      <path d="M63 100 Q75 110 87 100" stroke="#3A2A2E" stroke-width="4" fill="none" stroke-linecap="round"></path>
+    </svg>
+  </div>
+</div>
+</div>
+
+<!-- ============ 2c CORRECTION OVERLAY §5 ============ -->
+<div class="dv-opt" id="2c">
+<div class="dv-olabel"><a class="dv-oid" href="#2c">2c</a>§5 Correction overlay — beat 2+3: reveal + retype-it-right (amber, never red)</div>
+<div class="dv-card" style="width:1280px" data-screen-label="2c Correction overlay">
+  <div style="width:1280px;height:800px;background:#FBF4EC;display:flex;flex-direction:column;align-items:center;position:relative;color:#3A2E38;letter-spacing:0.02em">
+    <div style="position:absolute;inset:0;background:rgba(58,46,56,0.18)"></div>
+    <div style="flex:1;display:flex;align-items:center;justify-content:center;width:100%;position:relative">
+      <div style="background:#FFFBF2;border-radius:28px;border:4px solid #F0B450;box-shadow:0 0 0 8px rgba(240,180,80,0.22), 0 14px 34px rgba(58,46,56,0.16);padding:46px 80px 40px;display:flex;flex-direction:column;align-items:center;gap:26px;min-width:780px">
+        <div style="display:flex;align-items:center;gap:14px">
+          <div style="font-size:34px;font-weight:600;color:#B07A1E">Almost! Let's look together</div>
+          <div style="font-size:32px">💛</div>
+        </div>
+        <div style="display:flex;align-items:baseline;gap:3px;font-size:76px;font-weight:600;line-height:1.3">l<span style="color:#EE6FA0">o</span>v<span style="color:#EE6FA0;position:relative">e<span style="position:absolute;top:-30px;left:6px;font-size:26px">🛡️</span></span></div>
+        <div style="display:flex;align-items:center;gap:16px;background:#FFF6D9;border-radius:18px;padding:16px 26px;max-width:640px">
+          <button style="width:56px;height:56px;border-radius:50%;border:none;background:#F9C74F;color:#6B4E0E;font-size:24px;cursor:pointer;flex:none" style-hover="background:#E5B93E">🔊</button>
+          <div style="font-size:24px;line-height:1.6;color:#6B5A64">love ends in silent e — the e is v's bodyguard!</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;align-items:center">
+          <div style="font-size:21px;color:#9C8B95">Now you write it:</div>
+          <div style="display:flex;gap:14px">
+            <div style="width:72px;height:80px;border-radius:18px;background:#FDF0F5;border:3px solid #EE6FA0;box-shadow:0 0 0 4px rgba(238,111,160,0.18);display:flex;align-items:center;justify-content:center"><span style="width:3px;height:44px;background:#EE6FA0;display:inline-block;border-radius:2px"></span></div>
+            <div style="width:72px;height:80px;border-radius:18px;background:#fff;border:3px dashed #E8D4C0"></div>
+            <div style="width:72px;height:80px;border-radius:18px;background:#fff;border:3px dashed #E8D4C0"></div>
+            <div style="width:72px;height:80px;border-radius:18px;background:#fff;border:3px dashed #E8D4C0"></div>
+          </div>
+        </div>
+      </div>
+      <svg width="130" height="122" viewBox="0 0 150 140" style="position:absolute;left:120px;bottom:60px;transform:rotate(8deg)">
+        <ellipse cx="42" cy="30" rx="21" ry="23" fill="#C15A45"></ellipse><ellipse cx="108" cy="30" rx="21" ry="23" fill="#C15A45"></ellipse>
+        <ellipse cx="42" cy="33" rx="11" ry="12" fill="#FDEFE0"></ellipse><ellipse cx="108" cy="33" rx="11" ry="12" fill="#FDEFE0"></ellipse>
+        <circle cx="75" cy="72" r="52" fill="#E5764F"></circle>
+        <ellipse cx="49" cy="86" rx="20" ry="24" fill="#FDEFE0"></ellipse><ellipse cx="101" cy="86" rx="20" ry="24" fill="#FDEFE0"></ellipse>
+        <ellipse cx="75" cy="96" rx="22" ry="18" fill="#FDEFE0"></ellipse>
+        <path d="M48 74 Q55 68 62 74" stroke="#3A2A2E" stroke-width="4.5" fill="none" stroke-linecap="round"></path>
+        <path d="M88 74 Q95 68 102 74" stroke="#3A2A2E" stroke-width="4.5" fill="none" stroke-linecap="round"></path>
+        <ellipse cx="75" cy="88" rx="7" ry="5.5" fill="#3A2A2E"></ellipse>
+        <path d="M63 100 Q75 108 87 100" stroke="#3A2A2E" stroke-width="4" fill="none" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ============ 2d REWARD S4 ============ -->
+<div class="dv-opt" id="2d">
+<div class="dv-olabel"><a class="dv-oid" href="#2d">2d</a>S4 Reward — chest, stars count up, level meter, hatching tease</div>
+<div class="dv-card" style="width:1280px" data-screen-label="2d Reward S4">
+  <div style="width:1280px;height:800px;background:#FBF4EC;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px;position:relative;color:#3A2E38;letter-spacing:0.02em;overflow:hidden">
+    <span style="position:absolute;top:90px;left:300px;width:12px;height:18px;background:#EE6FA0;border-radius:3px;transform:rotate(24deg)"></span>
+    <span style="position:absolute;top:150px;left:940px;width:12px;height:18px;background:#F9C74F;border-radius:3px;transform:rotate(-30deg)"></span>
+    <span style="position:absolute;top:70px;left:660px;width:10px;height:16px;background:#7FB6AE;border-radius:3px;transform:rotate(12deg)"></span>
+    <span style="position:absolute;top:230px;left:180px;width:10px;height:16px;background:#F9C74F;border-radius:3px;transform:rotate(-14deg)"></span>
+    <span style="position:absolute;top:250px;left:1080px;width:12px;height:18px;background:#F2A0B8;border-radius:3px;transform:rotate(40deg)"></span>
+    <span style="position:absolute;top:420px;left:120px;width:10px;height:16px;background:#EE6FA0;border-radius:3px;transform:rotate(-40deg)"></span>
+    <span style="position:absolute;top:460px;left:1130px;width:10px;height:16px;background:#7FB6AE;border-radius:3px;transform:rotate(18deg)"></span>
+    <div style="font-size:44px;font-weight:600;line-height:1.4">You did it, Katie!</div>
+    <div style="position:relative;display:flex;flex-direction:column;align-items:center">
+      <div style="display:flex;gap:20px;position:absolute;top:-52px;font-size:40px">
+        <span style="transform:rotate(-12deg) translateY(-8px);display:inline-block">⭐</span>
+        <span style="transform:translateY(-24px);display:inline-block">⭐</span>
+        <span style="transform:rotate(12deg) translateY(-8px);display:inline-block">⭐</span>
+      </div>
+      <svg width="220" height="170" viewBox="0 0 220 170">
+        <rect x="30" y="70" width="160" height="90" rx="16" fill="#B9793F"></rect>
+        <path d="M30 78 Q110 8 190 78 L190 92 L30 92 Z" fill="#9C6231"></path>
+        <rect x="30" y="86" width="160" height="12" fill="#8A5528"></rect>
+        <rect x="96" y="80" width="28px" height="34" rx="7" fill="#F9C74F"></rect>
+        <circle cx="110" cy="94" r="5" fill="#8A5528"></circle>
+        <rect x="46" y="104" width="128" height="8" rx="4" fill="#CE8B4D"></rect>
+      </svg>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px;font-size:32px;font-weight:600"><span style="font-size:36px">⭐</span><span>+9 stars today!</span></div>
+    <div style="display:flex;flex-direction:column;gap:10px;align-items:center;width:560px">
+      <div style="width:100%;height:26px;border-radius:999px;background:#F5E7D8;overflow:hidden;border:2px solid #F0DCC4"><span style="display:block;width:68%;height:100%;border-radius:999px;background:#F9C74F"></span></div>
+      <div style="font-size:22px;color:#6B5A64">14 ⭐ to <strong style="color:#B07A1E">Word Wizard Lv. 5</strong></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px;background:#FCE3EC;border-radius:999px;padding:14px 28px;font-size:22px;color:#A54B6E;transform:rotate(-1deg)">🥚 <span>Something is hatching… come back tomorrow!</span></div>
+    <button style="font-family:'Lexend',sans-serif;font-size:30px;font-weight:600;color:#fff;background:#EE6FA0;border:none;border-radius:999px;padding:22px 84px;box-shadow:0 7px 0 #C94F80;cursor:pointer;letter-spacing:0.04em" style-hover="transform:translateY(2px);box-shadow:0 5px 0 #C94F80">Yay! Done</button>
+  </div>
+</div>
+</div>
+
+<!-- ============ 2e COLLECTION S5 ============ -->
+<div class="dv-opt" id="2e">
+<div class="dv-olabel"><a class="dv-oid" href="#2e">2e</a>S5 Collection shelf — mastered creatures + mystery eggs</div>
+<div class="dv-card" style="width:1280px" data-screen-label="2e Collection S5">
+  <div style="width:1280px;height:800px;background:#FBF4EC;display:flex;flex-direction:column;align-items:center;position:relative;color:#3A2E38;letter-spacing:0.02em">
+    <button style="position:absolute;top:26px;left:30px;width:56px;height:56px;border-radius:50%;border:3px solid #F6D8B8;background:#FFFDF8;font-size:24px;cursor:pointer;color:#3A2E38" style-hover="border-color:#EE6FA0">←</button>
+    <div style="display:flex;align-items:center;gap:20px;padding-top:38px">
+      <div style="font-size:38px;font-weight:600">My Collection</div>
+      <div style="display:flex;align-items:center;gap:8px;background:#FFF6D9;border-radius:999px;padding:10px 22px;font-size:20px;font-weight:600;color:#8A6A1F">⭐ 86</div>
+      <div style="display:flex;align-items:center;gap:8px;background:#F9C74F;border-radius:999px;padding:10px 22px;font-size:20px;font-weight:600;color:#6B4E0E;transform:rotate(1.5deg)">Word Wizard · Lv. 4</div>
+    </div>
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:14px;width:1000px">
+      <div style="display:flex;justify-content:space-around;align-items:flex-end;padding:0 40px 6px">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer" style-hover="transform:translateY(-4px)">
+          <svg width="92" height="86" viewBox="0 0 100 94"><ellipse cx="50" cy="54" rx="36" ry="34" fill="#8FBFDF"></ellipse><path d="M14 54 L2 40 L14 30 Z" fill="#6FA6CC"></path><circle cx="38" cy="48" r="5" fill="#2E3E4A"></circle><circle cx="62" cy="48" r="5" fill="#2E3E4A"></circle><path d="M42 64 Q50 70 58 64" stroke="#2E3E4A" stroke-width="3.5" fill="none" stroke-linecap="round"></path><path d="M78 40 L96 30 L88 50 Z" fill="#6FA6CC"></path></svg>
+          <div style="background:#EAF2F8;border-radius:999px;padding:6px 16px;font-size:18px;font-weight:500;color:#4A6B84">sh 🦈</div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer" style-hover="transform:translateY(-4px)">
+          <svg width="92" height="86" viewBox="0 0 100 94"><circle cx="50" cy="52" r="34" fill="#A6CC8F"></circle><circle cx="30" cy="26" r="12" fill="#8FB877"></circle><circle cx="70" cy="26" r="12" fill="#8FB877"></circle><circle cx="38" cy="48" r="5" fill="#33412E"></circle><circle cx="62" cy="48" r="5" fill="#33412E"></circle><path d="M42 62 Q50 68 58 62" stroke="#33412E" stroke-width="3.5" fill="none" stroke-linecap="round"></path></svg>
+          <div style="background:#EDF4E8;border-radius:999px;padding:6px 16px;font-size:18px;font-weight:500;color:#587244">ch 🐻</div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer" style-hover="transform:translateY(-4px)">
+          <svg width="92" height="86" viewBox="0 0 100 94"><ellipse cx="50" cy="56" rx="34" ry="30" fill="#D9A6E0"></ellipse><path d="M28 32 Q22 8 40 20 Z" fill="#C48ECC"></path><path d="M72 32 Q78 8 60 20 Z" fill="#C48ECC"></path><circle cx="38" cy="52" r="5" fill="#463049"></circle><circle cx="62" cy="52" r="5" fill="#463049"></circle><path d="M42 68 Q50 74 58 68" stroke="#463049" stroke-width="3.5" fill="none" stroke-linecap="round"></path></svg>
+          <div style="background:#F5EBF7;border-radius:999px;padding:6px 16px;font-size:18px;font-weight:500;color:#7A5482">th 🦋</div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;opacity:0.9" style-hover="transform:translateY(-4px)">
+          <svg width="80" height="86" viewBox="0 0 80 94"><ellipse cx="40" cy="54" rx="28" ry="34" fill="#F5E7D8"></ellipse><ellipse cx="40" cy="54" rx="28" ry="34" fill="none" stroke="#E8D4C0" stroke-width="3"></ellipse><text x="40" y="64" font-size="30" text-anchor="middle" fill="#C4B3A4" font-family="Lexend,sans-serif">?</text></svg>
+          <div style="background:#F5E7D8;border-radius:999px;padding:6px 16px;font-size:18px;font-weight:500;color:#9C8B95">magic e</div>
+        </div>
+      </div>
+      <div style="height:22px;border-radius:10px;background:#C98F55;box-shadow:0 6px 0 #B07A42"></div>
+      <div style="display:flex;justify-content:space-around;align-items:flex-end;padding:34px 120px 6px">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;opacity:0.9">
+          <svg width="80" height="86" viewBox="0 0 80 94"><ellipse cx="40" cy="54" rx="28" ry="34" fill="#F5E7D8"></ellipse><ellipse cx="40" cy="54" rx="28" ry="34" fill="none" stroke="#E8D4C0" stroke-width="3"></ellipse><text x="40" y="64" font-size="30" text-anchor="middle" fill="#C4B3A4" font-family="Lexend,sans-serif">?</text></svg>
+          <div style="background:#F5E7D8;border-radius:999px;padding:6px 16px;font-size:18px;font-weight:500;color:#9C8B95">ai</div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;opacity:0.9">
+          <svg width="80" height="86" viewBox="0 0 80 94"><ellipse cx="40" cy="54" rx="28" ry="34" fill="#F5E7D8"></ellipse><ellipse cx="40" cy="54" rx="28" ry="34" fill="none" stroke="#E8D4C0" stroke-width="3"></ellipse><text x="40" y="64" font-size="30" text-anchor="middle" fill="#C4B3A4" font-family="Lexend,sans-serif">?</text></svg>
+          <div style="background:#F5E7D8;border-radius:999px;padding:6px 16px;font-size:18px;font-weight:500;color:#9C8B95">oa</div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;opacity:0.9">
+          <svg width="80" height="86" viewBox="0 0 80 94"><ellipse cx="40" cy="54" rx="28" ry="34" fill="#F5E7D8"></ellipse><ellipse cx="40" cy="54" rx="28" ry="34" fill="none" stroke="#E8D4C0" stroke-width="3"></ellipse><text x="40" y="64" font-size="30" text-anchor="middle" fill="#C4B3A4" font-family="Lexend,sans-serif">?</text></svg>
+          <div style="background:#F5E7D8;border-radius:999px;padding:6px 16px;font-size:18px;font-weight:500;color:#9C8B95">heart words</div>
+        </div>
+      </div>
+      <div style="height:22px;border-radius:10px;background:#C98F55;box-shadow:0 6px 0 #B07A42"></div>
+    </div>
+    <div style="padding-bottom:30px;font-size:20px;color:#9C8B95">Keep practicing to hatch the eggs! 🥚✨</div>
+  </div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Try next: "show the E2 correct-answer beat + reward level-up variant" · "refine <a class="dv-oid" href="#2c">2c</a>'s beat 1 (the amber 'almost' moment)" · "build the parent dashboard" · "produce the tokens.css handoff"</p>
+</section>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Three directions · Home (S1) + Letter boxes (E2) · 1280×800 · red panda mascot</span></div>
+<div class="dv-opts">
+
+<!-- ============ 1a CORAL STORYBOOK ============ -->
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Coral storybook — chunky cards, deep soft shadows, centered ritual layout, big cozy motion (stars arc, mascot bobs)</div>
+
+<div class="dv-card" style="width:1280px" data-screen-label="1a Home S1">
+  <div style="width:1280px;height:800px;background:#FAF6EE;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;position:relative;letter-spacing:0.02em;color:#2B2B33">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:10px">
+      <svg width="150" height="140" viewBox="0 0 150 140" style="animation:sq-bob 3.2s ease-in-out infinite">
+        <ellipse cx="42" cy="30" rx="21" ry="23" fill="#C75B39"></ellipse><ellipse cx="108" cy="30" rx="21" ry="23" fill="#C75B39"></ellipse>
+        <ellipse cx="42" cy="33" rx="11" ry="12" fill="#FBEEDF"></ellipse><ellipse cx="108" cy="33" rx="11" ry="12" fill="#FBEEDF"></ellipse>
+        <circle cx="75" cy="72" r="52" fill="#E2734B"></circle>
+        <ellipse cx="49" cy="86" rx="20" ry="24" fill="#FBEEDF"></ellipse><ellipse cx="101" cy="86" rx="20" ry="24" fill="#FBEEDF"></ellipse>
+        <ellipse cx="75" cy="96" rx="22" ry="18" fill="#FBEEDF"></ellipse>
+        <circle cx="55" cy="72" r="6.5" fill="#3A2A24"></circle><circle cx="95" cy="72" r="6.5" fill="#3A2A24"></circle>
+        <circle cx="57" cy="70" r="2" fill="#fff"></circle><circle cx="97" cy="70" r="2" fill="#fff"></circle>
+        <ellipse cx="75" cy="88" rx="7" ry="5.5" fill="#3A2A24"></ellipse>
+        <path d="M63 100 Q75 110 87 100" stroke="#3A2A24" stroke-width="4" fill="none" stroke-linecap="round"></path>
+        <circle cx="38" cy="94" r="7" fill="#F3A183" opacity="0.6"></circle><circle cx="112" cy="94" r="7" fill="#F3A183" opacity="0.6"></circle>
+      </svg>
+      <div style="font-size:40px;font-weight:600;line-height:1.6">Hi Katie!</div>
+      <div style="font-size:28px;font-weight:400;color:#5A5560">Ready for today's quest?</div>
+    </div>
+    <div style="display:flex;gap:16px;align-items:center">
+      <div style="display:flex;align-items:center;gap:8px;background:#FFFDF7;border-radius:999px;padding:12px 22px;box-shadow:0 3px 0 rgba(43,43,51,0.08);font-size:22px;font-weight:500">🔥 <span>6 days</span></div>
+      <div style="display:flex;align-items:center;gap:8px;background:#FFFDF7;border-radius:999px;padding:12px 22px;box-shadow:0 3px 0 rgba(43,43,51,0.08);font-size:22px;font-weight:500">Today: magic e 🪄</div>
+    </div>
+    <button style="font-family:'Lexend',sans-serif;font-size:34px;font-weight:600;color:#fff;background:#F2705B;border:none;border-radius:28px;padding:26px 96px;box-shadow:0 8px 0 #D45542;cursor:pointer;letter-spacing:0.04em" style-hover="transform:translateY(2px);box-shadow:0 6px 0 #D45542">Start!</button>
+    <div style="display:flex;gap:20px;margin-top:6px">
+      <button style="font-family:'Lexend',sans-serif;display:flex;align-items:center;gap:10px;font-size:20px;font-weight:500;color:#2B2B33;background:#FFFDF7;border:2px solid #EFE6D6;border-radius:20px;padding:14px 26px;cursor:pointer;min-height:56px" style-hover="border-color:#F2705B">🧸 My Collection</button>
+      <button style="font-family:'Lexend',sans-serif;display:flex;align-items:center;gap:10px;font-size:20px;font-weight:500;color:#2B2B33;background:#FFFDF7;border:2px solid #EFE6D6;border-radius:20px;padding:14px 26px;cursor:pointer;min-height:56px" style-hover="border-color:#F2705B">🎮 Games</button>
+    </div>
+    <div style="position:absolute;top:28px;right:32px;display:flex;align-items:center;gap:10px;background:#FFF3D6;border-radius:999px;padding:10px 20px;font-size:18px;font-weight:600;color:#8A6A1F">⭐ Word Wizard · Lv. 4</div>
+  </div>
+</div>
+
+<div class="dv-card" style="width:1280px" data-screen-label="1a Exercise E2">
+  <div style="width:1280px;height:800px;background:#FAF6EE;display:flex;flex-direction:column;align-items:center;position:relative;color:#2B2B33;letter-spacing:0.02em">
+    <div style="display:flex;gap:18px;align-items:center;padding-top:34px">
+      <span style="font-size:26px">⭐</span><span style="font-size:26px">⭐</span><span style="font-size:26px">⭐</span>
+      <span style="width:20px;height:20px;border-radius:50%;background:#F2705B;display:inline-block;animation:sq-pulse 1.6s ease-in-out infinite"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #DACFBB;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #DACFBB;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #DACFBB;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #DACFBB;display:inline-block"></span>
+    </div>
+    <button style="position:absolute;top:26px;right:30px;width:44px;height:44px;border-radius:50%;border:none;background:transparent;color:#B9AE9A;font-size:22px;cursor:pointer" style-hover="background:#F1E9DA">⏸</button>
+    <div style="flex:1;display:flex;align-items:center;justify-content:center;width:100%">
+      <div style="background:#FFFDF7;border-radius:24px;box-shadow:0 12px 32px rgba(43,43,51,0.10);padding:52px 72px 40px;display:flex;flex-direction:column;align-items:center;gap:34px;position:relative;min-width:760px">
+        <div style="display:flex;align-items:center;gap:14px;font-size:24px;color:#5A5560">✏️ <span>Spell the word</span></div>
+        <div style="display:flex;align-items:center;gap:26px">
+          <div style="font-size:84px;line-height:1">🚢</div>
+          <button style="width:88px;height:88px;border-radius:50%;border:none;background:#F2705B;color:#fff;font-size:38px;cursor:pointer;box-shadow:0 6px 0 #D45542" style-hover="transform:translateY(2px);box-shadow:0 4px 0 #D45542">🔊</button>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;align-items:center">
+          <div style="display:flex;gap:14px">
+            <div style="width:72px;height:80px;border-radius:16px;background:#FFF;border:3px solid #EADFC9;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:500">s</div>
+            <div style="width:72px;height:80px;border-radius:16px;background:#FFF;border:3px solid #EADFC9;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:500">h</div>
+            <div style="width:72px;height:80px;border-radius:16px;background:#FFF8EC;border:3px solid #F2705B;box-shadow:0 0 0 4px rgba(242,112,91,0.18);display:flex;align-items:center;justify-content:center;font-size:44px"><span style="width:3px;height:44px;background:#F2705B;display:inline-block;border-radius:2px"></span></div>
+            <div style="width:72px;height:80px;border-radius:16px;background:#FFF;border:3px dashed #DACFBB"></div>
+          </div>
+          <svg width="330" height="14" viewBox="0 0 330 14">
+            <path d="M6 4 Q79 14 152 4" stroke="#7FB6AE" stroke-width="5" fill="none" stroke-linecap="round"></path>
+            <line x1="172" y1="8" x2="238" y2="8" stroke="#DACFBB" stroke-width="5" stroke-linecap="round"></line>
+            <line x1="258" y1="8" x2="324" y2="8" stroke="#DACFBB" stroke-width="5" stroke-linecap="round"></line>
+          </svg>
+        </div>
+        <button style="font-family:'Lexend',sans-serif;align-self:flex-end;font-size:26px;font-weight:600;color:#fff;background:#DACFBB;border:none;border-radius:20px;padding:16px 52px;cursor:not-allowed;letter-spacing:0.04em">Done</button>
+      </div>
+    </div>
+    <svg width="96" height="90" viewBox="0 0 150 140" style="position:absolute;left:36px;bottom:26px">
+      <ellipse cx="42" cy="30" rx="21" ry="23" fill="#C75B39"></ellipse><ellipse cx="108" cy="30" rx="21" ry="23" fill="#C75B39"></ellipse>
+      <ellipse cx="42" cy="33" rx="11" ry="12" fill="#FBEEDF"></ellipse><ellipse cx="108" cy="33" rx="11" ry="12" fill="#FBEEDF"></ellipse>
+      <circle cx="75" cy="72" r="52" fill="#E2734B"></circle>
+      <ellipse cx="49" cy="86" rx="20" ry="24" fill="#FBEEDF"></ellipse><ellipse cx="101" cy="86" rx="20" ry="24" fill="#FBEEDF"></ellipse>
+      <ellipse cx="75" cy="96" rx="22" ry="18" fill="#FBEEDF"></ellipse>
+      <circle cx="55" cy="72" r="6.5" fill="#3A2A24"></circle><circle cx="95" cy="72" r="6.5" fill="#3A2A24"></circle>
+      <ellipse cx="75" cy="88" rx="7" ry="5.5" fill="#3A2A24"></ellipse>
+      <path d="M63 100 Q75 110 87 100" stroke="#3A2A24" stroke-width="4" fill="none" stroke-linecap="round"></path>
+    </svg>
+  </div>
+</div>
+</div>
+
+<!-- ============ 1b TEAL CALM ============ -->
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Teal calm — flat airy cards, thin outlines, left-anchored greeting, quietest motion (fades only, tiny star pop)</div>
+
+<div class="dv-card" style="width:1280px" data-screen-label="1b Home S1">
+  <div style="width:1280px;height:800px;background:#F8F5ED;display:flex;align-items:center;position:relative;color:#2B2B33;letter-spacing:0.02em">
+    <div style="flex:1;display:flex;flex-direction:column;gap:26px;padding-left:130px">
+      <div style="display:flex;align-items:center;gap:12px;font-size:20px;font-weight:500;color:#7A8B87">
+        <span style="background:#EAF2EF;border:2px solid #CFE0DB;border-radius:999px;padding:8px 18px">🔥 6 days</span>
+        <span style="background:#EAF2EF;border:2px solid #CFE0DB;border-radius:999px;padding:8px 18px">⭐ Lv. 4 Word Wizard</span>
+      </div>
+      <div>
+        <div style="font-size:52px;font-weight:600;line-height:1.4">Hi Katie!</div>
+        <div style="font-size:30px;color:#5F6E6A;line-height:1.6">Ready for today's quest?</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;font-size:24px;color:#2B2B33;background:#FFFEFA;border:2px solid #E4DECE;border-radius:18px;padding:18px 26px;width:fit-content">🪄 <span>Today: magic e</span></div>
+      <button style="font-family:'Lexend',sans-serif;font-size:32px;font-weight:600;color:#fff;background:#2A9D8F;border:none;border-radius:22px;padding:24px 88px;cursor:pointer;width:fit-content;letter-spacing:0.04em;box-shadow:0 4px 14px rgba(42,157,143,0.35)" style-hover="background:#238A7D">Start!</button>
+      <div style="display:flex;gap:16px">
+        <button style="font-family:'Lexend',sans-serif;display:flex;align-items:center;gap:10px;font-size:19px;font-weight:500;color:#3E5551;background:transparent;border:2px solid #CFE0DB;border-radius:16px;padding:13px 24px;cursor:pointer;min-height:56px" style-hover="background:#EAF2EF">🧸 My Collection</button>
+        <button style="font-family:'Lexend',sans-serif;display:flex;align-items:center;gap:10px;font-size:19px;font-weight:500;color:#3E5551;background:transparent;border:2px solid #CFE0DB;border-radius:16px;padding:13px 24px;cursor:pointer;min-height:56px" style-hover="background:#EAF2EF">🎮 Games</button>
+      </div>
+    </div>
+    <div style="flex:1;display:flex;align-items:center;justify-content:center">
+      <svg width="300" height="280" viewBox="0 0 150 140">
+        <ellipse cx="42" cy="30" rx="21" ry="23" fill="#B85C3E"></ellipse><ellipse cx="108" cy="30" rx="21" ry="23" fill="#B85C3E"></ellipse>
+        <ellipse cx="42" cy="33" rx="11" ry="12" fill="#F6EFE2"></ellipse><ellipse cx="108" cy="33" rx="11" ry="12" fill="#F6EFE2"></ellipse>
+        <circle cx="75" cy="72" r="52" fill="#D66F4C"></circle>
+        <ellipse cx="49" cy="86" rx="20" ry="24" fill="#F6EFE2"></ellipse><ellipse cx="101" cy="86" rx="20" ry="24" fill="#F6EFE2"></ellipse>
+        <ellipse cx="75" cy="96" rx="22" ry="18" fill="#F6EFE2"></ellipse>
+        <circle cx="55" cy="72" r="6.5" fill="#33413E"></circle><circle cx="95" cy="72" r="6.5" fill="#33413E"></circle>
+        <circle cx="57" cy="70" r="2" fill="#fff"></circle><circle cx="97" cy="70" r="2" fill="#fff"></circle>
+        <ellipse cx="75" cy="88" rx="7" ry="5.5" fill="#33413E"></ellipse>
+        <path d="M63 100 Q75 110 87 100" stroke="#33413E" stroke-width="4" fill="none" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<div class="dv-card" style="width:1280px" data-screen-label="1b Exercise E2">
+  <div style="width:1280px;height:800px;background:#F8F5ED;display:flex;flex-direction:column;align-items:center;position:relative;color:#2B2B33;letter-spacing:0.02em">
+    <div style="display:flex;gap:16px;align-items:center;padding-top:36px">
+      <span style="font-size:22px">⭐</span><span style="font-size:22px">⭐</span><span style="font-size:22px">⭐</span>
+      <span style="width:16px;height:16px;border-radius:50%;background:#2A9D8F;display:inline-block;animation:sq-pulse 1.8s ease-in-out infinite"></span>
+      <span style="width:13px;height:13px;border-radius:50%;border:2.5px solid #CBC4B2;display:inline-block"></span>
+      <span style="width:13px;height:13px;border-radius:50%;border:2.5px solid #CBC4B2;display:inline-block"></span>
+      <span style="width:13px;height:13px;border-radius:50%;border:2.5px solid #CBC4B2;display:inline-block"></span>
+      <span style="width:13px;height:13px;border-radius:50%;border:2.5px solid #CBC4B2;display:inline-block"></span>
+    </div>
+    <button style="position:absolute;top:28px;right:30px;width:44px;height:44px;border-radius:12px;border:none;background:transparent;color:#B4AC97;font-size:20px;cursor:pointer" style-hover="background:#EFEADB">⏸</button>
+    <div style="flex:1;display:flex;align-items:center;justify-content:center;width:100%">
+      <div style="background:#FFFEFA;border:2px solid #E4DECE;border-radius:20px;padding:48px 80px 38px;display:flex;flex-direction:column;align-items:center;gap:36px;min-width:760px">
+        <div style="display:flex;align-items:center;gap:12px;font-size:23px;color:#5F6E6A">✏️ <span>Spell the word</span></div>
+        <div style="display:flex;align-items:center;gap:28px">
+          <div style="font-size:80px;line-height:1">🚢</div>
+          <button style="width:84px;height:84px;border-radius:50%;border:none;background:#2A9D8F;color:#fff;font-size:36px;cursor:pointer" style-hover="background:#238A7D">🔊</button>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;align-items:center">
+          <div style="display:flex;gap:12px">
+            <div style="width:70px;height:78px;border-radius:12px;background:#fff;border:2px solid #DDD5C1;display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:500">s</div>
+            <div style="width:70px;height:78px;border-radius:12px;background:#fff;border:2px solid #DDD5C1;display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:500">h</div>
+            <div style="width:70px;height:78px;border-radius:12px;background:#F1FAF8;border:2px solid #2A9D8F;box-shadow:0 0 0 4px rgba(42,157,143,0.15);display:flex;align-items:center;justify-content:center"><span style="width:3px;height:42px;background:#2A9D8F;display:inline-block;border-radius:2px"></span></div>
+            <div style="width:70px;height:78px;border-radius:12px;background:transparent;border:2px dashed #CBC4B2"></div>
+          </div>
+          <svg width="316" height="14" viewBox="0 0 316 14">
+            <path d="M6 4 Q76 14 146 4" stroke="#2A9D8F" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.55"></path>
+            <line x1="166" y1="8" x2="228" y2="8" stroke="#CBC4B2" stroke-width="4" stroke-linecap="round"></line>
+            <line x1="248" y1="8" x2="310" y2="8" stroke="#CBC4B2" stroke-width="4" stroke-linecap="round"></line>
+          </svg>
+        </div>
+        <button style="font-family:'Lexend',sans-serif;align-self:flex-end;font-size:24px;font-weight:600;color:#fff;background:#C8C1AD;border:none;border-radius:16px;padding:15px 48px;cursor:not-allowed;letter-spacing:0.04em">Done</button>
+      </div>
+    </div>
+    <svg width="88" height="82" viewBox="0 0 150 140" style="position:absolute;left:38px;bottom:28px">
+      <ellipse cx="42" cy="30" rx="21" ry="23" fill="#B85C3E"></ellipse><ellipse cx="108" cy="30" rx="21" ry="23" fill="#B85C3E"></ellipse>
+      <ellipse cx="42" cy="33" rx="11" ry="12" fill="#F6EFE2"></ellipse><ellipse cx="108" cy="33" rx="11" ry="12" fill="#F6EFE2"></ellipse>
+      <circle cx="75" cy="72" r="52" fill="#D66F4C"></circle>
+      <ellipse cx="49" cy="86" rx="20" ry="24" fill="#F6EFE2"></ellipse><ellipse cx="101" cy="86" rx="20" ry="24" fill="#F6EFE2"></ellipse>
+      <ellipse cx="75" cy="96" rx="22" ry="18" fill="#F6EFE2"></ellipse>
+      <circle cx="55" cy="72" r="6.5" fill="#33413E"></circle><circle cx="95" cy="72" r="6.5" fill="#33413E"></circle>
+      <ellipse cx="75" cy="88" rx="7" ry="5.5" fill="#33413E"></ellipse>
+      <path d="M63 100 Q75 110 87 100" stroke="#33413E" stroke-width="4" fill="none" stroke-linecap="round"></path>
+    </svg>
+  </div>
+</div>
+</div>
+
+<!-- ============ 1c PINK + YELLOW SUNNY ============ -->
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Pink + yellow sunny — pink primary, sunshine-yellow stars &amp; badges, tilted sticker energy, bounciest motion (tile hops, wiggly stars)</div>
+
+<div class="dv-card" style="width:1280px" data-screen-label="1c Home S1">
+  <div style="width:1280px;height:800px;background:#FBF4EC;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;position:relative;color:#3A2E38;letter-spacing:0.02em;overflow:hidden">
+    <div style="position:absolute;top:-120px;left:50%;transform:translateX(-50%);width:760px;height:380px;border-radius:0 0 380px 380px;background:#FDE9DF"></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:8px;position:relative">
+      <svg width="150" height="140" viewBox="0 0 150 140" style="animation:sq-bob 2.6s ease-in-out infinite">
+        <ellipse cx="42" cy="30" rx="21" ry="23" fill="#C15A45"></ellipse><ellipse cx="108" cy="30" rx="21" ry="23" fill="#C15A45"></ellipse>
+        <ellipse cx="42" cy="33" rx="11" ry="12" fill="#FDEFE0"></ellipse><ellipse cx="108" cy="33" rx="11" ry="12" fill="#FDEFE0"></ellipse>
+        <circle cx="75" cy="72" r="52" fill="#E5764F"></circle>
+        <ellipse cx="49" cy="86" rx="20" ry="24" fill="#FDEFE0"></ellipse><ellipse cx="101" cy="86" rx="20" ry="24" fill="#FDEFE0"></ellipse>
+        <ellipse cx="75" cy="96" rx="22" ry="18" fill="#FDEFE0"></ellipse>
+        <circle cx="55" cy="72" r="6.5" fill="#3A2A2E"></circle><circle cx="95" cy="72" r="6.5" fill="#3A2A2E"></circle>
+        <circle cx="57" cy="70" r="2" fill="#fff"></circle><circle cx="97" cy="70" r="2" fill="#fff"></circle>
+        <ellipse cx="75" cy="88" rx="7" ry="5.5" fill="#3A2A2E"></ellipse>
+        <path d="M63 100 Q75 110 87 100" stroke="#3A2A2E" stroke-width="4" fill="none" stroke-linecap="round"></path>
+        <circle cx="38" cy="94" r="7" fill="#F2A0B8" opacity="0.75"></circle><circle cx="112" cy="94" r="7" fill="#F2A0B8" opacity="0.75"></circle>
+      </svg>
+      <div style="font-size:42px;font-weight:600;line-height:1.5">Hi Katie!</div>
+      <div style="font-size:28px;color:#6B5A64">Ready for today's quest?</div>
+    </div>
+    <div style="display:flex;gap:16px;align-items:center">
+      <div style="display:flex;align-items:center;gap:8px;background:#FFF6D9;border-radius:999px;padding:12px 22px;font-size:22px;font-weight:500;color:#8A6A1F;transform:rotate(-2deg);box-shadow:0 3px 0 rgba(58,46,56,0.08)">🔥 6 days</div>
+      <div style="display:flex;align-items:center;gap:8px;background:#FCE3EC;border-radius:999px;padding:12px 22px;font-size:22px;font-weight:500;color:#A54B6E;transform:rotate(1.5deg);box-shadow:0 3px 0 rgba(58,46,56,0.08)">Today: magic e 🪄</div>
+    </div>
+    <button style="font-family:'Lexend',sans-serif;font-size:34px;font-weight:600;color:#fff;background:#EE6FA0;border:none;border-radius:999px;padding:26px 100px;box-shadow:0 8px 0 #C94F80;cursor:pointer;letter-spacing:0.04em" style-hover="transform:translateY(2px);box-shadow:0 6px 0 #C94F80">Start!</button>
+    <div style="display:flex;gap:20px;margin-top:4px">
+      <button style="font-family:'Lexend',sans-serif;display:flex;align-items:center;gap:10px;font-size:20px;font-weight:500;color:#3A2E38;background:#FFFDF8;border:3px solid #F6D8B8;border-radius:999px;padding:13px 26px;cursor:pointer;min-height:56px" style-hover="border-color:#EE6FA0">🧸 My Collection</button>
+      <button style="font-family:'Lexend',sans-serif;display:flex;align-items:center;gap:10px;font-size:20px;font-weight:500;color:#3A2E38;background:#FFFDF8;border:3px solid #F6D8B8;border-radius:999px;padding:13px 26px;cursor:pointer;min-height:56px" style-hover="border-color:#EE6FA0">🎮 Games</button>
+    </div>
+    <div style="position:absolute;top:26px;right:30px;display:flex;align-items:center;gap:10px;background:#F9C74F;border-radius:999px;padding:11px 22px;font-size:18px;font-weight:600;color:#6B4E0E;transform:rotate(2deg)">⭐ Word Wizard · Lv. 4</div>
+  </div>
+</div>
+
+<div class="dv-card" style="width:1280px" data-screen-label="1c Exercise E2">
+  <div style="width:1280px;height:800px;background:#FBF4EC;display:flex;flex-direction:column;align-items:center;position:relative;color:#3A2E38;letter-spacing:0.02em">
+    <div style="display:flex;gap:18px;align-items:center;padding-top:34px">
+      <span style="font-size:26px;transform:rotate(-8deg);display:inline-block">⭐</span><span style="font-size:26px;transform:rotate(5deg);display:inline-block">⭐</span><span style="font-size:26px;transform:rotate(-4deg);display:inline-block">⭐</span>
+      <span style="width:20px;height:20px;border-radius:50%;background:#EE6FA0;display:inline-block;animation:sq-pulse 1.4s ease-in-out infinite"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+      <span style="width:16px;height:16px;border-radius:50%;border:3px solid #E8D4C0;display:inline-block"></span>
+    </div>
+    <button style="position:absolute;top:26px;right:30px;width:44px;height:44px;border-radius:50%;border:none;background:transparent;color:#C4B3A4;font-size:22px;cursor:pointer" style-hover="background:#F5E7D8">⏸</button>
+    <div style="flex:1;display:flex;align-items:center;justify-content:center;width:100%">
+      <div style="background:#FFFDF8;border-radius:28px;box-shadow:0 10px 0 rgba(238,111,160,0.16);padding:52px 72px 40px;display:flex;flex-direction:column;align-items:center;gap:34px;min-width:760px;border:3px solid #F6D8B8">
+        <div style="display:flex;align-items:center;gap:14px;font-size:24px;color:#6B5A64">✏️ <span>Spell the word</span></div>
+        <div style="display:flex;align-items:center;gap:26px">
+          <div style="font-size:84px;line-height:1">🚢</div>
+          <button style="width:88px;height:88px;border-radius:50%;border:none;background:#EE6FA0;color:#fff;font-size:38px;cursor:pointer;box-shadow:0 6px 0 #C94F80" style-hover="transform:translateY(2px);box-shadow:0 4px 0 #C94F80">🔊</button>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;align-items:center">
+          <div style="display:flex;gap:14px">
+            <div style="width:72px;height:80px;border-radius:18px;background:#fff;border:3px solid #F0DCC4;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:500">s</div>
+            <div style="width:72px;height:80px;border-radius:18px;background:#fff;border:3px solid #F0DCC4;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:500">h</div>
+            <div style="width:72px;height:80px;border-radius:18px;background:#FDF0F5;border:3px solid #EE6FA0;box-shadow:0 0 0 4px rgba(238,111,160,0.18);display:flex;align-items:center;justify-content:center"><span style="width:3px;height:44px;background:#EE6FA0;display:inline-block;border-radius:2px"></span></div>
+            <div style="width:72px;height:80px;border-radius:18px;background:transparent;border:3px dashed #E8D4C0"></div>
+          </div>
+          <svg width="330" height="14" viewBox="0 0 330 14">
+            <path d="M6 4 Q79 14 152 4" stroke="#F9C74F" stroke-width="5" fill="none" stroke-linecap="round"></path>
+            <line x1="172" y1="8" x2="238" y2="8" stroke="#E8D4C0" stroke-width="5" stroke-linecap="round"></line>
+            <line x1="258" y1="8" x2="324" y2="8" stroke="#E8D4C0" stroke-width="5" stroke-linecap="round"></line>
+          </svg>
+        </div>
+        <button style="font-family:'Lexend',sans-serif;align-self:flex-end;font-size:26px;font-weight:600;color:#fff;background:#E8D4C0;border:none;border-radius:999px;padding:16px 52px;cursor:not-allowed;letter-spacing:0.04em">Done</button>
+      </div>
+    </div>
+    <svg width="96" height="90" viewBox="0 0 150 140" style="position:absolute;left:36px;bottom:26px">
+      <ellipse cx="42" cy="30" rx="21" ry="23" fill="#C15A45"></ellipse><ellipse cx="108" cy="30" rx="21" ry="23" fill="#C15A45"></ellipse>
+      <ellipse cx="42" cy="33" rx="11" ry="12" fill="#FDEFE0"></ellipse><ellipse cx="108" cy="33" rx="11" ry="12" fill="#FDEFE0"></ellipse>
+      <circle cx="75" cy="72" r="52" fill="#E5764F"></circle>
+      <ellipse cx="49" cy="86" rx="20" ry="24" fill="#FDEFE0"></ellipse><ellipse cx="101" cy="86" rx="20" ry="24" fill="#FDEFE0"></ellipse>
+      <ellipse cx="75" cy="96" rx="22" ry="18" fill="#FDEFE0"></ellipse>
+      <circle cx="55" cy="72" r="6.5" fill="#3A2A2E"></circle><circle cx="95" cy="72" r="6.5" fill="#3A2A2E"></circle>
+      <ellipse cx="75" cy="88" rx="7" ry="5.5" fill="#3A2A2E"></ellipse>
+      <path d="M63 100 Q75 110 87 100" stroke="#3A2A2E" stroke-width="4" fill="none" stroke-linecap="round"></path>
+    </svg>
+  </div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Try next: "commit to <a class="dv-oid" href="#1a">1a</a> and build the full core loop" · "<a class="dv-oid" href="#1c">1c</a>'s colors on <a class="dv-oid" href="#1b">1b</a>'s calm layout" · "show the correction overlay in each direction"</p>
+</section>
+
+</x-dc>
+</body>
+</html>

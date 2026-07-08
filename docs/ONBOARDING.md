@@ -1,7 +1,7 @@
 # ONBOARDING — Spell Quest: Living State & Cold-Start Brief
 
 > **The first thing any human or agent reads.** It always reflects the *current* reality so anyone can cold-start without prior context. **Stale state here is a bug** — update it at the end of every act.
-> **Last updated:** 2026-07-07 · **Last session:** Owner set the model/role policy (Sonnet 5 + DeepSeek build & cross-author tests; Opus 4.8 judges/QRs/verifies; escalation ladder Sonnet/DeepSeek→Opus→Fable; max context to every spawned agent) — now locked in `CLAUDE.md`. Prior: harness installed, ADRs 001–003 locked, single AI-from-start phase, `DESIGN_BRIEF.md` written. Next: owner takes the brief to Claude Design; meanwhile the backend skeleton can start.
+> **Last updated:** 2026-07-07 · **Last session:** Claude Design handoff received into `design_handoff_spell_quest/` (kid screens + all 10 exercises; parent screens + §8 states still owed — runner B10). Owner also set the model/role policy (Sonnet 5 + DeepSeek build & cross-author tests; Opus 4.8 judges/QRs; escalate Sonnet/DeepSeek→Opus→Fable; max context to agents) — locked in `CLAUDE.md`. Prior: harness installed, ADRs 001–003, `DESIGN_BRIEF.md`. Next: token-lock pass (B2), then backend skeleton + UI shell.
 
 ## 1. What this is (stable)
 Spell Quest is a local web app that teaches spelling to the owner's 7-year-old daughter (dyslexic, dysgraphic, ADHD; ~1st-grade spelling level, entering 3rd grade). It runs Orton-Gillingham-style structured literacy as software: a 14-skill mastery model with decay ("rose of winds"), an adaptive selector targeting ~80% success, ~10 exercise types, a strict wrong-spelling correction routine, and an AI teacher-agent (DeepSeek) that plans sessions, explains errors in kid language, and keeps a teacher notebook. Gamified (stars, levels, creature collection, beat-your-own-record) with a radically simple dyslexia/ADHD-safe UI. Full product spec: `PLAN.md`.
@@ -15,7 +15,7 @@ Browser (vanilla JS component registry + token CSS + browser TTS) ⇄ Flask API 
 ## 4. Current status (VOLATILE — keep current)
 - Harness installed; repo initialized; nothing built yet — no `app.py`, no `engine/`, no UI.
 - Product plan locked in `PLAN.md` (single phase, AI from the start; agent = DeepSeek, stubbed until the owner provides the key).
-- `DESIGN_BRIEF.md` written — the input for Claude Design mockups (owner action).
+- **Claude Design handoff RECEIVED** → `design_handoff_spell_quest/` (tokens.css, components.css, 2 rendered `.dc.html` references, README). Covers ALL kid screens + the 10 exercise cards ("pink + yellow sunny", red-panda mascot). **Not covered:** parent screens P1/P2 + the §8 state set (runner B10). The `.dc.html` files are references — never copy their inline-styled markup.
 - No `.env` / no DeepSeek key yet (`STUB:DEEPSEEK` until provided).
 
 ## 5. Decided vs. open (VOLATILE)
@@ -36,6 +36,7 @@ Browser (vanilla JS component registry + token CSS + browser TTS) ⇄ Flask API 
 - DoD: `CLAUDE.md` §✅. UI work: read `docs/sops/ui-development-guardrails.md` first. Gotcha: TTS voices differ per browser — verify dictation in the child's actual browser.
 
 ## 8. Session log (append-only, NEWEST FIRST)
+- **2026-07-07 (act-004)** — Received the Claude Design handoff (`design_handoff_spell_quest/`): kid screens + all 10 exercise cards, tokens.css + components.css + 2 `.dc.html` design references. Committed as-is (reference material); runner C1 resolved, B2/B7 unblocked, B10 opened for the missing parent screens + §8 states. Note: this landed mid-act and was briefly swept into the act-003 commit by an unscoped `git add -A`; history was split into two clean commits (no remote, safe).
 - **2026-07-07 (act-003)** — Owner set the model/role policy: Sonnet 5 + DeepSeek as builders AND test authors (cross-authored, never same slice); Opus 4.8 as judge/QR/verifier; escalation ladder Sonnet/DeepSeek → Opus → Fable after 2 failed attempts; max context in every agent spawn. Recorded in CLAUDE.md §standing rules. Note: DeepSeek runs as agent only after its key + a wrapper script exist; until then cross-author = separate Sonnet instance. Docs-only act, no tests to run.
 - **2026-07-07 (act-002)** — Adopted the dev_harness: instantiated CLAUDE.md/CONVENTIONS.md/CHEAT-SHEET.md, all running files, SOPs, CI-gates doc; locked ADR-001/002/003; updated PLAN.md to a single AI-from-start phase with DeepSeek; wrote DESIGN_BRIEF.md for Claude Design. No code yet, so no tests/gates to run. Initial commit.
 - **2026-07-07 (act-001)** — Wrote `PLAN.md`: pedagogy (why her errors happen, OG principles), 14-skill rose-of-winds model, 10 exercise types, error classifier, architecture (Flask + file DB + AI agent), kid-UI rules, gamification. Owner corrections captured: one phase, AI from the start, DeepSeek APIs.

@@ -14,17 +14,18 @@
 | ID | Item | Source | Status | Direction |
 |----|------|--------|--------|-----------|
 | B1 | `DESIGN_BRIEF.md` for Claude Design (screens, interactions, principles, styling manifest) | IN-2 | ✅ | done 2026-07-07; owner takes it to Claude Design |
-| B2 | Claude Design mockups → token-lock pass (`tokens.css` + primitives) | IN-2 | ❓ | blocked on C1 (mockups); follow `sops/mockup-implementation.md` |
+| B2 | Claude Design mockups → token-lock pass (`tokens.css` + primitives) | IN-2 | ☐ | UNBLOCKED — handoff landed in `design_handoff_spell_quest/` (tokens.css + components.css + 2 `.dc.html` references); verify tokens against the rendered references per `sops/mockup-implementation.md` Step 0, then adopt into `static/css/` |
 | B3 | Skill model + decay + prerequisite gates (`engine/skills.py`, `data/skills.json`) | PLAN §2 | ☐ | per ADR-001; pure functions, heavy unit tests |
 | B4 | Adaptive selector 60/30/10 + step-down ladder (`engine/selector.py`) | PLAN §2 | ☐ | deterministic; agent may override later |
 | B5 | Error classifier with alignment + tags (`engine/classifier.py`) | PLAN §4 | ☐ | pure function; richest test target |
 | B6 | Session builder + Flask API (start session / next item / submit answer) | PLAN §7 | ☐ | freeze the exercise JSON contract first (it's the seam with the UI **and** the agent tools) |
-| B7 | UI shell + component registry + first 3 exercises (`word_builder`, `letter_boxes`, `echo_dictation`) + browser TTS | PLAN §3 | ❓ | after B2 token-lock; zero inline styles |
+| B7 | UI shell + component registry + first 3 exercises (`word_builder`, `letter_boxes`, `echo_dictation`) + browser TTS | PLAN §3 | ☐ | after B2 token-lock; zero inline styles; NEVER copy the `.dc.html` reference markup (inline-styled design-tool output — rebuild on tokens/components per the SOP) |
+| B10 | Parent screens (P1 dashboard, P2 settings) design round — NOT in the current handoff bundle, nor the §8 state set (loading/empty/TTS-fallback) | handoff README | ❓ | owner runs a second Claude Design round for P1/P2 + states when kid screens are underway |
 | B8 | DeepSeek agent module: session-plan call, kid-voice feedback call, `memory.md` notebook, engine fallback (`agent/teacher.py`) | ADR-002 | ☐ | build against a mocked client; `STUB:DEEPSEEK` until key arrives |
 | B9 | Rewards engine: stars, chest, streak, levels (`engine/rewards.py`) | PLAN §6 | ☐ | invariant #3: never subtract earned rewards |
 
 ## C. Open questions (blocking the above)
-1. Claude Design mockups + structured handoff (owner runs the brief through Claude Design) → blocks B2/B7.
+1. ~~Claude Design mockups + structured handoff~~ → RESOLVED 2026-07-07: handoff received (`design_handoff_spell_quest/`), kid screens complete; parent screens + §8 states still owed (B10).
 2. `DEEPSEEK_API_KEY` (owner will provide) → blocks live agent calls; B8 proceeds mocked.
 3. Child's browser + TTS accent preference → blocks final dictation tuning only.
 

@@ -7,7 +7,7 @@
 | Area | Progress | Notes |
 |------|----------|-------|
 | Harness / docs | ✅ installed | constitution, running files, SOPs, ADR-001..003, PLAN.md, DESIGN_BRIEF.md |
-| UI design (Claude Design mockups) | ⬜ | brief ready; owner action |
+| UI design (Claude Design mockups) | 🔨 | kid screens + 10 exercises received (`design_handoff_spell_quest/`); parent P1/P2 + §8 states owed (B10) |
 | Backend engine (`engine/`) | ⬜ | not started |
 | Flask API (`app.py`) | ⬜ | not started |
 | Frontend (shell + exercises) | ⬜ | blocked on token-lock from mockups |

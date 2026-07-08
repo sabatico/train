@@ -1,0 +1,107 @@
+/* Spell Quest — design tokens (single source of truth, per DESIGN_BRIEF §9)
+   ALL component CSS must reference these vars. No raw hex/px in components. */
+
+:root {
+  /* ---- Color ---- */
+  --sq-color-bg: #FBF4EC;            /* warm cream page — never pure white */
+  --sq-color-bg-halo: #FDE9DF;       /* soft arch behind home mascot */
+  --sq-color-card: #FFFDF8;          /* task card surface */
+  --sq-color-ink: #3A2E38;           /* near-black text */
+  --sq-color-ink-muted: #6B5A64;     /* secondary text */
+  --sq-color-ink-faint: #9C8B95;     /* hints, quiet labels */
+  --sq-color-ink-disabled: #C4B3A4;
+
+  --sq-color-primary: #EE6FA0;       /* candy pink — actions, focus, highlights */
+  --sq-color-primary-deep: #C94F80;  /* 3D button shadow face */
+  --sq-color-primary-soft: #FDF0F5;  /* focused input fill */
+  --sq-color-primary-tint: #FCE3EC;  /* pink chips/buckets */
+  --sq-color-primary-tint-ink: #A54B6E;
+
+  --sq-color-star: #F9C74F;          /* sunshine yellow — stars, meters, tiles */
+  --sq-color-star-deep: #D9A62E;
+  --sq-color-star-soft: #FFF6D9;     /* yellow chips, teach-card bg */
+  --sq-color-star-ink: #8A6A1F;
+  --sq-color-star-ink-strong: #6B4E0E;
+
+  --sq-color-almost: #F0B450;        /* warm amber — correction flow. NEVER red. */
+  --sq-color-almost-ink: #B07A1E;
+  --sq-color-almost-card: #FFFBF2;
+
+  --sq-color-success: #7CB47C;       /* leafy green — correct-answer accents */
+  --sq-color-success-ink: #5E8A5E;
+
+  --sq-color-border: #F6D8B8;        /* card border */
+  --sq-color-border-soft: #F0DCC4;   /* inner strokes, empty boxes */
+  --sq-color-border-dashed: #E8D4C0; /* empty/dashed input boxes */
+  --sq-color-well: #F5E7D8;          /* recessed fills (tray, meters, eggs) */
+
+  --sq-color-scrim: rgba(58, 46, 56, 0.18); /* overlay dim */
+
+  /* pastel accent buckets for creatures/patterns */
+  --sq-color-pastel-blue: #8FBFDF;  --sq-color-pastel-blue-tint: #EAF2F8;  --sq-color-pastel-blue-ink: #4A6B84;
+  --sq-color-pastel-green: #A6CC8F; --sq-color-pastel-green-tint: #EDF4E8; --sq-color-pastel-green-ink: #587244;
+  --sq-color-pastel-lilac: #D9A6E0; --sq-color-pastel-lilac-tint: #F5EBF7; --sq-color-pastel-lilac-ink: #7A5482;
+  --sq-color-shelf: #C98F55;        --sq-color-shelf-deep: #B07A42;
+
+  /* mascot (red panda) */
+  --sq-color-mascot-fur: #E5764F;
+  --sq-color-mascot-fur-deep: #C15A45;
+  --sq-color-mascot-cream: #FDEFE0;
+  --sq-color-mascot-ink: #3A2A2E;
+
+  /* ---- Type ---- */
+  --sq-font-display: 'Lexend', 'OpenDyslexic', system-ui, sans-serif; /* weights 400/500/600 ONLY */
+  --sq-text-hero: 42px;        /* home greeting */
+  --sq-text-word-xl: 84px;     /* heart-word spotlight */
+  --sq-text-word-reveal: 76px; /* correction reveal (≥48px required) */
+  --sq-text-word: 44px;        /* letters inside boxes (≥40px required) */
+  --sq-text-title: 34px;
+  --sq-text-button: 26px;
+  --sq-text-body: 24px;        /* kid instruction line (≥28px for exercise text — instructions pair with icon + audio) */
+  --sq-text-note: 18px;
+  --sq-letter-spacing: 0.05em; /* word text */
+  --sq-letter-spacing-ui: 0.02em;
+  --sq-line-height: 1.6;       /* minimum everywhere */
+
+  /* ---- Space (4px base) ---- */
+  --sq-space-1: 4px;
+  --sq-space-2: 8px;
+  --sq-space-3: 12px;
+  --sq-space-4: 16px;
+  --sq-space-5: 24px;
+  --sq-space-6: 32px;
+  --sq-space-7: 48px;
+  --sq-space-8: 64px;
+
+  /* ---- Shape ---- */
+  --sq-radius-card: 28px;
+  --sq-radius-tile: 18px;
+  --sq-radius-tile-sm: 16px;
+  --sq-radius-pill: 999px;
+
+  /* ---- Elevation (chunky offset shadows, storybook style) ---- */
+  --sq-shadow-card: 0 10px 0 rgba(238, 111, 160, 0.16);
+  --sq-shadow-teach: 0 10px 0 rgba(249, 199, 79, 0.28);
+  --sq-shadow-chip: 0 3px 0 rgba(58, 46, 56, 0.08);
+  --sq-shadow-btn: 0 8px 0 var(--sq-color-primary-deep);
+  --sq-shadow-btn-pressed: 0 6px 0 var(--sq-color-primary-deep);
+  --sq-shadow-tile: 0 4px 0 #E5C367;
+  --sq-focus-ring: 0 0 0 4px rgba(238, 111, 160, 0.18);
+  --sq-almost-ring: 0 0 0 8px rgba(240, 180, 80, 0.22);
+
+  /* ---- Size ---- */
+  --sq-size-touch: 56px;       /* minimum hit target */
+  --sq-size-letterbox-w: 72px;
+  --sq-size-letterbox-h: 80px;
+  --sq-size-soundbox-w: 82px;
+  --sq-size-soundbox-w-digraph: 128px; /* two-letter box (sh/ch/th) */
+  --sq-size-soundbox-h: 92px;
+  --sq-size-audio-btn: 88px;
+  --sq-size-audio-btn-hero: 120px;
+
+  /* ---- Motion (200–400ms, ease-out; big only for celebrations) ---- */
+  --sq-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --sq-dur-fast: 200ms;
+  --sq-dur-base: 300ms;
+  --sq-dur-slow: 400ms;
+}
