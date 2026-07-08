@@ -1,6 +1,6 @@
 # ADR-006 — Data model & file-store schema (record shapes, IDs, on-disk layout)
 
-**Status:** Proposed *(lock before EW2/B3 — the store is built against it)*
+**Status:** Accepted *(2026-07-07; store built against it — EW2. Addendum from ADR-007: the skill record stores `mastery` as-of-`last_practiced` + `last_practiced`; effective mastery is computed lazily, never persisted per-read.)*
 **Date:** 2026-07-07 · **Related:** ADR-001 (file store), ADR-004 (`student_id` seam), `PLAN.md` §2/§5
 
 ## Context

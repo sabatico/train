@@ -1,6 +1,6 @@
 # ADR-010 — Frontend app architecture (SPA shell, registry, router, audio wrapper)
 
-**Status:** Proposed *(lock at token-lock / start of B7)*
+**Status:** Accepted *(2026-07-07; frozen at token-lock / start of B7)*
 **Date:** 2026-07-07 · **Related:** ADR-003 (stack), ADR-004 (WebView-clean seam), ADR-005 (item contract), `DESIGN_BRIEF.md`, the design handoff
 
 ## Context

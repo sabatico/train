@@ -1,6 +1,6 @@
 # ADR-005 — The exercise/interaction JSON contract (the one seam, three consumers)
 
-**Status:** Proposed *(lock before B6/B7/B8 — the first shared-contract dependency)*
+**Status:** Accepted *(2026-07-07; the shared-contract seam — frozen before B6/B7/B8)*
 **Date:** 2026-07-07 · **Related:** ADR-002 (agent tool schemas), ADR-003 (frontend registry), ADR-004 (stateless API), `PLAN.md` §3, `DESIGN_BRIEF.md` §6
 
 ## Context

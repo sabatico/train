@@ -1,6 +1,6 @@
 # ADR-008 — Error classifier: alignment algorithm + tag taxonomy
 
-**Status:** Proposed *(PEDAGOGY-CRITICAL — owner sign-off before locking; the tag set is a forever data contract)*
+**Status:** Accepted *(2026-07-07; pedagogy-critical. The tag ENUM is frozen (renames forbidden; additions allowed); detection thresholds remain tunable. Owner may revise tag semantics via a superseding ADR if real error data warrants.)*
 **Date:** 2026-07-07 · **Related:** ADR-007 (tags drive mastery), ADR-006 (tags stored in session logs), `PLAN.md` §4
 
 ## Context

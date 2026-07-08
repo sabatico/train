@@ -1,6 +1,6 @@
 # ADR-011 — Rewards & gamification economy
 
-**Status:** Proposed *(owner sign-off welcome — tuning the fun; lock before B9)*
+**Status:** Accepted *(2026-07-07; frozen before B9. The monotonic-non-decreasing invariant is permanent (invariant #3); the level curve / star values / freeze rules stay tunable in `engine/config.py` — tuning only ever makes rewards more generous, never retroactively removes.)*
 **Date:** 2026-07-07 · **Related:** ADR-006 (`rewards.json`), ADR-007 (mastery→hatching), invariant #3, `PLAN.md` §6, `DESIGN_BRIEF.md` §4
 
 ## Context

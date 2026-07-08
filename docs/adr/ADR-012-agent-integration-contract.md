@@ -1,6 +1,6 @@
 # ADR-012 — Agent integration contract (tool-use, prompt/PII boundary, caching, fallback wiring)
 
-**Status:** Proposed *(lock before B8 — the agent module)*
+**Status:** Accepted *(2026-07-07; frozen before B8 — the agent module)*
 **Date:** 2026-07-07 · **Related:** ADR-002 (DeepSeek + fallback), ADR-005 (tool schemas = exercise schemas), ADR-008 (tags), invariant #2 (no child PII), `PLAN.md` §5
 
 ## Context

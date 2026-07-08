@@ -1,6 +1,6 @@
 # ADR-007 — Mastery model & adaptive selection algorithm
 
-**Status:** Proposed *(PEDAGOGY-CRITICAL — owner sign-off + a second-ideator pass before locking)*
+**Status:** Accepted *(pedagogy-critical; constants remain tunable in `engine/config.py`. Second-ideator pass done inline 2026-07-07 → fixed a compounding-decay bug (now a lazy projection from a fixed baseline) and premature-unlock (gates check effective mastery at session end, `introduced` is a one-way latch, new skills start at 20). Owner may re-tune any constant without a new ADR.)*
 **Date:** 2026-07-07 · **Related:** ADR-006 (skill record), ADR-008 (tags feed this), `PLAN.md` §1/§2
 
 ## Context
@@ -12,11 +12,13 @@ This is the brain: it decides how a result moves a skill's mastery, how mastery 
 
 **2. Mastery update (EMA with a slowing learning rate):**
 `mastery ← clamp(mastery + K · (100·score − mastery), 0, 100)`
-where `K = max(0.12, 0.4 / (1 + exposures/8))` — early exposures move fast, later ones stabilize (prevents one bad day from wiping a solid skill). `exposures`, `streak`, `last_practiced` updated each attempt.
+where `K = max(0.12, 0.4 / (1 + exposures/8))` — early exposures move fast, later ones stabilize (prevents one bad day from wiping a solid skill). A newly introduced skill starts at `mastery = 20` (small credit for cleared prerequisites, not zero — so the first item isn't demoralizing scaffolding from nothing). `exposures`, `streak`, `last_practiced` updated each attempt.
 
-**3. Decay (forces spiral review — the core dyslexia principle):** on load, for each skill, apply `mastery ← max(0, mastery − decay_per_day · days_since_practiced)`. Default `decay_per_day = 0.8`; heart words decay faster (1.2, pure memory), rule-based skills slower (0.5). Decay is applied lazily at read time (no cron needed — fits the file store).
+**3. Decay (forces spiral review) — computed as a lazy projection, never a compounding subtraction.** Two stored fields per skill: `mastery` (the value *as of `last_practiced`*) and `last_practiced`. The **effective** mastery used everywhere (selection, gates, the radar) is computed on read:
+`effective(skill, today) = max(0, mastery − decay_per_day · days_since(last_practiced))`.
+The stored `mastery` is rewritten **only when she practices** — the EMA update (rule 2) starts from `effective` and writes the new value with `last_practiced = today`. *(This is the fix for a real bug: applying `mastery ← mastery − decay` on every read would compound — two reads on the same day, or a read that persists, would over-decay. Projecting from a fixed baseline is idempotent.)* Default `decay_per_day = 0.8`; heart words 1.2 (pure memory), rule-based skills 0.5.
 
-**4. Prerequisite gates (introduce, never overwhelm):** a skill is `introduced` only when all its prerequisites are ≥ 60. Prereq map lives in `data/word_bank/skill_graph.json` (e.g. `magic_e ← short_vowels`; `vowel_teams ← short_vowels, digraphs`). A skill is "mastered" (hatches its creature, ADR-011) at ≥ 85 sustained over ≥ 2 sessions.
+**4. Prerequisite gates (introduce, never overwhelm):** a skill becomes `introduced` (a one-way latch, set once and never unset) when all prerequisites have **effective mastery ≥ 60 at the END of a session** — not mid-session, so a lucky in-session streak can't prematurely unlock and overwhelm her. Prereq map lives in `data/word_bank/skill_graph.json` (e.g. `magic_e ← short_vowels`; `vowel_teams ← short_vowels, digraphs`). A skill is "mastered" (hatches its creature, ADR-011) at effective mastery ≥ 85 sustained across ≥ 2 sessions.
 
 **5. Selection per session (the 60/30/10, made concrete):** target `items_per_session` (default 10):
 - **60% focus:** the lowest-mastery *introduced* skill = the session's focus pattern (drives the teach card).

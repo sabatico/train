@@ -1,6 +1,6 @@
 # ADR-009 — Session lifecycle & where in-flight session state lives
 
-**Status:** Proposed *(lock before B6 — the session API)*
+**Status:** Accepted *(2026-07-07; frozen before B6 — the session API)*
 **Date:** 2026-07-07 · **Related:** ADR-004 (stateless API), ADR-005 (item contract), ADR-006 (`current.json`), ADR-007 (selection), `PLAN.md` §7
 
 ## Context
