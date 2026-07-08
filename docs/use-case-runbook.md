@@ -32,8 +32,17 @@
 1. Open http://127.0.0.1:5000/parent.
 2. ✔ Expect: 14-axis radar chart matching `data/skills.json` mastery values; weakest skill named under it.
 
+### KID-DAILY — the daily loop (browser manual-test script, verified act-012)
+**As the child, I want to do today's practice and earn stars.**
+1. `.venv/bin/python app.py` (or preview) → open `/app`.
+2. ✔ Home: cream page, greeting, big pink **Start!**, mascot. Tap Start.
+3. ✔ Teach card (yellow): today's pattern word + one rule sentence + 🔊. Tap **Got it!**.
+4. ✔ Progress dots row appears; first exercise renders (a `word_builder` while skills are low — dashed sound boxes + letter tiles, or `letter_boxes`/`echo_dictation` as mastery rises). 🔊 speaks the word.
+5. Answer wrong once → ✔ correction overlay: amber card, the **correct** word large with the pattern letters highlighted, a kid-voice why (agent when `SPELLQUEST_AGENT_LIVE=1`, else canned) + 🔊; type it correctly → advances. **Invariant check:** your wrong spelling is never shown.
+6. Finish all items → ✔ reward screen: ⭐ count, level, hatch tease. `data/students/default/` now has an updated `skills.json`, a session log, and a `memory.md` note.
+
 ## Golden end-to-end paths (the flows to demo / regression-test)
-- **Daily loop (primary):** KID-01 → KID-02 warm-up → KID-03 teach card → KID-04/05/10 practice items incl. one KID-14 correction → KID-15 reward chest → skills.json updated, session log written, ONBOARDING untouched.
-- **Agent-down path (must stay green):** same daily loop with no/invalid `DEEPSEEK_API_KEY` → session runs fully on engine fallback; a `agent_fallback` line appears in the app log; the child notices nothing.
+- **Daily loop (primary):** KID-DAILY above — verified in-browser act-012 (home→teach→exercises→correction→reward reaches ⭐).
+- **Agent-down path (must stay green):** same loop with `SPELLQUEST_AGENT_LIVE` unset (default) → runs fully on engine fallback (canned why lines); the child notices nothing. This is the default/tested path.
 
 > Stories are added/fleshed out with real steps in the same slice that ships the feature (part of Done).

@@ -1,0 +1,355 @@
+/* Spell Quest — component library (per DESIGN_BRIEF §9)
+   Scoped .sq-* classes; values come ONLY from tokens.css vars.
+   Same component = same pixels on every screen. Zero inline styles in production markup. */
+
+/* ---------- Base ---------- */
+.sq-page {
+  min-height: 100vh;
+  background: var(--sq-color-bg);
+  color: var(--sq-color-ink);
+  font-family: var(--sq-font-display);
+  letter-spacing: var(--sq-letter-spacing-ui);
+  line-height: var(--sq-line-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sq-page * { box-sizing: border-box; }
+
+@media (prefers-reduced-motion: reduce) {
+  .sq-page *, .sq-page *::before, .sq-page *::after { animation: none !important; transition: none !important; }
+}
+
+/* ---------- Button ---------- */
+.sq-btn {
+  font-family: var(--sq-font-display);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: var(--sq-radius-pill);
+  cursor: pointer;
+  min-height: var(--sq-size-touch);
+  transition: transform var(--sq-dur-fast) var(--sq-ease), box-shadow var(--sq-dur-fast) var(--sq-ease);
+}
+.sq-btn:focus-visible { outline: none; box-shadow: var(--sq-shadow-btn), var(--sq-focus-ring); }
+
+.sq-btn--primary {
+  font-size: var(--sq-text-button);
+  color: var(--sq-color-card);
+  background: var(--sq-color-primary);
+  box-shadow: var(--sq-shadow-btn);
+  padding: var(--sq-space-4) var(--sq-space-7);
+}
+.sq-btn--primary:hover { transform: translateY(2px); box-shadow: var(--sq-shadow-btn-pressed); }
+.sq-btn--primary:disabled {
+  background: var(--sq-color-border-dashed);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.sq-btn--hero { font-size: 34px; padding: 26px 100px; } /* Start! / Go! */
+
+.sq-btn--star { /* yellow variant (Got it!, Cover it!) */
+  font-size: 28px;
+  color: var(--sq-color-star-ink-strong);
+  background: var(--sq-color-star);
+  box-shadow: 0 7px 0 var(--sq-color-star-deep);
+  border-radius: 22px;
+  padding: var(--sq-space-4) var(--sq-space-8);
+}
+.sq-btn--star:hover { transform: translateY(2px); box-shadow: 0 5px 0 var(--sq-color-star-deep); }
+
+.sq-btn--quiet { /* icon-chip secondary links (My Collection, Games) */
+  display: flex; align-items: center; gap: var(--sq-space-2);
+  font-size: 20px; font-weight: 500;
+  color: var(--sq-color-ink);
+  background: var(--sq-color-card);
+  border: 3px solid var(--sq-color-border);
+  padding: var(--sq-space-3) var(--sq-space-5);
+}
+.sq-btn--quiet:hover { border-color: var(--sq-color-primary); }
+
+.sq-btn--ghost { /* pause/exit, back-home text button */
+  background: transparent;
+  color: var(--sq-color-ink-faint);
+  font-weight: 500;
+}
+.sq-btn--ghost:hover { color: var(--sq-color-primary); background: var(--sq-color-well); }
+
+/* ---------- AudioButton (unlimited replays — identical on every press) ---------- */
+.sq-audio {
+  width: var(--sq-size-audio-btn);
+  height: var(--sq-size-audio-btn);
+  border-radius: var(--sq-radius-pill);
+  border: none;
+  background: var(--sq-color-primary);
+  color: var(--sq-color-card);
+  font-size: 38px;
+  cursor: pointer;
+  box-shadow: 0 6px 0 var(--sq-color-primary-deep);
+  transition: transform var(--sq-dur-fast) var(--sq-ease), box-shadow var(--sq-dur-fast) var(--sq-ease);
+}
+.sq-audio:hover { transform: translateY(2px); box-shadow: 0 4px 0 var(--sq-color-primary-deep); }
+.sq-audio:focus-visible { outline: none; box-shadow: 0 6px 0 var(--sq-color-primary-deep), var(--sq-focus-ring); }
+.sq-audio--hero { width: var(--sq-size-audio-btn-hero); height: var(--sq-size-audio-btn-hero); font-size: 52px; } /* echo dictation */
+.sq-audio--star { background: var(--sq-color-star); color: var(--sq-color-star-ink-strong); box-shadow: 0 5px 0 var(--sq-color-star-deep); }
+.sq-audio--word { /* per-word ghost replay under phrase inputs */
+  width: auto; height: auto; min-height: 44px;
+  display: flex; align-items: center; gap: 6px;
+  font-family: var(--sq-font-display); font-size: 17px;
+  color: var(--sq-color-ink-faint);
+  background: transparent;
+  border: 2px solid var(--sq-color-border-dashed);
+  box-shadow: none;
+  padding: var(--sq-space-2) var(--sq-space-4);
+}
+.sq-audio--word:hover { border-color: var(--sq-color-primary); color: var(--sq-color-primary); transform: none; }
+
+/* ---------- TaskCard ---------- */
+.sq-card {
+  background: var(--sq-color-card);
+  border: 3px solid var(--sq-color-border);
+  border-radius: var(--sq-radius-card);
+  box-shadow: var(--sq-shadow-card);
+  padding: var(--sq-space-7) var(--sq-space-8) var(--sq-space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sq-space-6);
+}
+.sq-card--teach { background: var(--sq-color-star-soft); border-color: var(--sq-color-star); box-shadow: var(--sq-shadow-teach); }
+.sq-card--almost { /* correction overlay card */
+  background: var(--sq-color-almost-card);
+  border: 4px solid var(--sq-color-almost);
+  box-shadow: var(--sq-almost-ring), 0 14px 34px var(--sq-color-scrim);
+}
+.sq-card__instruction { /* icon + ≤5 words, auto-spoken */
+  display: flex; align-items: center; gap: var(--sq-space-3);
+  font-size: var(--sq-text-body);
+  color: var(--sq-color-ink-muted);
+}
+.sq-card__action { align-self: flex-end; }
+.sq-overlay-scrim { position: fixed; inset: 0; background: var(--sq-color-scrim); }
+
+/* ---------- LetterBox (typed input, one per letter) ---------- */
+.sq-letterbox {
+  width: var(--sq-size-letterbox-w);
+  height: var(--sq-size-letterbox-h);
+  border-radius: var(--sq-radius-tile);
+  background: var(--sq-color-card);
+  border: 3px solid var(--sq-color-border-soft);
+  font-family: var(--sq-font-display);
+  font-size: var(--sq-text-word);
+  font-weight: 500;
+  letter-spacing: var(--sq-letter-spacing);
+  text-align: center;
+  color: var(--sq-color-ink);
+  caret-color: var(--sq-color-primary);
+  transition: border-color var(--sq-dur-fast) var(--sq-ease), box-shadow var(--sq-dur-fast) var(--sq-ease);
+}
+.sq-letterbox:focus, .sq-letterbox--focused {
+  outline: none;
+  background: var(--sq-color-primary-soft);
+  border-color: var(--sq-color-primary);
+  box-shadow: var(--sq-focus-ring);
+}
+.sq-letterbox--empty { background: transparent; border-style: dashed; border-color: var(--sq-color-border-dashed); }
+.sq-letterbox-row { display: flex; gap: var(--sq-space-3); }
+.sq-phoneme-bracket { /* SVG underline brackets: joined arc for digraphs, flat line per single letter */
+  margin-top: var(--sq-space-2);
+}
+.sq-phoneme-bracket .arc { stroke: var(--sq-color-star); stroke-width: 5; fill: none; stroke-linecap: round; }
+.sq-phoneme-bracket .flat { stroke: var(--sq-color-border-dashed); stroke-width: 5; stroke-linecap: round; }
+
+/* ---------- SoundBoxRow + LetterTile (word builder) ---------- */
+.sq-soundbox {
+  width: var(--sq-size-soundbox-w);
+  height: var(--sq-size-soundbox-h);
+  border-radius: var(--sq-radius-tile);
+  background: var(--sq-color-card);
+  border: 3px dashed var(--sq-color-border-dashed);
+  display: flex; align-items: center; justify-content: center;
+}
+.sq-soundbox--digraph { width: var(--sq-size-soundbox-w-digraph); }
+.sq-soundbox--filled {
+  background: var(--sq-color-primary-soft);
+  border: 3px solid var(--sq-color-primary);
+  font-size: 46px; font-weight: 500;
+}
+.sq-soundbox-row { display: flex; gap: var(--sq-space-4); align-items: flex-end; }
+
+.sq-tile-tray {
+  display: flex; gap: var(--sq-space-3);
+  background: var(--sq-color-bg);
+  border: 3px solid var(--sq-color-border-soft);
+  border-radius: 22px;
+  padding: var(--sq-space-4) var(--sq-space-5);
+}
+.sq-tile {
+  width: 74px; height: 82px;
+  border-radius: var(--sq-radius-tile-sm);
+  background: var(--sq-color-star-soft);
+  border: 3px solid var(--sq-color-star);
+  box-shadow: var(--sq-shadow-tile);
+  font-family: var(--sq-font-display);
+  font-size: 42px; font-weight: 500;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: transform var(--sq-dur-fast) var(--sq-ease); /* the "hop" uses dur-base */
+}
+.sq-tile:hover, .sq-tile:focus-visible { transform: translateY(-4px); outline: none; }
+.sq-tile--digraph { width: 118px; }
+.sq-tile--used { background: var(--sq-color-well); border-color: var(--sq-color-border-soft); color: var(--sq-color-ink-disabled); box-shadow: none; cursor: default; }
+/* tilt rhythm: tiles alternate ±2deg for the sticker feel */
+.sq-tile:nth-child(odd) { transform: rotate(-2deg); }
+.sq-tile:nth-child(even) { transform: rotate(1.5deg); }
+.sq-tile:nth-child(odd):hover { transform: rotate(-2deg) translateY(-4px); }
+.sq-tile:nth-child(even):hover { transform: rotate(1.5deg) translateY(-4px); }
+
+/* ---------- ProgressDots (session shell top row — the ONLY chrome) ---------- */
+.sq-dots { display: flex; gap: var(--sq-space-4); align-items: center; padding-top: var(--sq-space-6); }
+.sq-dot { width: 16px; height: 16px; border-radius: var(--sq-radius-pill); border: 3px solid var(--sq-color-border-dashed); }
+.sq-dot--current { width: 20px; height: 20px; border: none; background: var(--sq-color-primary); animation: sq-pulse 1.4s ease-in-out infinite; }
+.sq-dot--done { /* rendered as ⭐ glyph, font-size 26px, alternating ±5deg tilt */
+  border: none; width: auto; height: auto; font-size: 26px;
+}
+@keyframes sq-pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.25); opacity: 0.75; } }
+
+/* ---------- StarMeter / progress bars (games use meters, NEVER clocks) ---------- */
+.sq-meter {
+  height: 26px;
+  border-radius: var(--sq-radius-pill);
+  background: var(--sq-color-well);
+  border: 2px solid var(--sq-color-border-soft);
+  overflow: hidden;
+}
+.sq-meter__fill { display: block; height: 100%; border-radius: var(--sq-radius-pill); background: var(--sq-color-star); transition: width var(--sq-dur-slow) var(--sq-ease); }
+
+/* ---------- Chips ---------- */
+.sq-chip {
+  display: flex; align-items: center; gap: var(--sq-space-2);
+  border-radius: var(--sq-radius-pill);
+  padding: var(--sq-space-3) var(--sq-space-5);
+  font-size: 22px; font-weight: 500;
+  box-shadow: var(--sq-shadow-chip);
+}
+.sq-chip--star { background: var(--sq-color-star-soft); color: var(--sq-color-star-ink); transform: rotate(-2deg); }
+.sq-chip--pink { background: var(--sq-color-primary-tint); color: var(--sq-color-primary-tint-ink); transform: rotate(1.5deg); }
+.sq-chip--badge { background: var(--sq-color-star); color: var(--sq-color-star-ink-strong); font-weight: 600; font-size: 18px; transform: rotate(2deg); }
+
+/* ---------- WordChip (word sort) ---------- */
+.sq-wordchip {
+  background: var(--sq-color-card);
+  border: 3px solid var(--sq-color-star);
+  border-radius: var(--sq-radius-pill);
+  box-shadow: 0 8px 0 rgba(249, 199, 79, 0.35);
+  padding: var(--sq-space-5) var(--sq-space-7);
+  font-size: 46px; font-weight: 600;
+  transform: rotate(-2deg);
+  cursor: grab;
+}
+
+/* ---------- Bucket (word sort) ---------- */
+.sq-bucket {
+  width: 340px; height: 230px;
+  border-radius: 26px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: var(--sq-space-3);
+  cursor: pointer;
+  transition: transform var(--sq-dur-fast) var(--sq-ease);
+}
+.sq-bucket:hover, .sq-bucket:focus-visible { transform: translateY(-4px); outline: none; }
+.sq-bucket--a { background: var(--sq-color-primary-tint); border: 4px solid var(--sq-color-primary); box-shadow: 0 0 0 6px rgba(238, 111, 160, 0.14); }
+.sq-bucket--a .sq-bucket__label { color: var(--sq-color-primary-tint-ink); }
+.sq-bucket--b { background: var(--sq-color-well); border: 4px solid var(--sq-color-border-dashed); }
+.sq-bucket--b .sq-bucket__label { color: var(--sq-color-ink-faint); }
+.sq-bucket__label { font-size: 28px; font-weight: 600; }
+.sq-bucket--hint { animation: sq-pulse 1.4s ease-in-out 2; } /* wrong sort: correct bucket glows */
+
+/* ---------- Word display (reveal, teach examples, heart words) ---------- */
+.sq-word {
+  font-size: var(--sq-text-word-reveal);
+  font-weight: 600;
+  letter-spacing: var(--sq-letter-spacing);
+  line-height: 1.3;
+}
+.sq-word--xl { font-size: var(--sq-text-word-xl); }
+.sq-word__hot { color: var(--sq-color-primary); }           /* highlighted pattern letters */
+.sq-word__heart { position: relative; color: var(--sq-color-primary); } /* ❤️ marker sits above via ::after or a positioned span */
+.sq-sentence-highlight { /* E9 review: polished-word highlight */
+  background: var(--sq-color-star-soft);
+  border-bottom: 4px solid var(--sq-color-star);
+  border-radius: 10px;
+  padding: 2px 10px;
+  font-weight: 500;
+}
+
+/* ---------- Lined writing area (E9) ---------- */
+.sq-lines {
+  width: 100%;
+  border-radius: 20px;
+  background: var(--sq-color-card);
+  border: 3px solid var(--sq-color-primary);
+  box-shadow: var(--sq-focus-ring);
+  padding: var(--sq-space-3) var(--sq-space-6);
+  font-family: var(--sq-font-display);
+  font-size: 36px;
+  letter-spacing: var(--sq-letter-spacing);
+  line-height: 76px; /* rule spacing */
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 73px,
+    var(--sq-color-border-soft) 73px,
+    var(--sq-color-border-soft) 76px
+  );
+  min-height: 228px; /* 3 lines max */
+  resize: none;
+}
+.sq-lines:focus { outline: none; }
+
+/* ---------- Explanation strip (correction beat 2) ---------- */
+.sq-explain {
+  display: flex; align-items: center; gap: var(--sq-space-4);
+  background: var(--sq-color-star-soft);
+  border-radius: var(--sq-radius-tile);
+  padding: var(--sq-space-4) var(--sq-space-5);
+  font-size: 24px; color: var(--sq-color-ink-muted);
+}
+.sq-explain .sq-audio { width: var(--sq-size-touch); height: var(--sq-size-touch); font-size: 24px; flex: none; }
+
+/* ---------- Mascot slot ---------- */
+.sq-mascot { position: absolute; left: var(--sq-space-6); bottom: var(--sq-space-5); } /* consistent corner, small */
+.sq-mascot--bob { animation: sq-bob 2.6s ease-in-out infinite; }
+@keyframes sq-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+
+/* ---------- Game bubbles (bd_ninja) ---------- */
+.sq-bubble {
+  width: 110px; height: 110px;
+  border-radius: var(--sq-radius-pill);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 52px; font-weight: 500;
+  cursor: pointer;
+  animation: sq-float 4.5s ease-in-out infinite;
+}
+.sq-bubble--target { background: var(--sq-color-primary-tint); border: 3px solid #F2A0B8; }
+.sq-bubble--foil { background: var(--sq-color-pastel-blue-tint); border: 3px solid #A9C6DE; }
+.sq-bubble:hover { transform: scale(1.08); }
+/* wrong tap = wobble only, no penalty flash */
+.sq-bubble--wobble { animation: sq-wobble var(--sq-dur-slow) var(--sq-ease); }
+@keyframes sq-float { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-14px) rotate(2deg); } }
+@keyframes sq-wobble { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-4deg); } 75% { transform: rotate(4deg); } }
+
+/* ---------- Beat pills (heart word LOOK/COVER/WRITE/CHECK) ---------- */
+.sq-beats { display: flex; gap: var(--sq-space-2); }
+.sq-beat { border-radius: var(--sq-radius-pill); padding: var(--sq-space-2) var(--sq-space-5); font-size: 19px; font-weight: 500; background: var(--sq-color-well); color: var(--sq-color-ink-faint); }
+.sq-beat--active { background: var(--sq-color-primary); color: var(--sq-color-card); font-weight: 600; }
+
+/* ---------- Collection shelf ---------- */
+.sq-shelf { height: 22px; border-radius: 10px; background: var(--sq-color-shelf); box-shadow: 0 6px 0 var(--sq-color-shelf-deep); }
+.sq-creature { display: flex; flex-direction: column; align-items: center; gap: var(--sq-space-2); cursor: pointer; transition: transform var(--sq-dur-fast) var(--sq-ease); }
+.sq-creature:hover, .sq-creature:focus-visible { transform: translateY(-4px); outline: none; }
+.sq-creature__label { border-radius: var(--sq-radius-pill); padding: 6px 16px; font-size: 18px; font-weight: 500; }
+.sq-egg { opacity: 0.9; } /* mystery egg fills use --sq-color-well + border-soft stroke, "?" in ink-disabled */
+
+/* ---------- Confetti (reward screens only) ---------- */
+.sq-confetti { position: absolute; width: 12px; height: 18px; border-radius: 3px; }

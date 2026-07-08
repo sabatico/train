@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Spell Quest</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/tokens.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/components.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+</head>
+<body>
+  <!-- Single-page shell (ADR-010): one mount point; JS swaps views (home → session
+       → reward). No inline styles anywhere — everything is tokens + .sq-* components. -->
+  <main id="app" class="sq-page" aria-live="polite"></main>
+  <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

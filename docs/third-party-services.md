@@ -14,7 +14,7 @@
 ### DeepSeek API
 - **Account / project:** owner's personal DeepSeek account (owner-managed).
 - **Endpoints / regions:** `https://api.deepseek.com/chat/completions` (OpenAI-compatible); model `deepseek-chat` (function-calling capable — needed for exercise tool schemas). Note: `deepseek-chat` is an alias — probe on 2026-07-07 served `deepseek-v4-flash`; the served model can change under us, so agent output validation (ADR-002 rule 2) is load-bearing.
-- **Config (env vars + non-secret dev values):** `DEEPSEEK_MODEL` = `deepseek-chat`; `DEEPSEEK_BASE_URL` = `https://api.deepseek.com`.
+- **Config (env vars + non-secret dev values):** `DEEPSEEK_MODEL` = `deepseek-chat`; `DEEPSEEK_BASE_URL` = `https://api.deepseek.com`; `SPELLQUEST_AGENT_LIVE` = `0` (default off — set `1` to enable live kid-voice feedback; off keeps dev/tests deterministic and free). TLS uses the `certifi` CA bundle (macOS Python lacks a system trust store).
 - **Secrets by NAME:** `DEEPSEEK_API_KEY` → stored in gitignored `.env`. *(value never here)*
 - **DNS / domains:** none.
 - **Limits / gotchas:** every call must respect **invariant #2 — no child PII in prompts** (words, skill states, error tags only; the child is "the student" in prompts). Timeouts/failures must degrade to the deterministic engine (ADR-002 fallback contract) — a slow API must never stall a 7-year-old mid-session; use tight timeouts (~10s plan / ~5s feedback) and the canned lines as fallback.

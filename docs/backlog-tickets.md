@@ -18,5 +18,9 @@
 | T-007 | 📈 | P3 | Pre-generated natural-voice audio to replace browser TTS | Only if browser voices prove too robotic for the child | ☐ | PLAN §5 |
 | T-008 | 🧹 | P2 | CI gate scripts (secret-scan, marker registries, no-inline-styles lint, coverage floor) as local pre-commit/`make gates` | Per `docs/ci/gates.md`, adapted to a no-remote local repo | ☐ | harness |
 | T-009 | ✨ | P3 | "Paper mode" — child writes on paper first, then types what she wrote | Dysgraphia bridge; PLAN §9 | ☐ | PLAN §9 |
+| T-010 | 🧹 | P2 | Automated JS unit tests for the UI (`static/js/*`) | Needs a JS test harness (vitest/jsdom) — a dependency+ADR decision. Until then UI is browser/manual-verified (use-case-runbook). Cover: registry rendering, correction overlay, session loop, speech wrapper | ☐ | act-012 (B7 DoD gap) |
+| T-011 | 🧹 | P2 | Self-host the Lexend font (woff2 in `static/fonts/`) | Currently falls back to system-ui via the token stack; self-hosting delivers the dyslexia-friendly typeface with zero external requests (third-party-services) | ☐ | act-012 |
+| T-012 | ✨ | P2 | Agent session-plan / teach-copy enrichment | ADR-012 call site #1: agent reorders the plan + writes teach-card copy via tool-use. Feedback (#2) already wired; this is #1 | ☐ | ADR-012 |
+| T-013 | 📈 | P3 | Home streak flame + mission chip; reward chest/confetti/level-up polish | DESIGN_BRIEF §1/§4 — richer home + reward moments beyond the functional versions | ☐ | act-012 |
 
 > **Definition of Ready** (before a ticket can be pulled into a wave): clear acceptance criteria, no unresolved blocking decision (else it belongs in `tbd-parking-lot.md` or as an open question in ONBOARDING §5), and a rough size. Keep this list groomed — prune `✅`/`✖` periodically into the session log.

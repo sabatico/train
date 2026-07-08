@@ -10,7 +10,7 @@ from __future__ import annotations
 import os
 
 from dotenv import load_dotenv
-from flask import Flask, jsonify, redirect, request
+from flask import Flask, jsonify, redirect, render_template, request
 
 from engine import session as session_engine, store
 
@@ -36,8 +36,7 @@ def create_app() -> Flask:
 
     @app.get("/app")
     def kid_app():
-        # Placeholder until the SPA shell lands (B7 / ADR-010).
-        return "<h1>Spell Quest</h1><p>the kid app shell will render here.</p>"
+        return render_template("app.html")
 
     @app.get("/parent")
     def parent_dashboard():
@@ -85,4 +84,7 @@ app = create_app()
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=int(os.environ.get("PORT", 5000)))
+    # use_reloader=False on purpose: the app writes the child's data under data/,
+    # and the file-watching reloader would restart the server mid-session (wiping
+    # sessions/current.json in flight). Keep the debugger, drop the reloader.
+    app.run(debug=True, use_reloader=False, port=int(os.environ.get("PORT", 5000)))

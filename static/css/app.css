@@ -1,0 +1,70 @@
+/* App-level layout + the few widgets not in the design handoff (free dictation
+   input, screen scaffolding). Tokens only (--sq-*), zero raw values — layered on
+   tokens.css + components.css (ADR-010). */
+
+.sq-screen {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: var(--sq-space-6) var(--sq-space-5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sq-space-5);
+}
+
+.sq-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sq-space-4);
+}
+
+.sq-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sq-space-3);
+  flex-wrap: wrap;
+}
+
+.sq-emoji-prompt {
+  font-size: 72px;
+  line-height: 1;
+}
+
+.sq-greeting {
+  font-size: var(--sq-text-hero);
+  font-weight: 600;
+  color: var(--sq-color-ink);
+  text-align: center;
+}
+
+/* free single-word input for echo_dictation */
+.sq-input-word {
+  font-family: var(--sq-font-display);
+  font-size: var(--sq-text-word);
+  text-align: center;
+  letter-spacing: var(--sq-letter-spacing);
+  color: var(--sq-color-ink);
+  background: var(--sq-color-card);
+  border: 3px solid var(--sq-color-border-dashed);
+  border-radius: var(--sq-radius-tile);
+  padding: var(--sq-space-3) var(--sq-space-5);
+  min-height: var(--sq-size-letterbox-h);
+  min-width: 260px;
+  outline: none;
+}
+.sq-input-word:focus {
+  border-color: var(--sq-color-primary);
+  background: var(--sq-color-primary-soft);
+  box-shadow: var(--sq-focus-ring);
+}
+
+/* reward numbers */
+.sq-reward-stars {
+  font-size: var(--sq-text-word-xl);
+  color: var(--sq-color-star-ink-strong);
+  font-weight: 600;
+}
+.sq-reward-note { font-size: var(--sq-text-title); color: var(--sq-color-ink); text-align: center; }
