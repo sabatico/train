@@ -10,9 +10,9 @@ from __future__ import annotations
 import os
 
 from dotenv import load_dotenv
-from flask import Flask, jsonify, redirect
+from flask import Flask, jsonify, redirect, request
 
-from engine import store
+from engine import session as session_engine, store
 
 load_dotenv()
 
@@ -43,6 +43,40 @@ def create_app() -> Flask:
     def parent_dashboard():
         # Placeholder until the parent dashboard lands (PAR-01).
         return "<h1>Spell Quest — grown-ups</h1><p>dashboard coming soon.</p>"
+
+    # ---- Session API (ADR-009). Stateless per request; v1 uses DEFAULT_STUDENT. ----
+    @app.post("/api/session/start")
+    def api_session_start():
+        return jsonify(session_engine.start_session(DEFAULT_STUDENT))
+
+    @app.get("/api/session/item")
+    def api_session_item():
+        view = session_engine.get_item(DEFAULT_STUDENT)
+        if view is None:
+            return jsonify(error="no_active_session"), 404
+        return jsonify(view)
+
+    @app.post("/api/session/answer")
+    def api_session_answer():
+        body = request.get_json(silent=True) or {}
+        item_id, attempt = body.get("item_id"), body.get("attempt", "")
+        if not item_id:
+            return jsonify(error="item_id required"), 400
+        result = session_engine.submit_answer(
+            DEFAULT_STUDENT, item_id, attempt, phase=body.get("phase", "first")
+        )
+        status = 409 if result.get("error") in {"item_mismatch", "session_complete"} else 200
+        status = 404 if result.get("error") == "no_active_session" else status
+        return jsonify(result), status
+
+    @app.post("/api/session/finish")
+    def api_session_finish():
+        result = session_engine.finish_session(DEFAULT_STUDENT)
+        return jsonify(result), (404 if result.get("error") else 200)
+
+    @app.get("/api/skills")
+    def api_skills():
+        return jsonify(store.load(DEFAULT_STUDENT, "skills"))
 
     return app
 

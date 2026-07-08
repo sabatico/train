@@ -152,6 +152,12 @@ def list_session_logs(student_id: str) -> list[str]:
     return sorted(p.stem for p in sdir.glob("*.json") if p.stem != "current")
 
 
+def load_session_log(student_id: str, date_key: str) -> dict | None:
+    """Read one completed session log by its date key, or None if absent."""
+    path = student_dir(student_id) / "sessions" / f"{_safe_student_id(date_key)}.json"
+    return _read_json(path) if path.exists() else None
+
+
 # ----------------------------------------------------------------- shared content
 def load_word_bank(pattern: str) -> list[dict]:
     """Read a curated word list (shared content, read-only, git-tracked)."""

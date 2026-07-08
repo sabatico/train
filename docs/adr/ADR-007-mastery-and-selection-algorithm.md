@@ -27,7 +27,7 @@ The stored `mastery` is rewritten **only when she practices** — the EMA update
 - **Warm-up override:** the first 2 items are always from skills with mastery ≥ 75 (guaranteed early wins, §1 / ADR-011).
 - **~80% success targeting:** the selector picks the *scaffold level* (ADR-005 `scaffold_level`, mapped to exercise type per §3's ladder) to aim ~80% correct for the current mastery — low mastery → high-scaffold types (`word_builder`), high mastery → low-scaffold (`echo_dictation`).
 
-**6. Step-down (never spiral into failure):** two consecutive misses → the same target is re-served one scaffold level easier; the session is guaranteed to end on a success item (reorder so a ≥75-mastery item is last).
+**6. Step-down (never spiral into failure):** two consecutive **first-try** misses → the *next* item is re-served at the most-scaffolded exercise type; the session is guaranteed to end on a success item (reorder so a ≥75-mastery item is last). "Consecutive" counts first-try failures — a correct *retype* in the correction routine does not reset the count (a first-try miss means the difficulty was too high regardless of copying the revealed word); only a correct first-try answer resets it.
 
 All constants live in one `engine/config.py` block so tuning them is a one-file change with a test, not a hunt.
 

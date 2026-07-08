@@ -43,10 +43,12 @@
 | CORE-02 | Skill model (mastery EMA, decay, prerequisite gates) | ✅ | `engine/skills.py` | the rose of winds | ✅ | ADR-007; 100% cov |
 | CORE-03 | Adaptive selector (60/30/10 + scaffold ladder) | ✅ | `engine/selector.py` | what to practice next | ✅ | ADR-007; 100% cov; deterministic |
 | CORE-04 | Error classifier (alignment + error tags) | ✅ | `engine/classifier.py` | attempt→tags→skill signals | ✅ | ADR-008; 100% cov; frozen tag enum |
-| CORE-05 | Session builder (warmup→teach→practice→challenge→reward) | ⬜ | `engine/session.py` | assembling a session | — | PLAN §7; next (B6) |
+| CORE-05 | Session builder (start→teach→practice+correction→finish) | ✅ | `engine/session.py` | assembling + running a session | ✅ | ADR-009; 100% cov; server-authoritative grading, step-down, resume, hatching |
+| CORE-11 | Exercise contract (envelope + payloads + validation + tool-schemas) | ✅ | `engine/contracts.py` | the UI⇄API⇄agent seam | ✅ | ADR-005; 100% cov; `public_item` hides answer keys |
+| CORE-12 | DeepSeek client (OpenAI-compatible HTTP wrapper) | 🔨 | `agent/client.py` | the provider seam | — | ADR-012; live function-calling verified; tests owed with B8 |
 | CORE-06 | Rewards (stars, chest, streak, levels, collection) | ✅ | `engine/rewards.py` | invariant #3 half-owner | ✅ | ADR-011; 100% cov; add-only |
 | CORE-07 | Teacher agent (DeepSeek: plan, feedback, notebook; engine fallback) | ⬜ | `agent/teacher.py` | the AI layer | — | key live (2026-07-07); build against real API |
-| CORE-08 | Flask API + routes | 🔨 | `app.py` | HTTP seam UI⇄engine | ▶ | skeleton: `/healthz`, `/`→`/app`, `/parent`, `create_app` factory, bootstrap on start; session endpoints owed (B6) |
+| CORE-08 | Flask API + routes | ✅ | `app.py` | HTTP seam UI⇄engine | ✅ | `/healthz`, `/`→`/app`, `/parent`, `/api/session/{start,item,answer,finish}`, `/api/skills`; 98% cov (`__main__` guard) |
 | CORE-09 | UI shell + component registry + tokens | ⬜ | `static/`, `templates/` | render `{type,payload}` | — | ADR-003; zero inline styles |
 | CORE-10 | Word banks (curated pattern lists) | 🔨 | `data/word_bank/*.json` | content, not code | n/a | `skill_graph.json` (14-skill prereqs) + `short_vowels.json` (8-word seed); more banks + expansion owed (EW3) |
 

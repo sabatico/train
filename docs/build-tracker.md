@@ -9,12 +9,12 @@
 | Harness / docs | ✅ installed | constitution, running files, SOPs, PLAN.md, DESIGN_BRIEF.md |
 | Architecture (ADRs) | 🔨 | ADR-001..004 Accepted; ADR-005..012 (Stage-1 build contracts) Proposed, awaiting owner lock — roadmap in adr/README.md |
 | UI design (Claude Design mockups) | 🔨 | kid screens + 10 exercises received (`design_handoff_spell_quest/`); parent P1/P2 + §8 states owed (B10) |
-| Backend engine (`engine/`) | 🔨 | store/config/models + skills/selector/classifier/rewards built & tested (100% cov each); session builder (B6) owed |
-| Flask API (`app.py`) | 🔨 | skeleton (health + tenancy routes + factory + bootstrap); session endpoints owed (B6) |
+| Backend engine (`engine/`) | ✅ | store/config/models + skills/selector/classifier/rewards + contracts/session all built & tested (100% cov each) |
+| Flask API (`app.py`) | ✅ | health + tenancy routes + `/api/session/*` + `/api/skills`; 98% cov |
 | Frontend (shell + exercises) | ⬜ | blocked on token-lock from mockups |
-| Teacher agent (`agent/`) | ⬜ | mocked until `DEEPSEEK_API_KEY` |
+| Teacher agent (`agent/`) | 🔨 | `agent/client.py` built; live function-calling verified; `agent/teacher.py` + wiring owed (B8) |
 | Word banks | 🔨 | 3 banks / 28 words (short_vowels, digraphs, heart_words); expand toward ~120 (T-005) |
-| Tests + gates | 🔨 | 185 tests green, 99% overall (100% on every engine module); invariant-#1 guardrail in place; CI gate scripts still owed (T-008) |
+| Tests + gates | 🔨 | 264 tests green, 99% overall (100% on every engine module); invariant-#1 guardrail in place; CI gate scripts still owed (T-008) |
 
 ## Wave log
 - **Wave 1 — Foundation** (open, 2026-07-07 → ): design brief ✅ → mockups → token-lock → engine skeleton + API + 3 exercises + agent module. Tracker: `runner.md`.
