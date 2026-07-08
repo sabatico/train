@@ -9,15 +9,26 @@ from __future__ import annotations
 
 import os
 
+from datetime import date
+
 from dotenv import load_dotenv
 from flask import Flask, jsonify, redirect, render_template, request
 
-from engine import session as session_engine, store
+from engine import report, session as session_engine, store
 
 load_dotenv()
 
 CONTRACT_VERSION = 1          # ADR-005 envelope version
 DEFAULT_STUDENT = "default"   # v1 single student (ADR-004 seam: never assumed elsewhere)
+
+
+def _set_num(form, key, settings, cast, lo, hi):
+    """Clamp-and-apply one numeric setting; ignore a missing/invalid value (an
+    absent field casts None → TypeError) so a bad field never rolls back others."""
+    try:
+        settings[key] = max(lo, min(hi, cast(form.get(key))))
+    except (TypeError, ValueError):
+        pass
 
 
 def create_app() -> Flask:
@@ -40,8 +51,33 @@ def create_app() -> Flask:
 
     @app.get("/parent")
     def parent_dashboard():
-        # Placeholder until the parent dashboard lands (PAR-01).
-        return "<h1>Spell Quest — grown-ups</h1><p>dashboard coming soon.</p>"
+        today = date.today()
+        skills_doc = store.load(DEFAULT_STUDENT, "skills")
+        summary = report.skill_summary(skills_doc, today)
+        logs = [
+            log
+            for key in store.list_session_logs(DEFAULT_STUDENT)
+            if (log := store.load_session_log(DEFAULT_STUDENT, key))
+        ]
+        return render_template(
+            "parent.html",
+            summary=summary,
+            weakest=report.weakest_introduced(summary),
+            radar=report.radar_points(summary),
+            errors=report.recent_errors(logs),
+            rewards=store.load(DEFAULT_STUDENT, "rewards"),
+            profile=store.load(DEFAULT_STUDENT, "profile"),
+        )
+
+    @app.post("/parent/settings")
+    def parent_settings():
+        profile = store.load(DEFAULT_STUDENT, "profile")
+        settings = profile["settings"]
+        # apply each field independently so one bad value can't discard a good one
+        _set_num(request.form, "items_per_session", settings, int, 4, 20)
+        _set_num(request.form, "tts_rate", settings, float, 0.5, 1.5)
+        store.save(DEFAULT_STUDENT, "profile", profile)
+        return redirect("/parent")
 
     # ---- Session API (ADR-009). Stateless per request; v1 uses DEFAULT_STUDENT. ----
     @app.post("/api/session/start")

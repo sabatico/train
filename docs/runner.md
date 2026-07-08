@@ -32,6 +32,11 @@ ADR-005..012 accepted; build items may proceed against them. ADR-007 got an inli
 2. ~~`DEEPSEEK_API_KEY`~~ → RESOLVED 2026-07-07: key in `.env`, probe verified (TBD-001 closed). Also unblocks the Sonnet↔DeepSeek cross-author pairing (CLAUDE.md model policy) once the wrapper script exists.
 3. Child's browser + TTS accent preference → blocks final dictation tuning only.
 
+## E. Post-core Phase-1 additions
+| ID | Item | Status | Notes |
+|----|------|--------|-------|
+| PD1 | Parent dashboard: rose-of-winds SVG radar + weakest-three + error log + settings (`/parent`, `engine/report.py`) | ✅ | done act-013; browser-verified; T-003 satisfied for v1. Cross-authored report tests in progress |
+
 ## D. Review/correction log (append per review or owner-correction round)
 - 2026-07-07 — CR1 (owner): plan is ONE phase, AI from the start, DeepSeek APIs (not Claude API); UI+backend first, connect the key after. PLAN.md updated accordingly.
 

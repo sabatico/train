@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spell Quest — Parent Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/tokens.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/parent.css') }}">
+</head>
+<body>
+  <div class="sq-parent">
+    <h1>Spell Quest — progress</h1>
+    <p>Level {{ rewards.level }} · {{ rewards.level_name }} · ⭐ {{ rewards.stars_total }} ·
+       🔥 {{ rewards.streak.count }}-day streak</p>
+
+    <div class="sq-parent-grid">
+      <!-- Rose of winds -->
+      <div class="sq-panel">
+        <h2>The rose of winds</h2>
+        <svg viewBox="0 0 {{ radar.size }} {{ radar.size }}" width="100%" role="img"
+             aria-label="skill mastery radar chart">
+          {% for r in radar.rings %}
+          <circle class="sq-radar-ring" cx="{{ radar.center }}" cy="{{ radar.center }}" r="{{ r }}"/>
+          {% endfor %}
+          {% for ax in radar.axes %}
+          <line class="sq-radar-axis" x1="{{ radar.center }}" y1="{{ radar.center }}"
+                x2="{{ ax.x }}" y2="{{ ax.y }}"/>
+          {% endfor %}
+          <polygon class="sq-radar-poly" points="{{ radar.polygon }}"/>
+          {% for ax in radar.axes %}
+          <text class="sq-radar-label" x="{{ ax.x }}" y="{{ ax.y }}"
+                text-anchor="middle" dominant-baseline="middle">{{ ax.label }}</text>
+          {% endfor %}
+        </svg>
+      </div>
+
+      <!-- Work on next -->
+      <div class="sq-panel">
+        <h2>Work on next</h2>
+        {% if weakest %}
+        <ul class="sq-weak-list">
+          {% for s in weakest %}
+          <li><span>{{ s.label }}</span><span class="sq-badge">{{ s.mastery }}</span></li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p class="sq-empty">No introduced skills yet — start a session.</p>
+        {% endif %}
+
+        <h2>Settings</h2>
+        <form class="sq-settings" method="post" action="{{ url_for('parent_settings') }}">
+          <label for="items">Items per session (4–20)</label>
+          <input id="items" name="items_per_session" type="number" min="4" max="20"
+                 value="{{ profile.settings.items_per_session }}">
+          <label for="rate">Voice speed (0.5–1.5)</label>
+          <input id="rate" name="tts_rate" type="number" step="0.1" min="0.5" max="1.5"
+                 value="{{ profile.settings.tts_rate }}">
+          <br><button type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Error log (parent-only; the child never sees these) -->
+    <h2>Recent tricky words</h2>
+    <div class="sq-panel">
+      {% if errors %}
+      <table class="sq-errtable">
+        <thead><tr><th>Date</th><th>Word</th><th>Wrote</th><th>Type</th><th>Skill</th></tr></thead>
+        <tbody>
+          {% for e in errors %}
+          <tr>
+            <td>{{ e.date }}</td>
+            <td class="sq-err-target">{{ e.target }}</td>
+            <td class="sq-err-attempt">{{ e.attempt }}</td>
+            <td class="sq-err-tag">{{ e.tags | join(", ") }}</td>
+            <td class="sq-err-tag">{{ e.skill }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <p class="sq-empty">No mistakes logged yet — they'll appear here to guide practice.</p>
+      {% endif %}
+    </div>
+  </div>
+</body>
+</html>

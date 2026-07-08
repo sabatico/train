@@ -2,6 +2,8 @@
    input, screen scaffolding). Tokens only (--sq-*), zero raw values — layered on
    tokens.css + components.css (ADR-010). */
 
+body { background: var(--sq-color-bg); margin: 0; }
+
 .sq-screen {
   width: 100%;
   max-width: 760px;

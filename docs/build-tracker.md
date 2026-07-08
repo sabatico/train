@@ -8,7 +8,7 @@
 |------|----------|-------|
 | Harness / docs | ✅ installed | constitution, running files, SOPs, PLAN.md, DESIGN_BRIEF.md |
 | Architecture (ADRs) | 🔨 | ADR-001..004 Accepted; ADR-005..012 (Stage-1 build contracts) Proposed, awaiting owner lock — roadmap in adr/README.md |
-| UI design (Claude Design mockups) | 🔨 | kid screens + 10 exercises received (`design_handoff_spell_quest/`); parent P1/P2 + §8 states owed (B10) |
+| UI design (Claude Design mockups) | 🔨 | kid screens implemented from handoff; parent dashboard hand-built (radar/log/settings) — a designed parent mockup + §8 states still nice-to-have (B10) |
 | Backend engine (`engine/`) | ✅ | store/config/models + skills/selector/classifier/rewards + contracts/session all built & tested (100% cov each) |
 | Flask API (`app.py`) | ✅ | health + tenancy routes + `/api/session/*` + `/api/skills`; 98% cov |
 | Frontend (shell + exercises) | ✅ | SPA shell + registry + 3 renderers + correction + reward + `speech.js`; browser-verified; JS tests deferred (T-010) |

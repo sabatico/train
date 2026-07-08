@@ -11,7 +11,7 @@
 |----|------|-----|-------|--------------------------|--------|--------|
 | T-001 | ✨ | P1 | Remaining exercise types beyond Wave 1's three | `missing_letters`, `bd_ninja`, `word_sort`, `heart_word_spotlight`, `phrase_dictation`, `beat_yesterday` (KID-06..09, 11, 13); done when each renders from the registry + has a runbook story | ☐ | PLAN §3 |
 | T-002 | ✨ | P1 | `sentence_scribe` free writing + gentle AI review (KID-12) | Max 2 corrections per text, praise-first; needs live agent | ☐ | PLAN §3 |
-| T-003 | ✨ | P1 | Parent dashboard: radar chart + error log + settings (PAR-01/02/04) | Radar matches skills.json; settings persist to profile.json | ☐ | PLAN §2 |
+| T-003 | ✨ | P1 | Parent dashboard: radar chart + error log + settings (PAR-01/02/04) | Radar matches skills.json; settings persist to profile.json | ✅ | done act-013 (v1); notebook viewer + weekly note still open (T-004) |
 | T-004 | ✨ | P2 | Weekly agent parent-note generation (PAR-03) | Appended to data/memory.md, readable on dashboard | ☐ | PLAN §5 |
 | T-005 | ✨ | P2 | Word banks: vowel_teams, r_controlled, suffixes, doubling_endings | Same schema as Wave 1 banks; owner reviews word choice | ☐ | PLAN §2 |
 | T-006 | ✨ | P2 | Streak freeze token + level-up celebration screen (KID-15/17 polish) | Missing a day with a token keeps the flame; never punitive | ☐ | PLAN §6 |

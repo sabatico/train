@@ -32,10 +32,10 @@
 ### The parent (the owner)
 | ID | Feature | Status | Surface | Key endpoints / entrypoints | Tests | Notes |
 |----|---------|--------|---------|-----------------------------|-------|-------|
-| PAR-01 | Rose-of-winds radar chart of the 14 skills | ⬜ | Parent dashboard `/parent` | `GET /api/skills` | — | PLAN §2 |
-| PAR-02 | Session history + error log browser | ⬜ | Parent dashboard | `data/sessions/*` | — | |
-| PAR-03 | Agent's teacher notebook + weekly note | ⬜ | Parent dashboard | `data/memory.md` | — | key live; unblocked |
-| PAR-04 | Settings (TTS voice/rate, font size, session length) | ⬜ | Parent dashboard | `data/profile.json` | — | |
+| PAR-01 | Rose-of-winds radar chart of the 14 skills | ✅ | Parent dashboard `/parent` | `engine/report.radar_points` | 🖥️ | server-rendered SVG radar; browser-verified; PLAN §2 |
+| PAR-02 | Error log (recent tricky words) | ✅ | Parent dashboard | `engine/report.recent_errors` | 🖥️ | parent-only; shows target/attempt/tags/skill; verified |
+| PAR-03 | Agent's teacher notebook | 🔨 | `data/memory.md` (written) | `store.append_memory` | — | notebook accrues per-session; a dashboard viewer + weekly agent note owed (T-004) |
+| PAR-04 | Settings (TTS rate, session length) | ✅ | Parent dashboard | `POST /parent/settings` | 🖥️ | items/session + voice rate, clamped; font/voice-name later |
 
 ## Part B — Core / internal modules
 | ID | Module | Status | Path | Responsibility | Tests | Notes |
@@ -50,6 +50,7 @@
 | CORE-06 | Rewards (stars, chest, streak, levels, collection) | ✅ | `engine/rewards.py` | invariant #3 half-owner | ✅ | ADR-011; 100% cov; add-only |
 | CORE-07 | Teacher agent (DeepSeek: kid-voice feedback, notebook; engine fallback) | ✅ | `agent/teacher.py` | the AI layer | ✅ | ADR-012; 100% cov; PII-safe, gated, live-verified; plan-enrich later |
 | CORE-13 | UI: SPA shell + registry + 3 exercise renderers + correction + TTS | ✅ | `static/js/*` | render `{type,payload}` | 🖥️ | ADR-010; browser-verified; JS unit tests deferred (T-010) |
+| CORE-14 | Parent report (radar geometry, summaries, error log) | ✅ | `engine/report.py` | dashboard data | ⏳ | pure functions; cross-authored tests in progress |
 | CORE-08 | Flask API + routes | ✅ | `app.py` | HTTP seam UI⇄engine | ✅ | `/healthz`, `/`→`/app`, `/parent`, `/api/session/{start,item,answer,finish}`, `/api/skills`; 98% cov (`__main__` guard) |
 | CORE-09 | UI tokens + component CSS (design system) | ✅ | `static/css/*`, `templates/` | branding + primitives | 🖥️ | ADR-003/010; adopted from handoff; zero inline styles; `app.css` for gaps |
 | CORE-10 | Word banks (curated pattern lists) | 🔨 | `data/word_bank/*.json` | content, not code | n/a | `skill_graph.json` (14-skill prereqs) + `short_vowels.json` (8-word seed); more banks + expansion owed (EW3) |
