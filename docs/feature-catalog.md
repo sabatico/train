@@ -21,7 +21,7 @@
 | KID-08 | `word_sort` exercise (drag into pattern buckets) | ⬜ | Session screen | component registry | — | PLAN §3 #5 |
 | KID-09 | `heart_word_spotlight` (look-cover-write-check with ❤️ letters) | ⬜ | Session screen | component registry | — | PLAN §3 #6 |
 | KID-10 | `echo_dictation` (TTS word → free input, unlimited 🔊 replay) | ✅ | Session screen | `speech.js` + registry | 🖥️ | renderer verified; auto-speak + replay |
-| KID-18 | Natural dictation voice (pre-generated audio, browser-TTS fallback) | 🔨 | `speech.js` + `static/audio/` | ADR-013 | 🖥️ | seam wired + fallback verified (404→browser TTS); clips need `OPENAI_API_KEY` (TBD-008) |
+| KID-18 | Natural dictation voice (pre-generated `sage` audio, browser-TTS fallback) | ✅ | `speech.js` + `static/audio/` | ADR-013 | 🖥️ | 733 clips generated (`gpt-4o-mini-tts`, voice `sage`, kid instructions); `/static/audio/cat.mp3`→200 verified; browser TTS fallback for any gaps |
 | KID-11 | `phrase_dictation` (TTS phrase → per-word inputs) | ⬜ | Session screen | component registry | — | PLAN §3 #8 |
 | KID-12 | `sentence_scribe` (free writing + gentle AI review, max 2 corrections) | ⬜ | Session screen | agent review call | — | PLAN §3 #9 |
 | KID-13 | `beat_yesterday` sprint (mastered words, beat own record) | ⬜ | Session screen | component registry | — | PLAN §3 #10 |

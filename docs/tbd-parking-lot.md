@@ -8,7 +8,6 @@ Each item names **the constraint** (why now is wrong) and **the resurface trigge
 
 | ID | Item | Why deferred (the constraint) | Resurface trigger | Code marker | Notes |
 |----|------|-------------------------------|-------------------|-------------|-------|
-| TBD-008 | Generate the natural-voice audio clips (run `scripts/generate_audio.py`) | Needs the owner's `OPENAI_API_KEY` (2nd provider, ADR-013); the wiring + script are built and `speech.js` falls back to browser TTS meanwhile | Owner adds `OPENAI_API_KEY` to `.env` → run the script, decide whether to commit the MP3s | — | T-014; ADR-013 |
 | TBD-002 | Final TTS voice/rate tuning for dictation | Don't know the child's actual browser/accent preference yet (ONBOARDING §5 Q1/Q2) | Owner answers → tune `profile.json` defaults | — | voices differ wildly per browser |
 | TBD-003 | Multi-child support (profiles, separate data dirs) | v1 is deliberately single-child — one learner, one `data/`; generalizing now adds complexity with zero users for it. `student_id` seam kept per ADR-004 | A second child starts using the app, or Stage 2 starts | — | deliberate scope cut |
 | TBD-004 | Auth / network exposure (serve beyond localhost) | App is localhost-only on the family Mac; adding auth now is cost without threat | Owner wants tablet/remote access, or Stage 2 starts | — | if it ships, PAR dashboard gets the gate first |

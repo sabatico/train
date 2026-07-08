@@ -41,12 +41,28 @@ def all_words() -> list[str]:
     return sorted(words)
 
 
-def tts(word: str, voice: str, speed: float, timeout: float = 30.0) -> bytes:
-    """One OpenAI TTS call → mp3 bytes."""
+# The steerable mini TTS model (voice tuned via free-text `instructions`).
+MODEL = os.environ.get("OPENAI_TTS_MODEL", "gpt-4o-mini-tts")
+VOICE = os.environ.get("OPENAI_TTS_VOICE", "sage")
+INSTRUCTIONS = os.environ.get(
+    "OPENAI_TTS_INSTRUCTIONS",
+    "very friendly and funny, kids communication oriented (for 6 y.o. girl auditory)",
+)
+
+
+def tts(word: str, voice: str, instructions: str, timeout: float = 30.0) -> bytes:
+    """One OpenAI TTS call → mp3 bytes. Uses the steerable mini model with a
+    free-text voice instruction (kid-friendly delivery)."""
     req = urllib.request.Request(
         "https://api.openai.com/v1/audio/speech",
         data=json.dumps(
-            {"model": "tts-1", "voice": voice, "input": word, "response_format": "mp3", "speed": speed}
+            {
+                "model": MODEL,
+                "voice": voice,
+                "input": word,
+                "instructions": instructions,
+                "response_format": "mp3",
+            }
         ).encode("utf-8"),
         headers={
             "Content-Type": "application/json",
@@ -60,8 +76,8 @@ def tts(word: str, voice: str, speed: float, timeout: float = 30.0) -> bytes:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--voice", default=os.environ.get("OPENAI_TTS_VOICE", "nova"))
-    ap.add_argument("--speed", type=float, default=0.9)
+    ap.add_argument("--voice", default=VOICE)
+    ap.add_argument("--instructions", default=INSTRUCTIONS)
     ap.add_argument("--limit", type=int, default=None)
     args = ap.parse_args()
     if not os.environ.get("OPENAI_API_KEY"):
@@ -72,12 +88,12 @@ def main() -> None:
     todo = [w for w in words if not (AUDIO_DIR / f"{w}.mp3").exists()]
     if args.limit is not None:
         todo = todo[: args.limit]
-    print(f"{len(words)} words, {len(todo)} to generate (voice={args.voice})")
+    print(f"{len(words)} words, {len(todo)} to generate ({MODEL}, voice={args.voice})")
 
     made = 0
     for w in todo:
         try:
-            data = tts(w, args.voice, args.speed)
+            data = tts(w, args.voice, args.instructions)
         except (urllib.error.URLError, TimeoutError, OSError) as exc:
             print(f"  {w}: FAILED ({type(exc).__name__}); skipping")
             continue
