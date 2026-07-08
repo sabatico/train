@@ -1,0 +1,16 @@
+{
+  "pattern": "digraphs",
+  "note": "Two letters, one sound: sh ch th ck wh (PLAN §2). `phonemes` keep the digraph as ONE unit so word_builder/letter_boxes draw it in a single (wider) sound box. Seed set — expand toward ~40.",
+  "words": [
+    {"word": "ship", "phonemes": ["sh", "i", "p"], "pattern": "digraphs", "tricky_letters": [], "phrase": "a big ship", "sentence": "The ship is big.", "emoji": "🚢", "distractors": ["c", "e"]},
+    {"word": "shop", "phonemes": ["sh", "o", "p"], "pattern": "digraphs", "tricky_letters": [], "phrase": "the toy shop", "sentence": "We go to the shop.", "emoji": "🏪", "distractors": ["c", "a"]},
+    {"word": "chat", "phonemes": ["ch", "a", "t"], "pattern": "digraphs", "tricky_letters": [], "phrase": "a fun chat", "sentence": "We chat and laugh.", "emoji": "🗨️", "distractors": ["s", "e"]},
+    {"word": "chip", "phonemes": ["ch", "i", "p"], "pattern": "digraphs", "tricky_letters": [], "phrase": "one chip", "sentence": "I eat a chip.", "emoji": "🍟", "distractors": ["sh", "o"]},
+    {"word": "thin", "phonemes": ["th", "i", "n"], "pattern": "digraphs", "tricky_letters": [], "phrase": "thin ice", "sentence": "The ice is thin.", "emoji": "🧊", "distractors": ["f", "e"]},
+    {"word": "that", "phonemes": ["th", "a", "t"], "pattern": "digraphs", "tricky_letters": [], "phrase": "that one", "sentence": "I like that hat.", "emoji": "👉", "distractors": ["d", "o"]},
+    {"word": "duck", "phonemes": ["d", "u", "ck"], "pattern": "digraphs", "tricky_letters": [], "phrase": "a yellow duck", "sentence": "The duck can swim.", "emoji": "🦆", "distractors": ["k", "o"]},
+    {"word": "sock", "phonemes": ["s", "o", "ck"], "pattern": "digraphs", "tricky_letters": [], "phrase": "a red sock", "sentence": "I lost one sock.", "emoji": "🧦", "distractors": ["k", "a"]},
+    {"word": "when", "phonemes": ["wh", "e", "n"], "pattern": "digraphs", "tricky_letters": [], "phrase": "when now", "sentence": "When can we go?", "emoji": "❓", "distractors": ["w", "a"]},
+    {"word": "whip", "phonemes": ["wh", "i", "p"], "pattern": "digraphs", "tricky_letters": [], "phrase": "whip it", "sentence": "Whip the cream.", "emoji": "🌪️", "distractors": ["w", "o"]}
+  ]
+}

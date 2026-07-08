@@ -48,6 +48,16 @@ ITEMS_PER_SESSION = 10
 MIX_FOCUS = 0.6
 MIX_REVIEW = 0.3
 MIX_STRETCH = 0.1
+WARMUP_ITEMS = 2              # first N items are guaranteed early wins
+
+# ---- Scaffold ladder (ADR-007 rule 5 / ADR-005 scaffold_level) ----
+# Exercise types ordered MOST-scaffold → LEAST. Phase-1 ships these three; more
+# slot in later without changing the mapping shape. Index+1 = scaffold_level.
+SCAFFOLD_TYPES = ("word_builder", "letter_boxes", "echo_dictation")
+# effective-mastery cutoffs between the ladder rungs (len = len(SCAFFOLD_TYPES)-1):
+# <45 → most scaffold (word_builder); 45–75 → letter_boxes; ≥75 → echo_dictation.
+# Targets ~80% success — a shakier skill gets a more forgiving exercise.
+SCAFFOLD_CUTOFFS = (45, 75)
 
 # ---- Reward economy (ADR-011) — ONLY ever added to (invariant #3) ----
 STARS_FIRST_TRY = 2
