@@ -19,7 +19,7 @@ How we write code and docs here, so a swarm of agents (and humans) produce one c
 7. **All `data/` writes go through one storage module** (atomic tmp-file + rename). No `open(..., "w")` on data files anywhere else — this is what makes invariant #1 testable.
 
 ## Commits & branches
-- Trunk-based, direct-to-main during buildup (single owner, no remote). Short-lived branches once the child uses the app daily.
+- Trunk-based, direct to `master` on `origin` (`github.com/sabatico/train`), push at end of act — standing owner permission, no per-push approval. No force-pushes or history rewrites of pushed commits.
 - Commit messages: imperative subject, a body that says *why* for anything non-obvious. Special prefixes the harness uses: **`quality-review:`** (a review baseline).
 - Trailer on every commit: `Co-Authored-By: Claude <noreply@anthropic.com>`.
 

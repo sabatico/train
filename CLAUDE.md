@@ -28,7 +28,7 @@ Led by an AI lead agent + spawned role sub-agents; the human owner (the parent) 
   - **Max context to every spawned agent.** Skimpy prompts cause most agent mistakes: every spawn gets the full relevant context — the frozen contract, the actual file contents it must match, `PLAN.md`/`DESIGN_BRIEF.md` excerpts that govern the slice, an existing exemplar (e.g. a neighboring module or test file), the invariants, and the DoD. Don't summarize what you can paste.
   - A **scribe** (cheap model or the lead inline) documents each finished item into the running files.
 - **Coverage is part of Done:** every slice **measures** coverage on its new/changed code (`pytest --cov`) and hits **80–100%** (top of the band for `engine/` — it drives what the child is taught). A test you can't write yet (missing harness/dep) is **DEFERRED, never dropped** — tag the site `DEFERRED-TEST:`, register it, and write it the moment the dependency lands.
-- **Git:** trunk-based, direct-to-main during buildup (single owner); short-lived branches once the app is in daily use by the child. End commits with: `Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>`.
+- **Git:** remote = `https://github.com/sabatico/train.git`; trunk-based, **commit and push directly to `master`** — owner approval is NOT needed for commits/pushes (owner-granted 2026-07-07). Push at the end of every act. (The destructive-action rule still applies in full: no force-push, no history rewrites of pushed commits, no deletions without approval.) End commits with: `Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>`.
 - **Spend:** sub-$5 de-risk validation (e.g. a DeepSeek API probe) is never a blocker — just do it, then clean up (per the destructive-action rule).
 - **"Quality review" = run the SOP (`docs/sops/quality-review.md`):** review ALL code since the last `quality-review:` commit across 3 axes (code quality / tests+coverage / observability); lead leads + an **independent second reviewer**; lead **judges** each finding; resolve; verify green; commit with the `quality-review:` prefix.
 - **Maintain state — no stale docs (check at the end of EVERY act, before yielding):** update ALL of these "running files" for anything the work changed (mandatory, exactly like ONBOARDING — don't wait for "session end"):
@@ -48,7 +48,7 @@ Led by an AI lead agent + spawned role sub-agents; the human owner (the parent) 
 6. Committed with a clear message.
 
 ## 🔑 Quick facts
-- **Repo / access:** local repo `~/Documents/Personal/CodingProjects/train`; no remote yet; the agent has full local access, owner runs the app on this Mac.
+- **Repo / access:** `~/Documents/Personal/CodingProjects/train` → `origin` = `https://github.com/sabatico/train.git`, branch `master`; the agent has full local access + standing push permission; owner runs the app on this Mac.
 - **Stack:** Python 3 / Flask · vanilla JS + CSS-custom-property tokens frontend (no framework — ADR-003) · file-based JSON database under `data/` (ADR-001) · DeepSeek API for the teacher agent (ADR-002) · browser `speechSynthesis` for TTS.
 - **Environments:** dev = prod = this machine. The only real environment is the child's daily use — `data/` is production data from the first real session onward.
 - **Toolchains & non-obvious knobs:** Python via `python3`; venv at `.venv/`; run `flask --app app run --debug`; tests `pytest --cov`. TTS quality differs per browser — test dictation in the browser the child actually uses (Safari and Chrome voices differ).
