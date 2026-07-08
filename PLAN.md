@@ -5,8 +5,9 @@ dysgraphia and ADHD, driven by an AI teacher-agent (DeepSeek API) with persisten
 a per-skill mastery model ("rose of winds"), and a gamified, distraction-free kid UI.
 
 > Built in **one continuous phase, AI wired in from the start** (the DeepSeek key is
-> connected once the UI + backend exist; until then the agent module runs mocked —
-> see ADR-002). Process/decision docs live in `CLAUDE.md` + `docs/`.
+> live and verified — see ADR-002; tests mock the client). Stage 2 (multi-user
+> service, WebView apps) is parked — see §10 and ADR-004. Process/decision docs
+> live in `CLAUDE.md` + `docs/`.
 
 ---
 
@@ -302,3 +303,17 @@ One continuous build; the live tracker is `docs/runner.md`, the queue is
 - Sit with her the first weeks: your reaction to her mistakes inside the app teaches
   her whether mistakes are safe here. The app treats every error as information,
   never as failure — that framing is the most therapeutic feature of the whole plan.
+
+---
+
+## 10. Stage 2 (owner-declared 2026-07-07 — parked, not in scope now)
+
+Wrap the app in **Mac + Android WebView shells** (push notifications: practice
+reminders, streak nudges, parent weekly-note push) and grow it into a **multi-user
+service**: parent + kid accounts, billing, scalable to **~10k users**.
+
+Not built in v1. What v1 DOES do about it: keep four seams clean (ADR-004) —
+`student_id` on every store call, a stateless API as the only UI⇄backend channel,
+tenancy-shaped route namespaces (`/app/*`, `/api/*`, `/parent/*`), and a
+WebView-clean frontend with TTS behind one wrapper. Parked work + resurface
+triggers: `docs/tbd-parking-lot.md` TBD-005/006/007.

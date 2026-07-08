@@ -9,8 +9,11 @@ Each item names **the constraint** (why now is wrong) and **the resurface trigge
 | ID | Item | Why deferred (the constraint) | Resurface trigger | Code marker | Notes |
 |----|------|-------------------------------|-------------------|-------------|-------|
 | TBD-002 | Final TTS voice/rate tuning for dictation | Don't know the child's actual browser/accent preference yet (ONBOARDING §5 Q1/Q2) | Owner answers → tune `profile.json` defaults | — | voices differ wildly per browser |
-| TBD-003 | Multi-child support (profiles, separate data dirs) | v1 is deliberately single-child — one learner, one `data/`; generalizing now adds complexity with zero users for it | A second child starts using the app | — | deliberate scope cut |
-| TBD-004 | Auth / network exposure (serve beyond localhost) | App is localhost-only on the family Mac; adding auth now is cost without threat | Owner wants tablet/remote access on the home network | — | if it ships, PAR dashboard gets the gate first |
+| TBD-003 | Multi-child support (profiles, separate data dirs) | v1 is deliberately single-child — one learner, one `data/`; generalizing now adds complexity with zero users for it. `student_id` seam kept per ADR-004 | A second child starts using the app, or Stage 2 starts | — | deliberate scope cut |
+| TBD-004 | Auth / network exposure (serve beyond localhost) | App is localhost-only on the family Mac; adding auth now is cost without threat | Owner wants tablet/remote access, or Stage 2 starts | — | if it ships, PAR dashboard gets the gate first |
+| TBD-005 | **Stage 2: multi-user service** — accounts (parent + kid roles), multi-tenancy, Postgres behind `store.py`, hosting, ~10k-user scalability (caching, rate limits) | Owner-declared stage gate (2026-07-07): "this is later staged"; v1 must ship to its one user first | Owner declares Stage 2 start | — | ADR-004 names the seams v1 keeps clean for this |
+| TBD-006 | **Stage 2: billing** (subscriptions, payment provider, plan gating) | Same stage gate; nothing to bill before a service exists | Stage 2 start (after TBD-005 accounts) | — | provider choice = a future ADR |
+| TBD-007 | **Stage 2: Mac + Android WebView wrapper apps with push notifications** (practice reminders, streak nudges, parent weekly-note push) | Same stage gate; v1 is a local browser app | Stage 2 start | — | v1 build rule (ADR-004 seam 4): keep the frontend WebView-clean, TTS behind `speech.js`; B10 design round to note phone-width viewport |
 
 ## Categories that commonly land here
 - **Blocked on an external dependency** (a vendor sandbox, an unbuilt module, an approval, a license).

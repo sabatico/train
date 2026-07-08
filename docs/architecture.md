@@ -40,6 +40,7 @@
 
 ## 3. The boundaries that matter
 - **Trust / security boundary:** localhost-only app; the real boundary is the **outbound DeepSeek call** — the only place data leaves the machine. Gate: `agent/teacher.py` prompt builders (words/skills/tags only — invariant #2). Untrusted input = the child's free-typed text; it goes to the classifier and (for `sentence_scribe`) to the agent, never into shell/eval/paths.
+- **Stage-2 scale seams (ADR-004 — build rules NOW, even though multi-user is parked):** every `store.py` call carries `student_id` (constant `"default"` in v1); the API is stateless per request; routes are tenancy-shaped (`/app/*`, `/api/*`, `/parent/*`); the frontend stays WebView-clean with TTS behind `speech.js`.
 - **Contract boundaries (the lead freezes these before parallel work):**
   1. **The exercise JSON contract** `{type, payload}` per exercise type — shared by API responses, the frontend registry, AND the agent's tool schemas. One schema, three consumers.
   2. **`store.py`'s API** — no other module touches `data/` files directly.
