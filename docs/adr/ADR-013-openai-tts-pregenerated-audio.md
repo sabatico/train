@@ -18,5 +18,5 @@ Use **OpenAI's steerable mini TTS** (`gpt-4o-mini-tts`, voice **`sage`**, with a
 ## Consequences
 - **Makes easy:** natural voice, instant playback, offline, ~free per play; provider swap (one script); the frontend already consumes it via `speech.js`.
 - **Makes hard / costs:** a one-time generation pass + a second API key + ~10–20 MB of MP3s to store; regenerate when the banks grow (the script only makes missing clips, so it's cheap).
-- **Follow-ups:** owner provides `OPENAI_API_KEY` (TBD-008) → run `scripts/generate_audio.py`; decide whether to commit the MP3s.
+- **Follow-ups:** after generation, run `scripts/normalize_audio.py` (EBU R128 loudnorm, bundled ffmpeg) so all clips play at the same perceived volume — raw TTS output has a wide loudness spread (~65 dB) and the model occasionally emits a near-silent clip (detect via peak `< -35 dB`, delete + regenerate). `scripts/generate_audio.py` is idempotent, so re-running only fills missing/deleted clips.
 - **Risks accepted:** dependence on a second vendor for the *nice* audio — bounded by the browser-TTS fallback (the app never loses audio entirely).
