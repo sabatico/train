@@ -23,15 +23,34 @@ CONTRACT_VERSION = 1
 # (additive per ADR-005). Order mirrors PLAN §3.
 EXERCISE_TYPES = ("word_builder", "letter_boxes", "echo_dictation")
 
-# Canned kid-voice explanations per skill/pattern (the agent may replace `why.text`
-# at feedback time — ADR-012; these are the always-available fallback, ADR-002).
-CANNED_WHY = {
-    "short_vowels": ("short_vowel_sound", "Say each letter's sound, then blend them together!"),
-    "digraphs": ("digraph_one_sound", "Two letters, one sound — sh, ch, th stay together!"),
-    "heart_words": ("heart_word_by_heart", "This is a heart word — we learn it by heart ❤️."),
-    "magic_e": ("magic_e_v_bodyguard", "Magic e is silent and makes the vowel say its name!"),
-}
-_DEFAULT_WHY = ("sound_it_out", "Let's say the sounds slowly and write each one.")
+def _sound_out(phonemes: list[str]) -> str:
+    """Format a word's sounds like '/p/ /u/ /p/'."""
+    return " ".join(f"/{p}/" for p in phonemes)
+
+
+def why_for(skill_id: str, word_entry: dict) -> tuple[str, str]:
+    """The kid-voice explanation for THIS word — generated from its sounds, not a
+    static template (PLAN §1: segment each sound, then blend to the word). Decodable
+    patterns get the sound-by-sound blend; irregular heart words are learned whole.
+    The agent may still replace the text at feedback time (ADR-012); this is the
+    always-available, word-correct fallback (ADR-002)."""
+    word = word_entry["word"]
+    phonemes = word_entry.get("phonemes") or list(word)
+    sounds = _sound_out(phonemes)
+    if skill_id == "heart_words":
+        return ("heart_word_by_heart", f"“{word}” is a heart word — learn it by heart ❤️.")
+    if skill_id == "magic_e":
+        return ("magic_e_silent", f"Magic e is silent — it makes the vowel say its name → {word}.")
+    if skill_id == "digraphs":
+        return ("digraph_one_sound", f"Two letters make one sound: {sounds} → {word}.")
+    if skill_id == "vowel_teams":
+        return ("vowel_team_one_sound", f"The vowel team makes one sound: {sounds} → {word}.")
+    if skill_id == "r_controlled":
+        return ("r_controlled", f"The r changes the vowel: {sounds} → {word}.")
+    if skill_id in ("blends", "doubling_endings", "suffixes"):
+        return ("blend_sounds", f"Blend each sound: {sounds} → {word}.")
+    # short_vowels + anything else: sound out each letter and blend
+    return ("sound_it_out", f"Sound out each letter: {sounds} → {word}.")
 
 
 # --------------------------------------------------------------- phoneme helpers
@@ -109,7 +128,7 @@ def build_item(
     if exercise_type not in EXERCISE_TYPES:
         raise ValueError(f"unknown exercise type: {exercise_type!r}")
     word = word_entry["word"]
-    rule_id, why_text = CANNED_WHY.get(skill_id, _DEFAULT_WHY)
+    rule_id, why_text = why_for(skill_id, word_entry)
     payload = _PAYLOAD_BUILDERS[exercise_type](word_entry, distractor_pool or [])
     return {
         "contract_version": CONTRACT_VERSION,

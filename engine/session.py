@@ -32,10 +32,17 @@ def _normalize(text: str, grading: dict) -> str:
 
 
 def _build_teach(focus_skill: str, words_for) -> dict:
-    """The one mini-lesson card for the session's focus pattern (PLAN §7 step 3)."""
-    rule_id, text = contracts.CANNED_WHY.get(focus_skill, contracts._DEFAULT_WHY)
-    examples = [w["word"] for w in words_for(focus_skill)[:2]]
-    return {"skill_id": focus_skill, "rule_id": rule_id, "text": text, "examples": examples}
+    """The one mini-lesson card for the session's focus pattern (PLAN §7 step 3).
+    The rule is generated from the FIRST example word so it sounds out that word."""
+    words = words_for(focus_skill)
+    example = words[0] if words else {"word": focus_skill, "phonemes": []}
+    rule_id, text = contracts.why_for(focus_skill, example)
+    return {
+        "skill_id": focus_skill,
+        "rule_id": rule_id,
+        "text": text,
+        "examples": [w["word"] for w in words[:2]],
+    }
 
 
 def _public_state(state: dict) -> dict:
@@ -172,10 +179,9 @@ def submit_answer(
         store.save_current_session(student_id, state)
         # kid-voice explanation from the agent, or the canned line on any failure
         # (ADR-012 / invariant #2: only word + tag + rule id go to the prompt).
-        # Recompute the canned rule FRESH from the current CANNED_WHY (keyed by
-        # skill) rather than the copy baked into the stored item — so wording fixes
-        # apply to in-flight sessions (the item's baked text can be stale).
-        rule_id, canned = contracts.CANNED_WHY.get(entry["skill_id"], contracts._DEFAULT_WHY)
+        # Generated FRESH from THIS word's sounds (contracts.why_for) — e.g.
+        # "Sound out each letter: /p/ /u/ /p/ → pup" — not a static baked template.
+        rule_id, canned = contracts.why_for(entry["skill_id"], entry["word"])
         why = teacher.feedback_for(target, result["primary"], rule_id, canned)
         return {
             "correct": False,
