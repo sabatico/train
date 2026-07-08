@@ -16,6 +16,7 @@ The running list of **locked architectural decisions.** Read this before making 
 | [ADR-010](ADR-010-frontend-app-architecture.md) | Frontend app architecture (SPA shell, registry, router, audio wrapper) | Accepted | 2026-07-07 |
 | [ADR-011](ADR-011-rewards-gamification-economy.md) | Rewards & gamification economy | Accepted | 2026-07-07 |
 | [ADR-012](ADR-012-agent-integration-contract.md) | Agent integration contract (tool-use, PII boundary, caching, fallback) | Accepted | 2026-07-07 |
+| [ADR-013](ADR-013-openai-tts-pregenerated-audio.md) | OpenAI TTS as the pre-generated dictation-audio provider | Accepted | 2026-07-08 |
 
 > Number monotonically; never reuse. One file per ADR: `ADR-NNN-short-slug.md`.
 

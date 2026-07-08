@@ -22,7 +22,7 @@ export function unlock() {
   }
 }
 
-export function speak(word, { rate = 0.9 } = {}) {
+function browserSpeak(word, rate) {
   if (!available() || !word) return false;
   try {
     window.speechSynthesis.cancel();
@@ -32,5 +32,28 @@ export function speak(word, { rate = 0.9 } = {}) {
     return true;
   } catch {
     return false;
+  }
+}
+
+// Prefer a PRE-GENERATED natural-voice clip (T-014, OpenAI TTS), fall back to
+// browser TTS when the clip is missing. This is the swap seam (ADR-004): until
+// audio files exist under /static/audio/, every word gracefully uses browser TTS.
+export function speak(word, { rate = 0.9 } = {}) {
+  if (!word) return false;
+  const url = `/static/audio/${encodeURIComponent(String(word).toLowerCase())}.mp3`;
+  let fellBack = false;
+  const fallback = () => {
+    if (!fellBack) {
+      fellBack = true;
+      browserSpeak(word, rate);
+    }
+  };
+  try {
+    const audio = new Audio(url);
+    audio.addEventListener("error", fallback, { once: true });
+    audio.play().catch(fallback);
+    return true;
+  } catch {
+    return browserSpeak(word, rate);
   }
 }

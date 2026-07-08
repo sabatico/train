@@ -7,7 +7,8 @@
 | Service | What it does for us | WHY this one (vs alternatives) | Status | Plan / cost | Owner-action needed |
 |---------|---------------------|--------------------------------|--------|-------------|---------------------|
 | DeepSeek API | The teacher-agent LLM: session planning, kid-voice error explanations, sentence review, weekly parent notes, `memory.md` notebook | Owner's choice (ADR-002) — owner provides the account; OpenAI-compatible API keeps the client trivial; very low per-token cost suits daily kid sessions | **key live** (verified 2026-07-07); module not yet built | pay-as-you-go, expected < $2/mo at 1 session/day | none |
-| Browser `speechSynthesis` (Web Speech API) | TTS for all dictation exercises | Built into every browser: free, offline, zero deps, adjustable rate; quality is "good enough for v1" per PLAN §5 | live (browser built-in) | free | none |
+| OpenAI TTS (`tts-1`) | Pre-generated natural dictation audio (ADR-013) — one MP3 per word, cached static | Owner chose it (2026-07-08) over ElevenLabs (pricier) / realtime (per-play cost); natural + cheap; `speech.js` seam already isolates it | planned / gated on key | ~one-time pennies for 736 clips | provide `OPENAI_API_KEY`, run `scripts/generate_audio.py` |
+| Browser `speechSynthesis` (Web Speech API) | TTS FALLBACK when a pre-generated clip is missing | Built into every browser: free, offline, zero deps; the graceful fallback under ADR-013 | live (browser built-in) | free | none |
 | Google Fonts — Lexend | The dyslexia-friendly UI typeface | Lexend is designed for reading proficiency, free, and can be **self-hosted** — we vendor the woff2 into `static/fonts/` so the child's sessions make zero external requests | planned | free (OFL) | none |
 
 ## Configuration (per service)
