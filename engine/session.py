@@ -172,9 +172,11 @@ def submit_answer(
         store.save_current_session(student_id, state)
         # kid-voice explanation from the agent, or the canned line on any failure
         # (ADR-012 / invariant #2: only word + tag + rule id go to the prompt).
-        why = teacher.feedback_for(
-            target, result["primary"], item["why"]["rule_id"], item["why"]["text_fallback"]
-        )
+        # Recompute the canned rule FRESH from the current CANNED_WHY (keyed by
+        # skill) rather than the copy baked into the stored item — so wording fixes
+        # apply to in-flight sessions (the item's baked text can be stale).
+        rule_id, canned = contracts.CANNED_WHY.get(entry["skill_id"], contracts._DEFAULT_WHY)
+        why = teacher.feedback_for(target, result["primary"], rule_id, canned)
         return {
             "correct": False,
             "stars": 0,
