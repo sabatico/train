@@ -35,10 +35,41 @@ function browserSpeak(word, rate) {
   }
 }
 
+// Shared "currently playing" handle + a read-aloud busy guard.
+let _current = null;
+let _reading = false;
+
+function stopCurrent() {
+  if (_current) {
+    try {
+      _current.pause();
+      _current.currentTime = 0;
+    } catch {
+      /* ignore */
+    }
+    _current = null;
+  }
+  if (available()) {
+    try {
+      window.speechSynthesis.cancel();
+    } catch {
+      /* ignore */
+    }
+  }
+}
+
 // Read arbitrary on-screen text aloud in the kid voice via /api/tts (cached
 // server-side), falling back to browser TTS if the endpoint is unavailable.
+// ANTI-SPAM: while a read is already in flight, extra taps are ignored — so
+// spamming the button never fires parallel API calls or overlapping audio.
 export async function speakText(text, { rate = 0.95 } = {}) {
-  if (!text) return;
+  if (!text || _reading) return;
+  _reading = true;
+  stopCurrent();
+  const done = () => {
+    _reading = false;
+  };
+  const fallback = () => browserSpeakUntil(text, rate, done);
   try {
     const res = await fetch("/api/tts", {
       method: "POST",
@@ -48,15 +79,43 @@ export async function speakText(text, { rate = 0.95 } = {}) {
     if (res.ok) {
       const url = URL.createObjectURL(await res.blob());
       const audio = new Audio(url);
-      audio.addEventListener("ended", () => URL.revokeObjectURL(url), { once: true });
-      audio.addEventListener("error", () => browserSpeak(text, rate), { once: true });
-      audio.play().catch(() => browserSpeak(text, rate));
+      _current = audio;
+      const cleanup = () => {
+        URL.revokeObjectURL(url);
+        if (_current === audio) _current = null;
+      };
+      audio.addEventListener("ended", () => { cleanup(); done(); }, { once: true });
+      audio.addEventListener("error", () => { cleanup(); fallback(); }, { once: true });
+      try {
+        await audio.play();
+      } catch {
+        cleanup();
+        fallback();
+      }
       return;
     }
   } catch {
     /* fall through to browser TTS */
   }
-  browserSpeak(text, rate);
+  fallback();
+}
+
+// browser-TTS fallback that clears the read-aloud guard when the utterance ends.
+function browserSpeakUntil(text, rate, done) {
+  if (!available()) {
+    done();
+    return;
+  }
+  try {
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(String(text));
+    u.rate = rate;
+    u.onend = done;
+    u.onerror = done;
+    window.speechSynthesis.speak(u);
+  } catch {
+    done();
+  }
 }
 
 // Prefer a PRE-GENERATED natural-voice clip (T-014, OpenAI TTS), fall back to
@@ -64,6 +123,7 @@ export async function speakText(text, { rate = 0.95 } = {}) {
 // audio files exist under /static/audio/, every word gracefully uses browser TTS.
 export function speak(word, { rate = 0.9 } = {}) {
   if (!word) return false;
+  stopCurrent(); // never overlap a previous word / read-aloud
   const url = `/static/audio/${encodeURIComponent(String(word).toLowerCase())}.mp3`;
   let fellBack = false;
   const fallback = () => {
@@ -74,7 +134,9 @@ export function speak(word, { rate = 0.9 } = {}) {
   };
   try {
     const audio = new Audio(url);
+    _current = audio;
     audio.addEventListener("error", fallback, { once: true });
+    audio.addEventListener("ended", () => { if (_current === audio) _current = null; }, { once: true });
     audio.play().catch(fallback);
     return true;
   } catch {

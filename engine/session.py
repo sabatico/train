@@ -43,10 +43,15 @@ def _public_state(state: dict) -> dict:
     cursor = state["cursor"]
     items = state["items"]
     item_view = contracts.public_item(items[cursor]["item"]) if cursor < len(items) else None
+    # Compute the teach card FRESH from the focus skill on every read (not from a
+    # value baked into current.json at start), so content fixes apply immediately
+    # even to a session already in progress.
+    focus = state.get("focus_skill")
+    teach = _build_teach(focus, store.load_word_bank) if focus else None
     return {
         "session_id": state["session_id"],
         "focus_skill": state["focus_skill"],
-        "teach": state["teach"],
+        "teach": teach,
         "cursor": cursor,
         "total_items": len(items),
         "done": cursor >= len(items),
@@ -101,7 +106,6 @@ def start_session(
         "session_id": str(uuid.uuid4()),
         "date": day.isoformat(),
         "focus_skill": focus,
-        "teach": _build_teach(focus, store.load_word_bank) if focus else None,
         "cursor": 0,
         "items": items,
         "totals": {"stars": 0, "items": len(items), "correct_first_try": 0},
