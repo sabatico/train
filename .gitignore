@@ -12,10 +12,6 @@ htmlcov/
 # macOS
 .DS_Store
 
-# child's runtime learning data — personal, not source (word_bank/ IS source and stays tracked)
-data/sessions/
-data/skills.json
-data/rewards.json
-data/profile.json
-data/memory.md
-data/logs/
+# child's runtime learning data — personal, not source (ADR-006 layout).
+# data/word_bank/ IS source (curated content) and stays tracked; per-student data is not.
+data/students/

@@ -6,9 +6,9 @@
 ## A. Easy wins — low-risk, ship first
 | ID | Item | Source | Status | Notes |
 |----|------|--------|--------|-------|
-| EW1 | Repo scaffolding: `.gitignore`, `requirements.txt`, venv, empty Flask `app.py` that serves a hello page | IN-1 | ☐ | trivial, unblocks everything |
-| EW2 | `data/` layout + storage module with atomic writes (`engine/store.py`) | IN-1 | ☐ | invariant #1 lives here; guardrail test with it |
-| EW3 | Seed word banks: `short_vowels`, `digraphs`, `heart_words` (~120 words with phonemes, phrase, sentence, emoji) | PLAN §5 | ☐ | curated content, no code risk |
+| EW1 | Repo scaffolding: `.gitignore`, `requirements.txt`, venv, Flask `app.py` (health + tenancy-shaped routes) | IN-1 | ✅ | done act-009; `/healthz`, `/`→`/app`, `/parent` verified |
+| EW2 | `data/` layout + storage module with atomic writes (`engine/store.py`) | ✅ | done act-009; lead-authored (invariant #1), Sonnet cross-authored 82 tests, `store.py` 100% cov (incl. atomic-write failure paths + traversal + guardrail); `config.py`/`models.py` 100% |
+| EW3 | Seed word banks: `short_vowels`, `digraphs`, `heart_words` (~120 words with phonemes, phrase, sentence, emoji) | PLAN §5 | ▶ | `short_vowels` (8) + `skill_graph.json` seeded; `digraphs`/`heart_words` + expansion to ~120 still owed |
 
 ## B. Bigger items — design before building (ADR if consequential)
 | ID | Item | Source | Status | Direction |
@@ -24,19 +24,8 @@
 | B8 | DeepSeek agent module: session-plan call, kid-voice feedback call, `memory.md` notebook, engine fallback (`agent/teacher.py`) | ADR-002 | ☐ | KEY LIVE (verified 2026-07-07, HTTP 200; `deepseek-chat` alias → `deepseek-v4-flash`) — build against the real API; tests still use a mocked client |
 | B9 | Rewards engine: stars, chest, streak, levels (`engine/rewards.py`) | PLAN §6 | ☐ | invariant #3: never subtract earned rewards |
 
-## B'. Stage-1 ADRs to lock (proposed 2026-07-07 — the lowered-altitude build contracts)
-| ID | ADR | Status | Gate |
-|----|-----|--------|------|
-| D6 | ADR-006 data model & store schema | Proposed | owner nod → lock, then EW2 |
-| D5 | ADR-005 exercise/interaction contract | Proposed | owner nod → lock, then B6/B7/B8 |
-| D8 | ADR-008 classifier alignment + tag taxonomy | Proposed | **owner sign-off** (permanent tag set) → lock, then B3/B5 |
-| D7 | ADR-007 mastery + selection algorithm | Proposed | **owner sign-off + 2nd-ideator** (pedagogy numbers) → lock, then B3/B4 |
-| D9 | ADR-009 session lifecycle & state | Proposed | owner nod → lock, then B6 |
-| D11 | ADR-011 rewards economy | Proposed | owner sign-off (fun tuning) → lock, then B9 |
-| D10 | ADR-010 frontend app architecture | Proposed | owner nod → lock, then B7 |
-| D12 | ADR-012 agent integration contract | Proposed | owner nod → lock, then B8 |
-
-> All target Stage 1 (single-user) only. Recommended review order: the 3 pedagogy ADRs (008, 007, 011) first — they change the child's experience; the rest are mechanical/architectural rubber-stamps. Nothing in section B builds until its governing ADR is Accepted.
+## B'. Stage-1 ADRs — ALL ACCEPTED 2026-07-07 (on owner "proceed")
+ADR-005..012 accepted; build items may proceed against them. ADR-007 got an inline second-ideator pass that fixed a compounding-decay bug (now a lazy projection) and premature-unlock (gate checks effective mastery at session end; `introduced` is a one-way latch; new skills start at 20). Pedagogy constants remain tunable in `engine/config.py` without a new ADR. Details: `docs/adr/README.md`.
 
 ## C. Open questions (blocking the above)
 1. ~~Claude Design mockups + structured handoff~~ → RESOLVED 2026-07-07: handoff received (`design_handoff_spell_quest/`), kid screens complete; parent screens + §8 states still owed (B10).

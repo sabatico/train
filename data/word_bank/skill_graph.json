@@ -1,0 +1,16 @@
+{
+  "letter_orientation": [],
+  "phoneme_segmentation": [],
+  "short_vowels": [],
+  "heart_words": [],
+  "blends": ["short_vowels"],
+  "digraphs": ["short_vowels"],
+  "magic_e": ["short_vowels"],
+  "r_controlled": ["short_vowels"],
+  "suffixes": ["short_vowels"],
+  "doubling_endings": ["short_vowels", "blends"],
+  "vowel_teams": ["short_vowels", "digraphs"],
+  "word_sequencing": ["blends"],
+  "phrase_dictation": ["short_vowels", "digraphs"],
+  "sentence_writing": ["phrase_dictation"]
+}

@@ -1,0 +1,14 @@
+{
+  "pattern": "short_vowels",
+  "note": "CVC words, one short-vowel sound each (PLAN §2). Seed set — expand toward ~40.",
+  "words": [
+    {"word": "cat", "phonemes": ["c", "a", "t"], "pattern": "short_vowels", "tricky_letters": [], "phrase": "a big cat", "sentence": "The cat sat on a mat.", "emoji": "🐱", "distractors": ["k", "e"]},
+    {"word": "dog", "phonemes": ["d", "o", "g"], "pattern": "short_vowels", "tricky_letters": [], "phrase": "my dog", "sentence": "The dog can run.", "emoji": "🐶", "distractors": ["b", "u"]},
+    {"word": "sun", "phonemes": ["s", "u", "n"], "pattern": "short_vowels", "tricky_letters": [], "phrase": "the hot sun", "sentence": "The sun is hot.", "emoji": "☀️", "distractors": ["z", "o"]},
+    {"word": "bed", "phonemes": ["b", "e", "d"], "pattern": "short_vowels", "tricky_letters": [], "phrase": "my bed", "sentence": "I nap on my bed.", "emoji": "🛏️", "distractors": ["d", "a"]},
+    {"word": "pig", "phonemes": ["p", "i", "g"], "pattern": "short_vowels", "tricky_letters": [], "phrase": "a pink pig", "sentence": "The pig is pink.", "emoji": "🐷", "distractors": ["q", "e"]},
+    {"word": "hen", "phonemes": ["h", "e", "n"], "pattern": "short_vowels", "tricky_letters": [], "phrase": "a red hen", "sentence": "The hen has an egg.", "emoji": "🐔", "distractors": ["n", "a"]},
+    {"word": "bug", "phonemes": ["b", "u", "g"], "pattern": "short_vowels", "tricky_letters": [], "phrase": "a little bug", "sentence": "A bug is on the rug.", "emoji": "🐛", "distractors": ["d", "o"]},
+    {"word": "map", "phonemes": ["m", "a", "p"], "pattern": "short_vowels", "tricky_letters": [], "phrase": "a big map", "sentence": "We read the map.", "emoji": "🗺️", "distractors": ["n", "e"]}
+  ]
+}
