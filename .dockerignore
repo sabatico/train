@@ -1,0 +1,17 @@
+.git
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.coverage
+htmlcov
+data/students
+data/logs
+tests
+scripts
+docs
+design_handoff_spell_quest
+*.md
+.env
+.env.example
+.claude
