@@ -72,9 +72,9 @@
       "pattern": "heart_words",
       "difficulty": 1,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "one happy cat",
+      "sentence": "I have one balloon.",
+      "emoji": "1️⃣",
       "distractors": [
         "t",
         "d"
@@ -89,9 +89,9 @@
       "pattern": "heart_words",
       "difficulty": 1,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "go to bed",
+      "sentence": "Let's go to park.",
+      "emoji": "➡️",
       "distractors": [
         "e",
         "w"
@@ -107,9 +107,9 @@
       "pattern": "heart_words",
       "difficulty": 1,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "two red apples",
+      "sentence": "I see two birds.",
+      "emoji": "2️⃣",
       "distractors": [
         "b",
         "l"
@@ -166,8 +166,8 @@
       "pattern": "heart_words",
       "difficulty": 2,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
+      "phrase": "any sunny day",
+      "sentence": "Do you have any?",
       "emoji": "",
       "distractors": [
         "e",
@@ -203,9 +203,9 @@
       "pattern": "heart_words",
       "difficulty": 2,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "buy a toy",
+      "sentence": "I buy ice cream.",
+      "emoji": "🛒",
       "distractors": [
         "t",
         "q"
@@ -222,9 +222,9 @@
       "pattern": "heart_words",
       "difficulty": 2,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "from my home",
+      "sentence": "This gift from mom.",
+      "emoji": "📦",
       "distractors": [
         "b",
         "e"
@@ -262,9 +262,9 @@
       "pattern": "heart_words",
       "difficulty": 2,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "many happy dogs",
+      "sentence": "I see many stars.",
+      "emoji": "✨",
       "distractors": [
         "e",
         "g"
@@ -280,9 +280,9 @@
       "pattern": "heart_words",
       "difficulty": 2,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "put it down",
+      "sentence": "Put the cup here.",
+      "emoji": "🫳",
       "distractors": [
         "i",
         "q"
@@ -320,9 +320,9 @@
       "pattern": "heart_words",
       "difficulty": 2,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "some sweet candy",
+      "sentence": "I want some cake.",
+      "emoji": "🍰",
       "distractors": [
         "b",
         "g"
@@ -377,8 +377,8 @@
       "pattern": "heart_words",
       "difficulty": 2,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
+      "phrase": "were so happy",
+      "sentence": "We were at home.",
       "emoji": "",
       "distractors": [
         "b",
@@ -395,9 +395,9 @@
       "pattern": "heart_words",
       "difficulty": 2,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "what a fun",
+      "sentence": "What is that sound?",
+      "emoji": "❓",
       "distractors": [
         "n",
         "o"
@@ -412,9 +412,9 @@
       "pattern": "heart_words",
       "difficulty": 2,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "who is here",
+      "sentence": "Who has my hat?",
+      "emoji": "🧑‍🦰",
       "distractors": [
         "p",
         "q"
@@ -429,9 +429,9 @@
       "pattern": "heart_words",
       "difficulty": 2,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "your big smile",
+      "sentence": "I like your toy.",
+      "emoji": "🧸",
       "distractors": [
         "k",
         "t"
@@ -447,8 +447,8 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
+      "phrase": "been so good",
+      "sentence": "I have been brave.",
       "emoji": "",
       "distractors": [
         "m",
@@ -465,9 +465,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "does it work",
+      "sentence": "She does a dance.",
+      "emoji": "💃",
       "distractors": [
         "q",
         "n"
@@ -484,9 +484,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "done with fun",
+      "sentence": "We are done now.",
+      "emoji": "✅",
       "distractors": [
         "u",
         "b"
@@ -501,9 +501,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "one big eye",
+      "sentence": "My eye sees you.",
+      "emoji": "👁️",
       "distractors": [
         "t",
         "s"
@@ -519,9 +519,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "full of joy",
+      "sentence": "My cup is full.",
+      "emoji": "🫗",
       "distractors": [
         "k",
         "b"
@@ -538,9 +538,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "give a hug",
+      "sentence": "Give me five please.",
+      "emoji": "✋",
       "distractors": [
         "p",
         "l"
@@ -557,9 +557,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "gone for now",
+      "sentence": "My bird is gone.",
+      "emoji": "🕊️",
       "distractors": [
         "b",
         "l"
@@ -575,9 +575,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "come here",
+      "sentence": "Here is your toy.",
+      "emoji": "📍",
       "distractors": [
         "o",
         "s"
@@ -592,9 +592,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "I know",
+      "sentence": "I know the answer.",
+      "emoji": "🧠",
       "distractors": [
         "r",
         "d"
@@ -611,9 +611,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "live happy",
+      "sentence": "We live in a house.",
+      "emoji": "🏠",
       "distractors": [
         "d",
         "g"
@@ -630,9 +630,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "move fast",
+      "sentence": "Move the red car.",
+      "emoji": "🚗",
       "distractors": [
         "t",
         "r"
@@ -649,9 +649,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "once upon",
+      "sentence": "Once I saw a frog.",
+      "emoji": "🐸",
       "distractors": [
         "t",
         "k"
@@ -668,9 +668,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "only one",
+      "sentence": "Only one cookie left.",
+      "emoji": "🍪",
       "distractors": [
         "a",
         "k"
@@ -686,9 +686,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "pull hard",
+      "sentence": "Pull the big door.",
+      "emoji": "🚪",
       "distractors": [
         "w",
         "g"
@@ -705,9 +705,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "talk loud",
+      "sentence": "We talk at lunch.",
+      "emoji": "🗣️",
       "distractors": [
         "i",
         "u"
@@ -723,9 +723,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "over there",
+      "sentence": "There is a cat.",
+      "emoji": "🐱",
       "distractors": [
         "s",
         "i"
@@ -741,9 +741,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "very big",
+      "sentence": "It is very fun.",
+      "emoji": "🎉",
       "distractors": [
         "i",
         "o"
@@ -760,9 +760,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "walk slow",
+      "sentence": "Walk to the park.",
+      "emoji": "🚶",
       "distractors": [
         "m",
         "s"
@@ -779,9 +779,9 @@
       "pattern": "heart_words",
       "difficulty": 3,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "want cake",
+      "sentence": "I want a hug.",
+      "emoji": "🤗",
       "distractors": [
         "l",
         "m"
@@ -800,9 +800,9 @@
       "pattern": "heart_words",
       "difficulty": 4,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "little bug",
+      "sentence": "A little bird sings.",
+      "emoji": "🐦",
       "distractors": [
         "q",
         "k"
@@ -821,9 +821,9 @@
       "pattern": "heart_words",
       "difficulty": 4,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "happy people",
+      "sentence": "People love to play.",
+      "emoji": "👫",
       "distractors": [
         "k",
         "r"
@@ -839,9 +839,9 @@
       "pattern": "heart_words",
       "difficulty": 4,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "where now",
+      "sentence": "Where is my hat?",
+      "emoji": "🎩",
       "distractors": [
         "g",
         "t"
@@ -858,9 +858,9 @@
       "pattern": "heart_words",
       "difficulty": 5,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "play again",
+      "sentence": "Let's read it again.",
+      "emoji": "🔄",
       "distractors": [
         "q",
         "o"
@@ -879,9 +879,9 @@
       "pattern": "heart_words",
       "difficulty": 5,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "because fun",
+      "sentence": "I smile because happy.",
+      "emoji": "😊",
       "distractors": [
         "q",
         "o"
@@ -898,9 +898,9 @@
       "pattern": "heart_words",
       "difficulty": 5,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "could jump",
+      "sentence": "I could run fast.",
+      "emoji": "🏃",
       "distractors": [
         "m",
         "b"
@@ -917,9 +917,9 @@
       "pattern": "heart_words",
       "difficulty": 5,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "every day",
+      "sentence": "Every dog has a bone.",
+      "emoji": "🐕",
       "distractors": [
         "o",
         "b"
@@ -937,9 +937,9 @@
       "pattern": "heart_words",
       "difficulty": 5,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "best friend",
+      "sentence": "My friend plays with me.",
+      "emoji": "🤝",
       "distractors": [
         "u",
         "b"
@@ -956,9 +956,9 @@
       "pattern": "heart_words",
       "difficulty": 5,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "You should go",
+      "sentence": "You should eat now.",
+      "emoji": "👍",
       "distractors": [
         "g",
         "e"
@@ -975,9 +975,9 @@
       "pattern": "heart_words",
       "difficulty": 5,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "Cold water please",
+      "sentence": "I drink cold water.",
+      "emoji": "💧",
       "distractors": [
         "n",
         "i"
@@ -994,9 +994,9 @@
       "pattern": "heart_words",
       "difficulty": 5,
       "tricky_letters": [],
-      "phrase": null,
-      "sentence": null,
-      "emoji": "",
+      "phrase": "I would like",
+      "sentence": "I would play outside.",
+      "emoji": "😊",
       "distractors": [
         "k",
         "m"

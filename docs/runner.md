@@ -8,7 +8,7 @@
 |----|------|--------|--------|-------|
 | EW1 | Repo scaffolding: `.gitignore`, `requirements.txt`, venv, Flask `app.py` (health + tenancy-shaped routes) | IN-1 | ✅ | done act-009; `/healthz`, `/`→`/app`, `/parent` verified |
 | EW2 | `data/` layout + storage module with atomic writes (`engine/store.py`) | ✅ | done act-009; lead-authored (invariant #1), Sonnet cross-authored 82 tests, `store.py` 100% cov (incl. atomic-write failure paths + traversal + guardrail); `config.py`/`models.py` 100% |
-| EW3 | Word banks with phonemes + difficulty | ✅ | done act-014; **736 words across 9 patterns** sourced online + built by `scripts/build_wordbanks.py` (via `engine/phonics.py` — grapheme segmenter + 1–5 difficulty). Selector now serves words easy→hard by mastery. phrase/sentence/emoji AI-enriched next (T-015) |
+| EW3 | Word banks with phonemes + difficulty + AI enrichment | ✅ | done act-014/015; **736 words / 9 patterns** sourced online, difficulty-scored (`engine/phonics.py`), selector serves easy→hard. AI-enriched phrase/sentence/emoji for 707/708 words (`agent/enrich.py`). OpenAI-TTS audio still pending (T-014) |
 
 ## B. Bigger items — design before building (ADR if consequential)
 | ID | Item | Source | Status | Direction |
