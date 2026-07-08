@@ -14,6 +14,7 @@ import random
 import uuid
 from datetime import date
 
+from agent import teacher
 from . import classifier, config, contracts, rewards, selector, skills as skills_mod, store
 
 
@@ -165,6 +166,11 @@ def submit_answer(
         state["consecutive_misses"] += 1
         _maybe_step_down(state)
         store.save_current_session(student_id, state)
+        # kid-voice explanation from the agent, or the canned line on any failure
+        # (ADR-012 / invariant #2: only word + tag + rule id go to the prompt).
+        why = teacher.feedback_for(
+            target, result["primary"], item["why"]["rule_id"], item["why"]["text_fallback"]
+        )
         return {
             "correct": False,
             "stars": 0,
@@ -173,7 +179,7 @@ def submit_answer(
             "reveal": {
                 "target": target,
                 "markers": item["why"]["markers"],
-                "why": item["why"]["text_fallback"],
+                "why": why,
                 "audio": target,
             },
             "next": "retry",
@@ -269,6 +275,15 @@ def finish_session(student_id: str, today: date | None = None) -> dict:
         "end_masteries": end_masteries,
     }
     store.write_session_log(student_id, log, on=day)
+    # append a dated observation to the teacher notebook (PAR-03). Deterministic
+    # summary for now; agent-written weekly notes are a later enrichment (T-004).
+    t = state["totals"]
+    store.append_memory(
+        student_id,
+        f"Focus '{state['focus_skill']}': {t['correct_first_try']}/{t['items']} first try, "
+        f"{t['stars']} stars." + (f" Newly introduced: {', '.join(newly)}." if newly else ""),
+        on=day,
+    )
     store.clear_current_session(student_id)
 
     return {

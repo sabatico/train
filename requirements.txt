@@ -1,6 +1,7 @@
 # Spell Quest — runtime + dev deps. Kept deliberately small (CONVENTIONS: every dep is paid for).
 Flask==3.0.3
 python-dotenv==1.0.1
+certifi==2024.7.4          # CA bundle for TLS to DeepSeek (macOS Python lacks a system one)
 
 # dev / test
 pytest==8.2.2
