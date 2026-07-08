@@ -26,7 +26,7 @@ EXERCISE_TYPES = ("word_builder", "letter_boxes", "echo_dictation")
 # Canned kid-voice explanations per skill/pattern (the agent may replace `why.text`
 # at feedback time — ADR-012; these are the always-available fallback, ADR-002).
 CANNED_WHY = {
-    "short_vowels": ("short_vowel_sound", "Sound out each letter: /k/ /a/ /t/ → cat."),
+    "short_vowels": ("short_vowel_sound", "Say each letter's sound, then blend them together!"),
     "digraphs": ("digraph_one_sound", "Two letters, one sound — sh, ch, th stay together!"),
     "heart_words": ("heart_word_by_heart", "This is a heart word — we learn it by heart ❤️."),
     "magic_e": ("magic_e_v_bodyguard", "Magic e is silent and makes the vowel say its name!"),
