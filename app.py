@@ -9,11 +9,13 @@ from __future__ import annotations
 
 import os
 
+import hashlib
 from datetime import date
 
 from dotenv import load_dotenv
-from flask import Flask, jsonify, redirect, render_template, request
+from flask import Flask, jsonify, redirect, render_template, request, send_file
 
+from agent import voice
 from engine import report, session as session_engine, store
 
 load_dotenv()
@@ -112,6 +114,28 @@ def create_app() -> Flask:
     @app.get("/api/skills")
     def api_skills():
         return jsonify(store.load(DEFAULT_STUDENT, "skills"))
+
+    @app.post("/api/tts")
+    def api_tts():
+        """Read-aloud: synthesize arbitrary on-screen text in the kid voice, cached
+        by text so repeated UI copy isn't re-billed. 503 when unconfigured → the
+        frontend falls back to browser TTS (ADR-013)."""
+        text = ((request.get_json(silent=True) or {}).get("text") or "").strip()[:400]
+        if not text:
+            return jsonify(error="text required"), 400
+        cache = store.DATA_ROOT / "tts_cache"
+        digest = hashlib.sha1(f"{voice.VOICE}|{text}".encode("utf-8")).hexdigest()
+        path = cache / f"{digest}.mp3"
+        if not path.exists():
+            try:
+                audio = voice.synthesize(text)
+            except voice.VoiceError:
+                return jsonify(error="tts unavailable"), 503
+            cache.mkdir(parents=True, exist_ok=True)
+            tmp = path.with_suffix(".mp3.tmp")
+            tmp.write_bytes(audio)
+            tmp.replace(path)
+        return send_file(path, mimetype="audio/mpeg")
 
     return app
 

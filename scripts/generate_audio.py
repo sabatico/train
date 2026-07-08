@@ -15,20 +15,17 @@ from __future__ import annotations
 import argparse
 import glob
 import json
-import os
-import ssl
 import sys
 import time
-import urllib.error
-import urllib.request
 from pathlib import Path
 
-import certifi
-
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+
+from agent import voice  # noqa: E402
+
 AUDIO_DIR = ROOT / "static" / "audio"
 WORD_BANK_DIR = ROOT / "data" / "word_bank"
-_SSL = ssl.create_default_context(cafile=certifi.where())
 
 
 def all_words() -> list[str]:
@@ -41,46 +38,13 @@ def all_words() -> list[str]:
     return sorted(words)
 
 
-# The steerable mini TTS model (voice tuned via free-text `instructions`).
-MODEL = os.environ.get("OPENAI_TTS_MODEL", "gpt-4o-mini-tts")
-VOICE = os.environ.get("OPENAI_TTS_VOICE", "sage")
-INSTRUCTIONS = os.environ.get(
-    "OPENAI_TTS_INSTRUCTIONS",
-    "very friendly and funny, kids communication oriented (for 6 y.o. girl auditory)",
-)
-
-
-def tts(word: str, voice: str, instructions: str, timeout: float = 30.0) -> bytes:
-    """One OpenAI TTS call → mp3 bytes. Uses the steerable mini model with a
-    free-text voice instruction (kid-friendly delivery)."""
-    req = urllib.request.Request(
-        "https://api.openai.com/v1/audio/speech",
-        data=json.dumps(
-            {
-                "model": MODEL,
-                "voice": voice,
-                "input": word,
-                "instructions": instructions,
-                "response_format": "mp3",
-            }
-        ).encode("utf-8"),
-        headers={
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}",
-        },
-        method="POST",
-    )
-    with urllib.request.urlopen(req, timeout=timeout, context=_SSL) as resp:
-        return resp.read()
-
-
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--voice", default=VOICE)
-    ap.add_argument("--instructions", default=INSTRUCTIONS)
+    ap.add_argument("--voice", default=voice.VOICE)
+    ap.add_argument("--instructions", default=voice.INSTRUCTIONS)
     ap.add_argument("--limit", type=int, default=None)
     args = ap.parse_args()
-    if not os.environ.get("OPENAI_API_KEY"):
+    if not voice.is_configured():
         sys.exit("OPENAI_API_KEY not set — cannot generate audio (see ADR-013).")
 
     AUDIO_DIR.mkdir(parents=True, exist_ok=True)
@@ -88,14 +52,14 @@ def main() -> None:
     todo = [w for w in words if not (AUDIO_DIR / f"{w}.mp3").exists()]
     if args.limit is not None:
         todo = todo[: args.limit]
-    print(f"{len(words)} words, {len(todo)} to generate ({MODEL}, voice={args.voice})")
+    print(f"{len(words)} words, {len(todo)} to generate ({voice.MODEL}, voice={args.voice})")
 
     made = 0
     for w in todo:
         try:
-            data = tts(w, args.voice, args.instructions)
-        except (urllib.error.URLError, TimeoutError, OSError) as exc:
-            print(f"  {w}: FAILED ({type(exc).__name__}); skipping")
+            data = voice.synthesize(w, voice=args.voice, instructions=args.instructions)
+        except voice.VoiceError as exc:
+            print(f"  {w}: FAILED ({exc}); skipping")
             continue
         (AUDIO_DIR / f"{w}.mp3").write_bytes(data)
         made += 1

@@ -35,6 +35,30 @@ function browserSpeak(word, rate) {
   }
 }
 
+// Read arbitrary on-screen text aloud in the kid voice via /api/tts (cached
+// server-side), falling back to browser TTS if the endpoint is unavailable.
+export async function speakText(text, { rate = 0.95 } = {}) {
+  if (!text) return;
+  try {
+    const res = await fetch("/api/tts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text }),
+    });
+    if (res.ok) {
+      const url = URL.createObjectURL(await res.blob());
+      const audio = new Audio(url);
+      audio.addEventListener("ended", () => URL.revokeObjectURL(url), { once: true });
+      audio.addEventListener("error", () => browserSpeak(text, rate), { once: true });
+      audio.play().catch(() => browserSpeak(text, rate));
+      return;
+    }
+  } catch {
+    /* fall through to browser TTS */
+  }
+  browserSpeak(text, rate);
+}
+
 // Prefer a PRE-GENERATED natural-voice clip (T-014, OpenAI TTS), fall back to
 // browser TTS when the clip is missing. This is the swap seam (ADR-004): until
 // audio files exist under /static/audio/, every word gracefully uses browser TTS.

@@ -4,6 +4,28 @@
 
 body { background: var(--sq-color-bg); margin: 0; }
 
+/* read-aloud button — fixed on every kid screen (DESIGN_BRIEF §2: audio-first) */
+.sq-speak-fab {
+  position: fixed;
+  top: var(--sq-space-4);
+  right: var(--sq-space-4);
+  z-index: 50;
+  width: 64px;
+  height: 64px;
+  border: none;
+  border-radius: var(--sq-radius-pill);
+  background: var(--sq-color-star);
+  box-shadow: 0 5px 0 var(--sq-color-star-deep);
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--sq-dur-fast) var(--sq-ease);
+}
+.sq-speak-fab:hover { transform: translateY(2px); box-shadow: 0 3px 0 var(--sq-color-star-deep); }
+.sq-speak-fab:focus-visible { outline: none; box-shadow: 0 5px 0 var(--sq-color-star-deep), var(--sq-focus-ring); }
+
 .sq-screen {
   width: 100%;
   max-width: 760px;

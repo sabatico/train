@@ -15,3 +15,4 @@ htmlcov/
 # child's runtime learning data — personal, not source (ADR-006 layout).
 # data/word_bank/ IS source (curated content) and stays tracked; per-student data is not.
 data/students/
+data/tts_cache/

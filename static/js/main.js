@@ -9,6 +9,46 @@ import { showCorrection } from "./correction.js";
 
 const root = document.getElementById("app");
 
+// ---- read-aloud: a speak button on every screen ----
+// Collects the meaningful text of the current view (prompts, teach text,
+// explanations, words) + anything she has typed, and reads it in the kid voice.
+function screenText() {
+  const seen = new Set();
+  const parts = [];
+  root
+    .querySelectorAll(
+      ".sq-greeting, .sq-card__instruction, .sq-explain, .sq-word, .sq-word--xl, .sq-reward-note, .sq-card--teach .sq-word"
+    )
+    .forEach((el) => {
+      const t = el.textContent.trim();
+      if (t && !seen.has(t)) {
+        seen.add(t);
+        parts.push(t);
+      }
+    });
+  root.querySelectorAll("input").forEach((i) => {
+    const v = i.value.trim();
+    if (v) parts.push(`you wrote: ${v}`);
+  });
+  return parts.join(". ");
+}
+
+function installSpeakButton() {
+  const fab = el("button", {
+    class: "sq-speak-fab",
+    html: "🔊",
+    attrs: { type: "button", "aria-label": "read this page aloud" },
+    on: {
+      click: () => {
+        speech.unlock();
+        const t = screenText();
+        if (t) speech.speakText(t);
+      },
+    },
+  });
+  document.body.appendChild(fab);
+}
+
 // ---------------- home ----------------
 function renderHome() {
   const start = el("button", {
@@ -116,4 +156,5 @@ async function finishSession() {
   mount(root, el("div", { class: "sq-screen" }, bits));
 }
 
+installSpeakButton();
 renderHome();

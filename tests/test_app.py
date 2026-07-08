@@ -14,6 +14,8 @@ import importlib
 
 import pytest
 
+from agent import voice
+
 
 @pytest.fixture
 def client(data_root):
@@ -169,3 +171,100 @@ def test_parent_settings_ignores_non_numeric_input(client):
     after = store.load("default", "profile")["settings"]
     assert after["items_per_session"] == before["items_per_session"]
     assert after["tts_rate"] == before["tts_rate"]
+
+
+# ---------------------------------------------------------------------------
+# POST /api/tts (ADR-013) — read-aloud, cached, mocked voice.synthesize.
+#
+# app.py does `from agent import voice` and calls `voice.synthesize(text)`, so
+# we patch the `voice` attribute on the *reloaded* app module (same object as
+# `agent.voice`, since importlib.reload(app_module) doesn't reload agent.voice
+# itself -- but patching app_module.voice.synthesize is the most direct/robust
+# target regardless).
+# ---------------------------------------------------------------------------
+
+
+def test_api_tts_empty_text_returns_400(client):
+    resp = client.post("/api/tts", json={"text": ""})
+    assert resp.status_code == 400
+
+
+def test_api_tts_missing_text_returns_400(client):
+    resp = client.post("/api/tts", json={})
+    assert resp.status_code == 400
+
+
+def test_api_tts_success_returns_audio_mpeg(client, monkeypatch):
+    import app as app_module
+
+    calls = []
+
+    def _fake_synthesize(text, **kwargs):
+        calls.append(text)
+        return b"AUDIO"
+
+    monkeypatch.setattr(app_module.voice, "synthesize", _fake_synthesize)
+
+    resp = client.post("/api/tts", json={"text": "hello there"})
+    assert resp.status_code == 200
+    assert resp.content_type == "audio/mpeg"
+    assert resp.data == b"AUDIO"
+    assert len(calls) == 1
+
+
+def test_api_tts_second_identical_request_is_served_from_cache(client, monkeypatch):
+    import app as app_module
+    from engine import store
+
+    calls = []
+
+    def _fake_synthesize(text, **kwargs):
+        calls.append(text)
+        return b"AUDIO"
+
+    monkeypatch.setattr(app_module.voice, "synthesize", _fake_synthesize)
+
+    first = client.post("/api/tts", json={"text": "hello there"})
+    assert first.status_code == 200
+    assert len(calls) == 1
+
+    second = client.post("/api/tts", json={"text": "hello there"})
+    assert second.status_code == 200
+    assert second.data == b"AUDIO"
+    # cache hit — voice.synthesize must NOT be called again
+    assert len(calls) == 1
+
+    cache_dir = store.DATA_ROOT / "tts_cache"
+    assert cache_dir.is_dir()
+    cached_files = list(cache_dir.glob("*.mp3"))
+    assert len(cached_files) == 1
+
+
+def test_api_tts_voice_error_returns_503(client, monkeypatch):
+    import app as app_module
+
+    def _raise_voice_error(text, **kwargs):
+        raise voice.VoiceError("tts failed: URLError")
+
+    monkeypatch.setattr(app_module.voice, "synthesize", _raise_voice_error)
+
+    resp = client.post("/api/tts", json={"text": "a brand new uncached phrase"})
+    assert resp.status_code == 503
+
+
+def test_api_tts_long_text_is_truncated_and_still_succeeds(client, monkeypatch):
+    import app as app_module
+
+    captured = {}
+
+    def _fake_synthesize(text, **kwargs):
+        captured["text"] = text
+        return b"AUDIO"
+
+    monkeypatch.setattr(app_module.voice, "synthesize", _fake_synthesize)
+
+    long_text = "a" * 1000
+    resp = client.post("/api/tts", json={"text": long_text})
+    assert resp.status_code == 200
+    assert resp.data == b"AUDIO"
+    assert len(captured["text"]) <= 400
