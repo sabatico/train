@@ -53,4 +53,4 @@ Led by an AI lead agent + spawned role sub-agents; the human owner (the parent) 
 - **Environments:** dev = prod = this machine. The only real environment is the child's daily use — `data/` is production data from the first real session onward.
 - **Toolchains & non-obvious knobs:** Python via `python3`; venv at `.venv/`; run `flask --app app run --debug`; tests `pytest --cov`. TTS quality differs per browser — test dictation in the browser the child actually uses (Safari and Chrome voices differ).
 - **Secrets by NAME (never values):** `DEEPSEEK_API_KEY` → `.env` (gitignored). That is the only secret.
-- **Phase:** pre-build. Harness installed; product plan locked (`PLAN.md`); next: UI design brief → Claude Design mockups → build UI + backend → connect DeepSeek agent. Single continuous phase — AI wired in from the start (stubbed until the key is provided).
+- **Phase:** pre-build, fully unblocked. Harness installed; product plan locked (`PLAN.md`); design handoff received (kid screens); DeepSeek key live and probe-verified. Next: token-lock pass → backend skeleton + UI shell + agent module, single continuous phase, AI wired from the start.

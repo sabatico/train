@@ -6,14 +6,14 @@
 ## Services
 | Service | What it does for us | WHY this one (vs alternatives) | Status | Plan / cost | Owner-action needed |
 |---------|---------------------|--------------------------------|--------|-------------|---------------------|
-| DeepSeek API | The teacher-agent LLM: session planning, kid-voice error explanations, sentence review, weekly parent notes, `memory.md` notebook | Owner's choice (ADR-002) — owner provides the account; OpenAI-compatible API keeps the client trivial; very low per-token cost suits daily kid sessions | planned / stubbed | pay-as-you-go, expected < $2/mo at 1 session/day | provide `DEEPSEEK_API_KEY` |
+| DeepSeek API | The teacher-agent LLM: session planning, kid-voice error explanations, sentence review, weekly parent notes, `memory.md` notebook | Owner's choice (ADR-002) — owner provides the account; OpenAI-compatible API keeps the client trivial; very low per-token cost suits daily kid sessions | **key live** (verified 2026-07-07); module not yet built | pay-as-you-go, expected < $2/mo at 1 session/day | none |
 | Browser `speechSynthesis` (Web Speech API) | TTS for all dictation exercises | Built into every browser: free, offline, zero deps, adjustable rate; quality is "good enough for v1" per PLAN §5 | live (browser built-in) | free | none |
 | Google Fonts — Lexend | The dyslexia-friendly UI typeface | Lexend is designed for reading proficiency, free, and can be **self-hosted** — we vendor the woff2 into `static/fonts/` so the child's sessions make zero external requests | planned | free (OFL) | none |
 
 ## Configuration (per service)
 ### DeepSeek API
 - **Account / project:** owner's personal DeepSeek account (owner-managed).
-- **Endpoints / regions:** `https://api.deepseek.com/chat/completions` (OpenAI-compatible); model `deepseek-chat` (function-calling capable — needed for exercise tool schemas).
+- **Endpoints / regions:** `https://api.deepseek.com/chat/completions` (OpenAI-compatible); model `deepseek-chat` (function-calling capable — needed for exercise tool schemas). Note: `deepseek-chat` is an alias — probe on 2026-07-07 served `deepseek-v4-flash`; the served model can change under us, so agent output validation (ADR-002 rule 2) is load-bearing.
 - **Config (env vars + non-secret dev values):** `DEEPSEEK_MODEL` = `deepseek-chat`; `DEEPSEEK_BASE_URL` = `https://api.deepseek.com`.
 - **Secrets by NAME:** `DEEPSEEK_API_KEY` → stored in gitignored `.env`. *(value never here)*
 - **DNS / domains:** none.
@@ -26,6 +26,6 @@
 ## Stubbed / not-yet-live integrations
 | Service | Marker | Why stubbed | Unblock trigger |
 |---------|--------|-------------|-----------------|
-| DeepSeek API | `STUB:DEEPSEEK` | owner hasn't provided the key yet; client is mocked in dev/tests | `DEEPSEEK_API_KEY` lands in `.env` → wire live + tune prompts in that same slice (TBD-001) |
+| *(none — DeepSeek key landed 2026-07-07 and was probe-verified before any code existed, so no `STUB:DEEPSEEK` marker was ever written; `agent/teacher.py` builds against the live API from the start, mocked only in tests)* | | | |
 
 > Read this **before touching any integration.** New service or changed config ⇒ update this file in the same slice (it's a running file — part of Done).

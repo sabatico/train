@@ -8,7 +8,6 @@ Each item names **the constraint** (why now is wrong) and **the resurface trigge
 
 | ID | Item | Why deferred (the constraint) | Resurface trigger | Code marker | Notes |
 |----|------|-------------------------------|-------------------|-------------|-------|
-| TBD-001 | Live DeepSeek calls (real prompts tuned on real responses) | Owner has not yet provided `DEEPSEEK_API_KEY`; building against a mocked client meanwhile | Key lands in `.env` → wire + tune in that slice | `STUB:DEEPSEEK` | runner C2; `third-party-services.md` |
 | TBD-002 | Final TTS voice/rate tuning for dictation | Don't know the child's actual browser/accent preference yet (ONBOARDING §5 Q1/Q2) | Owner answers → tune `profile.json` defaults | — | voices differ wildly per browser |
 | TBD-003 | Multi-child support (profiles, separate data dirs) | v1 is deliberately single-child — one learner, one `data/`; generalizing now adds complexity with zero users for it | A second child starts using the app | — | deliberate scope cut |
 | TBD-004 | Auth / network exposure (serve beyond localhost) | App is localhost-only on the family Mac; adding auth now is cost without threat | Owner wants tablet/remote access on the home network | — | if it ships, PAR dashboard gets the gate first |

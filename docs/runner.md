@@ -21,12 +21,12 @@
 | B6 | Session builder + Flask API (start session / next item / submit answer) | PLAN §7 | ☐ | freeze the exercise JSON contract first (it's the seam with the UI **and** the agent tools) |
 | B7 | UI shell + component registry + first 3 exercises (`word_builder`, `letter_boxes`, `echo_dictation`) + browser TTS | PLAN §3 | ☐ | after B2 token-lock; zero inline styles; NEVER copy the `.dc.html` reference markup (inline-styled design-tool output — rebuild on tokens/components per the SOP) |
 | B10 | Parent screens (P1 dashboard, P2 settings) design round — NOT in the current handoff bundle, nor the §8 state set (loading/empty/TTS-fallback) | handoff README | ❓ | owner runs a second Claude Design round for P1/P2 + states when kid screens are underway |
-| B8 | DeepSeek agent module: session-plan call, kid-voice feedback call, `memory.md` notebook, engine fallback (`agent/teacher.py`) | ADR-002 | ☐ | build against a mocked client; `STUB:DEEPSEEK` until key arrives |
+| B8 | DeepSeek agent module: session-plan call, kid-voice feedback call, `memory.md` notebook, engine fallback (`agent/teacher.py`) | ADR-002 | ☐ | KEY LIVE (verified 2026-07-07, HTTP 200; `deepseek-chat` alias → `deepseek-v4-flash`) — build against the real API; tests still use a mocked client |
 | B9 | Rewards engine: stars, chest, streak, levels (`engine/rewards.py`) | PLAN §6 | ☐ | invariant #3: never subtract earned rewards |
 
 ## C. Open questions (blocking the above)
 1. ~~Claude Design mockups + structured handoff~~ → RESOLVED 2026-07-07: handoff received (`design_handoff_spell_quest/`), kid screens complete; parent screens + §8 states still owed (B10).
-2. `DEEPSEEK_API_KEY` (owner will provide) → blocks live agent calls; B8 proceeds mocked.
+2. ~~`DEEPSEEK_API_KEY`~~ → RESOLVED 2026-07-07: key in `.env`, probe verified (TBD-001 closed). Also unblocks the Sonnet↔DeepSeek cross-author pairing (CLAUDE.md model policy) once the wrapper script exists.
 3. Child's browser + TTS accent preference → blocks final dictation tuning only.
 
 ## D. Review/correction log (append per review or owner-correction round)

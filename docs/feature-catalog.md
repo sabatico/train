@@ -33,7 +33,7 @@
 |----|---------|--------|---------|-----------------------------|-------|-------|
 | PAR-01 | Rose-of-winds radar chart of the 14 skills | ⬜ | Parent dashboard `/parent` | `GET /api/skills` | — | PLAN §2 |
 | PAR-02 | Session history + error log browser | ⬜ | Parent dashboard | `data/sessions/*` | — | |
-| PAR-03 | Agent's teacher notebook + weekly note | ⬜ | Parent dashboard | `data/memory.md` | — | ⛔ needs DeepSeek key for generation |
+| PAR-03 | Agent's teacher notebook + weekly note | ⬜ | Parent dashboard | `data/memory.md` | — | key live; unblocked |
 | PAR-04 | Settings (TTS voice/rate, font size, session length) | ⬜ | Parent dashboard | `data/profile.json` | — | |
 
 ## Part B — Core / internal modules
@@ -45,7 +45,7 @@
 | CORE-04 | Error classifier (alignment + error tags) | ⬜ | `engine/classifier.py` | attempt→tags→skill signals | — | PLAN §4 |
 | CORE-05 | Session builder (warmup→teach→practice→challenge→reward) | ⬜ | `engine/session.py` | assembling a session | — | PLAN §7 |
 | CORE-06 | Rewards (stars, chest, streak, levels, collection) | ⬜ | `engine/rewards.py` | invariant #3 half-owner | — | PLAN §6 |
-| CORE-07 | Teacher agent (DeepSeek: plan, feedback, notebook; engine fallback) | ⬜ | `agent/teacher.py` | the AI layer | — | `STUB:DEEPSEEK` until key |
+| CORE-07 | Teacher agent (DeepSeek: plan, feedback, notebook; engine fallback) | ⬜ | `agent/teacher.py` | the AI layer | — | key live (2026-07-07); build against real API |
 | CORE-08 | Flask API + routes | ⬜ | `app.py` | HTTP seam UI⇄engine | — | contract frozen before B7 |
 | CORE-09 | UI shell + component registry + tokens | ⬜ | `static/`, `templates/` | render `{type,payload}` | — | ADR-003; zero inline styles |
 | CORE-10 | Word banks (curated pattern lists) | ⬜ | `data/word_bank/*.json` | content, not code | — | reviewed by owner |
