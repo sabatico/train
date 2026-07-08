@@ -188,3 +188,100 @@ def test_build_plan_via_bootstrapped_student_fixture(bootstrapped_student, data_
     # short_vowels is introduced at bootstrap and has words in the real seeded bank
     assert len(plan) > 0
     assert all(p["skill_id"] in skills_doc["skills"] for p in plan)
+
+
+# ------------------------------------------------------------- target_difficulty
+@pytest.mark.parametrize(
+    "effective,expected",
+    [
+        (0, 1),
+        (100, 5),
+        (-1, 1),
+        (-50, 1),
+        (101, 5),
+        (1000, 5),
+    ],
+)
+def test_target_difficulty_boundaries_and_clamping(effective, expected):
+    assert selector.target_difficulty(effective) == expected
+
+
+def test_target_difficulty_monotonic_non_decreasing():
+    values = [selector.target_difficulty(m) for m in range(0, 101)]
+    assert all(values[i] <= values[i + 1] for i in range(len(values) - 1))
+
+
+def test_target_difficulty_spans_full_1_to_5_range():
+    values = {selector.target_difficulty(m) for m in range(0, 101)}
+    assert values == {1, 2, 3, 4, 5}
+
+
+# ------------------------------------------------------------- _pick_word (target-aware)
+def _bank_with_difficulties():
+    return [
+        {"word": "w1", "difficulty": 1},
+        {"word": "w3", "difficulty": 3},
+        {"word": "w5", "difficulty": 5},
+    ]
+
+
+def test_pick_word_with_target_picks_closest_difficulty_low():
+    bank = _bank_with_difficulties()
+    result = selector._pick_word("sid", lambda sid: bank, random.Random(1), set(), target=1)
+    assert result["word"] == "w1"
+
+
+def test_pick_word_with_target_picks_closest_difficulty_high():
+    bank = _bank_with_difficulties()
+    result = selector._pick_word("sid", lambda sid: bank, random.Random(1), set(), target=5)
+    assert result["word"] == "w5"
+
+
+def test_pick_word_with_target_picks_closest_difficulty_mid():
+    bank = _bank_with_difficulties()
+    result = selector._pick_word("sid", lambda sid: bank, random.Random(1), set(), target=3)
+    assert result["word"] == "w3"
+
+
+def test_pick_word_target_none_still_returns_a_word_random_path():
+    bank = _bank_with_difficulties()
+    result = selector._pick_word("sid", lambda sid: bank, random.Random(1), set(), target=None)
+    assert result is not None
+    assert result["word"] in {"w1", "w3", "w5"}
+
+
+def test_pick_word_target_aware_still_falls_back_to_reuse_when_exhausted():
+    # existing "all words used -> reuse" behavior must still work when a target
+    # is supplied, not just in the untargeted path.
+    bank = [{"word": "cat", "difficulty": 3}]
+    used = {"cat"}
+    result = selector._pick_word(
+        "short_vowels", lambda sid: bank, random.Random(1), used, target=3
+    )
+    assert result == {"word": "cat", "difficulty": 3}
+
+
+def test_pick_word_target_breaks_ties_within_rng_choices():
+    # two words equidistant from target=2 (w1 at distance 1, w3 at distance 1);
+    # the result must be one of the tied candidates, never w5 (distance 3).
+    bank = _bank_with_difficulties()
+    result = selector._pick_word("sid", lambda sid: bank, random.Random(7), set(), target=2)
+    assert result["word"] in {"w1", "w3"}
+
+
+# ------------------------------------------------------------- determinism with target-aware picking
+def test_build_plan_deterministic_under_seeded_rng_with_difficulty_aware_words():
+    # words now carry a "difficulty" field (as real word-bank entries do); confirm
+    # target-aware selection didn't break build_plan's determinism guarantee.
+    graph = {"short_vowels": []}
+    skills_doc = models.default_skills(graph)
+    words = [
+        {"word": f"w{i}", "phonemes": ["a"], "difficulty": (i % 5) + 1} for i in range(8)
+    ]
+
+    def words_for(sid):
+        return words if sid == "short_vowels" else []
+
+    plan1 = selector.build_plan(skills_doc, graph, words_for, TODAY, n=10, rng=random.Random(42))
+    plan2 = selector.build_plan(skills_doc, graph, words_for, TODAY, n=10, rng=random.Random(42))
+    assert plan1 == plan2

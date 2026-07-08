@@ -342,7 +342,9 @@ def test_list_session_logs_empty_for_fresh_student(data_root):
 def test_load_word_bank_seeded_pattern_returns_words(data_root):
     words = store.load_word_bank("short_vowels")
     assert len(words) >= 1
-    assert words[0]["word"] == "cat"
+    # every entry carries the schema fields the engine relies on
+    assert all({"word", "phonemes", "pattern", "difficulty"} <= set(w) for w in words)
+    assert "cat" in {w["word"] for w in words}
 
 
 def test_load_word_bank_missing_pattern_returns_empty_list(data_root):

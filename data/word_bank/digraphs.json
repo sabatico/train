@@ -1,16 +1,1099 @@
 {
   "pattern": "digraphs",
-  "note": "Two letters, one sound: sh ch th ck wh (PLAN §2). `phonemes` keep the digraph as ONE unit so word_builder/letter_boxes draw it in a single (wider) sound box. Seed set — expand toward ~40.",
+  "note": "60 words. Built by scripts/build_wordbanks.py; phrase/sentence/emoji enriched by AI (see docs). difficulty = engine.phonics (1-5).",
   "words": [
-    {"word": "ship", "phonemes": ["sh", "i", "p"], "pattern": "digraphs", "tricky_letters": [], "phrase": "a big ship", "sentence": "The ship is big.", "emoji": "🚢", "distractors": ["c", "e"]},
-    {"word": "shop", "phonemes": ["sh", "o", "p"], "pattern": "digraphs", "tricky_letters": [], "phrase": "the toy shop", "sentence": "We go to the shop.", "emoji": "🏪", "distractors": ["c", "a"]},
-    {"word": "chat", "phonemes": ["ch", "a", "t"], "pattern": "digraphs", "tricky_letters": [], "phrase": "a fun chat", "sentence": "We chat and laugh.", "emoji": "🗨️", "distractors": ["s", "e"]},
-    {"word": "chip", "phonemes": ["ch", "i", "p"], "pattern": "digraphs", "tricky_letters": [], "phrase": "one chip", "sentence": "I eat a chip.", "emoji": "🍟", "distractors": ["sh", "o"]},
-    {"word": "thin", "phonemes": ["th", "i", "n"], "pattern": "digraphs", "tricky_letters": [], "phrase": "thin ice", "sentence": "The ice is thin.", "emoji": "🧊", "distractors": ["f", "e"]},
-    {"word": "that", "phonemes": ["th", "a", "t"], "pattern": "digraphs", "tricky_letters": [], "phrase": "that one", "sentence": "I like that hat.", "emoji": "👉", "distractors": ["d", "o"]},
-    {"word": "duck", "phonemes": ["d", "u", "ck"], "pattern": "digraphs", "tricky_letters": [], "phrase": "a yellow duck", "sentence": "The duck can swim.", "emoji": "🦆", "distractors": ["k", "o"]},
-    {"word": "sock", "phonemes": ["s", "o", "ck"], "pattern": "digraphs", "tricky_letters": [], "phrase": "a red sock", "sentence": "I lost one sock.", "emoji": "🧦", "distractors": ["k", "a"]},
-    {"word": "when", "phonemes": ["wh", "e", "n"], "pattern": "digraphs", "tricky_letters": [], "phrase": "when now", "sentence": "When can we go?", "emoji": "❓", "distractors": ["w", "a"]},
-    {"word": "whip", "phonemes": ["wh", "i", "p"], "pattern": "digraphs", "tricky_letters": [], "phrase": "whip it", "sentence": "Whip the cream.", "emoji": "🌪️", "distractors": ["w", "o"]}
+    {
+      "word": "them",
+      "phonemes": [
+        "th",
+        "e",
+        "m"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 2,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "g",
+        "q"
+      ]
+    },
+    {
+      "word": "then",
+      "phonemes": [
+        "th",
+        "e",
+        "n"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 2,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "i",
+        "s"
+      ]
+    },
+    {
+      "word": "this",
+      "phonemes": [
+        "th",
+        "i",
+        "s"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 2,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "a",
+        "d"
+      ]
+    },
+    {
+      "word": "when",
+      "phonemes": [
+        "wh",
+        "e",
+        "n"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 2,
+      "tricky_letters": [],
+      "phrase": "when now",
+      "sentence": "When can we go?",
+      "emoji": "❓",
+      "distractors": [
+        "w",
+        "a"
+      ]
+    },
+    {
+      "word": "with",
+      "phonemes": [
+        "w",
+        "i",
+        "th"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 2,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "k",
+        "l"
+      ]
+    },
+    {
+      "word": "back",
+      "phonemes": [
+        "b",
+        "a",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "p",
+        "u"
+      ]
+    },
+    {
+      "word": "bath",
+      "phonemes": [
+        "b",
+        "a",
+        "th"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "q",
+        "m"
+      ]
+    },
+    {
+      "word": "cash",
+      "phonemes": [
+        "c",
+        "a",
+        "sh"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "i",
+        "w"
+      ]
+    },
+    {
+      "word": "chat",
+      "phonemes": [
+        "ch",
+        "a",
+        "t"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": "a fun chat",
+      "sentence": "We chat and laugh.",
+      "emoji": "🗨️",
+      "distractors": [
+        "s",
+        "e"
+      ]
+    },
+    {
+      "word": "chin",
+      "phonemes": [
+        "ch",
+        "i",
+        "n"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "r",
+        "o"
+      ]
+    },
+    {
+      "word": "chip",
+      "phonemes": [
+        "ch",
+        "i",
+        "p"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": "one chip",
+      "sentence": "I eat a chip.",
+      "emoji": "🍟",
+      "distractors": [
+        "sh",
+        "o"
+      ]
+    },
+    {
+      "word": "chop",
+      "phonemes": [
+        "ch",
+        "o",
+        "p"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "s",
+        "m"
+      ]
+    },
+    {
+      "word": "dash",
+      "phonemes": [
+        "d",
+        "a",
+        "sh"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "t",
+        "m"
+      ]
+    },
+    {
+      "word": "deck",
+      "phonemes": [
+        "d",
+        "e",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "b",
+        "r"
+      ]
+    },
+    {
+      "word": "duck",
+      "phonemes": [
+        "d",
+        "u",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": "a yellow duck",
+      "sentence": "The duck can swim.",
+      "emoji": "🦆",
+      "distractors": [
+        "k",
+        "o"
+      ]
+    },
+    {
+      "word": "fish",
+      "phonemes": [
+        "f",
+        "i",
+        "sh"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "r",
+        "k"
+      ]
+    },
+    {
+      "word": "kick",
+      "phonemes": [
+        "k",
+        "i",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "l",
+        "r"
+      ]
+    },
+    {
+      "word": "lock",
+      "phonemes": [
+        "l",
+        "o",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "d",
+        "t"
+      ]
+    },
+    {
+      "word": "moth",
+      "phonemes": [
+        "m",
+        "o",
+        "th"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "q",
+        "a"
+      ]
+    },
+    {
+      "word": "much",
+      "phonemes": [
+        "m",
+        "u",
+        "ch"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "p",
+        "a"
+      ]
+    },
+    {
+      "word": "neck",
+      "phonemes": [
+        "n",
+        "e",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "i",
+        "a"
+      ]
+    },
+    {
+      "word": "pack",
+      "phonemes": [
+        "p",
+        "a",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "w",
+        "i"
+      ]
+    },
+    {
+      "word": "path",
+      "phonemes": [
+        "p",
+        "a",
+        "th"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "l",
+        "e"
+      ]
+    },
+    {
+      "word": "pick",
+      "phonemes": [
+        "p",
+        "i",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "l",
+        "u"
+      ]
+    },
+    {
+      "word": "rich",
+      "phonemes": [
+        "r",
+        "i",
+        "ch"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "e",
+        "k"
+      ]
+    },
+    {
+      "word": "rock",
+      "phonemes": [
+        "r",
+        "o",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "p",
+        "l"
+      ]
+    },
+    {
+      "word": "rush",
+      "phonemes": [
+        "r",
+        "u",
+        "sh"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "w",
+        "b"
+      ]
+    },
+    {
+      "word": "shed",
+      "phonemes": [
+        "sh",
+        "e",
+        "d"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "g",
+        "i"
+      ]
+    },
+    {
+      "word": "shin",
+      "phonemes": [
+        "sh",
+        "i",
+        "n"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "u",
+        "r"
+      ]
+    },
+    {
+      "word": "ship",
+      "phonemes": [
+        "sh",
+        "i",
+        "p"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": "a big ship",
+      "sentence": "The ship is big.",
+      "emoji": "🚢",
+      "distractors": [
+        "c",
+        "e"
+      ]
+    },
+    {
+      "word": "shop",
+      "phonemes": [
+        "sh",
+        "o",
+        "p"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": "the toy shop",
+      "sentence": "We go to the shop.",
+      "emoji": "🏪",
+      "distractors": [
+        "c",
+        "a"
+      ]
+    },
+    {
+      "word": "shut",
+      "phonemes": [
+        "sh",
+        "u",
+        "t"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "p",
+        "l"
+      ]
+    },
+    {
+      "word": "sick",
+      "phonemes": [
+        "s",
+        "i",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "m",
+        "r"
+      ]
+    },
+    {
+      "word": "sock",
+      "phonemes": [
+        "s",
+        "o",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": "a red sock",
+      "sentence": "I lost one sock.",
+      "emoji": "🧦",
+      "distractors": [
+        "k",
+        "a"
+      ]
+    },
+    {
+      "word": "such",
+      "phonemes": [
+        "s",
+        "u",
+        "ch"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "n",
+        "r"
+      ]
+    },
+    {
+      "word": "that",
+      "phonemes": [
+        "th",
+        "a",
+        "t"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": "that one",
+      "sentence": "I like that hat.",
+      "emoji": "👉",
+      "distractors": [
+        "d",
+        "o"
+      ]
+    },
+    {
+      "word": "thin",
+      "phonemes": [
+        "th",
+        "i",
+        "n"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": "thin ice",
+      "sentence": "The ice is thin.",
+      "emoji": "🧊",
+      "distractors": [
+        "f",
+        "e"
+      ]
+    },
+    {
+      "word": "whim",
+      "phonemes": [
+        "wh",
+        "i",
+        "m"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "o",
+        "l"
+      ]
+    },
+    {
+      "word": "whip",
+      "phonemes": [
+        "wh",
+        "i",
+        "p"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": "whip it",
+      "sentence": "Whip the cream.",
+      "emoji": "🌪️",
+      "distractors": [
+        "w",
+        "o"
+      ]
+    },
+    {
+      "word": "whiz",
+      "phonemes": [
+        "wh",
+        "i",
+        "z"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "d",
+        "l"
+      ]
+    },
+    {
+      "word": "wish",
+      "phonemes": [
+        "w",
+        "i",
+        "sh"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 3,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "g",
+        "q"
+      ]
+    },
+    {
+      "word": "chick",
+      "phonemes": [
+        "ch",
+        "i",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "b",
+        "r"
+      ]
+    },
+    {
+      "word": "chill",
+      "phonemes": [
+        "ch",
+        "i",
+        "ll"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "b",
+        "t"
+      ]
+    },
+    {
+      "word": "quick",
+      "phonemes": [
+        "qu",
+        "i",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "o",
+        "p"
+      ]
+    },
+    {
+      "word": "shell",
+      "phonemes": [
+        "sh",
+        "e",
+        "ll"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "r",
+        "d"
+      ]
+    },
+    {
+      "word": "thick",
+      "phonemes": [
+        "th",
+        "i",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "g",
+        "o"
+      ]
+    },
+    {
+      "word": "which",
+      "phonemes": [
+        "wh",
+        "i",
+        "ch"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "n",
+        "r"
+      ]
+    },
+    {
+      "word": "bench",
+      "phonemes": [
+        "b",
+        "e",
+        "n",
+        "ch"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "a",
+        "g"
+      ]
+    },
+    {
+      "word": "black",
+      "phonemes": [
+        "b",
+        "l",
+        "a",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "w",
+        "u"
+      ]
+    },
+    {
+      "word": "brush",
+      "phonemes": [
+        "b",
+        "r",
+        "u",
+        "sh"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "t",
+        "e"
+      ]
+    },
+    {
+      "word": "chest",
+      "phonemes": [
+        "ch",
+        "e",
+        "s",
+        "t"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "p",
+        "g"
+      ]
+    },
+    {
+      "word": "clock",
+      "phonemes": [
+        "c",
+        "l",
+        "o",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "q",
+        "t"
+      ]
+    },
+    {
+      "word": "cloth",
+      "phonemes": [
+        "c",
+        "l",
+        "o",
+        "th"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "u",
+        "e"
+      ]
+    },
+    {
+      "word": "fresh",
+      "phonemes": [
+        "f",
+        "r",
+        "e",
+        "sh"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "k",
+        "d"
+      ]
+    },
+    {
+      "word": "lunch",
+      "phonemes": [
+        "l",
+        "u",
+        "n",
+        "ch"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "m",
+        "g"
+      ]
+    },
+    {
+      "word": "munch",
+      "phonemes": [
+        "m",
+        "u",
+        "n",
+        "ch"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "b",
+        "p"
+      ]
+    },
+    {
+      "word": "stick",
+      "phonemes": [
+        "s",
+        "t",
+        "i",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "o",
+        "u"
+      ]
+    },
+    {
+      "word": "thump",
+      "phonemes": [
+        "th",
+        "u",
+        "m",
+        "p"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "w",
+        "k"
+      ]
+    },
+    {
+      "word": "trash",
+      "phonemes": [
+        "t",
+        "r",
+        "a",
+        "sh"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "m",
+        "q"
+      ]
+    },
+    {
+      "word": "truck",
+      "phonemes": [
+        "t",
+        "r",
+        "u",
+        "ck"
+      ],
+      "pattern": "digraphs",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "s",
+        "a"
+      ]
+    }
   ]
 }

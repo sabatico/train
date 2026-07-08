@@ -1,0 +1,701 @@
+{
+  "pattern": "suffixes",
+  "note": "35 words. Built by scripts/build_wordbanks.py; phrase/sentence/emoji enriched by AI (see docs). difficulty = engine.phonics (1-5).",
+  "words": [
+    {
+      "word": "beds",
+      "phonemes": [
+        "b",
+        "e",
+        "d",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "u",
+        "o"
+      ]
+    },
+    {
+      "word": "cats",
+      "phonemes": [
+        "c",
+        "a",
+        "t",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "k",
+        "w"
+      ]
+    },
+    {
+      "word": "cups",
+      "phonemes": [
+        "c",
+        "u",
+        "p",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "g",
+        "b"
+      ]
+    },
+    {
+      "word": "digs",
+      "phonemes": [
+        "d",
+        "i",
+        "g",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "q",
+        "a"
+      ]
+    },
+    {
+      "word": "dogs",
+      "phonemes": [
+        "d",
+        "o",
+        "g",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "a",
+        "l"
+      ]
+    },
+    {
+      "word": "hats",
+      "phonemes": [
+        "h",
+        "a",
+        "t",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "d",
+        "e"
+      ]
+    },
+    {
+      "word": "hops",
+      "phonemes": [
+        "h",
+        "o",
+        "p",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "w",
+        "a"
+      ]
+    },
+    {
+      "word": "pigs",
+      "phonemes": [
+        "p",
+        "i",
+        "g",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "d",
+        "t"
+      ]
+    },
+    {
+      "word": "pins",
+      "phonemes": [
+        "p",
+        "i",
+        "n",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "q",
+        "o"
+      ]
+    },
+    {
+      "word": "runs",
+      "phonemes": [
+        "r",
+        "u",
+        "n",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "t",
+        "o"
+      ]
+    },
+    {
+      "word": "sits",
+      "phonemes": [
+        "s",
+        "i",
+        "t",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 4,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "w",
+        "n"
+      ]
+    },
+    {
+      "word": "bigger",
+      "phonemes": [
+        "b",
+        "i",
+        "g",
+        "g",
+        "er"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "o",
+        "d"
+      ]
+    },
+    {
+      "word": "boxes",
+      "phonemes": [
+        "b",
+        "o",
+        "x",
+        "e",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "a",
+        "q"
+      ]
+    },
+    {
+      "word": "buses",
+      "phonemes": [
+        "b",
+        "u",
+        "s",
+        "e",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "k",
+        "g"
+      ]
+    },
+    {
+      "word": "dishes",
+      "phonemes": [
+        "d",
+        "i",
+        "sh",
+        "e",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "o",
+        "w"
+      ]
+    },
+    {
+      "word": "eating",
+      "phonemes": [
+        "ea",
+        "t",
+        "i",
+        "ng"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "w",
+        "u"
+      ]
+    },
+    {
+      "word": "faster",
+      "phonemes": [
+        "f",
+        "a",
+        "s",
+        "t",
+        "er"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "l",
+        "n"
+      ]
+    },
+    {
+      "word": "foxes",
+      "phonemes": [
+        "f",
+        "o",
+        "x",
+        "e",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "b",
+        "w"
+      ]
+    },
+    {
+      "word": "helped",
+      "phonemes": [
+        "h",
+        "e",
+        "l",
+        "p",
+        "e",
+        "d"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "r",
+        "n"
+      ]
+    },
+    {
+      "word": "helping",
+      "phonemes": [
+        "h",
+        "e",
+        "l",
+        "p",
+        "i",
+        "ng"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "b",
+        "u"
+      ]
+    },
+    {
+      "word": "jumped",
+      "phonemes": [
+        "j",
+        "u",
+        "m",
+        "p",
+        "e",
+        "d"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "q",
+        "l"
+      ]
+    },
+    {
+      "word": "jumping",
+      "phonemes": [
+        "j",
+        "u",
+        "m",
+        "p",
+        "i",
+        "ng"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "s",
+        "e"
+      ]
+    },
+    {
+      "word": "jumps",
+      "phonemes": [
+        "j",
+        "u",
+        "m",
+        "p",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "q",
+        "g"
+      ]
+    },
+    {
+      "word": "landed",
+      "phonemes": [
+        "l",
+        "a",
+        "n",
+        "d",
+        "e",
+        "d"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "r",
+        "k"
+      ]
+    },
+    {
+      "word": "longer",
+      "phonemes": [
+        "l",
+        "o",
+        "ng",
+        "er"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "w",
+        "m"
+      ]
+    },
+    {
+      "word": "planted",
+      "phonemes": [
+        "p",
+        "l",
+        "a",
+        "n",
+        "t",
+        "e",
+        "d"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "k",
+        "u"
+      ]
+    },
+    {
+      "word": "played",
+      "phonemes": [
+        "p",
+        "l",
+        "ay",
+        "e",
+        "d"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "q",
+        "w"
+      ]
+    },
+    {
+      "word": "playing",
+      "phonemes": [
+        "p",
+        "l",
+        "ay",
+        "i",
+        "ng"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "b",
+        "k"
+      ]
+    },
+    {
+      "word": "reading",
+      "phonemes": [
+        "r",
+        "ea",
+        "d",
+        "i",
+        "ng"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "q",
+        "t"
+      ]
+    },
+    {
+      "word": "running",
+      "phonemes": [
+        "r",
+        "u",
+        "n",
+        "n",
+        "i",
+        "ng"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "t",
+        "m"
+      ]
+    },
+    {
+      "word": "singing",
+      "phonemes": [
+        "s",
+        "i",
+        "ng",
+        "i",
+        "ng"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "p",
+        "k"
+      ]
+    },
+    {
+      "word": "smaller",
+      "phonemes": [
+        "s",
+        "m",
+        "a",
+        "ll",
+        "er"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "q",
+        "i"
+      ]
+    },
+    {
+      "word": "taller",
+      "phonemes": [
+        "t",
+        "a",
+        "ll",
+        "er"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "g",
+        "o"
+      ]
+    },
+    {
+      "word": "wanted",
+      "phonemes": [
+        "w",
+        "a",
+        "n",
+        "t",
+        "e",
+        "d"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "u",
+        "l"
+      ]
+    },
+    {
+      "word": "wishes",
+      "phonemes": [
+        "w",
+        "i",
+        "sh",
+        "e",
+        "s"
+      ],
+      "pattern": "suffixes",
+      "difficulty": 5,
+      "tricky_letters": [],
+      "phrase": null,
+      "sentence": null,
+      "emoji": "",
+      "distractors": [
+        "a",
+        "b"
+      ]
+    }
+  ]
+}

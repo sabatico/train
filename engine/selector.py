@@ -33,14 +33,32 @@ def _counts(n: int) -> tuple[int, int, int]:
     return focus, review, stretch
 
 
-def _pick_word(skill_id: str, words_for, rng: random.Random, used: set[str]) -> dict | None:
-    """Choose an unused word for a skill, or None if the bank is empty/exhausted."""
+def target_difficulty(effective_mastery: float) -> int:
+    """Map mastery to a target word difficulty (1–5): a shakier skill gets easier
+    words, a stronger one gets harder words. mastery 0→1 … 100→5."""
+    return 1 + round(4 * max(0.0, min(100.0, effective_mastery)) / 100.0)
+
+
+def _pick_word(
+    skill_id: str,
+    words_for,
+    rng: random.Random,
+    used: set[str],
+    target: int | None = None,
+) -> dict | None:
+    """Choose an unused word for a skill, or None if the bank is empty/exhausted.
+    When `target` is given, prefer words whose difficulty is closest to it (so word
+    complexity tracks her mastery); ties broken randomly. Without a target, random."""
     bank = [w for w in words_for(skill_id) if w.get("word") not in used]
     if not bank:
         bank = words_for(skill_id)  # allow reuse rather than starve the session
     if not bank:
         return None
-    return rng.choice(bank)
+    if target is None:
+        return rng.choice(bank)
+    best = min(abs(w.get("difficulty", 3) - target) for w in bank)
+    closest = [w for w in bank if abs(w.get("difficulty", 3) - target) == best]
+    return rng.choice(closest)
 
 
 def _entry(skill_id: str, word: dict, skills_doc: dict, today: date, slot: str) -> dict:
@@ -89,7 +107,7 @@ def build_plan(
 
     # focus: the weakest introduced skill (the session's pattern)
     for _ in range(n_focus):
-        w = _pick_word(focus, words_for, rng, used)
+        w = _pick_word(focus, words_for, rng, used, target_difficulty(eff(focus)))
         if w:
             used.add(w["word"])
             middle.append(_entry(focus, w, skills_doc, today, "focus"))
@@ -102,7 +120,7 @@ def build_plan(
         if not review_pool:
             break
         sid = review_pool[i % len(review_pool)]
-        w = _pick_word(sid, words_for, rng, used)
+        w = _pick_word(sid, words_for, rng, used, target_difficulty(eff(sid)))
         if w:
             used.add(w["word"])
             middle.append(_entry(sid, w, skills_doc, today, "review"))
@@ -122,7 +140,7 @@ def build_plan(
     for _ in range(n_stretch):
         sid = stretch_sid or focus
         slot = "stretch" if stretch_sid else "review"
-        w = _pick_word(sid, words_for, rng, used)
+        w = _pick_word(sid, words_for, rng, used, target_difficulty(eff(sid)))
         if w:
             used.add(w["word"])
             middle.append(_entry(sid, w, skills_doc, today, slot))
@@ -130,7 +148,7 @@ def build_plan(
     # top up to the middle target from the focus skill if review/stretch couldn't
     # fill (e.g. only one skill has a word bank yet) — the session still gets full.
     while len(middle) < middle_target:
-        w = _pick_word(focus, words_for, rng, used)
+        w = _pick_word(focus, words_for, rng, used, target_difficulty(eff(focus)))
         if not w:  # pragma: no cover — focus ∈ introduced, which is filtered to skills with words
             break
         used.add(w["word"])
@@ -142,7 +160,7 @@ def build_plan(
     warm_used: set[str] = set()
     for i in range(warmup_count):
         sid = warm_pool[i % len(warm_pool)]
-        w = _pick_word(sid, words_for, rng, warm_used)
+        w = _pick_word(sid, words_for, rng, warm_used, target=1)  # easiest words = sure early wins
         if w:
             warm_used.add(w["word"])
             warmup.append(_entry(sid, w, skills_doc, today, "warmup"))

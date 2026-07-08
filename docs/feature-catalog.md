@@ -53,7 +53,8 @@
 | CORE-14 | Parent report (radar geometry, summaries, error log) | ✅ | `engine/report.py` | dashboard data | ⏳ | pure functions; cross-authored tests in progress |
 | CORE-08 | Flask API + routes | ✅ | `app.py` | HTTP seam UI⇄engine | ✅ | `/healthz`, `/`→`/app`, `/parent`, `/api/session/{start,item,answer,finish}`, `/api/skills`; 98% cov (`__main__` guard) |
 | CORE-09 | UI tokens + component CSS (design system) | ✅ | `static/css/*`, `templates/` | branding + primitives | 🖥️ | ADR-003/010; adopted from handoff; zero inline styles; `app.css` for gaps |
-| CORE-10 | Word banks (curated pattern lists) | 🔨 | `data/word_bank/*.json` | content, not code | n/a | `skill_graph.json` (14-skill prereqs) + `short_vowels.json` (8-word seed); more banks + expansion owed (EW3) |
+| CORE-10 | Word banks (9 patterns, 736 words + difficulty) | ✅ | `data/word_bank/*.json` | content | ✅ | sourced online, built via `scripts/build_wordbanks.py`; integrity-tested; AI-enrich phrases/emoji next (T-015) |
+| CORE-15 | Phonics utils (grapheme segmenter + difficulty score) | ✅ | `engine/phonics.py` | "how complex is this word" | ⏳ | pure; cross-authored tests in progress |
 
 ## Stub / intentionally-incomplete inventory
 | Marker | What's stubbed | Why (the external gate) | Where it's tracked |

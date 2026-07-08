@@ -13,7 +13,7 @@
 | Flask API (`app.py`) | ✅ | health + tenancy routes + `/api/session/*` + `/api/skills`; 98% cov |
 | Frontend (shell + exercises) | ✅ | SPA shell + registry + 3 renderers + correction + reward + `speech.js`; browser-verified; JS tests deferred (T-010) |
 | Teacher agent (`agent/`) | ✅ | `client.py` + `teacher.py` (100% cov); kid-voice feedback wired + live-verified; plan-enrich later (T-012) |
-| Word banks | 🔨 | 3 banks / 28 words (short_vowels, digraphs, heart_words); expand toward ~120 (T-005) |
+| Word banks | ✅ | 736 words / 9 patterns, sourced online + `scripts/` pipeline + difficulty scores; AI enrichment of phrases/emoji next (T-015) |
 | Tests + gates | 🔨 | 264 tests green, 99% overall (100% on every engine module); invariant-#1 guardrail in place; CI gate scripts still owed (T-008) |
 
 ## Wave log

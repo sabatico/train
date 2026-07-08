@@ -8,7 +8,7 @@
 |----|------|--------|--------|-------|
 | EW1 | Repo scaffolding: `.gitignore`, `requirements.txt`, venv, Flask `app.py` (health + tenancy-shaped routes) | IN-1 | ✅ | done act-009; `/healthz`, `/`→`/app`, `/parent` verified |
 | EW2 | `data/` layout + storage module with atomic writes (`engine/store.py`) | ✅ | done act-009; lead-authored (invariant #1), Sonnet cross-authored 82 tests, `store.py` 100% cov (incl. atomic-write failure paths + traversal + guardrail); `config.py`/`models.py` 100% |
-| EW3 | Seed word banks: `short_vowels`, `digraphs`, `heart_words` (~120 words with phonemes, phrase, sentence, emoji) | ▶ | 3 banks seeded (28 words: short_vowels 8, digraphs 10, heart_words 10) + `skill_graph.json`; expansion toward ~120 + more patterns still owed (backlog T-005) |
+| EW3 | Word banks with phonemes + difficulty | ✅ | done act-014; **736 words across 9 patterns** sourced online + built by `scripts/build_wordbanks.py` (via `engine/phonics.py` — grapheme segmenter + 1–5 difficulty). Selector now serves words easy→hard by mastery. phrase/sentence/emoji AI-enriched next (T-015) |
 
 ## B. Bigger items — design before building (ADR if consequential)
 | ID | Item | Source | Status | Direction |

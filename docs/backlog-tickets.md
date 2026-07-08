@@ -13,7 +13,10 @@
 | T-002 | ✨ | P1 | `sentence_scribe` free writing + gentle AI review (KID-12) | Max 2 corrections per text, praise-first; needs live agent | ☐ | PLAN §3 |
 | T-003 | ✨ | P1 | Parent dashboard: radar chart + error log + settings (PAR-01/02/04) | Radar matches skills.json; settings persist to profile.json | ✅ | done act-013 (v1); notebook viewer + weekly note still open (T-004) |
 | T-004 | ✨ | P2 | Weekly agent parent-note generation (PAR-03) | Appended to data/memory.md, readable on dashboard | ☐ | PLAN §5 |
-| T-005 | ✨ | P2 | Word banks: vowel_teams, r_controlled, suffixes, doubling_endings | Same schema as Wave 1 banks; owner reviews word choice | ☐ | PLAN §2 |
+| T-005 | ✨ | P2 | Word banks expansion | ✅ done act-014: 736 words / 9 patterns sourced online + `scripts/build_wordbanks.py`. Can grow further via the same pipeline | ✅ | PLAN §2 |
+| T-014 | ✨ | P1 | Pre-generated natural TTS audio (OpenAI TTS) for the word banks | Owner decision 2026-07-08: replace robotic browser TTS. Generate a clip per word once, cache static, `speech.js` prefers cached else falls back. Needs OpenAI key + a new ADR (2nd provider) + third-party-services entry | ☐ | owner |
+| T-015 | ✨ | P1 | AI enrichment pass over the 736 words | Owner decision 2026-07-08 ("AI enriches, engine leads"): DeepSeek generates kid-friendly `phrase`/`sentence`/`emoji` + `tricky_letters` (heart words) and refines `difficulty`; engine stays authoritative for selection. Batch script, validated against schema | ☐ | owner |
+| T-016 | ✨ | P2 | AI example-generation within engine-chosen skill+difficulty | "AI enriches, engine leads": agent proposes/varies specific words for the skill+difficulty the selector picked (engine still decides what pattern/scaffold). Builds on T-015 | ☐ | owner (ADR-012 #1) |
 | T-006 | ✨ | P2 | Streak freeze token + level-up celebration screen (KID-15/17 polish) | Missing a day with a token keeps the flame; never punitive | ☐ | PLAN §6 |
 | T-007 | 📈 | P3 | Pre-generated natural-voice audio to replace browser TTS | Only if browser voices prove too robotic for the child | ☐ | PLAN §5 |
 | T-008 | 🧹 | P2 | CI gate scripts (secret-scan, marker registries, no-inline-styles lint, coverage floor) as local pre-commit/`make gates` | Per `docs/ci/gates.md`, adapted to a no-remote local repo | ☐ | harness |
