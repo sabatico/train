@@ -6,7 +6,8 @@
 ## Overall
 | Area | Progress | Notes |
 |------|----------|-------|
-| Harness / docs | ✅ installed | constitution, running files, SOPs, ADR-001..003, PLAN.md, DESIGN_BRIEF.md |
+| Harness / docs | ✅ installed | constitution, running files, SOPs, PLAN.md, DESIGN_BRIEF.md |
+| Architecture (ADRs) | 🔨 | ADR-001..004 Accepted; ADR-005..012 (Stage-1 build contracts) Proposed, awaiting owner lock — roadmap in adr/README.md |
 | UI design (Claude Design mockups) | 🔨 | kid screens + 10 exercises received (`design_handoff_spell_quest/`); parent P1/P2 + §8 states owed (B10) |
 | Backend engine (`engine/`) | ⬜ | not started |
 | Flask API (`app.py`) | ⬜ | not started |

@@ -24,6 +24,20 @@
 | B8 | DeepSeek agent module: session-plan call, kid-voice feedback call, `memory.md` notebook, engine fallback (`agent/teacher.py`) | ADR-002 | ☐ | KEY LIVE (verified 2026-07-07, HTTP 200; `deepseek-chat` alias → `deepseek-v4-flash`) — build against the real API; tests still use a mocked client |
 | B9 | Rewards engine: stars, chest, streak, levels (`engine/rewards.py`) | PLAN §6 | ☐ | invariant #3: never subtract earned rewards |
 
+## B'. Stage-1 ADRs to lock (proposed 2026-07-07 — the lowered-altitude build contracts)
+| ID | ADR | Status | Gate |
+|----|-----|--------|------|
+| D6 | ADR-006 data model & store schema | Proposed | owner nod → lock, then EW2 |
+| D5 | ADR-005 exercise/interaction contract | Proposed | owner nod → lock, then B6/B7/B8 |
+| D8 | ADR-008 classifier alignment + tag taxonomy | Proposed | **owner sign-off** (permanent tag set) → lock, then B3/B5 |
+| D7 | ADR-007 mastery + selection algorithm | Proposed | **owner sign-off + 2nd-ideator** (pedagogy numbers) → lock, then B3/B4 |
+| D9 | ADR-009 session lifecycle & state | Proposed | owner nod → lock, then B6 |
+| D11 | ADR-011 rewards economy | Proposed | owner sign-off (fun tuning) → lock, then B9 |
+| D10 | ADR-010 frontend app architecture | Proposed | owner nod → lock, then B7 |
+| D12 | ADR-012 agent integration contract | Proposed | owner nod → lock, then B8 |
+
+> All target Stage 1 (single-user) only. Recommended review order: the 3 pedagogy ADRs (008, 007, 011) first — they change the child's experience; the rest are mechanical/architectural rubber-stamps. Nothing in section B builds until its governing ADR is Accepted.
+
 ## C. Open questions (blocking the above)
 1. ~~Claude Design mockups + structured handoff~~ → RESOLVED 2026-07-07: handoff received (`design_handoff_spell_quest/`), kid screens complete; parent screens + §8 states still owed (B10).
 2. ~~`DEEPSEEK_API_KEY`~~ → RESOLVED 2026-07-07: key in `.env`, probe verified (TBD-001 closed). Also unblocks the Sonnet↔DeepSeek cross-author pairing (CLAUDE.md model policy) once the wrapper script exists.
