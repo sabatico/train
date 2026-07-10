@@ -165,6 +165,11 @@ function renderItem(view) {
 
 async function handleAnswer(itemId, attempt) {
   const res = await api.answer(itemId, attempt, "first");
+  if (res.next === "stay") {
+    // blank or unchanged answer — gentle nudge, no reveal, no advance
+    showNudge(res.message || "Give it a try first 🙂");
+    return;
+  }
   if (res.next === "retry") {
     showCorrection(
       root,
@@ -173,8 +178,21 @@ async function handleAnswer(itemId, attempt) {
       advance
     );
   } else {
+    if (res.message) speech.speakText(res.message);
     advance();
   }
+}
+
+function showNudge(message) {
+  const card = root.querySelector(".sq-card");
+  if (!card) return;
+  let nudge = card.querySelector(".sq-nudge");
+  if (!nudge) {
+    nudge = el("p", { class: "sq-card__instruction sq-nudge" });
+    card.appendChild(nudge);
+  }
+  nudge.textContent = message;
+  speech.speakText(message);
 }
 
 async function advance() {

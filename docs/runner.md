@@ -47,6 +47,7 @@ ADR-005..012 accepted; build items may proceed against them. ADR-007 got an inli
 | W2-5 | Stars banked at finish (bug: never persisted) + /api/home + gamified home/reward/collection | ✅ | 8-day arc: L4, 7 hatches, streak 8 |
 | W2-6 | Cross-authored redesign tests | ✅ | 66 tests, 669 total green; contracts 100%, session 99%, selector 98%; no bugs found |
 | W2-7 | beat_yesterday opt-in game | ☐ | T-013; the last PLAN §3 type |
+| W2-8 | Answer-flow hardening (anti-trick + typo-cascade responses) | ✅ | act-025; server-derived phase, blank/identical/retype policies, sanitization, bd plausibility, streak guard; browser-verified; cross-author tests running |
 
 ## D. Review/correction log (append per review or owner-correction round)
 - 2026-07-09 — CR2 (owner): \"present functionality path has no sense — re-review ALL functionality, redo in full.\" → ADR-014 + Wave 2 (section F). Root complaint validated by simulation; redesign shipped same day.

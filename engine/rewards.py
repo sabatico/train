@@ -91,10 +91,14 @@ def apply_session_end(
     skills_doc: dict,
     previous_masteries: dict[str, float],
     today: date,
+    *,
+    count_streak: bool = True,
 ) -> dict:
-    """Finish-of-session rewards bookkeeping: streak + creature hatching. Stars are
-    added per item during the session via add_stars(); this handles the once-per-
-    session effects. Returns the (mutated) rewards."""
-    _bump_streak(rewards, today)
+    """Finish-of-session rewards bookkeeping: streak + creature hatching.
+    `count_streak=False` when the session wasn't really done (an instant "finish"
+    can't farm the flame) — nothing is ever SUBTRACTED either way (invariant #3).
+    Returns the (mutated) rewards."""
+    if count_streak:
+        _bump_streak(rewards, today)
     hatch_creatures(rewards, skills_doc, previous_masteries, today)
     return rewards

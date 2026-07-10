@@ -98,6 +98,11 @@ LONG_WORD_MIN_DIFFICULTY = 4   # word_sequencing draws these
 CHALLENGE_ITEMS = 1            # PLAN §7 step 5 (skippable, only when unlocked)
 FOCUS_EXCLUDED = ("letter_orientation",)  # a mini-game can't be the lesson focus
 GAME_ITEMS_MAX = 1             # at most one bd_ninja round per session (variety)
+
+# ---- Answer-flow hardening (owner mandate 2026-07-09) ----
+MAX_RETYPE_TRIES = 2           # copying attempts after the reveal before moving on
+MAX_ATTEMPT_LEN = 200          # server-side clamp on any submitted answer
+MIN_RESOLVED_FRACTION = 0.5    # streak counts only if ≥ half the session was done
 BD_NINJA_LETTERS = 16          # letters per b/d round
 BD_NINJA_PASS = 0.8            # lenient game threshold (ADR-014 §4)
 

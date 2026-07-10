@@ -207,22 +207,39 @@ def test_retype_correct_gives_one_star_and_advances(bootstrapped_student):
     assert after_skills["skills"][skill_id]["mastery"] != before_mastery
 
 
-def test_retype_wrong_still_advances_never_traps(bootstrapped_student):
+def test_retype_wrong_gets_one_nudge_then_advances_never_traps(bootstrapped_student):
+    # HARDENED flow (2026-07-09): a wrong COPY of the revealed word earns one
+    # gentle "try again" (stay), and a second failure moves on warmly — never
+    # trapped, never punished, and each wrong retype must DIFFER (identical
+    # resubmits get a separate "same_again" nudge without counting).
     session.start_session(bootstrapped_student, today=DAY, rng=random.Random(SEED))
     item = _server_item(bootstrapped_student)
 
     session.submit_answer(
         bootstrapped_student, item["item_id"], "zzz_wrong", phase="first", today=DAY
     )
-    item_after_miss = _server_item(bootstrapped_student)
+    first_retry = session.submit_answer(
+        bootstrapped_student, item["item_id"], "still_wrong", phase="retry", today=DAY
+    )
+    assert first_retry["next"] == "stay"
+    assert first_retry["nudge"] == "copy_again"
+    assert store.load_current_session(bootstrapped_student)["cursor"] == 0  # held
+
+    # identical resubmit is caught separately and does not count a try
+    same = session.submit_answer(
+        bootstrapped_student, item["item_id"], "still_wrong", phase="retry", today=DAY
+    )
+    assert same["next"] == "stay" and same["nudge"] == "same_again"
+
     result = session.submit_answer(
-        bootstrapped_student, item_after_miss["item_id"], "still_wrong", phase="retry", today=DAY
+        bootstrapped_student, item["item_id"], "wrong_again", phase="retry", today=DAY
     )
     assert result["stars"] == 0
     assert result["next"] == "advance"
+    assert result["nudge"] == "move_on"
 
     state = store.load_current_session(bootstrapped_student)
-    assert state["cursor"] == 1  # advanced despite the wrong retype
+    assert state["cursor"] == 1  # advanced after the second distinct wrong copy
 
 
 # --------------------------------------------------------------- errors

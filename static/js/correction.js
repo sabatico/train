@@ -38,10 +38,24 @@ export function showCorrection(root, reveal, submitRetype, onContinue) {
     if (submitting) return; // guard against a double-tap re-entering
     submitting = true;
     go.disabled = true;
-    await submitRetype(input.value);
+    const res = await submitRetype(input.value);
+    // the server may ask her to try the copy again (typo on the retype,
+    // identical resubmit, blank) — stay in the overlay with a gentle nudge
+    if (res && res.next === "stay") {
+      nudgeEl.textContent = res.message || "Try once more 💪";
+      speech.speakText(nudgeEl.textContent);
+      input.select();
+      input.focus();
+      go.disabled = !input.value.trim();
+      submitting = false;
+      return;
+    }
+    if (res && res.message) speech.speakText(res.message);
     if (scrim.parentNode) root.removeChild(scrim);
     onContinue();
   }
+
+  const nudgeEl = el("p", { class: "sq-card__instruction sq-nudge", text: "" });
 
   const card = el("div", { class: "sq-card sq-card--almost" }, [
     el("p", { class: "sq-card__instruction", text: "Almost! Let's look together 💛" }),
@@ -56,6 +70,7 @@ export function showCorrection(root, reveal, submitRetype, onContinue) {
       el("p", { class: "sq-explain", text: reveal.why }),
     ]),
     el("p", { class: "sq-card__instruction", text: "Now you type it 🙂" }),
+    nudgeEl,
     input,
     go,
   ]);

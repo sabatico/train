@@ -99,11 +99,14 @@ def create_app() -> Flask:
         item_id, attempt = body.get("item_id"), body.get("attempt", "")
         if not item_id:
             return jsonify(error="item_id required"), 400
+        if not isinstance(attempt, str):
+            return jsonify(error="attempt must be a string"), 400
         result = session_engine.submit_answer(
             DEFAULT_STUDENT, item_id, attempt, phase=body.get("phase", "first")
         )
         status = 409 if result.get("error") in {"item_mismatch", "session_complete"} else 200
         status = 404 if result.get("error") == "no_active_session" else status
+        status = 400 if result.get("error") == "bad_attempt" else status
         return jsonify(result), status
 
     @app.post("/api/session/finish")

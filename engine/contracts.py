@@ -240,9 +240,11 @@ def build_item(
         "sentence_scribe": "listen, then write the sentence",
         "bd_ninja": f"pop only the {payload.get('target_letter', 'b')}!",
     }
-    grading = {"case_insensitive": True, "trim": True}
+    # punctuation is ALWAYS forgiven ("cat." from habit is not a spelling error);
+    # text types additionally collapse extra spaces (never punitive on mechanics)
+    grading = {"case_insensitive": True, "trim": True, "ignore_punctuation": True}
     if exercise_type in TEXT_TYPES:
-        grading.update({"collapse_spaces": True, "ignore_punctuation": True})
+        grading.update({"collapse_spaces": True})
     return {
         "contract_version": CONTRACT_VERSION,
         "item_id": str(uuid.uuid4()),

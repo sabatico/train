@@ -35,12 +35,17 @@ def _grade(item: dict, attempt: str) -> bool:
             item["payload"]["correct_bucket"], item["grading"]
         )
     if t == "bd_ninja":
-        # client-scored game (ADR-014 §4): attempt = "hits/wrong", lenient pass
+        # client-scored game (ADR-014 §4): attempt = "hits/wrong", lenient pass.
+        # Plausibility-checked: scores the round can't physically produce are
+        # rejected (a forged "99/0" is not a win).
         try:
             hits, wrong = (int(x) for x in attempt.split("/", 1))
         except (ValueError, AttributeError):
             return False
         goal = item["payload"].get("goal", 1)
+        max_wrong = len(item["payload"].get("letters", [])) - goal
+        if hits < 0 or wrong < 0 or hits > goal or wrong > max(0, max_wrong):
+            return False
         return hits >= max(1, round(goal * config.BD_NINJA_PASS)) and wrong <= 2
     return _normalize(attempt, item["grading"]) == _normalize(item["target"], item["grading"])
 
@@ -171,19 +176,38 @@ def skip_item(student_id: str) -> dict:
 
 
 # --------------------------------------------------------------- answer
+_ZERO_WIDTH = dict.fromkeys(map(ord, "​‌‍﻿"))
+
+
+def _sanitize_attempt(attempt) -> str | None:
+    """Defensive input hygiene: only strings, control/zero-width chars stripped,
+    length clamped (a 10k-char paste must not stall the Levenshtein aligner)."""
+    if not isinstance(attempt, str):
+        return None
+    cleaned = attempt.translate(_ZERO_WIDTH)
+    cleaned = "".join(ch for ch in cleaned if ch.isprintable())
+    return cleaned[: config.MAX_ATTEMPT_LEN]
+
+
 def submit_answer(
     student_id: str,
     item_id: str,
     attempt: str,
-    phase: str = "first",
+    phase: str = "first",  # kept for API compat; the REAL phase is server-derived
     today: date | None = None,
 ) -> dict:
     """Grade one answer server-side, classify a miss, update mastery, advance.
 
-    On a first-try miss: hold the cursor, return the reveal (correct word + markers
-    + why + audio) so the UI runs the correction routine, next="retry". On the
-    retype: score it and advance. Never traps the child — a wrong retry still
-    advances (she has seen the correct word)."""
+    HARDENED (owner mandate 2026-07-09) — every kid edge case gets a designed
+    response, and the client is never trusted about game state:
+    * the phase is DERIVED from stored attempts (a refresh after seeing the
+      reveal can never earn first-try stars);
+    * a blank answer never reveals the target (no free-answer cheat) — "stay";
+    * resubmitting the identical wrong answer doesn't double-count misses
+      (double-tap) — "stay" with a look-again nudge;
+    * after the reveal she gets MAX_RETYPE_TRIES copying attempts with gentle
+      nudges, then the session moves on warmly (never trapped, never punished).
+    """
     day = _today(today)
     state = store.load_current_session(student_id)
     if not state:
@@ -197,12 +221,39 @@ def submit_answer(
     if item["item_id"] != item_id:
         return {"error": "item_mismatch", "expected": item["item_id"]}
 
+    attempt = _sanitize_attempt(attempt)
+    if attempt is None:
+        return {"error": "bad_attempt"}
+
     target = item["target"]
+    grading = item["grading"]
+
+    # blank answer → never reveal; gentle nudge, nothing counted
+    if contracts.normalize_answer(attempt, grading) == "":
+        return {
+            "correct": False, "next": "stay", "nudge": "empty",
+            "message": "Type your answer first 🙂 Tap 🔊 to hear it again!",
+        }
+
+    # the TRUE phase comes from the server's own record, never the client
+    corrected = bool(entry["attempts"])
+
+    # identical resubmit of the last wrong answer (double-tap, or nothing changed)
+    if entry["attempts"]:
+        last = entry["attempts"][-1]
+        if contracts.normalize_answer(last["attempt"], grading) == contracts.normalize_answer(
+            attempt, grading
+        ):
+            return {
+                "correct": False, "next": "stay", "nudge": "same_again",
+                "message": "That's the same as before — look really closely 👀",
+            }
+
     correct = _grade(item, attempt)
     is_text = item["type"] in contracts.TEXT_TYPES
     if is_text or item["type"] == "bd_ninja":
         # multi-word / game answers aren't letter-aligned — tag coarsely
-        result = {"tags": ["correct"] if correct else ["pattern_violation"], "primary": None}
+        result = {"tags": ["correct"] if correct else ["pattern_violation"]}
         result["primary"] = result["tags"][0]
     else:
         result = classifier.classify(
@@ -212,10 +263,14 @@ def submit_answer(
             target_phonemes=entry["word"].get("phonemes"),
         )
     entry["attempts"].append(
-        {"attempt": attempt, "phase": phase, "correct": correct, "tags": result["tags"]}
+        {
+            "attempt": attempt,
+            "phase": "retry" if corrected else "first",
+            "correct": correct,
+            "tags": result["tags"],
+        }
     )
 
-    corrected = phase != "first"
     score = skills_mod.score_for(correct, corrected=corrected)
     stars = rewards.stars_for(correct, corrected=corrected)
 
@@ -251,7 +306,30 @@ def submit_answer(
             "next": "retry",
         }
 
-    # resolved (correct first try, or the retype): score mastery + advance
+    # wrong AGAIN while copying the revealed word → nudge, then move on warmly
+    if not correct and corrected:
+        entry["retype_tries"] = entry.get("retype_tries", 0) + 1
+        if entry["retype_tries"] < config.MAX_RETYPE_TRIES:
+            store.save_current_session(student_id, state)
+            return {
+                "correct": False, "next": "stay", "nudge": "copy_again",
+                "message": "Almost! Look at each letter and copy it once more 💪",
+            }
+        # enough — never trap the child on one word (PLAN §1)
+        _apply_mastery(student_id, entry["skill_id"], score, day)
+        entry["stars"] = 0
+        entry["resolved"] = True
+        state["cursor"] += 1
+        store.save_current_session(student_id, state)
+        return {
+            "correct": False, "stars": 0, "tags": result["tags"],
+            "next": "advance", "nudge": "move_on",
+            "message": "We'll practice that one again another day 💛",
+            "done": state["cursor"] >= len(state["items"]),
+            "totals": state["totals"],
+        }
+
+    # resolved correctly (first try, or the retype): score mastery + advance
     _apply_mastery(student_id, entry["skill_id"], score, day)
     entry["stars"] = stars
     entry["resolved"] = True
@@ -342,7 +420,11 @@ def finish_session(student_id: str, today: date | None = None) -> dict:
     # bank the session's earned stars (drives xp/levels — invariant #3 add-only)
     rewards.add_stars(rewards_doc, state["totals"]["stars"])
     hatched = rewards.hatch_creatures(rewards_doc, skills_doc, previous, day)
-    rewards.apply_session_end(rewards_doc, skills_doc, previous, day)
+    # the streak counts only for a REAL session (≥ half the items actually done) —
+    # finishing instantly to farm the flame doesn't work; stars stay as earned
+    resolved = sum(1 for e in state["items"] if e.get("resolved"))
+    did_enough = resolved >= max(1, int(len(state["items"]) * config.MIN_RESOLVED_FRACTION))
+    rewards.apply_session_end(rewards_doc, skills_doc, previous, day, count_streak=did_enough)
     store.save(student_id, "rewards", rewards_doc)
 
     log = {

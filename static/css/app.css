@@ -122,3 +122,6 @@ body { background: var(--sq-color-bg); margin: 0; }
   font-weight: 600;
 }
 .sq-reward-note { font-size: var(--sq-text-title); color: var(--sq-color-ink); text-align: center; }
+
+/* gentle nudge line (answer-flow hardening) */
+.sq-nudge { color: var(--sq-color-almost-ink); min-height: 1.6em; }
