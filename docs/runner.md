@@ -45,7 +45,7 @@ ADR-005..012 accepted; build items may proceed against them. ADR-007 got an inli
 | W2-3 | 6 new exercise types end-to-end (contracts+renderers) | ✅ | missing_letters, word_sort, heart_word_spotlight, phrase_dictation, sentence_scribe, bd_ninja |
 | W2-4 | Challenge slot + skip; writing review with whys; memory tail in prompts | ✅ | PLAN §7 shape restored; teacher.review_writing |
 | W2-5 | Stars banked at finish (bug: never persisted) + /api/home + gamified home/reward/collection | ✅ | 8-day arc: L4, 7 hatches, streak 8 |
-| W2-6 | Cross-authored redesign tests | ▶ | Sonnet agent running |
+| W2-6 | Cross-authored redesign tests | ✅ | 66 tests, 669 total green; contracts 100%, session 99%, selector 98%; no bugs found |
 | W2-7 | beat_yesterday opt-in game | ☐ | T-013; the last PLAN §3 type |
 
 ## D. Review/correction log (append per review or owner-correction round)
