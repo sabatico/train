@@ -71,11 +71,39 @@ def _build_teach(focus_skill: str, content) -> dict:
     }
 
 
+def _fresh_word(entry: dict) -> dict:
+    """The CURRENT bank version of this item's word (emoji/phoneme fixes apply to
+    in-flight sessions). Synthetic content (phrases/sentences/game rounds) has no
+    bank row and keeps its stored form."""
+    word = entry["word"]
+    if word.get("kind"):
+        return word
+    for w in store.load_word_bank(word.get("pattern", "")):
+        if w["word"] == word["word"]:
+            return w
+    return word
+
+
+def _served_item(entry: dict) -> dict:
+    """Rebuild the item AS SERVED from the current bank content — identity and
+    grading stay on the STORED item (item_id/target/answer keys are authoritative);
+    only what the child SEES is regenerated. This kills the whole 'stale baked
+    content' bug class (teach text, why lines, emojis, tiles) at the root: a
+    content fix reaches even a session already in progress (owner-found, thrice)."""
+    stored = entry["item"]
+    fresh = contracts.build_item(
+        stored["type"], stored["skill_id"], _fresh_word(entry), stored["scaffold_level"]
+    )
+    fresh["item_id"] = stored["item_id"]
+    fresh["target"] = stored["target"]
+    return fresh
+
+
 def _public_state(state: dict, student_id: str) -> dict:
     """The session view sent to the client (no answer keys)."""
     cursor = state["cursor"]
     items = state["items"]
-    item_view = contracts.public_item(items[cursor]["item"]) if cursor < len(items) else None
+    item_view = contracts.public_item(_served_item(items[cursor])) if cursor < len(items) else None
     slot = items[cursor].get("slot", "focus") if cursor < len(items) else None
     # Compute the teach card FRESH from the focus skill on every read (not from a
     # value baked into current.json at start), so content fixes apply immediately
