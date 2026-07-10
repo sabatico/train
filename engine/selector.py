@@ -72,9 +72,18 @@ def make_content_provider(skills_doc: dict, words_for, today):
                 else []
             )
         elif skill_id == "phoneme_segmentation":
-            out = [w for w in real_banks() if len(w.get("phonemes") or []) >= 2]
+            # only words whose sounds ARE their letters (heart words store sounds
+            # like they→th/ay that can't be built/typed — owner-found bug)
+            out = [
+                w for w in real_banks()
+                if len(w.get("phonemes") or []) >= 2
+                and "".join(w["phonemes"]).lower() == w["word"].lower()
+            ]
         elif skill_id == "word_sequencing":
-            pool = real_banks()
+            pool = [
+                w for w in real_banks()
+                if "".join(w.get("phonemes") or []).lower() == w["word"].lower()
+            ]
             out = [w for w in pool if w.get("difficulty", 1) >= config.LONG_WORD_MIN_DIFFICULTY]
             if not out:
                 out = [w for w in pool if len(w["word"]) >= 5]

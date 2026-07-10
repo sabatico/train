@@ -17,7 +17,7 @@
       ],
       "phrase": "come here",
       "sentence": "Come and play.",
-      "emoji": "👋",
+      "emoji": "",
       "distractors": [
         "u",
         "s"
@@ -37,7 +37,7 @@
       ],
       "phrase": "i have",
       "sentence": "I have a cat.",
-      "emoji": "🤲",
+      "emoji": "",
       "distractors": [
         "d",
         "g"
@@ -56,7 +56,7 @@
       ],
       "phrase": "a cup of tea",
       "sentence": "A cup of milk.",
-      "emoji": "🥛",
+      "emoji": "",
       "distractors": [
         "p",
         "n"
@@ -91,7 +91,7 @@
       "tricky_letters": [],
       "phrase": "go to bed",
       "sentence": "Let's go to park.",
-      "emoji": "➡️",
+      "emoji": "",
       "distractors": [
         "e",
         "w"
@@ -130,7 +130,7 @@
       ],
       "phrase": "it was",
       "sentence": "It was fun.",
-      "emoji": "🕰️",
+      "emoji": "",
       "distractors": [
         "i",
         "o"
@@ -187,7 +187,7 @@
       ],
       "phrase": "we are",
       "sentence": "We are here.",
-      "emoji": "🧑‍🤝‍🧑",
+      "emoji": "",
       "distractors": [
         "b",
         "g"
@@ -205,7 +205,7 @@
       "tricky_letters": [],
       "phrase": "buy a toy",
       "sentence": "I buy ice cream.",
-      "emoji": "🛒",
+      "emoji": "",
       "distractors": [
         "t",
         "q"
@@ -224,7 +224,7 @@
       "tricky_letters": [],
       "phrase": "from my home",
       "sentence": "This gift from mom.",
-      "emoji": "📦",
+      "emoji": "",
       "distractors": [
         "b",
         "e"
@@ -264,7 +264,7 @@
       "tricky_letters": [],
       "phrase": "many happy dogs",
       "sentence": "I see many stars.",
-      "emoji": "✨",
+      "emoji": "",
       "distractors": [
         "e",
         "g"
@@ -282,7 +282,7 @@
       "tricky_letters": [],
       "phrase": "put it down",
       "sentence": "Put the cup here.",
-      "emoji": "🫳",
+      "emoji": "",
       "distractors": [
         "i",
         "q"
@@ -303,7 +303,7 @@
       ],
       "phrase": "she said",
       "sentence": "She said hello.",
-      "emoji": "💬",
+      "emoji": "",
       "distractors": [
         "o",
         "t"
@@ -322,7 +322,7 @@
       "tricky_letters": [],
       "phrase": "some sweet candy",
       "sentence": "I want some cake.",
-      "emoji": "🍰",
+      "emoji": "",
       "distractors": [
         "b",
         "g"
@@ -341,7 +341,7 @@
       ],
       "phrase": "the sun",
       "sentence": "The sun is up.",
-      "emoji": "☀️",
+      "emoji": "",
       "distractors": [
         "k",
         "g"
@@ -361,7 +361,7 @@
       ],
       "phrase": "they run",
       "sentence": "They are happy.",
-      "emoji": "👫",
+      "emoji": "",
       "distractors": [
         "s",
         "u"
@@ -397,7 +397,7 @@
       "tricky_letters": [],
       "phrase": "what a fun",
       "sentence": "What is that sound?",
-      "emoji": "❓",
+      "emoji": "",
       "distractors": [
         "n",
         "o"
@@ -414,7 +414,7 @@
       "tricky_letters": [],
       "phrase": "who is here",
       "sentence": "Who has my hat?",
-      "emoji": "🧑‍🦰",
+      "emoji": "",
       "distractors": [
         "p",
         "q"
@@ -431,7 +431,7 @@
       "tricky_letters": [],
       "phrase": "your big smile",
       "sentence": "I like your toy.",
-      "emoji": "🧸",
+      "emoji": "",
       "distractors": [
         "k",
         "t"
@@ -467,7 +467,7 @@
       "tricky_letters": [],
       "phrase": "does it work",
       "sentence": "She does a dance.",
-      "emoji": "💃",
+      "emoji": "",
       "distractors": [
         "q",
         "n"
@@ -486,7 +486,7 @@
       "tricky_letters": [],
       "phrase": "done with fun",
       "sentence": "We are done now.",
-      "emoji": "✅",
+      "emoji": "",
       "distractors": [
         "u",
         "b"
@@ -521,7 +521,7 @@
       "tricky_letters": [],
       "phrase": "full of joy",
       "sentence": "My cup is full.",
-      "emoji": "🫗",
+      "emoji": "",
       "distractors": [
         "k",
         "b"
@@ -540,7 +540,7 @@
       "tricky_letters": [],
       "phrase": "give a hug",
       "sentence": "Give me five please.",
-      "emoji": "✋",
+      "emoji": "",
       "distractors": [
         "p",
         "l"
@@ -559,7 +559,7 @@
       "tricky_letters": [],
       "phrase": "gone for now",
       "sentence": "My bird is gone.",
-      "emoji": "🕊️",
+      "emoji": "",
       "distractors": [
         "b",
         "l"
@@ -577,7 +577,7 @@
       "tricky_letters": [],
       "phrase": "come here",
       "sentence": "Here is your toy.",
-      "emoji": "📍",
+      "emoji": "",
       "distractors": [
         "o",
         "s"
@@ -594,7 +594,7 @@
       "tricky_letters": [],
       "phrase": "I know",
       "sentence": "I know the answer.",
-      "emoji": "🧠",
+      "emoji": "",
       "distractors": [
         "r",
         "d"
@@ -613,7 +613,7 @@
       "tricky_letters": [],
       "phrase": "live happy",
       "sentence": "We live in a house.",
-      "emoji": "🏠",
+      "emoji": "",
       "distractors": [
         "d",
         "g"
@@ -632,7 +632,7 @@
       "tricky_letters": [],
       "phrase": "move fast",
       "sentence": "Move the red car.",
-      "emoji": "🚗",
+      "emoji": "",
       "distractors": [
         "t",
         "r"
@@ -651,7 +651,7 @@
       "tricky_letters": [],
       "phrase": "once upon",
       "sentence": "Once I saw a frog.",
-      "emoji": "🐸",
+      "emoji": "",
       "distractors": [
         "t",
         "k"
@@ -670,7 +670,7 @@
       "tricky_letters": [],
       "phrase": "only one",
       "sentence": "Only one cookie left.",
-      "emoji": "🍪",
+      "emoji": "",
       "distractors": [
         "a",
         "k"
@@ -688,7 +688,7 @@
       "tricky_letters": [],
       "phrase": "pull hard",
       "sentence": "Pull the big door.",
-      "emoji": "🚪",
+      "emoji": "",
       "distractors": [
         "w",
         "g"
@@ -725,7 +725,7 @@
       "tricky_letters": [],
       "phrase": "over there",
       "sentence": "There is a cat.",
-      "emoji": "🐱",
+      "emoji": "",
       "distractors": [
         "s",
         "i"
@@ -743,7 +743,7 @@
       "tricky_letters": [],
       "phrase": "very big",
       "sentence": "It is very fun.",
-      "emoji": "🎉",
+      "emoji": "",
       "distractors": [
         "i",
         "o"
@@ -781,7 +781,7 @@
       "tricky_letters": [],
       "phrase": "want cake",
       "sentence": "I want a hug.",
-      "emoji": "🤗",
+      "emoji": "",
       "distractors": [
         "l",
         "m"
@@ -802,7 +802,7 @@
       "tricky_letters": [],
       "phrase": "little bug",
       "sentence": "A little bird sings.",
-      "emoji": "🐦",
+      "emoji": "",
       "distractors": [
         "q",
         "k"
@@ -823,7 +823,7 @@
       "tricky_letters": [],
       "phrase": "happy people",
       "sentence": "People love to play.",
-      "emoji": "👫",
+      "emoji": "",
       "distractors": [
         "k",
         "r"
@@ -841,7 +841,7 @@
       "tricky_letters": [],
       "phrase": "where now",
       "sentence": "Where is my hat?",
-      "emoji": "🎩",
+      "emoji": "",
       "distractors": [
         "g",
         "t"
@@ -860,7 +860,7 @@
       "tricky_letters": [],
       "phrase": "play again",
       "sentence": "Let's read it again.",
-      "emoji": "🔄",
+      "emoji": "",
       "distractors": [
         "q",
         "o"
@@ -881,7 +881,7 @@
       "tricky_letters": [],
       "phrase": "because fun",
       "sentence": "I smile because happy.",
-      "emoji": "😊",
+      "emoji": "",
       "distractors": [
         "q",
         "o"
@@ -900,7 +900,7 @@
       "tricky_letters": [],
       "phrase": "could jump",
       "sentence": "I could run fast.",
-      "emoji": "🏃",
+      "emoji": "",
       "distractors": [
         "m",
         "b"
@@ -919,7 +919,7 @@
       "tricky_letters": [],
       "phrase": "every day",
       "sentence": "Every dog has a bone.",
-      "emoji": "🐕",
+      "emoji": "",
       "distractors": [
         "o",
         "b"
@@ -939,7 +939,7 @@
       "tricky_letters": [],
       "phrase": "best friend",
       "sentence": "My friend plays with me.",
-      "emoji": "🤝",
+      "emoji": "",
       "distractors": [
         "u",
         "b"
@@ -958,7 +958,7 @@
       "tricky_letters": [],
       "phrase": "You should go",
       "sentence": "You should eat now.",
-      "emoji": "👍",
+      "emoji": "",
       "distractors": [
         "g",
         "e"
@@ -996,7 +996,7 @@
       "tricky_letters": [],
       "phrase": "I would like",
       "sentence": "I would play outside.",
-      "emoji": "😊",
+      "emoji": "",
       "distractors": [
         "k",
         "m"

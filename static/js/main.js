@@ -39,10 +39,18 @@ function installSpeakButton() {
     html: "🔊",
     attrs: { type: "button", "aria-label": "read this page aloud" },
     on: {
-      click: () => {
+      click: async () => {
+        if (speech.isReading()) return;
         speech.unlock();
-        const t = screenText();
-        if (t) speech.speakText(t);
+        // ALWAYS say something — if the screen has no readable text, explain
+        // the task generically (owner: "I expect a readout of what to do")
+        const t = screenText() || "Listen with the sound button, then answer on the card!";
+        fab.classList.add("sq-speak-fab--busy"); // instant feedback while TTS synthesizes
+        try {
+          await speech.speakText(t);
+        } finally {
+          fab.classList.remove("sq-speak-fab--busy");
+        }
       },
     },
   });

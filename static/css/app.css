@@ -125,3 +125,10 @@ body { background: var(--sq-color-bg); margin: 0; }
 
 /* gentle nudge line (answer-flow hardening) */
 .sq-nudge { color: var(--sq-color-almost-ink); min-height: 1.6em; }
+
+/* speak button while TTS is being synthesized — instant visual feedback */
+.sq-speak-fab--busy { animation: sq-speak-pulse 0.9s ease-in-out infinite; }
+@keyframes sq-speak-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}

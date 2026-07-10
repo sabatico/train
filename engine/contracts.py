@@ -18,7 +18,7 @@ import random
 import re
 import uuid
 
-from . import config
+from . import config, phonics
 
 CONTRACT_VERSION = 1
 
@@ -48,10 +48,11 @@ def why_for(skill_id: str, word_entry: dict) -> tuple[str, str]:
     static template (PLAN §1: segment each sound, then blend to the word). Decodable
     patterns get the sound-by-sound blend; irregular heart words are learned whole.
     The agent may still replace the text at feedback time (ADR-012); this is the
-    always-available, word-correct fallback (ADR-002)."""
+    always-available, word-correct fallback (ADR-002). Sound-outs use SPELLABLE
+    units — never sound-phonemes that don't rejoin to the letters (a "/th/ /a/ →
+    they" line asks the child to type the wrong thing; owner-found bug)."""
     word = word_entry["word"]
-    phonemes = word_entry.get("phonemes") or list(word)
-    sounds = _sound_out(phonemes)
+    sounds = _sound_out(spellable_units(word_entry))
     if skill_id == "heart_words":
         return ("heart_word_by_heart", f"“{word}” is a heart word — learn it by heart ❤️.")
     if skill_id == "magic_e":
@@ -75,6 +76,18 @@ def why_for(skill_id: str, word_entry: dict) -> tuple[str, str]:
 
 
 # --------------------------------------------------------------- phoneme helpers
+def spellable_units(word_entry: dict) -> list[str]:
+    """The units a SPELLING exercise may be built from: the stored phonemes IF
+    they rejoin to the word's letters (grapheme-based), else the word's grapheme
+    segments. Heart words store SOUNDS ('they' → th/ay) which must never become
+    tiles/boxes — you can't spell 'they' from /th/ /a/ (owner-found bug)."""
+    word = word_entry["word"]
+    phonemes = word_entry.get("phonemes") or []
+    if "".join(phonemes).lower() == word.lower():
+        return phonemes
+    return phonics.segment_graphemes(word)
+
+
 def phoneme_letter_groups(word: str, phonemes: list[str]) -> list[list[int]]:
     """Map each phoneme to the LETTER indices it spans (ship → [[0,1],[2],[3]]).
 
@@ -101,26 +114,27 @@ def _markers_for(word_entry: dict) -> list[list[int]]:
     tricky = word_entry.get("tricky_letters") or []
     if tricky:
         return [[i] for i in tricky]
-    word, phonemes = word_entry["word"], word_entry.get("phonemes", [])
-    return [g for g in phoneme_letter_groups(word, phonemes) if len(g) > 1]
+    word = word_entry["word"]
+    return [g for g in phoneme_letter_groups(word, spellable_units(word_entry)) if len(g) > 1]
 
 
 # --------------------------------------------------------------- payload builders
 def _payload_word_builder(word_entry: dict, distractor_pool: list[str]) -> dict:
-    """Tiles (phoneme graphemes + distractors) that tap into sound boxes."""
-    phonemes = word_entry.get("phonemes") or list(word_entry["word"])
-    tiles = list(phonemes) + list(word_entry.get("distractors") or distractor_pool[:2])
-    sound_boxes = [{"width": "digraph" if len(p) > 1 else "single"} for p in phonemes]
+    """Tiles that tap into sound boxes. Tiles are SPELLABLE units (graphemes) —
+    joining the correct tiles ALWAYS spells the target (never sound-phonemes
+    like they→/th/ /a/, which made the exercise impossible)."""
+    units = spellable_units(word_entry)
+    tiles = list(units) + list(word_entry.get("distractors") or distractor_pool[:2])
+    sound_boxes = [{"width": "digraph" if len(p) > 1 else "single"} for p in units]
     return {"sound_boxes": sound_boxes, "tiles": tiles}
 
 
 def _payload_letter_boxes(word_entry: dict) -> dict:
     """One input box per LETTER; phoneme_groups draw the digraph brackets."""
     word = word_entry["word"]
-    phonemes = word_entry.get("phonemes") or list(word)
     return {
         "boxes": [{"count": 1} for _ in word],
-        "phoneme_groups": phoneme_letter_groups(word, phonemes),
+        "phoneme_groups": phoneme_letter_groups(word, spellable_units(word_entry)),
     }
 
 

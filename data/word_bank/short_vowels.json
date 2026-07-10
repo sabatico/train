@@ -14,7 +14,7 @@
       "tricky_letters": [],
       "phrase": "bad apple",
       "sentence": "That apple is bad.",
-      "emoji": "🍎",
+      "emoji": "",
       "distractors": [
         "i",
         "r"
@@ -86,7 +86,7 @@
       "tricky_letters": [],
       "phrase": "beg for",
       "sentence": "Do not beg me.",
-      "emoji": "🙏",
+      "emoji": "",
       "distractors": [
         "k",
         "i"
@@ -122,7 +122,7 @@
       "tricky_letters": [],
       "phrase": "big dog",
       "sentence": "That is a big dog.",
-      "emoji": "🐕",
+      "emoji": "",
       "distractors": [
         "w",
         "u"
@@ -140,7 +140,7 @@
       "tricky_letters": [],
       "phrase": "trash bin",
       "sentence": "Put it in bin.",
-      "emoji": "🗑️",
+      "emoji": "",
       "distractors": [
         "g",
         "a"
@@ -158,7 +158,7 @@
       "tricky_letters": [],
       "phrase": "a bit",
       "sentence": "I bit the cookie.",
-      "emoji": "🍪",
+      "emoji": "",
       "distractors": [
         "w",
         "k"
@@ -176,7 +176,7 @@
       "tricky_letters": [],
       "phrase": "bog land",
       "sentence": "The bog is wet.",
-      "emoji": "🌿",
+      "emoji": "",
       "distractors": [
         "r",
         "d"
@@ -230,7 +230,7 @@
       "tricky_letters": [],
       "phrase": "hot dog bun",
       "sentence": "I eat a bun.",
-      "emoji": "🌭",
+      "emoji": "",
       "distractors": [
         "o",
         "q"
@@ -284,7 +284,7 @@
       "tricky_letters": [],
       "phrase": "blue cap",
       "sentence": "Put on your cap.",
-      "emoji": "🧢",
+      "emoji": "",
       "distractors": [
         "k",
         "i"
@@ -320,7 +320,7 @@
       "tricky_letters": [],
       "phrase": "corn cob",
       "sentence": "I hold a cob.",
-      "emoji": "🌽",
+      "emoji": "",
       "distractors": [
         "e",
         "m"
@@ -338,7 +338,7 @@
       "tricky_letters": [],
       "phrase": "cod fish",
       "sentence": "I see a cod.",
-      "emoji": "🐟",
+      "emoji": "",
       "distractors": [
         "b",
         "m"
@@ -356,7 +356,7 @@
       "tricky_letters": [],
       "phrase": "police cop",
       "sentence": "The cop helps us.",
-      "emoji": "👮",
+      "emoji": "",
       "distractors": [
         "d",
         "i"
@@ -374,7 +374,7 @@
       "tricky_letters": [],
       "phrase": "baby cot",
       "sentence": "Sleep in your cot.",
-      "emoji": "🛏️",
+      "emoji": "",
       "distractors": [
         "i",
         "m"
@@ -392,7 +392,7 @@
       "tricky_letters": [],
       "phrase": "tea cup",
       "sentence": "Drink from the cup.",
-      "emoji": "☕",
+      "emoji": "",
       "distractors": [
         "l",
         "m"
@@ -410,7 +410,7 @@
       "tricky_letters": [],
       "phrase": "cut paper",
       "sentence": "I cut the string.",
-      "emoji": "✂️",
+      "emoji": "",
       "distractors": [
         "g",
         "k"
@@ -428,7 +428,7 @@
       "tricky_letters": [],
       "phrase": "my cool dad",
       "sentence": "Dad reads me stories.",
-      "emoji": "👨",
+      "emoji": "",
       "distractors": [
         "i",
         "r"
@@ -446,7 +446,7 @@
       "tricky_letters": [],
       "phrase": "cozy bear den",
       "sentence": "The den is dark.",
-      "emoji": "🐻",
+      "emoji": "",
       "distractors": [
         "w",
         "o"
@@ -464,7 +464,7 @@
       "tricky_letters": [],
       "phrase": "dig a hole",
       "sentence": "I dig in sand.",
-      "emoji": "⛏️",
+      "emoji": "",
       "distractors": [
         "n",
         "o"
@@ -482,7 +482,7 @@
       "tricky_letters": [],
       "phrase": "dim the light",
       "sentence": "The room is dim.",
-      "emoji": "💡",
+      "emoji": "",
       "distractors": [
         "t",
         "k"
@@ -500,7 +500,7 @@
       "tricky_letters": [],
       "phrase": "dip in sauce",
       "sentence": "Dip the chip now.",
-      "emoji": "🍟",
+      "emoji": "",
       "distractors": [
         "q",
         "m"
@@ -536,7 +536,7 @@
       "tricky_letters": [],
       "phrase": "tiny red dot",
       "sentence": "A dot on paper.",
-      "emoji": "🔴",
+      "emoji": "",
       "distractors": [
         "l",
         "k"
@@ -554,7 +554,7 @@
       "tricky_letters": [],
       "phrase": "dug a pit",
       "sentence": "Dog dug in dirt.",
-      "emoji": "🐕",
+      "emoji": "",
       "distractors": [
         "w",
         "r"
@@ -572,7 +572,7 @@
       "tricky_letters": [],
       "phrase": "spin the fan",
       "sentence": "Fan blows cold air.",
-      "emoji": "🌀",
+      "emoji": "",
       "distractors": [
         "d",
         "w"
@@ -590,7 +590,7 @@
       "tricky_letters": [],
       "phrase": "fat fluffy cat",
       "sentence": "The cat is fat.",
-      "emoji": "🐱",
+      "emoji": "",
       "distractors": [
         "m",
         "b"
@@ -608,7 +608,7 @@
       "tricky_letters": [],
       "phrase": "fed the fish",
       "sentence": "Mom fed the cat.",
-      "emoji": "🍽️",
+      "emoji": "",
       "distractors": [
         "i",
         "q"
@@ -626,7 +626,7 @@
       "tricky_letters": [],
       "phrase": "shark's big fin",
       "sentence": "Fish has a fin.",
-      "emoji": "🦈",
+      "emoji": "",
       "distractors": [
         "q",
         "r"
@@ -644,7 +644,7 @@
       "tricky_letters": [],
       "phrase": "fit the lid",
       "sentence": "The shoe fits me.",
-      "emoji": "👟",
+      "emoji": "",
       "distractors": [
         "s",
         "r"
@@ -662,7 +662,7 @@
       "tricky_letters": [],
       "phrase": "fix the toy",
       "sentence": "Dad can fix it.",
-      "emoji": "🔧",
+      "emoji": "",
       "distractors": [
         "t",
         "a"
@@ -716,7 +716,7 @@
       "tricky_letters": [],
       "phrase": "lots of fun",
       "sentence": "This game is fun.",
-      "emoji": "🎉",
+      "emoji": "",
       "distractors": [
         "i",
         "m"
@@ -734,7 +734,7 @@
       "tricky_letters": [],
       "phrase": "jump the gap",
       "sentence": "A gap in fence.",
-      "emoji": "⬜",
+      "emoji": "",
       "distractors": [
         "m",
         "t"
@@ -752,7 +752,7 @@
       "tricky_letters": [],
       "phrase": "get a snack",
       "sentence": "I get the ball.",
-      "emoji": "🙌",
+      "emoji": "",
       "distractors": [
         "o",
         "u"
@@ -770,7 +770,7 @@
       "tricky_letters": [],
       "phrase": "got a gift",
       "sentence": "I got a new toy.",
-      "emoji": "🎁",
+      "emoji": "",
       "distractors": [
         "p",
         "i"
@@ -788,7 +788,7 @@
       "tricky_letters": [],
       "phrase": "chew pink gum",
       "sentence": "Gum is fun to chew.",
-      "emoji": "🫧",
+      "emoji": "",
       "distractors": [
         "e",
         "t"
@@ -842,7 +842,7 @@
       "tricky_letters": [],
       "phrase": "ham sandwich",
       "sentence": "I eat ham now.",
-      "emoji": "🍖",
+      "emoji": "",
       "distractors": [
         "n",
         "d"
@@ -896,7 +896,7 @@
       "tricky_letters": [],
       "phrase": "a red hen",
       "sentence": "The hen has an egg.",
-      "emoji": "🐔",
+      "emoji": "",
       "distractors": [
         "n",
         "a"
@@ -932,7 +932,7 @@
       "tricky_letters": [],
       "phrase": "hit the ball",
       "sentence": "Hit the ball hard.",
-      "emoji": "⚾",
+      "emoji": "",
       "distractors": [
         "k",
         "n"
@@ -950,7 +950,7 @@
       "tricky_letters": [],
       "phrase": "hop on one",
       "sentence": "Hop like a frog.",
-      "emoji": "🐸",
+      "emoji": "",
       "distractors": [
         "w",
         "t"
@@ -968,7 +968,7 @@
       "tricky_letters": [],
       "phrase": "hot soup",
       "sentence": "The soup is hot.",
-      "emoji": "🌶️",
+      "emoji": "",
       "distractors": [
         "w",
         "a"
@@ -1004,7 +1004,7 @@
       "tricky_letters": [],
       "phrase": "hum a song",
       "sentence": "Hum your favorite tune.",
-      "emoji": "🎵",
+      "emoji": "",
       "distractors": [
         "n",
         "q"
@@ -1022,7 +1022,7 @@
       "tricky_letters": [],
       "phrase": "grass hut",
       "sentence": "We built a hut.",
-      "emoji": "🏠",
+      "emoji": "",
       "distractors": [
         "p",
         "m"
@@ -1040,7 +1040,7 @@
       "tricky_letters": [],
       "phrase": "strawberry jam",
       "sentence": "I love jam toast.",
-      "emoji": "🍓",
+      "emoji": "",
       "distractors": [
         "u",
         "l"
@@ -1058,7 +1058,7 @@
       "tricky_letters": [],
       "phrase": "fast jet",
       "sentence": "The jet flies high.",
-      "emoji": "✈️",
+      "emoji": "",
       "distractors": [
         "p",
         "u"
@@ -1076,7 +1076,7 @@
       "tricky_letters": [],
       "phrase": "fun job",
       "sentence": "My job is fun.",
-      "emoji": "💼",
+      "emoji": "",
       "distractors": [
         "n",
         "e"
@@ -1094,7 +1094,7 @@
       "tricky_letters": [],
       "phrase": "jog slowly",
       "sentence": "Let's jog outside.",
-      "emoji": "🏃",
+      "emoji": "",
       "distractors": [
         "n",
         "m"
@@ -1112,7 +1112,7 @@
       "tricky_letters": [],
       "phrase": "water jug",
       "sentence": "Fill the jug up.",
-      "emoji": "🏺",
+      "emoji": "",
       "distractors": [
         "b",
         "n"
@@ -1130,7 +1130,7 @@
       "tricky_letters": [],
       "phrase": "happy kid",
       "sentence": "I am a kid.",
-      "emoji": "👦",
+      "emoji": "",
       "distractors": [
         "a",
         "t"
@@ -1148,7 +1148,7 @@
       "tricky_letters": [],
       "phrase": "art kit",
       "sentence": "Open your art kit.",
-      "emoji": "🎨",
+      "emoji": "",
       "distractors": [
         "o",
         "n"
@@ -1184,7 +1184,7 @@
       "tricky_letters": [],
       "phrase": "led the way",
       "sentence": "The dog led me.",
-      "emoji": "🐕",
+      "emoji": "",
       "distractors": [
         "w",
         "o"
@@ -1220,7 +1220,7 @@
       "tricky_letters": [],
       "phrase": "let it go",
       "sentence": "Let me play.",
-      "emoji": "🎈",
+      "emoji": "",
       "distractors": [
         "k",
         "b"
@@ -1238,7 +1238,7 @@
       "tricky_letters": [],
       "phrase": "pot lid",
       "sentence": "Put on the lid.",
-      "emoji": "🍲",
+      "emoji": "",
       "distractors": [
         "s",
         "e"
@@ -1256,7 +1256,7 @@
       "tricky_letters": [],
       "phrase": "red lip",
       "sentence": "My lip is pink.",
-      "emoji": "👄",
+      "emoji": "",
       "distractors": [
         "n",
         "u"
@@ -1274,7 +1274,7 @@
       "tricky_letters": [],
       "phrase": "lit a candle",
       "sentence": "The lamp lit up.",
-      "emoji": "🕯️",
+      "emoji": "",
       "distractors": [
         "g",
         "s"
@@ -1310,7 +1310,7 @@
       "tricky_letters": [],
       "phrase": "a lot",
       "sentence": "I have a lot.",
-      "emoji": "📦",
+      "emoji": "",
       "distractors": [
         "d",
         "i"
@@ -1328,7 +1328,7 @@
       "tricky_letters": [],
       "phrase": "mad at me",
       "sentence": "I feel mad.",
-      "emoji": "😠",
+      "emoji": "",
       "distractors": [
         "k",
         "i"
@@ -1382,7 +1382,7 @@
       "tricky_letters": [],
       "phrase": "strong men",
       "sentence": "The men run fast.",
-      "emoji": "👨‍👨",
+      "emoji": "",
       "distractors": [
         "w",
         "a"
@@ -1400,7 +1400,7 @@
       "tricky_letters": [],
       "phrase": "met a friend",
       "sentence": "I met you today.",
-      "emoji": "🤝",
+      "emoji": "",
       "distractors": [
         "w",
         "s"
@@ -1418,7 +1418,7 @@
       "tricky_letters": [],
       "phrase": "mix it up",
       "sentence": "Mix the colors now.",
-      "emoji": "🎨",
+      "emoji": "",
       "distractors": [
         "d",
         "a"
@@ -1436,7 +1436,7 @@
       "tricky_letters": [],
       "phrase": "big mob",
       "sentence": "A mob of sheep.",
-      "emoji": "🐑",
+      "emoji": "",
       "distractors": [
         "q",
         "n"
@@ -1454,7 +1454,7 @@
       "tricky_letters": [],
       "phrase": "wet mop",
       "sentence": "Mop the floor.",
-      "emoji": "🧹",
+      "emoji": "",
       "distractors": [
         "w",
         "l"
@@ -1472,7 +1472,7 @@
       "tricky_letters": [],
       "phrase": "sticky mud",
       "sentence": "I love mud puddles.",
-      "emoji": "🫧",
+      "emoji": "",
       "distractors": [
         "s",
         "e"
@@ -1490,7 +1490,7 @@
       "tricky_letters": [],
       "phrase": "blue mug",
       "sentence": "My mug is warm.",
-      "emoji": "☕",
+      "emoji": "",
       "distractors": [
         "n",
         "t"
@@ -1508,7 +1508,7 @@
       "tricky_letters": [],
       "phrase": "quick nap",
       "sentence": "Time for a nap.",
-      "emoji": "😴",
+      "emoji": "",
       "distractors": [
         "l",
         "k"
@@ -1526,7 +1526,7 @@
       "tricky_letters": [],
       "phrase": "fishing net",
       "sentence": "The net catches fish.",
-      "emoji": "🎣",
+      "emoji": "",
       "distractors": [
         "u",
         "w"
@@ -1544,7 +1544,7 @@
       "tricky_letters": [],
       "phrase": "nod your head",
       "sentence": "I nod and smile.",
-      "emoji": "🙂",
+      "emoji": "",
       "distractors": [
         "t",
         "l"
@@ -1562,7 +1562,7 @@
       "tricky_letters": [],
       "phrase": "not yet",
       "sentence": "I am not sad.",
-      "emoji": "🚫",
+      "emoji": "",
       "distractors": [
         "l",
         "k"
@@ -1580,7 +1580,7 @@
       "tricky_letters": [],
       "phrase": "nut snack",
       "sentence": "The nut is yummy.",
-      "emoji": "🥜",
+      "emoji": "",
       "distractors": [
         "p",
         "l"
@@ -1598,7 +1598,7 @@
       "tricky_letters": [],
       "phrase": "frying pan",
       "sentence": "Mom has a pan.",
-      "emoji": "🍳",
+      "emoji": "",
       "distractors": [
         "m",
         "b"
@@ -1616,7 +1616,7 @@
       "tricky_letters": [],
       "phrase": "pat the dog",
       "sentence": "Pat the soft cat.",
-      "emoji": "🐱",
+      "emoji": "",
       "distractors": [
         "k",
         "w"
@@ -1634,7 +1634,7 @@
       "tricky_letters": [],
       "phrase": "peg on line",
       "sentence": "Hang it with peg.",
-      "emoji": "🧷",
+      "emoji": "",
       "distractors": [
         "t",
         "a"
@@ -1670,7 +1670,7 @@
       "tricky_letters": [],
       "phrase": "pet a dog",
       "sentence": "I love my pet.",
-      "emoji": "🐕",
+      "emoji": "",
       "distractors": [
         "k",
         "m"
@@ -1724,7 +1724,7 @@
       "tricky_letters": [],
       "phrase": "peach pit",
       "sentence": "The pit is hard.",
-      "emoji": "🍑",
+      "emoji": "",
       "distractors": [
         "o",
         "r"
@@ -1742,7 +1742,7 @@
       "tricky_letters": [],
       "phrase": "pea pod",
       "sentence": "Open the green pod.",
-      "emoji": "🫛",
+      "emoji": "",
       "distractors": [
         "i",
         "t"
@@ -1760,7 +1760,7 @@
       "tricky_letters": [],
       "phrase": "pop a balloon",
       "sentence": "Pop goes the bubble.",
-      "emoji": "🎈",
+      "emoji": "",
       "distractors": [
         "l",
         "n"
@@ -1778,7 +1778,7 @@
       "tricky_letters": [],
       "phrase": "flower pot",
       "sentence": "Put it in pot.",
-      "emoji": "🪴",
+      "emoji": "",
       "distractors": [
         "k",
         "w"
@@ -1796,7 +1796,7 @@
       "tricky_letters": [],
       "phrase": "cute pup",
       "sentence": "The pup is small.",
-      "emoji": "🐶",
+      "emoji": "",
       "distractors": [
         "q",
         "a"
@@ -1814,7 +1814,7 @@
       "tricky_letters": [],
       "phrase": "clean rag",
       "sentence": "Wipe with a rag.",
-      "emoji": "🧽",
+      "emoji": "",
       "distractors": [
         "n",
         "b"
@@ -1832,7 +1832,7 @@
       "tricky_letters": [],
       "phrase": "ran fast",
       "sentence": "I ran to mom.",
-      "emoji": "🏃",
+      "emoji": "",
       "distractors": [
         "k",
         "l"
@@ -1886,7 +1886,7 @@
       "tricky_letters": [],
       "phrase": "rib bone",
       "sentence": "Eat the rib bone.",
-      "emoji": "🍖",
+      "emoji": "",
       "distractors": [
         "o",
         "g"
@@ -1904,7 +1904,7 @@
       "tricky_letters": [],
       "phrase": "rip the paper",
       "sentence": "Don't rip the book.",
-      "emoji": "📄",
+      "emoji": "",
       "distractors": [
         "g",
         "s"
@@ -1922,7 +1922,7 @@
       "tricky_letters": [],
       "phrase": "rob a bank",
       "sentence": "Rob is not nice.",
-      "emoji": "🚔",
+      "emoji": "",
       "distractors": [
         "g",
         "a"
@@ -1940,7 +1940,7 @@
       "tricky_letters": [],
       "phrase": "fishing rod",
       "sentence": "I hold the rod.",
-      "emoji": "🎣",
+      "emoji": "",
       "distractors": [
         "m",
         "a"
@@ -1958,7 +1958,7 @@
       "tricky_letters": [],
       "phrase": "apple rot",
       "sentence": "The apple will rot.",
-      "emoji": "🍎",
+      "emoji": "",
       "distractors": [
         "p",
         "m"
@@ -1976,7 +1976,7 @@
       "tricky_letters": [],
       "phrase": "soft rug",
       "sentence": "I sit on rug.",
-      "emoji": "🧶",
+      "emoji": "",
       "distractors": [
         "w",
         "q"
@@ -1994,7 +1994,7 @@
       "tricky_letters": [],
       "phrase": "run fast",
       "sentence": "I run to mom.",
-      "emoji": "🏃",
+      "emoji": "",
       "distractors": [
         "d",
         "o"
@@ -2030,7 +2030,7 @@
       "tricky_letters": [],
       "phrase": "sat down",
       "sentence": "I sat on chair.",
-      "emoji": "🪑",
+      "emoji": "",
       "distractors": [
         "m",
         "e"
@@ -2048,7 +2048,7 @@
       "tricky_letters": [],
       "phrase": "set table",
       "sentence": "Set the table please.",
-      "emoji": "🍽️",
+      "emoji": "",
       "distractors": [
         "w",
         "n"
@@ -2066,7 +2066,7 @@
       "tricky_letters": [],
       "phrase": "sip milk",
       "sentence": "I sip my milk.",
-      "emoji": "🥛",
+      "emoji": "",
       "distractors": [
         "l",
         "k"
@@ -2084,7 +2084,7 @@
       "tricky_letters": [],
       "phrase": "sit still",
       "sentence": "Sit on the mat.",
-      "emoji": "🧘",
+      "emoji": "",
       "distractors": [
         "n",
         "b"
@@ -2120,7 +2120,7 @@
       "tricky_letters": [],
       "phrase": "sob cry",
       "sentence": "I sob very loud.",
-      "emoji": "😭",
+      "emoji": "",
       "distractors": [
         "k",
         "t"
@@ -2138,7 +2138,7 @@
       "tricky_letters": [],
       "phrase": "sub sandwich",
       "sentence": "I eat a sub.",
-      "emoji": "🥪",
+      "emoji": "",
       "distractors": [
         "w",
         "i"
@@ -2174,7 +2174,7 @@
       "tricky_letters": [],
       "phrase": "play tag",
       "sentence": "We play tag now.",
-      "emoji": "🏷️",
+      "emoji": "",
       "distractors": [
         "n",
         "q"
@@ -2192,7 +2192,7 @@
       "tricky_letters": [],
       "phrase": "tap dance",
       "sentence": "I tap the door.",
-      "emoji": "🚪",
+      "emoji": "",
       "distractors": [
         "n",
         "i"
@@ -2228,7 +2228,7 @@
       "tricky_letters": [],
       "phrase": "tin can",
       "sentence": "The tin is shiny.",
-      "emoji": "🥫",
+      "emoji": "",
       "distractors": [
         "u",
         "m"
@@ -2246,7 +2246,7 @@
       "tricky_letters": [],
       "phrase": "tip toe",
       "sentence": "I tip the cup.",
-      "emoji": "🥤",
+      "emoji": "",
       "distractors": [
         "o",
         "k"
@@ -2282,7 +2282,7 @@
       "tricky_letters": [],
       "phrase": "bath tub",
       "sentence": "I sit in tub.",
-      "emoji": "🛁",
+      "emoji": "",
       "distractors": [
         "r",
         "e"
@@ -2300,7 +2300,7 @@
       "tricky_letters": [],
       "phrase": "tug boat",
       "sentence": "Tug the rope hard.",
-      "emoji": "🛳️",
+      "emoji": "",
       "distractors": [
         "e",
         "s"
@@ -2336,7 +2336,7 @@
       "tricky_letters": [],
       "phrase": "dog wag",
       "sentence": "Dog wag tail.",
-      "emoji": "🐕",
+      "emoji": "",
       "distractors": [
         "b",
         "t"
@@ -2354,7 +2354,7 @@
       "tricky_letters": [],
       "phrase": "spider web",
       "sentence": "Web is sticky.",
-      "emoji": "🕸️",
+      "emoji": "",
       "distractors": [
         "d",
         "o"
@@ -2372,7 +2372,7 @@
       "tricky_letters": [],
       "phrase": "wet dog",
       "sentence": "My dog wet.",
-      "emoji": "💧",
+      "emoji": "",
       "distractors": [
         "i",
         "u"
@@ -2390,7 +2390,7 @@
       "tricky_letters": [],
       "phrase": "funny wig",
       "sentence": "Wig is silly.",
-      "emoji": "👱",
+      "emoji": "",
       "distractors": [
         "k",
         "d"
@@ -2408,7 +2408,7 @@
       "tricky_letters": [],
       "phrase": "big win",
       "sentence": "We win game.",
-      "emoji": "🏆",
+      "emoji": "",
       "distractors": [
         "l",
         "p"
@@ -2426,7 +2426,7 @@
       "tricky_letters": [],
       "phrase": "sweet yam",
       "sentence": "Yam is yummy.",
-      "emoji": "🍠",
+      "emoji": "",
       "distractors": [
         "w",
         "q"
@@ -2444,7 +2444,7 @@
       "tricky_letters": [],
       "phrase": "say yes",
       "sentence": "Yes, I can.",
-      "emoji": "👍",
+      "emoji": "",
       "distractors": [
         "d",
         "l"
@@ -2462,7 +2462,7 @@
       "tricky_letters": [],
       "phrase": "zap bug",
       "sentence": "Zap the bug.",
-      "emoji": "⚡",
+      "emoji": "",
       "distractors": [
         "k",
         "b"
@@ -2480,7 +2480,7 @@
       "tricky_letters": [],
       "phrase": "zip coat",
       "sentence": "Zip your coat.",
-      "emoji": "🤐",
+      "emoji": "",
       "distractors": [
         "n",
         "l"

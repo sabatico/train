@@ -53,7 +53,7 @@
       "tricky_letters": [],
       "phrase": "colorful cups",
       "sentence": "Cups hold juice.",
-      "emoji": "🥤",
+      "emoji": "",
       "distractors": [
         "g",
         "b"
@@ -72,7 +72,7 @@
       "tricky_letters": [],
       "phrase": "happy digs",
       "sentence": "Dog digs in sand.",
-      "emoji": "🐶",
+      "emoji": "",
       "distractors": [
         "q",
         "a"
@@ -129,7 +129,7 @@
       "tricky_letters": [],
       "phrase": "bunny hops",
       "sentence": "Bunny hops very high.",
-      "emoji": "🐇",
+      "emoji": "",
       "distractors": [
         "w",
         "a"
@@ -186,7 +186,7 @@
       "tricky_letters": [],
       "phrase": "fast runs",
       "sentence": "She runs to play.",
-      "emoji": "🏃",
+      "emoji": "",
       "distractors": [
         "t",
         "o"
@@ -205,7 +205,7 @@
       "tricky_letters": [],
       "phrase": "sits down",
       "sentence": "Cat sits on mat.",
-      "emoji": "🐈",
+      "emoji": "",
       "distractors": [
         "w",
         "n"
@@ -225,7 +225,7 @@
       "tricky_letters": [],
       "phrase": "bigger toy",
       "sentence": "My truck is bigger.",
-      "emoji": "🚚",
+      "emoji": "",
       "distractors": [
         "o",
         "d"
@@ -245,7 +245,7 @@
       "tricky_letters": [],
       "phrase": "big boxes",
       "sentence": "Boxes hide surprises inside.",
-      "emoji": "📦",
+      "emoji": "",
       "distractors": [
         "a",
         "q"
@@ -265,7 +265,7 @@
       "tricky_letters": [],
       "phrase": "yellow buses",
       "sentence": "Buses take us to school.",
-      "emoji": "🚌",
+      "emoji": "",
       "distractors": [
         "k",
         "g"
@@ -285,7 +285,7 @@
       "tricky_letters": [],
       "phrase": "clean dishes",
       "sentence": "Dishes go in sink.",
-      "emoji": "🍽️",
+      "emoji": "",
       "distractors": [
         "o",
         "w"
@@ -304,7 +304,7 @@
       "tricky_letters": [],
       "phrase": "eating snacks",
       "sentence": "We are eating cookies.",
-      "emoji": "🍪",
+      "emoji": "",
       "distractors": [
         "w",
         "u"
@@ -324,7 +324,7 @@
       "tricky_letters": [],
       "phrase": "faster bike",
       "sentence": "My bike goes faster.",
-      "emoji": "🚲",
+      "emoji": "",
       "distractors": [
         "l",
         "n"
@@ -344,7 +344,7 @@
       "tricky_letters": [],
       "phrase": "clever foxes",
       "sentence": "Foxes have bushy tails.",
-      "emoji": "🦊",
+      "emoji": "",
       "distractors": [
         "b",
         "w"
@@ -365,7 +365,7 @@
       "tricky_letters": [],
       "phrase": "helped mom",
       "sentence": "I helped my friend.",
-      "emoji": "🤝",
+      "emoji": "",
       "distractors": [
         "r",
         "n"
@@ -386,7 +386,7 @@
       "tricky_letters": [],
       "phrase": "helping hands",
       "sentence": "We are helping dad.",
-      "emoji": "🙌",
+      "emoji": "",
       "distractors": [
         "b",
         "u"
@@ -407,7 +407,7 @@
       "tricky_letters": [],
       "phrase": "happy jumped up",
       "sentence": "The cat jumped high.",
-      "emoji": "🐱",
+      "emoji": "",
       "distractors": [
         "q",
         "l"
@@ -428,7 +428,7 @@
       "tricky_letters": [],
       "phrase": "fun jumping game",
       "sentence": "Kids are jumping now.",
-      "emoji": "🤸",
+      "emoji": "",
       "distractors": [
         "s",
         "e"
@@ -448,7 +448,7 @@
       "tricky_letters": [],
       "phrase": "dog jumps fast",
       "sentence": "He jumps over puddles.",
-      "emoji": "🐕",
+      "emoji": "",
       "distractors": [
         "q",
         "g"
@@ -469,7 +469,7 @@
       "tricky_letters": [],
       "phrase": "soft landed safe",
       "sentence": "The bird landed down.",
-      "emoji": "🐦",
+      "emoji": "",
       "distractors": [
         "r",
         "k"
@@ -488,7 +488,7 @@
       "tricky_letters": [],
       "phrase": "longer rope now",
       "sentence": "My stick is longer.",
-      "emoji": "📏",
+      "emoji": "",
       "distractors": [
         "w",
         "m"
@@ -510,7 +510,7 @@
       "tricky_letters": [],
       "phrase": "planted a seed",
       "sentence": "I planted a flower.",
-      "emoji": "🌱",
+      "emoji": "",
       "distractors": [
         "k",
         "u"
@@ -530,7 +530,7 @@
       "tricky_letters": [],
       "phrase": "played all day",
       "sentence": "We played outside fun.",
-      "emoji": "🎮",
+      "emoji": "",
       "distractors": [
         "q",
         "w"
@@ -550,7 +550,7 @@
       "tricky_letters": [],
       "phrase": "playing with friends",
       "sentence": "She is playing now.",
-      "emoji": "🧸",
+      "emoji": "",
       "distractors": [
         "b",
         "k"
@@ -570,7 +570,7 @@
       "tricky_letters": [],
       "phrase": "reading a book",
       "sentence": "I love reading stories.",
-      "emoji": "📖",
+      "emoji": "",
       "distractors": [
         "q",
         "t"
@@ -591,7 +591,7 @@
       "tricky_letters": [],
       "phrase": "running very fast",
       "sentence": "He is running home.",
-      "emoji": "🏃",
+      "emoji": "",
       "distractors": [
         "t",
         "m"
@@ -611,7 +611,7 @@
       "tricky_letters": [],
       "phrase": "singing a song",
       "sentence": "Birds are singing sweet.",
-      "emoji": "🎤",
+      "emoji": "",
       "distractors": [
         "p",
         "k"
@@ -631,7 +631,7 @@
       "tricky_letters": [],
       "phrase": "smaller toy car",
       "sentence": "My bug is smaller.",
-      "emoji": "🐞",
+      "emoji": "",
       "distractors": [
         "q",
         "i"
@@ -671,7 +671,7 @@
       "tricky_letters": [],
       "phrase": "wanted a hug",
       "sentence": "I wanted a cookie.",
-      "emoji": "🍪",
+      "emoji": "",
       "distractors": [
         "u",
         "l"
@@ -691,7 +691,7 @@
       "tricky_letters": [],
       "phrase": "wishes come true",
       "sentence": "She makes three wishes.",
-      "emoji": "✨",
+      "emoji": "",
       "distractors": [
         "a",
         "b"

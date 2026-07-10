@@ -66,16 +66,24 @@ export async function speakText(text, { rate = 0.95 } = {}) {
   if (!text || _reading) return;
   _reading = true;
   stopCurrent();
+  // safety net: whatever goes wrong, the guard NEVER sticks (a hung fetch once
+  // made every later tap dead-silent — owner-found bug)
+  const failsafe = setTimeout(() => { _reading = false; }, 15000);
   const done = () => {
+    clearTimeout(failsafe);
     _reading = false;
   };
   const fallback = () => browserSpeakUntil(text, rate, done);
   try {
+    const ctrl = new AbortController();
+    const abortTimer = setTimeout(() => ctrl.abort(), 8000); // never hang on TTS
     const res = await fetch("/api/tts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text }),
+      signal: ctrl.signal,
     });
+    clearTimeout(abortTimer);
     if (res.ok) {
       const url = URL.createObjectURL(await res.blob());
       const audio = new Audio(url);
@@ -95,9 +103,13 @@ export async function speakText(text, { rate = 0.95 } = {}) {
       return;
     }
   } catch {
-    /* fall through to browser TTS */
+    /* timeout or network — fall through to browser TTS */
   }
   fallback();
+}
+
+export function isReading() {
+  return _reading;
 }
 
 // browser-TTS fallback that clears the read-aloud guard when the utterance ends.
