@@ -13,9 +13,9 @@
 | Flask API (`app.py`) | ✅ | health + tenancy routes + `/api/session/*` + `/api/skills`; 98% cov |
 | Frontend (shell + exercises) | ✅ | SPA shell + registry + 3 renderers + correction + reward + `speech.js`; browser-verified; JS tests deferred (T-010) |
 | Teacher agent (`agent/`) | ✅ | `client.py` + `teacher.py` (100% cov); kid-voice feedback wired + live-verified; plan-enrich later (T-012) |
-| Word banks | ✅ | 736 words / 9 patterns, sourced online + `scripts/` pipeline + difficulty scores; AI-enriched phrases/sentences; **250 verified generated word-picture SVGs** wired (ADR-015) |
+| Word banks | ✅ | 736 words / 9 patterns, sourced online + `scripts/` pipeline + difficulty scores; AI-enriched phrases/sentences; **273 verified generated word-picture SVGs** wired (ADR-015) |
 | Tests + gates | 🔨 | 755 tests green; invariant-#1 guardrail in place; CI gate scripts still owed (T-008) |
 
 ## Wave log
-- **Wave 2 — ADR-014 experience redesign + polish** (2026-07-09/10): full learning-path redesign (type rotation, all 14 skills practicable, 6 new renderers, challenge slot, writing review, stars banked, gamified home/reward/collection); answer-flow hardening; misleading-image audit + stale-content-class kill (serve-fresh); **generated word-picture SVG art (ADR-015): 411 drawn → 250 lead-verified keepers wired**. 755 tests green. Tracker: `runner.md` §F.
+- **Wave 2 — ADR-014 experience redesign + polish** (2026-07-09/10): full learning-path redesign (type rotation, all 14 skills practicable, 6 new renderers, challenge slot, writing review, stars banked, gamified home/reward/collection); answer-flow hardening; misleading-image audit + stale-content-class kill (serve-fresh); **generated word-picture SVG art (ADR-015): 411 drawn → 273 lead-verified keepers wired (incl. a regen recovery pass)**. 755 tests green. Tracker: `runner.md` §F.
 - **Wave 1 — Foundation** (2026-07-07): design brief → handoff → token-lock → full deterministic engine (store/config/models/skills/classifier/selector/rewards/contracts/session, 100% cov) + session API + 3 exercises UI + DeepSeek teacher (kid-voice feedback). **Phase-1 core playable end-to-end** (home→teach→exercise→correction→reward), browser-verified. 312 automated tests. Remaining Phase-1 polish + parent dashboard tracked in backlog. Tracker: `runner.md`.
