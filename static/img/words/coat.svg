@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Coat body -->
+  <rect x="25" y="25" width="70" height="85" rx="8" fill="#D32F2F"/>
+  <!-- Left sleeve -->
+  <rect x="5" y="30" width="25" height="50" rx="10" fill="#B71C1C"/>
+  <!-- Right sleeve -->
+  <rect x="90" y="30" width="25" height="50" rx="10" fill="#B71C1C"/>
+  <!-- Left sleeve end -->
+  <rect x="5" y="70" width="25" height="12" rx="4" fill="#C62828"/>
+  <!-- Right sleeve end -->
+  <rect x="90" y="70" width="25" height="12" rx="4" fill="#C62828"/>
+  <!-- Collar left -->
+  <path d="M35 25 Q30 15 25 22" fill="#C62828" stroke="#B71C1C" stroke-width="2"/>
+  <!-- Collar right -->
+  <path d="M85 25 Q90 15 95 22" fill="#C62828" stroke="#B71C1C" stroke-width="2"/>
+  <!-- Button line -->
+  <line x1="60" y1="40" x2="60" y2="95" stroke="#B71C1C" stroke-width="2"/>
+  <!-- Buttons -->
+  <circle cx="60" cy="45" r="4" fill="#FFD54F"/>
+  <circle cx="60" cy="60" r="4" fill="#FFD54F"/>
+  <circle cx="60" cy="75" r="4" fill="#FFD54F"/>
+  <circle cx="60" cy="90" r="4" fill="#FFD54F"/>
+  <!-- Coat bottom hem -->
+  <rect x="25" y="105" width="70" height="5" rx="2" fill="#C62828"/>
+</svg>

@@ -49,7 +49,7 @@ ADR-005..012 accepted; build items may proceed against them. ADR-007 got an inli
 | W2-7 | beat_yesterday opt-in game | ☐ | T-013; the last PLAN §3 type |
 | W2-8 | Answer-flow hardening (anti-trick + typo-cascade responses) | ✅ | act-025; server-derived phase, blank/identical/retype policies, sanitization, bd plausibility, streak guard; **27 cross-authored tests, no bugs** |
 | W2-9 | Misleading-image audit (emoji back-translation) + stale-content class kill (served fresh) | ✅ | act-026/027; 557 emojis removed, serving rebuilt from current bank; 59 cross-authored tests |
-| W2-10 | Word-picture SVG art: DeepSeek-generated, lead-verified, per depictable word (ADR-015) | ▶ | ~252 drawable; generate→render→visual-verify→apply image fields; wiring done, art generating |
+| W2-10 | Word-picture SVG art: DeepSeek-generated, lead-verified, per depictable word (ADR-015) | ✅ | act-028; 411 drawn → **lead visual-verified all 411** → 250 keepers wired onto banks (`entry.image`), 161 rejected+deleted (ambiguous/action words/look-alikes). 755 tests green. Cross-authored `agent/svg_art.py` tests owed (⏳, not dependency-blocked) |
 
 ## D. Review/correction log (append per review or owner-correction round)
 - 2026-07-09 — CR2 (owner): \"present functionality path has no sense — re-review ALL functionality, redo in full.\" → ADR-014 + Wave 2 (section F). Root complaint validated by simulation; redesign shipped same day.

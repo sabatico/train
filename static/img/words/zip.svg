@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Zipper tape left -->
+  <rect x="20" y="10" width="8" height="100" rx="2" fill="#4a7c59"/>
+  <!-- Zipper tape right -->
+  <rect x="92" y="10" width="8" height="100" rx="2" fill="#4a7c59"/>
+  <!-- Teeth left side -->
+  <g fill="#c0c0c0">
+    <rect x="28" y="15" width="10" height="6" rx="1"/>
+    <rect x="28" y="27" width="10" height="6" rx="1"/>
+    <rect x="28" y="39" width="10" height="6" rx="1"/>
+    <rect x="28" y="51" width="10" height="6" rx="1"/>
+    <rect x="28" y="63" width="10" height="6" rx="1"/>
+    <rect x="28" y="75" width="10" height="6" rx="1"/>
+    <rect x="28" y="87" width="10" height="6" rx="1"/>
+  </g>
+  <!-- Teeth right side -->
+  <g fill="#c0c0c0">
+    <rect x="82" y="21" width="10" height="6" rx="1"/>
+    <rect x="82" y="33" width="10" height="6" rx="1"/>
+    <rect x="82" y="45" width="10" height="6" rx="1"/>
+    <rect x="82" y="57" width="10" height="6" rx="1"/>
+    <rect x="82" y="69" width="10" height="6" rx="1"/>
+    <rect x="82" y="81" width="10" height="6" rx="1"/>
+    <rect x="82" y="93" width="10" height="6" rx="1"/>
+  </g>
+  <!-- Slider body -->
+  <rect x="38" y="10" width="44" height="20" rx="4" fill="#e0e0e0" stroke="#999" stroke-width="1.5"/>
+  <!-- Slider channel line -->
+  <line x1="60" y1="10" x2="60" y2="30" stroke="#999" stroke-width="1.5"/>
+  <!-- Pull tab -->
+  <rect x="48" y="30" width="24" height="8" rx="3" fill="#d4d4d4" stroke="#999" stroke-width="1.5"/>
+  <!-- Pull tab hole -->
+  <rect x="54" y="32" width="12" height="4" rx="2" fill="#f9f9f9" stroke="#bbb" stroke-width="1"/>
+</svg>

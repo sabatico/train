@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect x="20" y="30" width="80" height="60" rx="4" fill="#c0392b"/>
+  <rect x="20" y="30" width="80" height="60" rx="4" fill="none" stroke="#922b21" stroke-width="3"/>
+  <!-- Rough texture dots -->
+  <circle cx="35" cy="45" r="2" fill="#a93226"/>
+  <circle cx="55" cy="40" r="1.5" fill="#a93226"/>
+  <circle cx="75" cy="50" r="2" fill="#a93226"/>
+  <circle cx="40" cy="65" r="1.5" fill="#a93226"/>
+  <circle cx="60" cy="70" r="2" fill="#a93226"/>
+  <circle cx="85" cy="60" r="1.5" fill="#a93226"/>
+  <circle cx="30" cy="80" r="1.5" fill="#a93226"/>
+  <circle cx="70" cy="80" r="2" fill="#a93226"/>
+  <circle cx="50" cy="55" r="1.5" fill="#a93226"/>
+  <circle cx="90" cy="75" r="1.5" fill="#a93226"/>
+  <!-- Small irregular lines -->
+  <line x1="45" y1="35" x2="48" y2="38" stroke="#922b21" stroke-width="1.5"/>
+  <line x1="65" y1="42" x2="68" y2="45" stroke="#922b21" stroke-width="1.5"/>
+  <line x1="35" y1="72" x2="38" y2="75" stroke="#922b21" stroke-width="1.5"/>
+  <line x1="80" y1="65" x2="83" y2="68" stroke="#922b21" stroke-width="1.5"/>
+</svg>

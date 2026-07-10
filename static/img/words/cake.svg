@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Cake base -->
+  <rect x="20" y="65" width="80" height="30" rx="5" fill="#D4A574"/>
+  <!-- Cake top layer -->
+  <rect x="25" y="50" width="70" height="20" rx="5" fill="#F4C2C2"/>
+  <!-- Frosting drips -->
+  <path d="M25 55 Q30 65 35 55 Q40 65 45 55 Q50 65 55 55 Q60 65 65 55 Q70 65 75 55 Q80 65 85 55 Q90 65 95 55" fill="#FFB6C1"/>
+  <!-- Candles -->
+  <rect x="45" y="30" width="4" height="20" fill="#FF6347"/>
+  <rect x="55" y="25" width="4" height="25" fill="#FFD700"/>
+  <rect x="65" y="32" width="4" height="18" fill="#32CD32"/>
+  <rect x="75" y="28" width="4" height="22" fill="#1E90FF"/>
+  <!-- Candle flames -->
+  <ellipse cx="47" cy="28" rx="3" ry="5" fill="#FFA500"/>
+  <ellipse cx="57" cy="23" rx="3" ry="5" fill="#FFA500"/>
+  <ellipse cx="67" cy="30" rx="3" ry="5" fill="#FFA500"/>
+  <ellipse cx="77" cy="26" rx="3" ry="5" fill="#FFA500"/>
+  <!-- Plate -->
+  <rect x="15" y="92" width="90" height="8" rx="4" fill="#E0E0E0"/>
+</svg>

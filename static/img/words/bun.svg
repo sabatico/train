@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Shadow -->
+  <ellipse cx="60" cy="100" rx="40" ry="8" fill="#d4a373" opacity="0.4"/>
+  <!-- Bun body -->
+  <ellipse cx="60" cy="65" rx="45" ry="35" fill="#e8b84b"/>
+  <!-- Top highlight -->
+  <ellipse cx="60" cy="50" rx="35" ry="22" fill="#f0c75e"/>
+  <!-- Crust top -->
+  <ellipse cx="60" cy="42" rx="30" ry="15" fill="#d4943a"/>
+  <!-- Sesame seeds -->
+  <ellipse cx="48" cy="40" rx="3" ry="2" fill="#f5e6c8" transform="rotate(-15 48 40)"/>
+  <ellipse cx="62" cy="35" rx="3" ry="2" fill="#f5e6c8" transform="rotate(10 62 35)"/>
+  <ellipse cx="75" cy="42" rx="3" ry="2" fill="#f5e6c8" transform="rotate(20 75 42)"/>
+  <ellipse cx="55" cy="48" rx="3" ry="2" fill="#f5e6c8" transform="rotate(-5 55 48)"/>
+  <ellipse cx="68" cy="46" rx="3" ry="2" fill="#f5e6c8" transform="rotate(5 68 46)"/>
+</svg>

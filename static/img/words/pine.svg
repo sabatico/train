@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Trunk -->
+  <rect x="52" y="80" width="16" height="30" fill="#8B4513"/>
+  <!-- Bottom triangle layer -->
+  <polygon points="60,10 20,85 100,85" fill="#2E7D32"/>
+  <!-- Middle triangle layer -->
+  <polygon points="60,25 28,80 92,80" fill="#388E3C"/>
+  <!-- Top triangle layer -->
+  <polygon points="60,40 36,75 84,75" fill="#43A047"/>
+</svg>

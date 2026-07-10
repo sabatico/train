@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect x="10" y="40" width="20" height="40" rx="10" fill="#7a8b99" stroke="#4a5b69" stroke-width="3"/>
+  <rect x="30" y="35" width="20" height="50" rx="10" fill="#b0c4d6" stroke="#4a5b69" stroke-width="3"/>
+  <rect x="50" y="30" width="20" height="60" rx="10" fill="#7a8b99" stroke="#4a5b69" stroke-width="3"/>
+  <rect x="70" y="35" width="20" height="50" rx="10" fill="#b0c4d6" stroke="#4a5b69" stroke-width="3"/>
+  <rect x="90" y="40" width="20" height="40" rx="10" fill="#7a8b99" stroke="#4a5b69" stroke-width="3"/>
+</svg>

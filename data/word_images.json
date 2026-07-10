@@ -1,0 +1,3667 @@
+{
+  "add": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "again": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "aid": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "aim": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "any": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "are": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "arm": {
+    "drawable": true,
+    "brief": "A human arm with hand and fingers",
+    "status": "ok"
+  },
+  "back": {
+    "drawable": true,
+    "brief": "A person seen from behind, showing the back",
+    "status": "ok"
+  },
+  "bad": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "bag": {
+    "drawable": true,
+    "brief": "A simple handbag or sack with a handle",
+    "status": "ok"
+  },
+  "bake": {
+    "drawable": true,
+    "brief": "An oven with a tray of cookies inside",
+    "status": "ok"
+  },
+  "ball": {
+    "drawable": true,
+    "brief": "A round ball, like a soccer ball",
+    "status": "rejected"
+  },
+  "band": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "bank": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "bar": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "barn": {
+    "drawable": true,
+    "brief": "A red barn with a roof and a door",
+    "status": "ok"
+  },
+  "base": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "bat": {
+    "drawable": true,
+    "brief": "A baseball bat or a flying bat animal",
+    "status": "ok"
+  },
+  "bath": {
+    "drawable": true,
+    "brief": "A bathtub filled with water and bubbles",
+    "status": "ok"
+  },
+  "beach": {
+    "drawable": true,
+    "brief": "A sandy shore with ocean waves and a sun",
+    "status": "ok"
+  },
+  "bead": {
+    "drawable": true,
+    "brief": "A single round bead with a hole through it",
+    "status": "rejected"
+  },
+  "because": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "bed": {
+    "drawable": true,
+    "brief": "A bed with a pillow and blanket",
+    "status": "ok"
+  },
+  "beds": {
+    "drawable": true,
+    "brief": "Two beds side by side",
+    "status": "rejected"
+  },
+  "been": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "beg": {
+    "drawable": true,
+    "brief": "A person on their knees with hands clasped together, pleading.",
+    "status": "rejected"
+  },
+  "bell": {
+    "drawable": true,
+    "brief": "A simple metal bell shape with a clapper at the bottom.",
+    "status": "ok"
+  },
+  "belt": {
+    "drawable": true,
+    "brief": "A long strip with a buckle at one end.",
+    "status": "ok"
+  },
+  "bench": {
+    "drawable": true,
+    "brief": "A long wooden seat with four legs.",
+    "status": "ok"
+  },
+  "bend": {
+    "drawable": true,
+    "brief": "A straight line that curves into a V-shape.",
+    "status": "rejected"
+  },
+  "best": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "bet": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "big": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "bigger": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "bike": {
+    "drawable": true,
+    "brief": "A bicycle with two wheels, handlebars, and a seat.",
+    "status": "ok"
+  },
+  "bill": {
+    "drawable": true,
+    "brief": "A duck's flat beak.",
+    "status": "rejected"
+  },
+  "bin": {
+    "drawable": true,
+    "brief": "A rectangular container with an open top.",
+    "status": "ok"
+  },
+  "bird": {
+    "drawable": true,
+    "brief": "A simple bird shape with wings, beak, and tail.",
+    "status": "ok"
+  },
+  "birth": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "bit": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "bite": {
+    "drawable": true,
+    "brief": "An open mouth with teeth about to close on an apple.",
+    "status": "ok"
+  },
+  "black": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "block": {
+    "drawable": true,
+    "brief": "A cube-shaped toy block.",
+    "status": "ok"
+  },
+  "blow": {
+    "drawable": true,
+    "brief": "A face with puckered lips and lines showing air coming out.",
+    "status": "rejected"
+  },
+  "blur": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "boat": {
+    "drawable": true,
+    "brief": "A simple boat shape with a hull and a sail.",
+    "status": "ok"
+  },
+  "bog": {
+    "drawable": true,
+    "brief": "A patch of muddy ground with grass tufts.",
+    "status": "rejected"
+  },
+  "boil": {
+    "drawable": true,
+    "brief": "A pot with bubbles rising from the water surface.",
+    "status": "rejected"
+  },
+  "bone": {
+    "drawable": true,
+    "brief": "A dog bone shape with two knobs at each end.",
+    "status": "rejected"
+  },
+  "book": {
+    "drawable": true,
+    "brief": "A closed book with a cover and spine.",
+    "status": "ok"
+  },
+  "boot": {
+    "drawable": true,
+    "brief": "A tall shoe with a thick sole and a top opening.",
+    "status": "ok"
+  },
+  "born": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "boss": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "box": {
+    "drawable": true,
+    "brief": "A square shape with an open top and flaps.",
+    "status": "ok"
+  },
+  "boxes": {
+    "drawable": true,
+    "brief": "Two or more square shapes with open tops and flaps.",
+    "status": "ok"
+  },
+  "boy": {
+    "drawable": true,
+    "brief": "A simple stick figure of a child with short hair.",
+    "status": "ok"
+  },
+  "braid": {
+    "drawable": true,
+    "brief": "Three wavy lines intertwined like a rope.",
+    "status": "rejected"
+  },
+  "brain": {
+    "drawable": true,
+    "brief": "A wrinkled oval shape with squiggly lines inside.",
+    "status": "ok"
+  },
+  "brick": {
+    "drawable": true,
+    "brief": "A rectangular block with a rough texture.",
+    "status": "ok"
+  },
+  "bride": {
+    "drawable": true,
+    "brief": "A woman in a long white dress with a veil.",
+    "status": "ok"
+  },
+  "bright": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "bring": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "brush": {
+    "drawable": true,
+    "brief": "A handle with bristles at one end.",
+    "status": "ok"
+  },
+  "bug": {
+    "drawable": true,
+    "brief": "A small oval body with six legs and antennae.",
+    "status": "ok"
+  },
+  "bump": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "bun": {
+    "drawable": true,
+    "brief": "A round, fluffy bread roll.",
+    "status": "ok"
+  },
+  "burn": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "burst": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "bus": {
+    "drawable": true,
+    "brief": "A large rectangle with windows and wheels.",
+    "status": "ok"
+  },
+  "buses": {
+    "drawable": true,
+    "brief": "Two or more large rectangles with windows and wheels.",
+    "status": "ok"
+  },
+  "but": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "butter": {
+    "drawable": true,
+    "brief": "A yellow square pat on a plate.",
+    "status": "ok"
+  },
+  "buy": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "buzz": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "cake": {
+    "drawable": true,
+    "brief": "A layered round dessert with frosting and candles.",
+    "status": "ok"
+  },
+  "class": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "claw": {
+    "drawable": true,
+    "brief": "A curved animal claw, like a cat's paw with sharp nails",
+    "status": "rejected"
+  },
+  "clay": {
+    "drawable": true,
+    "brief": "A lump of brownish modeling clay on a table",
+    "status": "rejected"
+  },
+  "clerk": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "cliff": {
+    "drawable": true,
+    "brief": "A steep rock face with a flat top, overlooking water",
+    "status": "ok"
+  },
+  "clip": {
+    "drawable": true,
+    "brief": "A metal paperclip or a hair clip",
+    "status": "rejected"
+  },
+  "clock": {
+    "drawable": true,
+    "brief": "A round clock face with numbers and two hands",
+    "status": "fail"
+  },
+  "close": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "cloth": {
+    "drawable": true,
+    "brief": "A rectangular piece of fabric, like a napkin",
+    "status": "rejected"
+  },
+  "cloud": {
+    "drawable": true,
+    "brief": "A fluffy white cloud in the sky",
+    "status": "ok"
+  },
+  "coach": {
+    "drawable": true,
+    "brief": "A horse-drawn carriage or a bus",
+    "status": "rejected"
+  },
+  "coat": {
+    "drawable": true,
+    "brief": "A long winter coat with buttons and sleeves",
+    "status": "ok"
+  },
+  "cob": {
+    "drawable": true,
+    "brief": "An ear of corn with kernels",
+    "status": "ok"
+  },
+  "cod": {
+    "drawable": true,
+    "brief": "A simple fish shape with fins and tail",
+    "status": "ok"
+  },
+  "code": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "coin": {
+    "drawable": true,
+    "brief": "A round metal coin with a number on it",
+    "status": "fail"
+  },
+  "come": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "cone": {
+    "drawable": true,
+    "brief": "An ice cream cone with a scoop on top",
+    "status": "ok"
+  },
+  "cool": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "cop": {
+    "drawable": true,
+    "brief": "A police officer in uniform with a hat",
+    "status": "ok"
+  },
+  "corn": {
+    "drawable": true,
+    "brief": "An ear of yellow corn with green husk",
+    "status": "ok"
+  },
+  "corner": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "cot": {
+    "drawable": true,
+    "brief": "A small bed with a frame and mattress",
+    "status": "ok"
+  },
+  "could": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "cow": {
+    "drawable": true,
+    "brief": "A spotted farm animal with four legs and horns",
+    "status": "ok"
+  },
+  "crab": {
+    "drawable": true,
+    "brief": "A sideways-facing crab with two claws and legs",
+    "status": "ok"
+  },
+  "crib": {
+    "drawable": true,
+    "brief": "A baby crib with four posts and a mattress",
+    "status": "ok"
+  },
+  "crop": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "cube": {
+    "drawable": true,
+    "brief": "A 3D square box with visible edges",
+    "status": "ok"
+  },
+  "cuff": {
+    "drawable": true,
+    "brief": "A shirt sleeve end with a button",
+    "status": "rejected"
+  },
+  "cup": {
+    "drawable": true,
+    "brief": "A simple cup with a handle",
+    "status": "ok"
+  },
+  "cups": {
+    "drawable": true,
+    "brief": "Two cups side by side",
+    "status": "ok"
+  },
+  "curb": {
+    "drawable": true,
+    "brief": "A street curb edge with sidewalk above",
+    "status": "rejected"
+  },
+  "curl": {
+    "drawable": true,
+    "brief": "A spiral curl of hair or ribbon",
+    "status": "rejected"
+  },
+  "curve": {
+    "drawable": true,
+    "brief": "A smooth curved line bending to the right",
+    "status": "rejected"
+  },
+  "cut": {
+    "drawable": true,
+    "brief": "Scissors cutting a piece of paper",
+    "status": "ok"
+  },
+  "cute": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "dad": {
+    "drawable": true,
+    "brief": "A stick figure man with a smile and glasses",
+    "status": "rejected"
+  },
+  "dark": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "dash": {
+    "drawable": true,
+    "brief": "A short horizontal line",
+    "status": "rejected"
+  },
+  "date": {
+    "drawable": true,
+    "brief": "A calendar page with a circled number",
+    "status": "fail"
+  },
+  "day": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "deck": {
+    "drawable": true,
+    "brief": "A wooden deck with railings",
+    "status": "rejected"
+  },
+  "den": {
+    "drawable": true,
+    "brief": "A cave-like animal den with an opening",
+    "status": "rejected"
+  },
+  "desk": {
+    "drawable": true,
+    "brief": "A rectangular desk with four legs",
+    "status": "ok"
+  },
+  "dice": {
+    "drawable": true,
+    "brief": "A cube with dots on each face",
+    "status": "ok"
+  },
+  "dig": {
+    "drawable": true,
+    "brief": "A shovel digging into dirt",
+    "status": "ok"
+  },
+  "digs": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "dim": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "dime": {
+    "drawable": true,
+    "brief": "A small coin with a profile face",
+    "status": "ok"
+  },
+  "dine": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "dip": {
+    "drawable": true,
+    "brief": "A hand dipping a chip into a bowl of sauce",
+    "status": "rejected"
+  },
+  "dirt": {
+    "drawable": true,
+    "brief": "A pile of brown soil with small rocks",
+    "status": "rejected"
+  },
+  "dirty": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "dishes": {
+    "drawable": true,
+    "brief": "A stack of plates and bowls",
+    "status": "ok"
+  },
+  "dive": {
+    "drawable": true,
+    "brief": "A person jumping headfirst into water",
+    "status": "ok"
+  },
+  "does": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "dog": {
+    "drawable": true,
+    "brief": "A simple cartoon dog with four legs and a tail",
+    "status": "ok"
+  },
+  "dogs": {
+    "drawable": true,
+    "brief": "Two simple cartoon dogs side by side",
+    "status": "ok"
+  },
+  "doll": {
+    "drawable": true,
+    "brief": "A simple doll with a round head and dress",
+    "status": "ok"
+  },
+  "done": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "dot": {
+    "drawable": true,
+    "brief": "A single small black circle",
+    "status": "rejected"
+  },
+  "down": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "drain": {
+    "drawable": true,
+    "brief": "A metal grate over a circular hole in the ground",
+    "status": "ok"
+  },
+  "draw": {
+    "drawable": true,
+    "brief": "A hand holding a pencil making lines on paper",
+    "status": "ok"
+  },
+  "dress": {
+    "drawable": true,
+    "brief": "A simple dress shape with a skirt and sleeves",
+    "status": "ok"
+  },
+  "drop": {
+    "drawable": true,
+    "brief": "A single water droplet falling downward",
+    "status": "ok"
+  },
+  "drove": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "drum": {
+    "drawable": true,
+    "brief": "A round drum with two drumsticks on top",
+    "status": "ok"
+  },
+  "duck": {
+    "drawable": true,
+    "brief": "A duck with a bill, wings, and webbed feet",
+    "status": "ok"
+  },
+  "dug": {
+    "drawable": true,
+    "brief": "A shovel stuck in a hole in the ground",
+    "status": "rejected"
+  },
+  "eat": {
+    "drawable": true,
+    "brief": "A person with an open mouth taking a bite of food",
+    "status": "ok"
+  },
+  "eating": {
+    "drawable": true,
+    "brief": "A person chewing food with a fork in hand",
+    "status": "ok"
+  },
+  "egg": {
+    "drawable": true,
+    "brief": "An oval-shaped egg with a smooth shell",
+    "status": "ok"
+  },
+  "enjoy": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "ever": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "every": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "expert": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "eye": {
+    "drawable": true,
+    "brief": "A simple human eye with an iris and pupil",
+    "status": "ok"
+  },
+  "face": {
+    "drawable": true,
+    "brief": "A round face with two eyes, a nose, and a smiling mouth",
+    "status": "ok"
+  },
+  "fail": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "fake": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "fall": {
+    "drawable": true,
+    "brief": "A stick figure falling sideways with arms and legs flailing",
+    "status": "rejected"
+  },
+  "fame": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "fan": {
+    "drawable": true,
+    "brief": "A handheld folding fan with a semicircular shape and lines",
+    "status": "ok"
+  },
+  "far": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "farm": {
+    "drawable": true,
+    "brief": "A red barn with a silo and a fence",
+    "status": "ok"
+  },
+  "fast": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "faster": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "fat": {
+    "drawable": true,
+    "brief": "A round, chubby person with a big belly",
+    "status": "rejected"
+  },
+  "fed": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "feet": {
+    "drawable": true,
+    "brief": "Two bare feet with toes",
+    "status": "ok"
+  },
+  "fell": {
+    "drawable": true,
+    "brief": "A tree lying on the ground with roots exposed",
+    "status": "rejected"
+  },
+  "fern": {
+    "drawable": true,
+    "brief": "A green fern leaf with many small leaflets along a stem",
+    "status": "ok"
+  },
+  "fight": {
+    "drawable": true,
+    "brief": "Two stick figures with fists raised facing each other",
+    "status": "rejected"
+  },
+  "file": {
+    "drawable": true,
+    "brief": "A metal file tool with a handle and a rough rectangular blade",
+    "status": "rejected"
+  },
+  "fill": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "fin": {
+    "drawable": true,
+    "brief": "A triangular fish fin attached to a fish body",
+    "status": "rejected"
+  },
+  "fine": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "fire": {
+    "drawable": true,
+    "brief": "Flames with orange and yellow tips rising from a log",
+    "status": "ok"
+  },
+  "firm": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "first": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "fish": {
+    "drawable": true,
+    "brief": "A simple fish shape with an eye and tail",
+    "status": "ok"
+  },
+  "fit": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "five": {
+    "drawable": true,
+    "brief": "The numeral 5",
+    "status": "ok"
+  },
+  "fix": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "fizz": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "flag": {
+    "drawable": true,
+    "brief": "A rectangle on a pole with wavy lines",
+    "status": "ok"
+  },
+  "flat": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "flight": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "float": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "flute": {
+    "drawable": true,
+    "brief": "A long thin tube with holes and a mouthpiece",
+    "status": "ok"
+  },
+  "fog": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "food": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "foot": {
+    "drawable": true,
+    "brief": "A simple foot shape with five toes",
+    "status": "ok"
+  },
+  "for": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "force": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "fork": {
+    "drawable": true,
+    "brief": "A utensil with a handle and four prongs",
+    "status": "ok"
+  },
+  "form": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "found": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "fox": {
+    "drawable": true,
+    "brief": "A fox face with pointy ears and a snout",
+    "status": "ok"
+  },
+  "foxes": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "free": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "fresh": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "friend": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "frog": {
+    "drawable": true,
+    "brief": "A green frog sitting with big eyes and a wide mouth",
+    "status": "ok"
+  },
+  "from": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "full": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "fun": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "fur": {
+    "drawable": true,
+    "brief": "A fluffy patch of brown fur",
+    "status": "rejected"
+  },
+  "fuzz": {
+    "drawable": true,
+    "brief": "A small fuzzy ball of lint",
+    "status": "rejected"
+  },
+  "gain": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "game": {
+    "drawable": true,
+    "brief": "A simple board game with dice and a path",
+    "status": "ok"
+  },
+  "gap": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "gate": {
+    "drawable": true,
+    "brief": "A wooden gate with horizontal bars and a latch",
+    "status": "ok"
+  },
+  "gave": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "germ": {
+    "drawable": true,
+    "brief": "A round germ with spiky bumps and a face",
+    "status": "ok"
+  },
+  "get": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "gift": {
+    "drawable": true,
+    "brief": "A wrapped present with a bow on top",
+    "status": "ok"
+  },
+  "girl": {
+    "drawable": true,
+    "brief": "A smiling girl with pigtails and a dress",
+    "status": "ok"
+  },
+  "give": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "glad": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "glow": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "goal": {
+    "drawable": true,
+    "brief": "A soccer goal with net and two posts",
+    "status": "rejected"
+  },
+  "goat": {
+    "drawable": true,
+    "brief": "A white goat with horns and a beard",
+    "status": "ok"
+  },
+  "gone": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "good": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "got": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "grab": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "grade": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "grain": {
+    "drawable": true,
+    "brief": "A small oval seed with a line through it, like a wheat kernel.",
+    "status": "rejected"
+  },
+  "grass": {
+    "drawable": true,
+    "brief": "Several thin green blades sticking up from a horizontal line.",
+    "status": "ok"
+  },
+  "gray": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "green": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "grin": {
+    "drawable": true,
+    "brief": "A simple smiley face with a curved mouth.",
+    "status": "ok"
+  },
+  "grow": {
+    "drawable": true,
+    "brief": "A small plant with leaves emerging from soil, with an upward arrow.",
+    "status": "ok"
+  },
+  "gum": {
+    "drawable": true,
+    "brief": "A pink oval blob, like a piece of chewing gum.",
+    "status": "rejected"
+  },
+  "gun": {
+    "drawable": true,
+    "brief": "A simple side-view of a pistol with a barrel and handle.",
+    "status": "rejected"
+  },
+  "gut": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "ham": {
+    "drawable": true,
+    "brief": "A pink oval slice of meat with a bone in the middle.",
+    "status": "rejected"
+  },
+  "hand": {
+    "drawable": true,
+    "brief": "A simple outline of a hand with five fingers.",
+    "status": "ok"
+  },
+  "hard": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "hat": {
+    "drawable": true,
+    "brief": "A simple triangle on a brim, like a party hat.",
+    "status": "rejected"
+  },
+  "hate": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "hats": {
+    "drawable": true,
+    "brief": "Two simple triangles on brims, side by side.",
+    "status": "rejected"
+  },
+  "have": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "hay": {
+    "drawable": true,
+    "brief": "A bundle of yellow straw tied with a string.",
+    "status": "rejected"
+  },
+  "helped": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "helping": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "hem": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "hen": {
+    "drawable": true,
+    "brief": "A round bird with a small comb on head and short legs.",
+    "status": "ok"
+  },
+  "her": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "herd": {
+    "drawable": true,
+    "brief": "Three simple cow shapes standing together.",
+    "status": "rejected"
+  },
+  "here": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "hide": {
+    "drawable": true,
+    "brief": "A child peeking from behind a rectangle (a wall) with eyes visible.",
+    "status": "rejected"
+  },
+  "high": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "hike": {
+    "drawable": true,
+    "brief": "A person walking up a mountain trail with a backpack",
+    "status": "ok"
+  },
+  "hill": {
+    "drawable": true,
+    "brief": "A green rounded mound of earth with grass",
+    "status": "ok"
+  },
+  "hip": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "hire": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "hit": {
+    "drawable": true,
+    "brief": "A fist striking a target or ball",
+    "status": "rejected"
+  },
+  "hive": {
+    "drawable": true,
+    "brief": "A beehive with bees flying around",
+    "status": "ok"
+  },
+  "hole": {
+    "drawable": true,
+    "brief": "A dark circular opening in the ground",
+    "status": "rejected"
+  },
+  "home": {
+    "drawable": true,
+    "brief": "A house with a door, windows, and a roof",
+    "status": "ok"
+  },
+  "hook": {
+    "drawable": true,
+    "brief": "A curved metal hook hanging from a line",
+    "status": "ok"
+  },
+  "hop": {
+    "drawable": true,
+    "brief": "A rabbit hopping on its hind legs",
+    "status": "rejected"
+  },
+  "hope": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "hops": {
+    "drawable": true,
+    "brief": "A rabbit hopping with motion lines",
+    "status": "rejected"
+  },
+  "horn": {
+    "drawable": true,
+    "brief": "A curved animal horn like a bull's",
+    "status": "rejected"
+  },
+  "horse": {
+    "drawable": true,
+    "brief": "A four-legged animal with a mane and tail",
+    "status": "ok"
+  },
+  "hot": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "house": {
+    "drawable": true,
+    "brief": "A simple house with a door, windows, and chimney",
+    "status": "ok"
+  },
+  "how": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "hug": {
+    "drawable": true,
+    "brief": "Two stick figures embracing each other",
+    "status": "ok"
+  },
+  "huge": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "hum": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "hunt": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "hurt": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "hut": {
+    "drawable": true,
+    "brief": "A small simple shelter with a thatched roof",
+    "status": "ok"
+  },
+  "ice": {
+    "drawable": true,
+    "brief": "A cube of ice with melting water drops",
+    "status": "ok"
+  },
+  "jam": {
+    "drawable": true,
+    "brief": "A jar of jam with a spoon sticking out",
+    "status": "ok"
+  },
+  "jar": {
+    "drawable": true,
+    "brief": "A glass jar with a lid",
+    "status": "ok"
+  },
+  "jaw": {
+    "drawable": true,
+    "brief": "A mouth showing teeth and jawbone outline",
+    "status": "ok"
+  },
+  "jazz": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "jerk": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "jet": {
+    "drawable": true,
+    "brief": "A jet airplane flying with exhaust trails",
+    "status": "ok"
+  },
+  "job": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "jog": {
+    "drawable": true,
+    "brief": "A person running with one leg forward",
+    "status": "ok"
+  },
+  "join": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "joke": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "joy": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "jug": {
+    "drawable": true,
+    "brief": "A jug with a handle and spout",
+    "status": "ok"
+  },
+  "jump": {
+    "drawable": true,
+    "brief": "A person jumping with arms up and legs apart",
+    "status": "ok"
+  },
+  "jumped": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "jumping": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "jumps": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "junk": {
+    "drawable": true,
+    "brief": "A pile of trash with cans and paper",
+    "status": "rejected"
+  },
+  "keep": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "kick": {
+    "drawable": true,
+    "brief": "A leg kicking a ball",
+    "status": "rejected"
+  },
+  "kid": {
+    "drawable": true,
+    "brief": "A smiling child with a simple body",
+    "status": "ok"
+  },
+  "kiss": {
+    "drawable": true,
+    "brief": "Two faces with lips touching",
+    "status": "ok"
+  },
+  "kit": {
+    "drawable": true,
+    "brief": "A toolbox with tools inside",
+    "status": "rejected"
+  },
+  "kite": {
+    "drawable": true,
+    "brief": "A diamond-shaped kite with a tail and string",
+    "status": "ok"
+  },
+  "know": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "laid": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "lake": {
+    "drawable": true,
+    "brief": "A large oval of blue water with a small tree on the shore",
+    "status": "ok"
+  },
+  "lamp": {
+    "drawable": true,
+    "brief": "A table lamp with a shade and a glowing bulb",
+    "status": "ok"
+  },
+  "land": {
+    "drawable": true,
+    "brief": "A patch of green ground with a tree and a sun above",
+    "status": "ok"
+  },
+  "landed": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "lap": {
+    "drawable": true,
+    "brief": "A person sitting with a cat on their thighs",
+    "status": "rejected"
+  },
+  "last": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "late": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "law": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "leaf": {
+    "drawable": true,
+    "brief": "A single green leaf with a stem",
+    "status": "ok"
+  },
+  "led": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "leg": {
+    "drawable": true,
+    "brief": "A simple leg from knee to foot",
+    "status": "rejected"
+  },
+  "less": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "let": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "lid": {
+    "drawable": true,
+    "brief": "A round pot lid with a small knob on top",
+    "status": "rejected"
+  },
+  "light": {
+    "drawable": true,
+    "brief": "A glowing light bulb with rays around it",
+    "status": "ok"
+  },
+  "like": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "lime": {
+    "drawable": true,
+    "brief": "A round green lime with a small stem",
+    "status": "ok"
+  },
+  "line": {
+    "drawable": true,
+    "brief": "A straight horizontal line",
+    "status": "rejected"
+  },
+  "lip": {
+    "drawable": true,
+    "brief": "A pair of red lips in a smile",
+    "status": "ok"
+  },
+  "list": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "lit": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "little": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "live": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "load": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "lock": {
+    "drawable": true,
+    "brief": "A padlock with a keyhole and a curved shackle",
+    "status": "ok"
+  },
+  "log": {
+    "drawable": true,
+    "brief": "A short thick piece of tree trunk with bark and rings on the cut end.",
+    "status": "ok"
+  },
+  "longer": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "look": {
+    "drawable": true,
+    "brief": "A pair of eyes with pupils looking to one side.",
+    "status": "ok"
+  },
+  "loss": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "lot": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "loud": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "love": {
+    "drawable": true,
+    "brief": "A red heart shape.",
+    "status": "ok"
+  },
+  "low": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "lunch": {
+    "drawable": true,
+    "brief": "A sandwich and an apple on a plate.",
+    "status": "ok"
+  },
+  "mad": {
+    "drawable": true,
+    "brief": "A face with angry eyebrows and a frown.",
+    "status": "ok"
+  },
+  "made": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "mail": {
+    "drawable": true,
+    "brief": "A white envelope with a red stamp.",
+    "status": "ok"
+  },
+  "main": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "make": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "man": {
+    "drawable": true,
+    "brief": "A stick figure of a man with a hat.",
+    "status": "ok"
+  },
+  "many": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "map": {
+    "drawable": true,
+    "brief": "A rectangular piece of paper with squiggly lines and an X.",
+    "status": "rejected"
+  },
+  "mask": {
+    "drawable": true,
+    "brief": "A face mask covering the nose and mouth with strings.",
+    "status": "ok"
+  },
+  "mate": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "may": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "meal": {
+    "drawable": true,
+    "brief": "A plate with a fork and knife beside it.",
+    "status": "ok"
+  },
+  "mean": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "meet": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "melt": {
+    "drawable": true,
+    "brief": "An ice cream cone with drips falling down.",
+    "status": "rejected"
+  },
+  "men": {
+    "drawable": true,
+    "brief": "Three stick figures of men standing together.",
+    "status": "ok"
+  },
+  "mess": {
+    "drawable": true,
+    "brief": "A messy room with toys and clothes scattered on the floor.",
+    "status": "rejected"
+  },
+  "met": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "mice": {
+    "drawable": true,
+    "brief": "Two small gray mice with round ears and long tails.",
+    "status": "ok"
+  },
+  "might": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "mile": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "milk": {
+    "drawable": true,
+    "brief": "A white carton of milk with a red cap.",
+    "status": "ok"
+  },
+  "mine": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "mint": {
+    "drawable": true,
+    "brief": "A green mint leaf or a green candy.",
+    "status": "rejected"
+  },
+  "miss": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "mix": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "mob": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "moon": {
+    "drawable": true,
+    "brief": "A crescent moon in a dark sky with stars.",
+    "status": "ok"
+  },
+  "mop": {
+    "drawable": true,
+    "brief": "A mop with a long handle and a wet, stringy head.",
+    "status": "ok"
+  },
+  "morning": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "moth": {
+    "drawable": true,
+    "brief": "A brown moth with patterned wings near a light.",
+    "status": "ok"
+  },
+  "mouth": {
+    "drawable": true,
+    "brief": "A smiling mouth with red lips and white teeth.",
+    "status": "ok"
+  },
+  "move": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "much": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "mud": {
+    "drawable": true,
+    "brief": "A brown puddle of mud with a footprint.",
+    "status": "rejected"
+  },
+  "mug": {
+    "drawable": true,
+    "brief": "A ceramic mug with a handle, filled with coffee.",
+    "status": "ok"
+  },
+  "munch": {
+    "drawable": true,
+    "brief": "A child munching on an apple with crumbs.",
+    "status": "ok"
+  },
+  "must": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "mute": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "nail": {
+    "drawable": true,
+    "brief": "A silver nail with a flat head and sharp point.",
+    "status": "ok"
+  },
+  "name": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "nap": {
+    "drawable": true,
+    "brief": "A person lying down with closed eyes, maybe a Z above them.",
+    "status": "fail"
+  },
+  "neck": {
+    "drawable": true,
+    "brief": "A simple outline of a head and torso with the neck area circled or highlighted.",
+    "status": "rejected"
+  },
+  "need": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "nerve": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "nest": {
+    "drawable": true,
+    "brief": "A bowl-shaped twig nest with a few eggs inside.",
+    "status": "ok"
+  },
+  "net": {
+    "drawable": true,
+    "brief": "A square grid of crossed lines like a fishing net.",
+    "status": "ok"
+  },
+  "nice": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "night": {
+    "drawable": true,
+    "brief": "A dark sky with a crescent moon and stars.",
+    "status": "ok"
+  },
+  "nine": {
+    "drawable": true,
+    "brief": "The numeral 9.",
+    "status": "rejected"
+  },
+  "nod": {
+    "drawable": true,
+    "brief": "A face with head tilted slightly down and a curved line for a nod motion.",
+    "status": "rejected"
+  },
+  "north": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "nose": {
+    "drawable": true,
+    "brief": "A simple face with a triangular or oval nose in the center.",
+    "status": "ok"
+  },
+  "not": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "note": {
+    "drawable": true,
+    "brief": "A small piece of paper with lines or a musical note symbol.",
+    "status": "ok"
+  },
+  "now": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "nurse": {
+    "drawable": true,
+    "brief": "A person in a white cap and dress holding a syringe or clipboard.",
+    "status": "ok"
+  },
+  "nut": {
+    "drawable": true,
+    "brief": "A small oval shape with a hard shell, like an acorn or walnut.",
+    "status": "ok"
+  },
+  "of": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "off": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "oil": {
+    "drawable": true,
+    "brief": "A bottle labeled 'oil' or a puddle of dark liquid.",
+    "status": "rejected"
+  },
+  "once": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "one": {
+    "drawable": true,
+    "brief": "The numeral 1.",
+    "status": "rejected"
+  },
+  "only": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "order": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "out": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "owl": {
+    "drawable": true,
+    "brief": "A round bird with big eyes, small beak, and wings, sitting on a branch.",
+    "status": "ok"
+  },
+  "pack": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "pain": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "paint": {
+    "drawable": true,
+    "brief": "A paintbrush with colorful paint drops.",
+    "status": "ok"
+  },
+  "pan": {
+    "drawable": true,
+    "brief": "A frying pan with a handle and a flat round bottom.",
+    "status": "ok"
+  },
+  "part": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "party": {
+    "drawable": true,
+    "brief": "A birthday cake with candles and balloons.",
+    "status": "ok"
+  },
+  "pass": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "pat": {
+    "drawable": true,
+    "brief": "A hand gently touching a dog's head.",
+    "status": "rejected"
+  },
+  "path": {
+    "drawable": true,
+    "brief": "A winding dirt path through grass with trees.",
+    "status": "ok"
+  },
+  "paw": {
+    "drawable": true,
+    "brief": "A cat or dog footprint with four toe pads.",
+    "status": "ok"
+  },
+  "pay": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "peg": {
+    "drawable": true,
+    "brief": "A small wooden or plastic peg sticking out of a board.",
+    "status": "rejected"
+  },
+  "pen": {
+    "drawable": true,
+    "brief": "A simple stick pen with a cap and clip.",
+    "status": "ok"
+  },
+  "people": {
+    "drawable": true,
+    "brief": "Three stick figures holding hands in a row.",
+    "status": "ok"
+  },
+  "perfect": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "person": {
+    "drawable": true,
+    "brief": "A stick figure with a round head, body, arms, and legs.",
+    "status": "ok"
+  },
+  "pet": {
+    "drawable": true,
+    "brief": "A small dog or cat sitting next to a bowl.",
+    "status": "rejected"
+  },
+  "pick": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "pig": {
+    "drawable": true,
+    "brief": "A pink pig with a curly tail, snout, and small ears.",
+    "status": "ok"
+  },
+  "pigs": {
+    "drawable": true,
+    "brief": "Two pink pigs standing side by side.",
+    "status": "ok"
+  },
+  "pile": {
+    "drawable": true,
+    "brief": "A stack of three round stones or logs.",
+    "status": "ok"
+  },
+  "pill": {
+    "drawable": true,
+    "brief": "A small oval or round medicine tablet.",
+    "status": "ok"
+  },
+  "pin": {
+    "drawable": true,
+    "brief": "A straight pin with a round colored head.",
+    "status": "ok"
+  },
+  "pine": {
+    "drawable": true,
+    "brief": "A tall evergreen tree with a triangular shape and needles.",
+    "status": "ok"
+  },
+  "pink": {
+    "drawable": true,
+    "brief": "A simple pink circle or blob colored pink.",
+    "status": "rejected"
+  },
+  "pins": {
+    "drawable": true,
+    "brief": "Two or three straight lines with round heads, like sewing pins.",
+    "status": "ok"
+  },
+  "pit": {
+    "drawable": true,
+    "brief": "A small oval brown seed (like a peach pit).",
+    "status": "rejected"
+  },
+  "place": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "plain": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "plan": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "planted": {
+    "drawable": true,
+    "brief": "A small plant in soil with roots below.",
+    "status": "ok"
+  },
+  "plate": {
+    "drawable": true,
+    "brief": "A circle with a rim, like a dinner plate.",
+    "status": "ok"
+  },
+  "play": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "played": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "playing": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "plug": {
+    "drawable": true,
+    "brief": "A rectangular electrical plug with two prongs.",
+    "status": "ok"
+  },
+  "pod": {
+    "drawable": true,
+    "brief": "A long green bean-like pod.",
+    "status": "rejected"
+  },
+  "point": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "poke": {
+    "drawable": true,
+    "brief": "A finger poking into a soft surface.",
+    "status": "rejected"
+  },
+  "pond": {
+    "drawable": true,
+    "brief": "A blue oval with wavy lines for water.",
+    "status": "rejected"
+  },
+  "pool": {
+    "drawable": true,
+    "brief": "A blue rectangle with a diving board.",
+    "status": "rejected"
+  },
+  "pop": {
+    "drawable": true,
+    "brief": "A balloon bursting with a 'POP' text.",
+    "status": "rejected"
+  },
+  "pot": {
+    "drawable": true,
+    "brief": "A simple cooking pot with two handles.",
+    "status": "ok"
+  },
+  "press": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "pride": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "print": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "puff": {
+    "drawable": true,
+    "brief": "A small cloud of smoke or air.",
+    "status": "rejected"
+  },
+  "pull": {
+    "drawable": true,
+    "brief": "A hand pulling a rope or a wagon.",
+    "status": "rejected"
+  },
+  "pup": {
+    "drawable": true,
+    "brief": "A small dog puppy with floppy ears.",
+    "status": "ok"
+  },
+  "purple": {
+    "drawable": true,
+    "brief": "A simple blob or circle colored purple.",
+    "status": "rejected"
+  },
+  "purse": {
+    "drawable": true,
+    "brief": "A small handbag with a clasp and handle.",
+    "status": "ok"
+  },
+  "put": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "queen": {
+    "drawable": true,
+    "brief": "A woman wearing a crown.",
+    "status": "ok"
+  },
+  "quick": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "race": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "rag": {
+    "drawable": true,
+    "brief": "A torn piece of cloth.",
+    "status": "rejected"
+  },
+  "rain": {
+    "drawable": true,
+    "brief": "Cloud with falling vertical lines (raindrops).",
+    "status": "ok"
+  },
+  "rake": {
+    "drawable": true,
+    "brief": "A garden tool with a long handle and tines.",
+    "status": "ok"
+  },
+  "ran": {
+    "drawable": true,
+    "brief": "A stick figure with legs in a running pose.",
+    "status": "rejected"
+  },
+  "rat": {
+    "drawable": true,
+    "brief": "A small rodent with a long tail and round ears.",
+    "status": "ok"
+  },
+  "rate": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "ray": {
+    "drawable": true,
+    "brief": "A single straight line coming from a sun or light source.",
+    "status": "rejected"
+  },
+  "read": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "reading": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "red": {
+    "drawable": true,
+    "brief": "A simple blob or circle colored red.",
+    "status": "rejected"
+  },
+  "return": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "rib": {
+    "drawable": true,
+    "brief": "A curved bone shape.",
+    "status": "rejected"
+  },
+  "rice": {
+    "drawable": true,
+    "brief": "A bowl with small white oval grains.",
+    "status": "rejected"
+  },
+  "rich": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "ride": {
+    "drawable": true,
+    "brief": "A stick figure sitting on a bicycle.",
+    "status": "rejected"
+  },
+  "rip": {
+    "drawable": true,
+    "brief": "A piece of paper with a jagged tear line.",
+    "status": "rejected"
+  },
+  "road": {
+    "drawable": true,
+    "brief": "A straight gray path with dashed center lines.",
+    "status": "ok"
+  },
+  "rob": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "rock": {
+    "drawable": true,
+    "brief": "A gray irregular oval shape.",
+    "status": "ok"
+  },
+  "rod": {
+    "drawable": true,
+    "brief": "A straight thin stick or metal bar",
+    "status": "rejected"
+  },
+  "roll": {
+    "drawable": true,
+    "brief": "A cylindrical object like a bread roll or a rolling pin",
+    "status": "rejected"
+  },
+  "room": {
+    "drawable": true,
+    "brief": "A simple square room with a door and window",
+    "status": "ok"
+  },
+  "rope": {
+    "drawable": true,
+    "brief": "A thick curved line representing a coiled rope",
+    "status": "rejected"
+  },
+  "rose": {
+    "drawable": true,
+    "brief": "A flower with layered petals and a stem",
+    "status": "ok"
+  },
+  "rot": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "round": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "rude": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "rug": {
+    "drawable": true,
+    "brief": "A rectangular or oval floor mat with fringe",
+    "status": "ok"
+  },
+  "rule": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "run": {
+    "drawable": true,
+    "brief": "A stick figure with legs in motion",
+    "status": "rejected"
+  },
+  "running": {
+    "drawable": true,
+    "brief": "A stick figure with legs in motion",
+    "status": "ok"
+  },
+  "runs": {
+    "drawable": true,
+    "brief": "A stick figure with legs in motion",
+    "status": "rejected"
+  },
+  "rush": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "sad": {
+    "drawable": true,
+    "brief": "A simple face with a downturned mouth and teardrop",
+    "status": "ok"
+  },
+  "said": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "sail": {
+    "drawable": true,
+    "brief": "A boat with a triangular cloth sail",
+    "status": "ok"
+  },
+  "same": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "sand": {
+    "drawable": true,
+    "brief": "A pile of tiny dots or a beach with waves",
+    "status": "ok"
+  },
+  "sat": {
+    "drawable": true,
+    "brief": "A stick figure sitting on a chair or ground",
+    "status": "rejected"
+  },
+  "save": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "saw": {
+    "drawable": true,
+    "brief": "A hand tool with a serrated blade and handle",
+    "status": "rejected"
+  },
+  "say": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "scan": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "scarf": {
+    "drawable": true,
+    "brief": "A long rectangular piece of cloth wrapped around a neck",
+    "status": "ok"
+  },
+  "sea": {
+    "drawable": true,
+    "brief": "Wavy blue lines across the page",
+    "status": "ok"
+  },
+  "seem": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "sell": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "send": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "serve": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "set": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "shade": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "sharp": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "shed": {
+    "drawable": true,
+    "brief": "A small wooden building with a slanted roof",
+    "status": "ok"
+  },
+  "sheep": {
+    "drawable": true,
+    "brief": "A fluffy white animal with four legs and a black face",
+    "status": "ok"
+  },
+  "shell": {
+    "drawable": true,
+    "brief": "A spiral seashell on the beach",
+    "status": "ok"
+  },
+  "shin": {
+    "drawable": true,
+    "brief": "A leg with a circle around the front part below the knee",
+    "status": "rejected"
+  },
+  "ship": {
+    "drawable": true,
+    "brief": "A boat with a hull, mast, and sails on water",
+    "status": "ok"
+  },
+  "shirt": {
+    "drawable": true,
+    "brief": "A simple T-shirt shape with sleeves and a collar",
+    "status": "ok"
+  },
+  "shop": {
+    "drawable": true,
+    "brief": "A small building with a sign and a door",
+    "status": "ok"
+  },
+  "short": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "should": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "show": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "shut": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "sick": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "side": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "silk": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "singing": {
+    "drawable": true,
+    "brief": "A person with an open mouth and musical notes above",
+    "status": "fail"
+  },
+  "sink": {
+    "drawable": true,
+    "brief": "A basin with a faucet and a drain",
+    "status": "ok"
+  },
+  "sip": {
+    "drawable": true,
+    "brief": "A person holding a cup to their lips",
+    "status": "rejected"
+  },
+  "sir": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "sister": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "sit": {
+    "drawable": true,
+    "brief": "A person sitting on a chair with legs bent at knees.",
+    "status": "rejected"
+  },
+  "site": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "sits": {
+    "drawable": true,
+    "brief": "A person sitting on a chair with legs bent at knees.",
+    "status": "rejected"
+  },
+  "six": {
+    "drawable": true,
+    "brief": "The numeral '6' or six dots in a row.",
+    "status": "rejected"
+  },
+  "skate": {
+    "drawable": true,
+    "brief": "A shoe with four wheels in a line.",
+    "status": "ok"
+  },
+  "skin": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "skip": {
+    "drawable": true,
+    "brief": "A child hopping forward with one foot lifted.",
+    "status": "rejected"
+  },
+  "skirt": {
+    "drawable": true,
+    "brief": "A triangle-shaped piece of clothing hanging from a waist.",
+    "status": "ok"
+  },
+  "sled": {
+    "drawable": true,
+    "brief": "A flat board with curved front, on snow.",
+    "status": "ok"
+  },
+  "sleep": {
+    "drawable": true,
+    "brief": "A person lying down with closed eyes and Z's above.",
+    "status": "fail"
+  },
+  "slide": {
+    "drawable": true,
+    "brief": "A playground slide with a ladder and a curved chute.",
+    "status": "ok"
+  },
+  "slim": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "slip": {
+    "drawable": true,
+    "brief": "A person's foot sliding forward on a banana peel.",
+    "status": "rejected"
+  },
+  "slow": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "smaller": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "smell": {
+    "drawable": true,
+    "brief": "A nose with wavy lines coming from it.",
+    "status": "rejected"
+  },
+  "smile": {
+    "drawable": true,
+    "brief": "A face with an upward-curving mouth.",
+    "status": "ok"
+  },
+  "smoke": {
+    "drawable": true,
+    "brief": "Gray wavy lines rising from a chimney.",
+    "status": "rejected"
+  },
+  "snack": {
+    "drawable": true,
+    "brief": "A small plate with a cookie and an apple.",
+    "status": "ok"
+  },
+  "snail": {
+    "drawable": true,
+    "brief": "A small creature with a spiral shell on its back.",
+    "status": "ok"
+  },
+  "snap": {
+    "drawable": true,
+    "brief": "A hand with thumb and middle finger touching, making a crack.",
+    "status": "rejected"
+  },
+  "sniff": {
+    "drawable": true,
+    "brief": "A nose with a curved line and a small puff of air.",
+    "status": "rejected"
+  },
+  "snow": {
+    "drawable": true,
+    "brief": "White dots falling from a gray cloud.",
+    "status": "rejected"
+  },
+  "soap": {
+    "drawable": true,
+    "brief": "A rectangular bar of soap with bubbles around it.",
+    "status": "ok"
+  },
+  "sob": {
+    "drawable": true,
+    "brief": "A face with tears streaming down and a sad expression.",
+    "status": "rejected"
+  },
+  "sock": {
+    "drawable": true,
+    "brief": "A single sock with a toe and heel shape.",
+    "status": "ok"
+  },
+  "soft": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "soil": {
+    "drawable": true,
+    "brief": "A patch of dirt with small rocks and a plant sprouting.",
+    "status": "rejected"
+  },
+  "some": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "soon": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "sort": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "sound": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "space": {
+    "drawable": true,
+    "brief": "A rocket ship with stars and a planet in the background.",
+    "status": "ok"
+  },
+  "spark": {
+    "drawable": true,
+    "brief": "A small yellow star shape with lines radiating from it.",
+    "status": "rejected"
+  },
+  "speed": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "spill": {
+    "drawable": true,
+    "brief": "A tipped-over cup with liquid flowing out in a puddle.",
+    "status": "rejected"
+  },
+  "spin": {
+    "drawable": true,
+    "brief": "A top toy with a pointed bottom and curved lines showing motion.",
+    "status": "rejected"
+  },
+  "spoil": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "sport": {
+    "drawable": true,
+    "brief": "A soccer ball on a grassy field.",
+    "status": "rejected"
+  },
+  "spot": {
+    "drawable": true,
+    "brief": "A circle with a dot in the center.",
+    "status": "rejected"
+  },
+  "spray": {
+    "drawable": true,
+    "brief": "A spray bottle with a nozzle and droplets coming out.",
+    "status": "ok"
+  },
+  "stamp": {
+    "drawable": true,
+    "brief": "A rectangular postage stamp with a wavy edge and a simple flower design.",
+    "status": "ok"
+  },
+  "stand": {
+    "drawable": true,
+    "brief": "A person standing upright with arms at sides.",
+    "status": "rejected"
+  },
+  "star": {
+    "drawable": true,
+    "brief": "A five-pointed star shape.",
+    "status": "ok"
+  },
+  "start": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "stay": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "stem": {
+    "drawable": true,
+    "brief": "A green line with a leaf attached, like a plant stem.",
+    "status": "rejected"
+  },
+  "step": {
+    "drawable": true,
+    "brief": "A single stair step with a flat top and vertical front.",
+    "status": "rejected"
+  },
+  "stern": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "stick": {
+    "drawable": true,
+    "brief": "A straight brown line with a few small branches or bumps",
+    "status": "ok"
+  },
+  "stir": {
+    "drawable": true,
+    "brief": "A hand holding a spoon inside a bowl with circular motion lines",
+    "status": "rejected"
+  },
+  "stone": {
+    "drawable": true,
+    "brief": "A gray oval shape with a rough texture",
+    "status": "rejected"
+  },
+  "stop": {
+    "drawable": true,
+    "brief": "A red octagon with the word STOP inside",
+    "status": "ok"
+  },
+  "storm": {
+    "drawable": true,
+    "brief": "Dark clouds with lightning bolts and rain lines",
+    "status": "ok"
+  },
+  "story": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "stove": {
+    "drawable": true,
+    "brief": "A rectangular box with four circles on top and knobs",
+    "status": "ok"
+  },
+  "stray": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "street": {
+    "drawable": true,
+    "brief": "A gray road with white dashed lines down the middle",
+    "status": "rejected"
+  },
+  "stuff": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "sub": {
+    "drawable": true,
+    "brief": "A long sandwich cut in half with fillings visible",
+    "status": "rejected"
+  },
+  "such": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "sun": {
+    "drawable": true,
+    "brief": "A yellow circle with short straight lines radiating outward",
+    "status": "ok"
+  },
+  "surf": {
+    "drawable": true,
+    "brief": "A person standing on a surfboard on a wave",
+    "status": "ok"
+  },
+  "sweet": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "swim": {
+    "drawable": true,
+    "brief": "A person with arms stretched forward and legs kicking in water",
+    "status": "ok"
+  },
+  "tag": {
+    "drawable": true,
+    "brief": "A rectangular label with a string attached",
+    "status": "rejected"
+  },
+  "tail": {
+    "drawable": true,
+    "brief": "A curved line extending from the back of an animal like a cat or dog",
+    "status": "rejected"
+  },
+  "take": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "talk": {
+    "drawable": true,
+    "brief": "Two faces facing each other with speech bubbles above them",
+    "status": "ok"
+  },
+  "tall": {
+    "drawable": true,
+    "brief": "A vertical rectangle taller than a small person next to it",
+    "status": "rejected"
+  },
+  "taller": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "tame": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "tap": {
+    "drawable": true,
+    "brief": "A hand with index finger pointing down touching a surface",
+    "status": "rejected"
+  },
+  "tape": {
+    "drawable": true,
+    "brief": "A roll of adhesive tape with a strip peeling off",
+    "status": "rejected"
+  },
+  "teach": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "team": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "teeth": {
+    "drawable": true,
+    "brief": "A smiling mouth showing white teeth",
+    "status": "ok"
+  },
+  "tell": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "ten": {
+    "drawable": true,
+    "brief": "The number 10 written clearly",
+    "status": "fail"
+  },
+  "tent": {
+    "drawable": true,
+    "brief": "A triangular camping tent with a door flap",
+    "status": "ok"
+  },
+  "term": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "that": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "the": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "them": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "then": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "there": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "they": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "thick": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "thin": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "third": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "thirsty": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "thirty": {
+    "drawable": true,
+    "brief": "The number 30 written clearly",
+    "status": "rejected"
+  },
+  "this": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "three": {
+    "drawable": true,
+    "brief": "The number 3 written clearly",
+    "status": "rejected"
+  },
+  "thump": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "tight": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "tile": {
+    "drawable": true,
+    "brief": "A square ceramic tile with a pattern",
+    "status": "rejected"
+  },
+  "time": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "tin": {
+    "drawable": true,
+    "brief": "A small metal can with a lid",
+    "status": "rejected"
+  },
+  "tip": {
+    "drawable": true,
+    "brief": "A finger touching the point of a pencil",
+    "status": "rejected"
+  },
+  "tire": {
+    "drawable": true,
+    "brief": "A round black car tire",
+    "status": "ok"
+  },
+  "to": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "toast": {
+    "drawable": true,
+    "brief": "A slice of bread with golden-brown surface",
+    "status": "rejected"
+  },
+  "took": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "tooth": {
+    "drawable": true,
+    "brief": "A single white tooth with roots",
+    "status": "ok"
+  },
+  "top": {
+    "drawable": true,
+    "brief": "A spinning toy with a pointed bottom",
+    "status": "rejected"
+  },
+  "torn": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "town": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "toy": {
+    "drawable": true,
+    "brief": "A simple block or ball",
+    "status": "rejected"
+  },
+  "trade": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "trail": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "train": {
+    "drawable": true,
+    "brief": "A locomotive with cars on tracks",
+    "status": "ok"
+  },
+  "trap": {
+    "drawable": true,
+    "brief": "A mousetrap with a spring and bait",
+    "status": "rejected"
+  },
+  "trash": {
+    "drawable": true,
+    "brief": "A metal can with a lid and a banana peel inside",
+    "status": "ok"
+  },
+  "tray": {
+    "drawable": true,
+    "brief": "A flat rectangular surface with raised edges",
+    "status": "rejected"
+  },
+  "tree": {
+    "drawable": true,
+    "brief": "A tall plant with a brown trunk and green leaves",
+    "status": "ok"
+  },
+  "trip": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "truck": {
+    "drawable": true,
+    "brief": "A large vehicle with a cab and cargo bed",
+    "status": "ok"
+  },
+  "tub": {
+    "drawable": true,
+    "brief": "A round bathtub with water",
+    "status": "ok"
+  },
+  "tube": {
+    "drawable": true,
+    "brief": "A long hollow cylinder",
+    "status": "rejected"
+  },
+  "tug": {
+    "drawable": true,
+    "brief": "A small boat pulling a larger ship",
+    "status": "rejected"
+  },
+  "tune": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "turkey": {
+    "drawable": true,
+    "brief": "A large bird with a fan-shaped tail and wattle",
+    "status": "ok"
+  },
+  "turn": {
+    "drawable": true,
+    "brief": "A curved arrow pointing right, showing a 90-degree turn.",
+    "status": "rejected"
+  },
+  "turtle": {
+    "drawable": true,
+    "brief": "A green turtle with a round shell, four legs, and a small head.",
+    "status": "ok"
+  },
+  "twin": {
+    "drawable": true,
+    "brief": "Two identical stick figures standing side by side.",
+    "status": "ok"
+  },
+  "twirl": {
+    "drawable": true,
+    "brief": "A spiral shape with a stick figure spinning around it.",
+    "status": "rejected"
+  },
+  "two": {
+    "drawable": true,
+    "brief": "The numeral '2'.",
+    "status": "rejected"
+  },
+  "van": {
+    "drawable": true,
+    "brief": "A boxy vehicle with wheels, windows, and a sliding door.",
+    "status": "ok"
+  },
+  "verb": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "very": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "vine": {
+    "drawable": true,
+    "brief": "A curving green line with small leaves along it.",
+    "status": "rejected"
+  },
+  "wag": {
+    "drawable": true,
+    "brief": "A dog's tail with motion lines showing it moving side to side.",
+    "status": "rejected"
+  },
+  "wait": {
+    "drawable": true,
+    "brief": "A stick figure standing still with a hand raised, palm out.",
+    "status": "rejected"
+  },
+  "wake": {
+    "drawable": true,
+    "brief": "A bed with a stick figure sitting up and eyes open.",
+    "status": "rejected"
+  },
+  "walk": {
+    "drawable": true,
+    "brief": "A stick figure with one leg forward and arms swinging.",
+    "status": "rejected"
+  },
+  "wall": {
+    "drawable": true,
+    "brief": "A rectangular brick wall with horizontal lines.",
+    "status": "ok"
+  },
+  "want": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "wanted": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "was": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "water": {
+    "drawable": true,
+    "brief": "Blue wavy lines representing a puddle or ocean.",
+    "status": "ok"
+  },
+  "wave": {
+    "drawable": true,
+    "brief": "A curved blue line with a crest and trough, like an ocean wave.",
+    "status": "rejected"
+  },
+  "way": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "web": {
+    "drawable": true,
+    "brief": "A spiderweb with radial lines and connecting curves.",
+    "status": "ok"
+  },
+  "week": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "well": {
+    "drawable": true,
+    "brief": "A circular stone structure with a bucket hanging from a rope.",
+    "status": "ok"
+  },
+  "were": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "wet": {
+    "drawable": true,
+    "brief": "A raindrop falling onto a surface with splash lines.",
+    "status": "rejected"
+  },
+  "what": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "when": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "where": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "which": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "whim": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "whip": {
+    "drawable": true,
+    "brief": "A long handle with a curled leather lash at the end",
+    "status": "rejected"
+  },
+  "whiz": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "who": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "wide": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "wig": {
+    "drawable": true,
+    "brief": "A head-shaped cap with hair strands on top",
+    "status": "rejected"
+  },
+  "will": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "win": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "wind": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "wine": {
+    "drawable": true,
+    "brief": "A glass bottle with a red liquid and a wine glass beside it",
+    "status": "rejected"
+  },
+  "wink": {
+    "drawable": true,
+    "brief": "A single eye with one eyelid closed in a wink",
+    "status": "rejected"
+  },
+  "wire": {
+    "drawable": true,
+    "brief": "A thin, straight metal line with a slight curve",
+    "status": "rejected"
+  },
+  "wish": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "wishes": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "with": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "woke": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "wood": {
+    "drawable": true,
+    "brief": "A brown log with tree rings on the end",
+    "status": "rejected"
+  },
+  "would": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "yam": {
+    "drawable": true,
+    "brief": "A long, brown, potato-like vegetable with rough skin",
+    "status": "rejected"
+  },
+  "yard": {
+    "drawable": true,
+    "brief": "A green grassy area with a fence around it",
+    "status": "rejected"
+  },
+  "yarn": {
+    "drawable": true,
+    "brief": "A ball of colorful twisted thread with a loose end",
+    "status": "fail"
+  },
+  "yawn": {
+    "drawable": true,
+    "brief": "A face with mouth wide open and eyes squeezed shut",
+    "status": "ok"
+  },
+  "yell": {
+    "drawable": true,
+    "brief": "A face with open mouth and lines radiating outward",
+    "status": "ok"
+  },
+  "yes": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "you": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "your": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "zap": {
+    "drawable": true,
+    "brief": "A lightning bolt zigzagging downward",
+    "status": "ok"
+  },
+  "zip": {
+    "drawable": true,
+    "brief": "A zipper with teeth and a pull tab",
+    "status": "ok"
+  },
+  "zoo": {
+    "drawable": true,
+    "brief": "A cage or fence with animal shapes inside",
+    "status": "rejected"
+  },
+  "call": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "came": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "camp": {
+    "drawable": true,
+    "brief": "A tent with a campfire next to it",
+    "status": "ok"
+  },
+  "cap": {
+    "drawable": true,
+    "brief": "A baseball cap on a head",
+    "status": "ok"
+  },
+  "cape": {
+    "drawable": true,
+    "brief": "A superhero cape flowing behind a figure",
+    "status": "ok"
+  },
+  "car": {
+    "drawable": true,
+    "brief": "A simple side-view car with wheels",
+    "status": "ok"
+  },
+  "cart": {
+    "drawable": true,
+    "brief": "A shopping cart with wheels and a handle",
+    "status": "ok"
+  },
+  "case": {
+    "drawable": true,
+    "brief": "A rectangular suitcase with a handle",
+    "status": "rejected"
+  },
+  "cash": {
+    "drawable": true,
+    "brief": "A stack of dollar bills with a dollar sign",
+    "status": "fail"
+  },
+  "cat": {
+    "drawable": true,
+    "brief": "A cat with pointy ears and a tail",
+    "status": "ok"
+  },
+  "cats": {
+    "drawable": true,
+    "brief": "Two cats side by side",
+    "status": "ok"
+  },
+  "cave": {
+    "drawable": true,
+    "brief": "A dark cave opening in a rocky hill",
+    "status": "ok"
+  },
+  "chain": {
+    "drawable": true,
+    "brief": "A metal chain with interlocking links",
+    "status": "ok"
+  },
+  "chart": {
+    "drawable": true,
+    "brief": "A bar chart with colored bars",
+    "status": "ok"
+  },
+  "chat": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "chest": {
+    "drawable": true,
+    "brief": "A wooden treasure chest with a lock",
+    "status": "ok"
+  },
+  "chick": {
+    "drawable": true,
+    "brief": "A small yellow chick with a beak",
+    "status": "ok"
+  },
+  "chill": {
+    "drawable": false,
+    "brief": "",
+    "status": "skip"
+  },
+  "chin": {
+    "drawable": true,
+    "brief": "A face with a highlighted chin",
+    "status": "rejected"
+  },
+  "chip": {
+    "drawable": true,
+    "brief": "A potato chip with wavy edges",
+    "status": "rejected"
+  },
+  "chop": {
+    "drawable": true,
+    "brief": "A hand holding a cleaver chopping a carrot",
+    "status": "ok"
+  },
+  "church": {
+    "drawable": true,
+    "brief": "A church with a steeple and cross",
+    "status": "ok"
+  },
+  "circle": {
+    "drawable": true,
+    "brief": "A round circle outline",
+    "status": "ok"
+  },
+  "clam": {
+    "drawable": true,
+    "brief": "A clam with a shell slightly open",
+    "status": "ok"
+  },
+  "clap": {
+    "drawable": true,
+    "brief": "Two hands clapping together",
+    "status": "ok"
+  }
+}

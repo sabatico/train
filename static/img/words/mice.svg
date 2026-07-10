@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Left mouse body -->
+  <ellipse cx="45" cy="70" rx="18" ry="14" fill="#9e9e9e"/>
+  <!-- Left mouse head -->
+  <circle cx="45" cy="55" r="12" fill="#9e9e9e"/>
+  <!-- Left mouse left ear -->
+  <circle cx="36" cy="45" r="7" fill="#9e9e9e"/>
+  <circle cx="36" cy="45" r="4" fill="#f48fb1"/>
+  <!-- Left mouse right ear -->
+  <circle cx="54" cy="45" r="7" fill="#9e9e9e"/>
+  <circle cx="54" cy="45" r="4" fill="#f48fb1"/>
+  <!-- Left mouse eye -->
+  <circle cx="42" cy="53" r="2" fill="#333"/>
+  <!-- Left mouse nose -->
+  <circle cx="48" cy="57" r="1.5" fill="#333"/>
+  <!-- Left mouse tail -->
+  <path d="M27 72 Q10 80 15 95" stroke="#9e9e9e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Right mouse body -->
+  <ellipse cx="80" cy="70" rx="18" ry="14" fill="#bdbdbd"/>
+  <!-- Right mouse head -->
+  <circle cx="80" cy="55" r="12" fill="#bdbdbd"/>
+  <!-- Right mouse left ear -->
+  <circle cx="71" cy="45" r="7" fill="#bdbdbd"/>
+  <circle cx="71" cy="45" r="4" fill="#f48fb1"/>
+  <!-- Right mouse right ear -->
+  <circle cx="89" cy="45" r="7" fill="#bdbdbd"/>
+  <circle cx="89" cy="45" r="4" fill="#f48fb1"/>
+  <!-- Right mouse eye -->
+  <circle cx="77" cy="53" r="2" fill="#333"/>
+  <!-- Right mouse nose -->
+  <circle cx="83" cy="57" r="1.5" fill="#333"/>
+  <!-- Right mouse tail -->
+  <path d="M98 72 Q115 80 110 95" stroke="#bdbdbd" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>

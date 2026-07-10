@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Sky background -->
+  <rect x="0" y="0" width="120" height="120" fill="#87CEEB"/>
+  <!-- Ground -->
+  <rect x="0" y="90" width="120" height="30" fill="#228B22"/>
+  <!-- Hut walls -->
+  <rect x="30" y="55" width="60" height="40" fill="#D2B48C"/>
+  <!-- Door -->
+  <rect x="50" y="70" width="20" height="25" fill="#8B4513"/>
+  <!-- Thatched roof -->
+  <polygon points="15,55 60,20 105,55" fill="#C4A35A"/>
+  <!-- Roof thatch lines -->
+  <line x1="25" y1="50" x2="60" y2="25" stroke="#A0843A" stroke-width="2"/>
+  <line x1="35" y1="50" x2="60" y2="30" stroke="#A0843A" stroke-width="2"/>
+  <line x1="45" y1="50" x2="60" y2="35" stroke="#A0843A" stroke-width="2"/>
+  <line x1="55" y1="50" x2="60" y2="40" stroke="#A0843A" stroke-width="2"/>
+  <line x1="65" y1="50" x2="60" y2="40" stroke="#A0843A" stroke-width="2"/>
+  <line x1="75" y1="50" x2="60" y2="35" stroke="#A0843A" stroke-width="2"/>
+  <line x1="85" y1="50" x2="60" y2="30" stroke="#A0843A" stroke-width="2"/>
+  <line x1="95" y1="50" x2="60" y2="25" stroke="#A0843A" stroke-width="2"/>
+  <!-- Window -->
+  <rect x="35" y="62" width="12" height="12" fill="#FFD700" rx="2"/>
+</svg>

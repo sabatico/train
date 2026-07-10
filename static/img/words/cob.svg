@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Corn cob body -->
+  <ellipse cx="60" cy="65" rx="22" ry="38" fill="#FFD700"/>
+  <!-- Kernels - rows of small circles -->
+  <circle cx="50" cy="35" r="3" fill="#FFA500"/>
+  <circle cx="60" cy="35" r="3" fill="#FFA500"/>
+  <circle cx="70" cy="35" r="3" fill="#FFA500"/>
+  <circle cx="45" cy="45" r="3" fill="#FFA500"/>
+  <circle cx="55" cy="45" r="3" fill="#FFA500"/>
+  <circle cx="65" cy="45" r="3" fill="#FFA500"/>
+  <circle cx="75" cy="45" r="3" fill="#FFA500"/>
+  <circle cx="42" cy="55" r="3" fill="#FFA500"/>
+  <circle cx="52" cy="55" r="3" fill="#FFA500"/>
+  <circle cx="62" cy="55" r="3" fill="#FFA500"/>
+  <circle cx="72" cy="55" r="3" fill="#FFA500"/>
+  <circle cx="42" cy="65" r="3" fill="#FFA500"/>
+  <circle cx="52" cy="65" r="3" fill="#FFA500"/>
+  <circle cx="62" cy="65" r="3" fill="#FFA500"/>
+  <circle cx="72" cy="65" r="3" fill="#FFA500"/>
+  <circle cx="45" cy="75" r="3" fill="#FFA500"/>
+  <circle cx="55" cy="75" r="3" fill="#FFA500"/>
+  <circle cx="65" cy="75" r="3" fill="#FFA500"/>
+  <circle cx="75" cy="75" r="3" fill="#FFA500"/>
+  <circle cx="50" cy="85" r="3" fill="#FFA500"/>
+  <circle cx="60" cy="85" r="3" fill="#FFA500"/>
+  <circle cx="70" cy="85" r="3" fill="#FFA500"/>
+  <!-- Husk leaves -->
+  <path d="M38 30 Q20 20 15 40 Q25 35 38 50" fill="#228B22" stroke="#1a6b1a" stroke-width="1"/>
+  <path d="M82 30 Q100 20 105 40 Q95 35 82 50" fill="#228B22" stroke="#1a6b1a" stroke-width="1"/>
+  <path d="M38 95 Q20 105 15 85 Q25 90 38 80" fill="#228B22" stroke="#1a6b1a" stroke-width="1"/>
+  <path d="M82 95 Q100 105 105 85 Q95 90 82 80" fill="#228B22" stroke="#1a6b1a" stroke-width="1"/>
+  <!-- Stem at bottom -->
+  <rect x="56" y="100" width="8" height="15" rx="2" fill="#228B22"/>
+</svg>

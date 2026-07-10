@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Jug body -->
+  <rect x="30" y="30" width="60" height="70" rx="10" ry="10" fill="#4A90D9"/>
+  <!-- Jug neck -->
+  <rect x="40" y="15" width="40" height="20" rx="5" ry="5" fill="#4A90D9"/>
+  <!-- Spout -->
+  <path d="M80 15 L95 5 L95 20 Z" fill="#4A90D9"/>
+  <!-- Handle -->
+  <path d="M30 40 Q5 40 5 65 Q5 90 30 90" fill="none" stroke="#4A90D9" stroke-width="8" stroke-linecap="round"/>
+  <!-- Opening -->
+  <ellipse cx="60" cy="15" rx="20" ry="6" fill="#2C6B9E"/>
+  <!-- Highlight -->
+  <rect x="40" y="40" width="10" height="30" rx="5" fill="#6BB3F0" opacity="0.5"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" fill="#f0f8ff"/>
+  <!-- Sock body -->
+  <path d="M35 20 L35 75 Q35 95 50 100 L70 100 Q85 95 85 75 L85 20 Z" fill="#ff6b6b" stroke="#cc4444" stroke-width="3"/>
+  <!-- Sock toe -->
+  <path d="M35 75 Q30 85 35 95 Q40 105 50 100" fill="#ff6b6b" stroke="#cc4444" stroke-width="3"/>
+  <!-- Sock heel -->
+  <path d="M85 75 Q90 85 85 95 Q80 105 70 100" fill="#ff6b6b" stroke="#cc4444" stroke-width="3"/>
+  <!-- Sock top ribbing -->
+  <rect x="33" y="18" width="54" height="12" rx="4" fill="#ff9999" stroke="#cc4444" stroke-width="2"/>
+  <!-- Stripe on sock -->
+  <rect x="35" y="45" width="50" height="8" rx="2" fill="#ffffff" opacity="0.6"/>
+</svg>

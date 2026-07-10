@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Sky background -->
+  <rect x="0" y="0" width="120" height="60" fill="#87CEEB"/>
+  <!-- Ocean -->
+  <rect x="0" y="60" width="120" height="60" fill="#1E90FF"/>
+  <!-- Wave crest -->
+  <path d="M0 80 Q30 60 60 75 Q90 90 120 70 L120 120 L0 120 Z" fill="#00BFFF"/>
+  <!-- Wave foam -->
+  <path d="M0 80 Q30 60 60 75 Q90 90 120 70" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <!-- Surfboard -->
+  <ellipse cx="60" cy="78" rx="22" ry="6" fill="#FF4500" transform="rotate(-10,60,78)"/>
+  <ellipse cx="60" cy="78" rx="22" ry="6" fill="none" stroke="#FFD700" stroke-width="1.5" transform="rotate(-10,60,78)"/>
+  <!-- Person body -->
+  <circle cx="60" cy="52" r="6" fill="#FFDAB9"/> <!-- head -->
+  <rect x="57" y="58" width="6" height="14" rx="2" fill="#FFDAB9"/> <!-- torso -->
+  <!-- Arms raised (surfing pose) -->
+  <line x1="59" y1="60" x2="48" y2="52" stroke="#FFDAB9" stroke-width="3" stroke-linecap="round"/>
+  <line x1="61" y1="60" x2="72" y2="50" stroke="#FFDAB9" stroke-width="3" stroke-linecap="round"/>
+  <!-- Legs -->
+  <line x1="58" y1="72" x2="55" y2="78" stroke="#FFDAB9" stroke-width="3" stroke-linecap="round"/>
+  <line x1="62" y1="72" x2="65" y2="78" stroke="#FFDAB9" stroke-width="3" stroke-linecap="round"/>
+  <!-- Hair -->
+  <path d="M54 50 Q56 46 60 46 Q64 46 66 50" fill="#8B4513"/>
+</svg>

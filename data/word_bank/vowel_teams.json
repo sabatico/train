@@ -70,7 +70,8 @@
       "distractors": [
         "n",
         "q"
-      ]
+      ],
+      "image": "words/look.svg"
     },
     {
       "word": "may",
@@ -209,7 +210,8 @@
       "distractors": [
         "l",
         "q"
-      ]
+      ],
+      "image": "words/boat.svg"
     },
     {
       "word": "boil",
@@ -245,7 +247,8 @@
       "distractors": [
         "a",
         "p"
-      ]
+      ],
+      "image": "words/book.svg"
     },
     {
       "word": "boot",
@@ -263,7 +266,8 @@
       "distractors": [
         "g",
         "d"
-      ]
+      ],
+      "image": "words/boot.svg"
     },
     {
       "word": "boy",
@@ -280,7 +284,8 @@
       "distractors": [
         "t",
         "e"
-      ]
+      ],
+      "image": "words/boy.svg"
     },
     {
       "word": "claw",
@@ -334,7 +339,8 @@
       "distractors": [
         "n",
         "p"
-      ]
+      ],
+      "image": "words/coat.svg"
     },
     {
       "word": "coin",
@@ -387,7 +393,8 @@
       "distractors": [
         "p",
         "n"
-      ]
+      ],
+      "image": "words/cow.svg"
     },
     {
       "word": "draw",
@@ -405,7 +412,8 @@
       "distractors": [
         "n",
         "e"
-      ]
+      ],
+      "image": "words/draw.svg"
     },
     {
       "word": "eat",
@@ -422,7 +430,8 @@
       "distractors": [
         "m",
         "k"
-      ]
+      ],
+      "image": "words/eat.svg"
     },
     {
       "word": "fail",
@@ -458,7 +467,8 @@
       "distractors": [
         "r",
         "u"
-      ]
+      ],
+      "image": "words/feet.svg"
     },
     {
       "word": "food",
@@ -494,7 +504,8 @@
       "distractors": [
         "s",
         "p"
-      ]
+      ],
+      "image": "words/foot.svg"
     },
     {
       "word": "free",
@@ -584,7 +595,8 @@
       "distractors": [
         "e",
         "l"
-      ]
+      ],
+      "image": "words/goat.svg"
     },
     {
       "word": "good",
@@ -638,7 +650,8 @@
       "distractors": [
         "k",
         "q"
-      ]
+      ],
+      "image": "words/grow.svg"
     },
     {
       "word": "hay",
@@ -690,7 +703,8 @@
       "distractors": [
         "d",
         "e"
-      ]
+      ],
+      "image": "words/hook.svg"
     },
     {
       "word": "jaw",
@@ -707,7 +721,8 @@
       "distractors": [
         "m",
         "d"
-      ]
+      ],
+      "image": "words/jaw.svg"
     },
     {
       "word": "join",
@@ -813,7 +828,8 @@
       "distractors": [
         "p",
         "k"
-      ]
+      ],
+      "image": "words/leaf.svg"
     },
     {
       "word": "load",
@@ -884,7 +900,8 @@
       "distractors": [
         "d",
         "q"
-      ]
+      ],
+      "image": "words/mail.svg"
     },
     {
       "word": "main",
@@ -920,7 +937,8 @@
       "distractors": [
         "o",
         "d"
-      ]
+      ],
+      "image": "words/meal.svg"
     },
     {
       "word": "mean",
@@ -974,7 +992,8 @@
       "distractors": [
         "r",
         "a"
-      ]
+      ],
+      "image": "words/moon.svg"
     },
     {
       "word": "nail",
@@ -992,7 +1011,8 @@
       "distractors": [
         "e",
         "q"
-      ]
+      ],
+      "image": "words/nail.svg"
     },
     {
       "word": "need",
@@ -1044,7 +1064,8 @@
       "distractors": [
         "g",
         "r"
-      ]
+      ],
+      "image": "words/owl.svg"
     },
     {
       "word": "pain",
@@ -1079,7 +1100,8 @@
       "distractors": [
         "e",
         "t"
-      ]
+      ],
+      "image": "words/paw.svg"
     },
     {
       "word": "pay",
@@ -1150,7 +1172,8 @@
       "distractors": [
         "p",
         "g"
-      ]
+      ],
+      "image": "words/rain.svg"
     },
     {
       "word": "ray",
@@ -1203,7 +1226,8 @@
       "distractors": [
         "l",
         "s"
-      ]
+      ],
+      "image": "words/road.svg"
     },
     {
       "word": "room",
@@ -1221,7 +1245,8 @@
       "distractors": [
         "l",
         "k"
-      ]
+      ],
+      "image": "words/room.svg"
     },
     {
       "word": "sail",
@@ -1239,7 +1264,8 @@
       "distractors": [
         "q",
         "k"
-      ]
+      ],
+      "image": "words/sail.svg"
     },
     {
       "word": "saw",
@@ -1290,7 +1316,8 @@
       "distractors": [
         "u",
         "b"
-      ]
+      ],
+      "image": "words/sea.svg"
     },
     {
       "word": "seem",
@@ -1379,7 +1406,8 @@
       "distractors": [
         "w",
         "t"
-      ]
+      ],
+      "image": "words/soap.svg"
     },
     {
       "word": "soil",
@@ -1558,7 +1586,8 @@
       "distractors": [
         "b",
         "w"
-      ]
+      ],
+      "image": "words/tree.svg"
     },
     {
       "word": "wait",
@@ -1647,7 +1676,8 @@
       "distractors": [
         "k",
         "p"
-      ]
+      ],
+      "image": "words/yawn.svg"
     },
     {
       "word": "zoo",
@@ -1682,7 +1712,8 @@
       "distractors": [
         "t",
         "k"
-      ]
+      ],
+      "image": "words/beach.svg"
     },
     {
       "word": "braid",
@@ -1720,7 +1751,8 @@
       "distractors": [
         "q",
         "s"
-      ]
+      ],
+      "image": "words/brain.svg"
     },
     {
       "word": "bright",
@@ -1757,7 +1789,8 @@
       "distractors": [
         "q",
         "w"
-      ]
+      ],
+      "image": "words/chain.svg"
     },
     {
       "word": "cloud",
@@ -1776,7 +1809,8 @@
       "distractors": [
         "n",
         "a"
-      ]
+      ],
+      "image": "words/cloud.svg"
     },
     {
       "word": "coach",
@@ -1813,7 +1847,8 @@
       "distractors": [
         "g",
         "l"
-      ]
+      ],
+      "image": "words/drain.svg"
     },
     {
       "word": "enjoy",
@@ -1964,7 +1999,8 @@
       "distractors": [
         "g",
         "i"
-      ]
+      ],
+      "image": "words/house.svg"
     },
     {
       "word": "light",
@@ -1982,7 +2018,8 @@
       "distractors": [
         "n",
         "q"
-      ]
+      ],
+      "image": "words/light.svg"
     },
     {
       "word": "might",
@@ -2018,7 +2055,8 @@
       "distractors": [
         "k",
         "p"
-      ]
+      ],
+      "image": "words/mouth.svg"
     },
     {
       "word": "night",
@@ -2036,7 +2074,8 @@
       "distractors": [
         "w",
         "o"
-      ]
+      ],
+      "image": "words/night.svg"
     },
     {
       "word": "paint",
@@ -2055,7 +2094,8 @@
       "distractors": [
         "o",
         "w"
-      ]
+      ],
+      "image": "words/paint.svg"
     },
     {
       "word": "plain",
@@ -2111,7 +2151,8 @@
       "distractors": [
         "k",
         "i"
-      ]
+      ],
+      "image": "words/queen.svg"
     },
     {
       "word": "round",
@@ -2148,7 +2189,8 @@
       "distractors": [
         "n",
         "t"
-      ]
+      ],
+      "image": "words/sheep.svg"
     },
     {
       "word": "sleep",
@@ -2186,7 +2228,8 @@
       "distractors": [
         "u",
         "g"
-      ]
+      ],
+      "image": "words/snail.svg"
     },
     {
       "word": "sound",
@@ -2262,7 +2305,8 @@
       "distractors": [
         "u",
         "q"
-      ]
+      ],
+      "image": "words/spray.svg"
     },
     {
       "word": "stray",
@@ -2356,7 +2400,8 @@
       "distractors": [
         "w",
         "o"
-      ]
+      ],
+      "image": "words/teeth.svg"
     },
     {
       "word": "three",
@@ -2429,7 +2474,8 @@
       "distractors": [
         "b",
         "a"
-      ]
+      ],
+      "image": "words/tooth.svg"
     },
     {
       "word": "trail",
@@ -2467,7 +2513,8 @@
       "distractors": [
         "e",
         "p"
-      ]
+      ],
+      "image": "words/train.svg"
     }
   ]
 }

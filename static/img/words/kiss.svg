@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" fill="#f0f8ff"/>
+  <!-- Left face -->
+  <circle cx="40" cy="60" r="22" fill="#ffe0b2"/>
+  <circle cx="32" cy="54" r="3" fill="#333"/>
+  <circle cx="48" cy="54" r="3" fill="#333"/>
+  <path d="M35 68 Q40 74 45 68" stroke="#333" stroke-width="2" fill="none"/>
+  <!-- Right face -->
+  <circle cx="80" cy="60" r="22" fill="#ffe0b2"/>
+  <circle cx="72" cy="54" r="3" fill="#333"/>
+  <circle cx="88" cy="54" r="3" fill="#333"/>
+  <path d="M75 68 Q80 74 85 68" stroke="#333" stroke-width="2" fill="none"/>
+  <!-- Lips touching (kiss) -->
+  <ellipse cx="55" cy="62" rx="5" ry="4" fill="#e91e63"/>
+  <ellipse cx="65" cy="62" rx="5" ry="4" fill="#e91e63"/>
+</svg>

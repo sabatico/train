@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Sky background -->
+  <rect x="0" y="0" width="120" height="120" fill="#87CEEB"/>
+  <!-- Ground -->
+  <rect x="0" y="100" width="120" height="20" fill="#4CAF50"/>
+  <!-- Ladder rails -->
+  <rect x="30" y="30" width="4" height="70" fill="#8B4513" rx="2"/>
+  <rect x="50" y="30" width="4" height="70" fill="#8B4513" rx="2"/>
+  <!-- Ladder rungs -->
+  <rect x="30" y="40" width="24" height="4" fill="#8B4513" rx="2"/>
+  <rect x="30" y="55" width="24" height="4" fill="#8B4513" rx="2"/>
+  <rect x="30" y="70" width="24" height="4" fill="#8B4513" rx="2"/>
+  <rect x="30" y="85" width="24" height="4" fill="#8B4513" rx="2"/>
+  <!-- Platform -->
+  <rect x="50" y="28" width="30" height="6" fill="#8B4513" rx="2"/>
+  <!-- Slide chute - curved -->
+  <path d="M80 30 Q110 30 110 60 Q110 95 90 100" stroke="#FF6347" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- Slide chute side rails -->
+  <path d="M80 26 Q106 26 106 60 Q106 92 88 96" stroke="#FF4500" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M80 34 Q114 34 114 60 Q114 98 92 104" stroke="#FF4500" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

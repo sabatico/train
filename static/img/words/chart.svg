@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Background -->
+  <rect x="0" y="0" width="120" height="120" fill="#f0f8ff" rx="10"/>
+  
+  <!-- Base line -->
+  <line x1="15" y1="100" x2="105" y2="100" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Bar 1 - red -->
+  <rect x="20" y="45" width="18" height="55" fill="#e74c3c" rx="3"/>
+  
+  <!-- Bar 2 - blue -->
+  <rect x="44" y="30" width="18" height="70" fill="#3498db" rx="3"/>
+  
+  <!-- Bar 3 - green -->
+  <rect x="68" y="55" width="18" height="45" fill="#2ecc71" rx="3"/>
+  
+  <!-- Bar 4 - yellow -->
+  <rect x="92" y="20" width="18" height="80" fill="#f1c40f" rx="3"/>
+</svg>

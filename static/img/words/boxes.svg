@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Left box -->
+  <rect x="15" y="50" width="40" height="40" fill="#E74C3C" rx="2"/>
+  <!-- Left box flaps -->
+  <polygon points="15,50 35,35 55,50" fill="#C0392B" stroke="#C0392B" stroke-width="1"/>
+  <polygon points="15,50 15,35 35,35" fill="#E74C3C" stroke="#C0392B" stroke-width="1"/>
+  <polygon points="35,35 55,35 55,50" fill="#E74C3C" stroke="#C0392B" stroke-width="1"/>
+  <!-- Left box front outline -->
+  <rect x="15" y="50" width="40" height="40" fill="none" stroke="#A93226" stroke-width="2" rx="2"/>
+
+  <!-- Right box -->
+  <rect x="65" y="45" width="40" height="40" fill="#3498DB" rx="2"/>
+  <!-- Right box flaps -->
+  <polygon points="65,45 85,30 105,45" fill="#2980B9" stroke="#2980B9" stroke-width="1"/>
+  <polygon points="65,45 65,30 85,30" fill="#3498DB" stroke="#2980B9" stroke-width="1"/>
+  <polygon points="85,30 105,30 105,45" fill="#3498DB" stroke="#2980B9" stroke-width="1"/>
+  <!-- Right box front outline -->
+  <rect x="65" y="45" width="40" height="40" fill="none" stroke="#2471A3" stroke-width="2" rx="2"/>
+</svg>

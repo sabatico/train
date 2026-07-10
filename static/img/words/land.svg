@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Sky background -->
+  <rect x="0" y="0" width="120" height="120" fill="#87CEEB"/>
+  <!-- Sun -->
+  <circle cx="90" cy="30" r="20" fill="#FFD700"/>
+  <!-- Sun rays -->
+  <line x1="90" y1="5" x2="90" y2="0" stroke="#FFD700" stroke-width="3"/>
+  <line x1="90" y1="55" x2="90" y2="60" stroke="#FFD700" stroke-width="3"/>
+  <line x1="65" y1="30" x2="60" y2="30" stroke="#FFD700" stroke-width="3"/>
+  <line x1="115" y1="30" x2="120" y2="30" stroke="#FFD700" stroke-width="3"/>
+  <line x1="72" y1="12" x2="68" y2="8" stroke="#FFD700" stroke-width="3"/>
+  <line x1="108" y1="48" x2="112" y2="52" stroke="#FFD700" stroke-width="3"/>
+  <line x1="108" y1="12" x2="112" y2="8" stroke="#FFD700" stroke-width="3"/>
+  <line x1="72" y1="48" x2="68" y2="52" stroke="#FFD700" stroke-width="3"/>
+  <!-- Ground -->
+  <rect x="0" y="80" width="120" height="40" fill="#228B22"/>
+  <!-- Tree trunk -->
+  <rect x="50" y="50" width="12" height="35" fill="#8B4513"/>
+  <!-- Tree foliage -->
+  <circle cx="56" cy="40" r="22" fill="#006400"/>
+  <circle cx="45" cy="45" r="15" fill="#228B22"/>
+  <circle cx="67" cy="45" r="15" fill="#228B22"/>
+</svg>

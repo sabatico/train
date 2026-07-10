@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Shell -->
+  <ellipse cx="60" cy="65" rx="35" ry="28" fill="#2d8a2d"/>
+  <!-- Shell pattern -->
+  <ellipse cx="60" cy="65" rx="28" ry="22" fill="#3cb043"/>
+  <ellipse cx="60" cy="65" rx="20" ry="16" fill="#4caf50"/>
+  <!-- Head -->
+  <ellipse cx="95" cy="55" rx="12" ry="8" fill="#4caf50"/>
+  <!-- Eye -->
+  <circle cx="100" cy="53" r="2.5" fill="#1a1a1a"/>
+  <!-- Front left leg -->
+  <ellipse cx="40" cy="90" rx="8" ry="5" fill="#3cb043" transform="rotate(-20,40,90)"/>
+  <!-- Front right leg -->
+  <ellipse cx="80" cy="90" rx="8" ry="5" fill="#3cb043" transform="rotate(20,80,90)"/>
+  <!-- Back left leg -->
+  <ellipse cx="35" cy="85" rx="7" ry="4" fill="#2d8a2d" transform="rotate(-30,35,85)"/>
+  <!-- Back right leg -->
+  <ellipse cx="85" cy="85" rx="7" ry="4" fill="#2d8a2d" transform="rotate(30,85,85)"/>
+  <!-- Tail -->
+  <polygon points="25,60 18,55 22,62" fill="#3cb043"/>
+</svg>

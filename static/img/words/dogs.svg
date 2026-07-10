@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Left dog -->
+  <ellipse cx="35" cy="80" rx="18" ry="22" fill="#C8A27A"/>
+  <circle cx="35" cy="55" r="16" fill="#C8A27A"/>
+  <ellipse cx="35" cy="55" rx="8" ry="5" fill="#8B5E3C"/>
+  <circle cx="28" cy="50" r="3" fill="#222"/>
+  <circle cx="42" cy="50" r="3" fill="#222"/>
+  <ellipse cx="35" cy="58" rx="3" ry="2" fill="#222"/>
+  <ellipse cx="22" cy="48" rx="6" ry="3" fill="#C8A27A" transform="rotate(-30 22 48)"/>
+  <ellipse cx="48" cy="48" rx="6" ry="3" fill="#C8A27A" transform="rotate(30 48 48)"/>
+  <ellipse cx="22" cy="48" rx="4" ry="2" fill="#8B5E3C" transform="rotate(-30 22 48)"/>
+  <ellipse cx="48" cy="48" rx="4" ry="2" fill="#8B5E3C" transform="rotate(30 48 48)"/>
+
+  <!-- Right dog -->
+  <ellipse cx="85" cy="80" rx="18" ry="22" fill="#A0785A"/>
+  <circle cx="85" cy="55" r="16" fill="#A0785A"/>
+  <ellipse cx="85" cy="55" rx="8" ry="5" fill="#6B4226"/>
+  <circle cx="78" cy="50" r="3" fill="#222"/>
+  <circle cx="92" cy="50" r="3" fill="#222"/>
+  <ellipse cx="85" cy="58" rx="3" ry="2" fill="#222"/>
+  <ellipse cx="72" cy="48" rx="6" ry="3" fill="#A0785A" transform="rotate(-30 72 48)"/>
+  <ellipse cx="98" cy="48" rx="6" ry="3" fill="#A0785A" transform="rotate(30 98 48)"/>
+  <ellipse cx="72" cy="48" rx="4" ry="2" fill="#6B4226" transform="rotate(-30 72 48)"/>
+  <ellipse cx="98" cy="48" rx="4" ry="2" fill="#6B4226" transform="rotate(30 98 48)"/>
+</svg>

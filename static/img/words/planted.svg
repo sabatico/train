@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect x="0" y="0" width="120" height="120" fill="#87CEEB"/>
+  <!-- Soil -->
+  <ellipse cx="60" cy="90" rx="45" ry="20" fill="#8B4513"/>
+  <ellipse cx="60" cy="85" rx="40" ry="15" fill="#A0522D"/>
+  <!-- Roots below soil -->
+  <path d="M50 90 Q45 100 40 110" stroke="#5C4033" stroke-width="3" fill="none"/>
+  <path d="M60 90 Q60 105 58 115" stroke="#5C4033" stroke-width="3" fill="none"/>
+  <path d="M70 90 Q75 100 80 110" stroke="#5C4033" stroke-width="3" fill="none"/>
+  <path d="M55 90 Q50 102 48 112" stroke="#5C4033" stroke-width="2" fill="none"/>
+  <path d="M65 90 Q68 102 70 112" stroke="#5C4033" stroke-width="2" fill="none"/>
+  <!-- Stem -->
+  <rect x="57" y="40" width="6" height="45" rx="3" fill="#228B22"/>
+  <!-- Leaves -->
+  <ellipse cx="50" cy="55" rx="12" ry="6" fill="#32CD32" transform="rotate(-30 50 55)"/>
+  <ellipse cx="70" cy="50" rx="12" ry="6" fill="#32CD32" transform="rotate(30 70 50)"/>
+  <ellipse cx="55" cy="38" rx="10" ry="5" fill="#2E8B57" transform="rotate(-20 55 38)"/>
+  <ellipse cx="65" cy="35" rx="10" ry="5" fill="#2E8B57" transform="rotate(20 65 35)"/>
+  <!-- Small flower on top -->
+  <circle cx="60" cy="30" r="5" fill="#FFD700"/>
+  <circle cx="56" cy="27" r="4" fill="#FFA500"/>
+  <circle cx="64" cy="27" r="4" fill="#FFA500"/>
+  <circle cx="58" cy="34" r="4" fill="#FFA500"/>
+  <circle cx="62" cy="34" r="4" fill="#FFA500"/>
+</svg>

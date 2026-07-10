@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Body -->
+  <ellipse cx="60" cy="75" rx="30" ry="25" fill="#8B4513"/>
+  <!-- Head -->
+  <circle cx="40" cy="50" r="12" fill="#5C4033"/>
+  <!-- Wattle -->
+  <ellipse cx="38" cy="60" rx="6" ry="8" fill="#FF4500"/>
+  <!-- Beak -->
+  <polygon points="28,48 20,50 28,52" fill="#FFD700"/>
+  <!-- Eye -->
+  <circle cx="35" cy="46" r="3" fill="white"/>
+  <circle cx="35" cy="46" r="1.5" fill="black"/>
+  <!-- Fan tail -->
+  <path d="M70 65 Q95 30 110 60 Q100 50 85 55 Q105 45 115 70 Q95 60 80 65 Q100 70 110 85 Q90 75 75 70" fill="#D2691E" stroke="#8B4513" stroke-width="2"/>
+  <!-- Tail feathers detail -->
+  <path d="M75 68 Q95 55 105 75" fill="none" stroke="#A0522D" stroke-width="2"/>
+  <path d="M78 72 Q98 65 108 80" fill="none" stroke="#A0522D" stroke-width="2"/>
+  <!-- Legs -->
+  <line x1="50" y1="95" x2="45" y2="115" stroke="#FFD700" stroke-width="3"/>
+  <line x1="65" y1="95" x2="70" y2="115" stroke="#FFD700" stroke-width="3"/>
+  <!-- Feet -->
+  <path d="M40 115 L45 115 L50 115" fill="none" stroke="#FFD700" stroke-width="2"/>
+  <path d="M65 115 L70 115 L75 115" fill="none" stroke="#FFD700" stroke-width="2"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Background -->
+  <rect width="120" height="120" fill="#f0f8ff"/>
+  <!-- Plate -->
+  <ellipse cx="60" cy="80" rx="35" ry="12" fill="#e0e0e0" stroke="#999" stroke-width="2"/>
+  <ellipse cx="60" cy="78" rx="30" ry="9" fill="#fff"/>
+  <!-- Food on plate (simple blob) -->
+  <ellipse cx="55" cy="75" rx="15" ry="6" fill="#f4a460"/>
+  <ellipse cx="60" cy="73" rx="10" ry="4" fill="#ffd700"/>
+  <!-- Person head -->
+  <circle cx="60" cy="25" r="15" fill="#f5cba7" stroke="#333" stroke-width="2"/>
+  <!-- Eyes -->
+  <circle cx="54" cy="22" r="2" fill="#333"/>
+  <circle cx="66" cy="22" r="2" fill="#333"/>
+  <!-- Smile (chewing) -->
+  <path d="M52 30 Q60 36 68 30" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+  <!-- Cheek (chewing bulge) -->
+  <circle cx="72" cy="28" r="4" fill="#f5cba7" stroke="#333" stroke-width="1.5"/>
+  <!-- Body -->
+  <rect x="45" y="38" width="30" height="25" rx="5" fill="#4a90d9" stroke="#333" stroke-width="2"/>
+  <!-- Arm holding fork -->
+  <path d="M70 45 L85 55 L95 50" fill="none" stroke="#f5cba7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Fork -->
+  <line x1="95" y1="50" x2="105" y2="45" stroke="#888" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="105" y1="45" x2="108" y2="40" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+  <line x1="105" y1="45" x2="108" y2="48" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+  <line x1="105" y1="45" x2="108" y2="44" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+  <!-- Fork handle -->
+  <line x1="95" y1="50" x2="90" y2="53" stroke="#888" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

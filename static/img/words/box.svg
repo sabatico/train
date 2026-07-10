@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Box body -->
+  <rect x="25" y="40" width="70" height="55" rx="3" fill="#D4A574" stroke="#8B5E3C" stroke-width="3"/>
+  <!-- Box front panel detail -->
+  <rect x="30" y="45" width="60" height="45" rx="2" fill="#C49464" stroke="#8B5E3C" stroke-width="2"/>
+  <!-- Left flap -->
+  <polygon points="25,40 40,25 55,40" fill="#E8C49A" stroke="#8B5E3C" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Right flap -->
+  <polygon points="65,40 80,25 95,40" fill="#E8C49A" stroke="#8B5E3C" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Back flap (behind) -->
+  <polygon points="35,38 60,20 85,38" fill="#B8845A" stroke="#8B5E3C" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Front flap (folded down) -->
+  <polygon points="30,40 60,50 90,40" fill="#F0D5B0" stroke="#8B5E3C" stroke-width="3" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Pin shaft -->
+  <line x1="60" y1="50" x2="60" y2="100" stroke="#888" stroke-width="4" stroke-linecap="round"/>
+  <!-- Pin head -->
+  <circle cx="60" cy="40" r="14" fill="#e63946"/>
+  <!-- Highlight on head -->
+  <circle cx="55" cy="35" r="5" fill="#ff6b6b" opacity="0.6"/>
+</svg>

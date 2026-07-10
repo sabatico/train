@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Plate -->
+  <ellipse cx="60" cy="85" rx="40" ry="12" fill="#d4d4d4" stroke="#999" stroke-width="2"/>
+  <ellipse cx="60" cy="83" rx="35" ry="9" fill="#e8e8e8"/>
+  <!-- Apple -->
+  <circle cx="45" cy="55" r="18" fill="#e74c3c"/>
+  <path d="M45 37 Q47 30 50 33" fill="none" stroke="#2ecc71" stroke-width="2.5" stroke-linecap="round"/>
+  <ellipse cx="45" cy="55" rx="6" ry="10" fill="#c0392b" opacity="0.4"/>
+  <!-- Cookie -->
+  <circle cx="75" cy="60" r="16" fill="#d4a017"/>
+  <circle cx="75" cy="60" r="14" fill="#e6b800"/>
+  <!-- Cookie chips -->
+  <circle cx="70" cy="55" r="2.5" fill="#5a3e1b"/>
+  <circle cx="78" cy="52" r="2" fill="#5a3e1b"/>
+  <circle cx="73" cy="64" r="2.5" fill="#5a3e1b"/>
+  <circle cx="80" cy="62" r="2" fill="#5a3e1b"/>
+  <circle cx="68" cy="61" r="2" fill="#5a3e1b"/>
+</svg>

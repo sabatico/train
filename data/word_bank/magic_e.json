@@ -18,7 +18,8 @@
       "distractors": [
         "r",
         "m"
-      ]
+      ],
+      "image": "words/ice.svg"
     },
     {
       "word": "like",
@@ -113,7 +114,8 @@
       "distractors": [
         "g",
         "d"
-      ]
+      ],
+      "image": "words/bake.svg"
     },
     {
       "word": "base",
@@ -151,7 +153,8 @@
       "distractors": [
         "g",
         "q"
-      ]
+      ],
+      "image": "words/bike.svg"
     },
     {
       "word": "bite",
@@ -170,7 +173,8 @@
       "distractors": [
         "d",
         "o"
-      ]
+      ],
+      "image": "words/bite.svg"
     },
     {
       "word": "bone",
@@ -208,7 +212,8 @@
       "distractors": [
         "u",
         "b"
-      ]
+      ],
+      "image": "words/cake.svg"
     },
     {
       "word": "came",
@@ -246,7 +251,8 @@
       "distractors": [
         "l",
         "o"
-      ]
+      ],
+      "image": "words/cape.svg"
     },
     {
       "word": "case",
@@ -284,7 +290,8 @@
       "distractors": [
         "l",
         "d"
-      ]
+      ],
+      "image": "words/cave.svg"
     },
     {
       "word": "code",
@@ -322,7 +329,8 @@
       "distractors": [
         "i",
         "b"
-      ]
+      ],
+      "image": "words/cone.svg"
     },
     {
       "word": "cube",
@@ -341,7 +349,8 @@
       "distractors": [
         "i",
         "d"
-      ]
+      ],
+      "image": "words/cube.svg"
     },
     {
       "word": "cute",
@@ -398,7 +407,8 @@
       "distractors": [
         "s",
         "p"
-      ]
+      ],
+      "image": "words/dice.svg"
     },
     {
       "word": "dime",
@@ -417,7 +427,8 @@
       "distractors": [
         "a",
         "q"
-      ]
+      ],
+      "image": "words/dime.svg"
     },
     {
       "word": "dine",
@@ -455,7 +466,8 @@
       "distractors": [
         "p",
         "k"
-      ]
+      ],
+      "image": "words/dive.svg"
     },
     {
       "word": "face",
@@ -474,7 +486,8 @@
       "distractors": [
         "u",
         "m"
-      ]
+      ],
+      "image": "words/face.svg"
     },
     {
       "word": "fake",
@@ -568,7 +581,8 @@
       "distractors": [
         "b",
         "l"
-      ]
+      ],
+      "image": "words/fire.svg"
     },
     {
       "word": "five",
@@ -587,7 +601,8 @@
       "distractors": [
         "k",
         "s"
-      ]
+      ],
+      "image": "words/five.svg"
     },
     {
       "word": "game",
@@ -606,7 +621,8 @@
       "distractors": [
         "p",
         "n"
-      ]
+      ],
+      "image": "words/game.svg"
     },
     {
       "word": "gate",
@@ -625,7 +641,8 @@
       "distractors": [
         "q",
         "l"
-      ]
+      ],
+      "image": "words/gate.svg"
     },
     {
       "word": "gave",
@@ -701,7 +718,8 @@
       "distractors": [
         "d",
         "w"
-      ]
+      ],
+      "image": "words/hike.svg"
     },
     {
       "word": "hire",
@@ -738,7 +756,8 @@
       "distractors": [
         "b",
         "d"
-      ]
+      ],
+      "image": "words/hive.svg"
     },
     {
       "word": "hole",
@@ -776,7 +795,8 @@
       "distractors": [
         "w",
         "p"
-      ]
+      ],
+      "image": "words/home.svg"
     },
     {
       "word": "hope",
@@ -852,7 +872,8 @@
       "distractors": [
         "s",
         "m"
-      ]
+      ],
+      "image": "words/kite.svg"
     },
     {
       "word": "lake",
@@ -871,7 +892,8 @@
       "distractors": [
         "s",
         "n"
-      ]
+      ],
+      "image": "words/lake.svg"
     },
     {
       "word": "late",
@@ -909,7 +931,8 @@
       "distractors": [
         "k",
         "n"
-      ]
+      ],
+      "image": "words/lime.svg"
     },
     {
       "word": "line",
@@ -966,7 +989,8 @@
       "distractors": [
         "w",
         "o"
-      ]
+      ],
+      "image": "words/mice.svg"
     },
     {
       "word": "mile",
@@ -1099,7 +1123,8 @@
       "distractors": [
         "l",
         "q"
-      ]
+      ],
+      "image": "words/nose.svg"
     },
     {
       "word": "note",
@@ -1118,7 +1143,8 @@
       "distractors": [
         "s",
         "k"
-      ]
+      ],
+      "image": "words/note.svg"
     },
     {
       "word": "pile",
@@ -1137,7 +1163,8 @@
       "distractors": [
         "u",
         "d"
-      ]
+      ],
+      "image": "words/pile.svg"
     },
     {
       "word": "pine",
@@ -1156,7 +1183,8 @@
       "distractors": [
         "w",
         "k"
-      ]
+      ],
+      "image": "words/pine.svg"
     },
     {
       "word": "poke",
@@ -1213,7 +1241,8 @@
       "distractors": [
         "u",
         "g"
-      ]
+      ],
+      "image": "words/rake.svg"
     },
     {
       "word": "rate",
@@ -1308,7 +1337,8 @@
       "distractors": [
         "l",
         "m"
-      ]
+      ],
+      "image": "words/rose.svg"
     },
     {
       "word": "rude",
@@ -1516,7 +1546,8 @@
       "distractors": [
         "q",
         "s"
-      ]
+      ],
+      "image": "words/tire.svg"
     },
     {
       "word": "tube",
@@ -1706,7 +1737,8 @@
       "distractors": [
         "o",
         "w"
-      ]
+      ],
+      "image": "words/bride.svg"
     },
     {
       "word": "close",
@@ -1766,7 +1798,8 @@
       "distractors": [
         "r",
         "k"
-      ]
+      ],
+      "image": "words/flute.svg"
     },
     {
       "word": "grade",
@@ -1826,7 +1859,8 @@
       "distractors": [
         "s",
         "q"
-      ]
+      ],
+      "image": "words/plate.svg"
     },
     {
       "word": "pride",
@@ -1866,7 +1900,8 @@
       "distractors": [
         "m",
         "b"
-      ]
+      ],
+      "image": "words/skate.svg"
     },
     {
       "word": "slide",
@@ -1886,7 +1921,8 @@
       "distractors": [
         "w",
         "a"
-      ]
+      ],
+      "image": "words/slide.svg"
     },
     {
       "word": "smile",
@@ -1906,7 +1942,8 @@
       "distractors": [
         "a",
         "q"
-      ]
+      ],
+      "image": "words/smile.svg"
     },
     {
       "word": "smoke",
@@ -1946,7 +1983,8 @@
       "distractors": [
         "q",
         "u"
-      ]
+      ],
+      "image": "words/space.svg"
     },
     {
       "word": "stone",
@@ -1986,7 +2024,8 @@
       "distractors": [
         "r",
         "p"
-      ]
+      ],
+      "image": "words/stove.svg"
     },
     {
       "word": "trade",

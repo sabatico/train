@@ -36,7 +36,8 @@
       "distractors": [
         "n",
         "t"
-      ]
+      ],
+      "image": "words/egg.svg"
     },
     {
       "word": "will",
@@ -90,7 +91,8 @@
       "distractors": [
         "g",
         "d"
-      ]
+      ],
+      "image": "words/bell.svg"
     },
     {
       "word": "bill",
@@ -198,7 +200,8 @@
       "distractors": [
         "k",
         "n"
-      ]
+      ],
+      "image": "words/doll.svg"
     },
     {
       "word": "fall",
@@ -306,7 +309,8 @@
       "distractors": [
         "m",
         "q"
-      ]
+      ],
+      "image": "words/hill.svg"
     },
     {
       "word": "jazz",
@@ -342,7 +346,8 @@
       "distractors": [
         "a",
         "q"
-      ]
+      ],
+      "image": "words/kiss.svg"
     },
     {
       "word": "less",
@@ -467,7 +472,8 @@
       "distractors": [
         "s",
         "r"
-      ]
+      ],
+      "image": "words/pill.svg"
     },
     {
       "word": "puff",
@@ -575,7 +581,8 @@
       "distractors": [
         "n",
         "e"
-      ]
+      ],
+      "image": "words/wall.svg"
     },
     {
       "word": "well",
@@ -593,7 +600,8 @@
       "distractors": [
         "i",
         "a"
-      ]
+      ],
+      "image": "words/well.svg"
     },
     {
       "word": "yell",
@@ -611,7 +619,8 @@
       "distractors": [
         "w",
         "m"
-      ]
+      ],
+      "image": "words/yell.svg"
     },
     {
       "word": "class",
@@ -649,7 +658,8 @@
       "distractors": [
         "n",
         "q"
-      ]
+      ],
+      "image": "words/cliff.svg"
     },
     {
       "word": "dress",
@@ -668,7 +678,8 @@
       "distractors": [
         "m",
         "a"
-      ]
+      ],
+      "image": "words/dress.svg"
     },
     {
       "word": "grass",
@@ -687,7 +698,8 @@
       "distractors": [
         "b",
         "u"
-      ]
+      ],
+      "image": "words/grass.svg"
     },
     {
       "word": "sniff",

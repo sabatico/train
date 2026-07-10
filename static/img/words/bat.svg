@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Baseball bat -->
+  <rect x="45" y="20" width="8" height="70" rx="4" fill="#C8A951"/>
+  <rect x="43" y="85" width="12" height="20" rx="3" fill="#8B6914"/>
+  <rect x="44" y="20" width="10" height="8" rx="4" fill="#D4B96A"/>
+</svg>

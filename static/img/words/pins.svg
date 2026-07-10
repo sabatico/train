@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Pin 1 -->
+  <line x1="40" y1="30" x2="40" y2="90" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="40" cy="28" r="8" fill="#e74c3c"/>
+  <!-- Pin 2 -->
+  <line x1="60" y1="20" x2="60" y2="95" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="60" cy="18" r="8" fill="#3498db"/>
+  <!-- Pin 3 -->
+  <line x1="80" y1="30" x2="80" y2="90" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="80" cy="28" r="8" fill="#2ecc71"/>
+</svg>

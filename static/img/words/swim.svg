@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Water -->
+  <rect x="0" y="70" width="120" height="50" fill="#4FC3F7"/>
+  <!-- Waves -->
+  <path d="M0 75 Q15 65 30 75 Q45 85 60 75 Q75 65 90 75 Q105 85 120 75 L120 120 L0 120Z" fill="#29B6F6"/>
+  <!-- Body -->
+  <ellipse cx="60" cy="55" rx="12" ry="20" fill="#FFCC80"/>
+  <!-- Head -->
+  <circle cx="60" cy="30" r="12" fill="#FFCC80"/>
+  <!-- Hair -->
+  <path d="M48 28 Q50 18 60 18 Q70 18 72 28" fill="#5D4037"/>
+  <!-- Eyes -->
+  <circle cx="56" cy="28" r="2" fill="#333"/>
+  <circle cx="64" cy="28" r="2" fill="#333"/>
+  <!-- Smile -->
+  <path d="M55 34 Q60 38 65 34" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Left arm stretched forward -->
+  <line x1="48" y1="50" x2="20" y2="35" stroke="#FFCC80" stroke-width="6" stroke-linecap="round"/>
+  <!-- Right arm stretched forward -->
+  <line x1="72" y1="50" x2="100" y2="35" stroke="#FFCC80" stroke-width="6" stroke-linecap="round"/>
+  <!-- Left leg kicking -->
+  <line x1="52" y1="72" x2="35" y2="90" stroke="#FFCC80" stroke-width="6" stroke-linecap="round"/>
+  <!-- Right leg kicking -->
+  <line x1="68" y1="72" x2="85" y2="90" stroke="#FFCC80" stroke-width="6" stroke-linecap="round"/>
+  <!-- Swim trunks -->
+  <rect x="50" y="65" width="20" height="10" rx="3" fill="#E53935"/>
+</svg>

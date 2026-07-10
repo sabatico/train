@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Frame - headboard and footboard -->
+  <rect x="15" y="25" width="8" height="70" rx="2" fill="#5C3A1E"/>
+  <rect x="97" y="25" width="8" height="70" rx="2" fill="#5C3A1E"/>
+  <!-- Side rails -->
+  <rect x="15" y="25" width="90" height="6" rx="2" fill="#5C3A1E"/>
+  <rect x="15" y="89" width="90" height="6" rx="2" fill="#5C3A1E"/>
+  <!-- Mattress -->
+  <rect x="20" y="35" width="80" height="50" rx="4" fill="#6BB5E0"/>
+  <!-- Mattress top line -->
+  <rect x="20" y="35" width="80" height="8" rx="3" fill="#8CC9F0"/>
+  <!-- Pillow -->
+  <rect x="25" y="40" width="25" height="15" rx="5" fill="#FFFFFF"/>
+  <!-- Blanket -->
+  <rect x="55" y="45" width="40" height="35" rx="4" fill="#F4A261"/>
+  <!-- Blanket pattern - simple stripes -->
+  <rect x="55" y="52" width="40" height="4" fill="#E76F51"/>
+  <rect x="55" y="62" width="40" height="4" fill="#E76F51"/>
+  <rect x="55" y="72" width="40" height="4" fill="#E76F51"/>
+  <!-- Legs -->
+  <rect x="18" y="90" width="5" height="10" rx="1" fill="#5C3A1E"/>
+  <rect x="97" y="90" width="5" height="10" rx="1" fill="#5C3A1E"/>
+</svg>

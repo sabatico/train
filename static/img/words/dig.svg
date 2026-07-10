@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Sky background -->
+  <rect x="0" y="0" width="120" height="120" fill="#87CEEB"/>
+  <!-- Ground -->
+  <rect x="0" y="70" width="120" height="50" fill="#8B5E3C"/>
+  <!-- Dirt pile -->
+  <ellipse cx="60" cy="75" rx="35" ry="12" fill="#6B4226"/>
+  <!-- Shovel handle -->
+  <rect x="68" y="10" width="6" height="60" rx="3" fill="#A0522D" transform="rotate(25, 71, 40)"/>
+  <!-- Shovel blade -->
+  <path d="M72 58 Q78 68 74 80 Q70 88 60 88 Q50 88 46 80 Q42 68 48 58 Z" fill="#808080" transform="rotate(25, 60, 73)"/>
+  <!-- Dirt on blade -->
+  <ellipse cx="62" cy="76" rx="10" ry="5" fill="#6B4226" transform="rotate(25, 62, 76)"/>
+  <!-- Small dirt clods -->
+  <circle cx="40" cy="82" r="3" fill="#5C3A1E"/>
+  <circle cx="50" cy="88" r="2.5" fill="#5C3A1E"/>
+  <circle cx="35" cy="78" r="2" fill="#5C3A1E"/>
+  <circle cx="45" cy="92" r="2" fill="#5C3A1E"/>
+</svg>

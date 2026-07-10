@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Face -->
+  <circle cx="60" cy="60" r="45" fill="#FFD166"/>
+  <!-- Eyes squeezed shut (two curved lines) -->
+  <path d="M35 45 Q40 38 45 45" stroke="#333" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M75 45 Q80 38 85 45" stroke="#333" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Wide open mouth (yawn) -->
+  <ellipse cx="60" cy="70" rx="20" ry="18" fill="#333"/>
+  <!-- Tongue -->
+  <ellipse cx="60" cy="78" rx="12" ry="8" fill="#E57373"/>
+</svg>

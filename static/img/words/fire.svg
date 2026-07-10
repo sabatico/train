@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Log -->
+  <rect x="30" y="85" width="60" height="18" rx="6" fill="#8B4513"/>
+  <rect x="28" y="88" width="64" height="8" rx="4" fill="#A0522D"/>
+  <!-- Log end circles -->
+  <circle cx="36" cy="94" r="9" fill="#8B4513"/>
+  <circle cx="84" cy="94" r="9" fill="#8B4513"/>
+  <circle cx="36" cy="94" r="5" fill="#A0522D"/>
+  <circle cx="84" cy="94" r="5" fill="#A0522D"/>
+
+  <!-- Fire base - orange -->
+  <path d="M60 85 Q45 70 48 55 Q50 45 55 50 Q52 40 56 30 Q58 25 60 28 Q62 20 64 28 Q68 40 65 50 Q70 45 72 55 Q75 70 60 85Z" fill="#FF8C00"/>
+  <!-- Fire tips - yellow -->
+  <path d="M60 85 Q50 65 53 52 Q55 42 58 48 Q56 38 59 30 Q60 26 61 30 Q64 38 62 48 Q65 42 67 52 Q70 65 60 85Z" fill="#FFD700"/>
+  <!-- Small flame flicker -->
+  <path d="M55 50 Q52 40 56 35 Q58 32 57 38 Q59 42 55 50Z" fill="#FFA500"/>
+  <path d="M65 50 Q68 40 64 35 Q62 32 63 38 Q61 42 65 50Z" fill="#FFA500"/>
+</svg>

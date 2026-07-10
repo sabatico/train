@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Sky background -->
+  <rect x="0" y="0" width="120" height="120" fill="#87CEEB"/>
+  <!-- Ground -->
+  <rect x="0" y="95" width="120" height="25" fill="#228B22"/>
+  <!-- House body -->
+  <rect x="20" y="50" width="80" height="55" fill="#F4A460"/>
+  <!-- Roof -->
+  <polygon points="10,50 60,10 110,50" fill="#8B0000"/>
+  <!-- Door -->
+  <rect x="48" y="75" width="24" height="30" fill="#8B4513" rx="2"/>
+  <!-- Door knob -->
+  <circle cx="66" cy="92" r="3" fill="#FFD700"/>
+  <!-- Left window -->
+  <rect x="28" y="60" width="20" height="20" fill="#ADD8E6" rx="2"/>
+  <!-- Right window -->
+  <rect x="72" y="60" width="20" height="20" fill="#ADD8E6" rx="2"/>
+  <!-- Window crosses -->
+  <line x1="38" y1="60" x2="38" y2="80" stroke="#8B4513" stroke-width="2"/>
+  <line x1="28" y1="70" x2="48" y2="70" stroke="#8B4513" stroke-width="2"/>
+  <line x1="82" y1="60" x2="82" y2="80" stroke="#8B4513" stroke-width="2"/>
+  <line x1="72" y1="70" x2="92" y2="70" stroke="#8B4513" stroke-width="2"/>
+  <!-- Chimney -->
+  <rect x="80" y="15" width="15" height="25" fill="#A0522D"/>
+  <!-- Sun -->
+  <circle cx="100" cy="20" r="12" fill="#FFD700"/>
+</svg>

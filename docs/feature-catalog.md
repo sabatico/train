@@ -23,6 +23,7 @@
 | KID-10 | `echo_dictation` (TTS word → free input, unlimited 🔊 replay) | ✅ | Session screen | `speech.js` + registry | 🖥️ | renderer verified; auto-speak + replay |
 | KID-18 | Natural dictation voice (pre-generated `sage` audio, browser-TTS fallback) | ✅ | `speech.js` + `static/audio/` | ADR-013 | 🖥️ | 733 clips generated (`gpt-4o-mini-tts`, voice `sage`, kid instructions); `/static/audio/cat.mp3`→200 verified; browser TTS fallback for any gaps |
 | KID-19 | Read-aloud speak button on every screen (reads page text + her inputs) | ✅ | `.sq-speak-fab` + `/api/tts` | `agent/voice.py` (cached) | 🖥️ | browser-verified: reads screen text in `sage` voice via cached `/api/tts`; browser-TTS fallback when unkeyed |
+| KID-20 | Word-picture cue (verified generated SVG beside the word) | ✅ | Session screen | `pictureFor` → `entry.image` | 🖥️ | ADR-015; 250 lead-verified SVGs (`static/img/words/`); SVG→emoji→placeholder fallback; pictureless when no unambiguous image exists |
 | KID-11 | `phrase_dictation` (TTS phrase → per-word inputs) | ✅ | Session screen | registry + live TTS | 🖥️ | ADR-014; content = AI-enriched phrases |
 | KID-12 | `sentence_scribe` (sentence writing + review ≤2 whys) | ✅ | Session screen | teacher.review_writing + fallback | 🖥️ | ADR-014; the words→phrases→sentences path |
 | KID-13 | `beat_yesterday` sprint (mastered words, beat own record) | ⬜ | Session screen | component registry | — | PLAN §3 #10 |
@@ -57,6 +58,7 @@
 | CORE-09 | UI tokens + component CSS (design system) | ✅ | `static/css/*`, `templates/` | branding + primitives | 🖥️ | ADR-003/010; adopted from handoff; zero inline styles; `app.css` for gaps |
 | CORE-10 | Word banks (9 patterns, 736 words + difficulty) | ✅ | `data/word_bank/*.json` | content | ✅ | sourced online, built via `scripts/build_wordbanks.py`; integrity-tested; AI-enrich phrases/emoji next (T-015) |
 | CORE-15 | Phonics utils (grapheme segmenter + difficulty score) | ✅ | `engine/phonics.py` | "how complex is this word" | ⏳ | pure; cross-authored tests in progress |
+| CORE-16 | Word-picture SVG art pipeline (classify→generate→sanitize→verify→wire) | ✅ | `agent/svg_art.py` + `scripts/{gen_word_svgs,svg_gallery,apply_verified_svgs}.py` | generated picture cues | ⏳ | ADR-015; DeepSeek gen, sanitized (no text/script/refs); 411 drawn → 250 lead-verified keepers, 161 rejected; manifest `data/word_images.json`; cross-authored tests owed |
 
 ## Stub / intentionally-incomplete inventory
 | Marker | What's stubbed | Why (the external gate) | Where it's tracked |

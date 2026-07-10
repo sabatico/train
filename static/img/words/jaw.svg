@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Jawbone outline -->
+  <path d="M20 65 Q20 95 60 100 Q100 95 100 65" fill="#f4d4b0" stroke="#5a3a1a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Upper jaw line -->
+  <path d="M20 65 Q60 55 100 65" fill="none" stroke="#5a3a1a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Teeth row top -->
+  <rect x="30" y="62" width="8" height="10" rx="2" fill="white" stroke="#5a3a1a" stroke-width="1.5"/>
+  <rect x="42" y="60" width="8" height="12" rx="2" fill="white" stroke="#5a3a1a" stroke-width="1.5"/>
+  <rect x="54" y="59" width="8" height="13" rx="2" fill="white" stroke="#5a3a1a" stroke-width="1.5"/>
+  <rect x="66" y="59" width="8" height="13" rx="2" fill="white" stroke="#5a3a1a" stroke-width="1.5"/>
+  <rect x="78" y="60" width="8" height="12" rx="2" fill="white" stroke="#5a3a1a" stroke-width="1.5"/>
+  <rect x="90" y="62" width="8" height="10" rx="2" fill="white" stroke="#5a3a1a" stroke-width="1.5"/>
+  <!-- Teeth row bottom -->
+  <rect x="30" y="76" width="8" height="10" rx="2" fill="white" stroke="#5a3a1a" stroke-width="1.5"/>
+  <rect x="42" y="78" width="8" height="12" rx="2" fill="white" stroke="#5a3a1a" stroke-width="1.5"/>
+  <rect x="54" y="79" width="8" height="13" rx="2" fill="white" stroke="#5a3a1a" stroke-width="1.5"/>
+  <rect x="66" y="79" width="8" height="13" rx="2" fill="white" stroke="#5a3a1a" stroke-width="1.5"/>
+  <rect x="78" y="78" width="8" height="12" rx="2" fill="white" stroke="#5a3a1a" stroke-width="1.5"/>
+  <rect x="90" y="76" width="8" height="10" rx="2" fill="white" stroke="#5a3a1a" stroke-width="1.5"/>
+</svg>

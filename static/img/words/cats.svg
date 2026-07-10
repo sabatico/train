@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Left cat body -->
+  <ellipse cx="40" cy="80" rx="20" ry="18" fill="#FFA500"/>
+  <!-- Left cat head -->
+  <circle cx="40" cy="55" r="14" fill="#FFA500"/>
+  <!-- Left cat ears -->
+  <polygon points="30,45 28,30 38,42" fill="#FFA500"/>
+  <polygon points="50,45 52,30 42,42" fill="#FFA500"/>
+  <!-- Left cat inner ears -->
+  <polygon points="32,44 31,34 37,42" fill="#FFB84D"/>
+  <polygon points="48,44 49,34 43,42" fill="#FFB84D"/>
+  <!-- Left cat eyes -->
+  <circle cx="35" cy="53" r="2.5" fill="#333"/>
+  <circle cx="45" cy="53" r="2.5" fill="#333"/>
+  <!-- Left cat nose -->
+  <polygon points="40,57 38,60 42,60" fill="#FF6B6B"/>
+  <!-- Left cat mouth -->
+  <path d="M37,62 Q40,65 43,62" fill="none" stroke="#333" stroke-width="1.2"/>
+  <!-- Left cat whiskers -->
+  <line x1="28" y1="57" x2="16" y2="55" stroke="#333" stroke-width="1"/>
+  <line x1="28" y1="60" x2="16" y2="62" stroke="#333" stroke-width="1"/>
+  <line x1="52" y1="57" x2="64" y2="55" stroke="#333" stroke-width="1"/>
+  <line x1="52" y1="60" x2="64" y2="62" stroke="#333" stroke-width="1"/>
+  <!-- Left cat tail -->
+  <path d="M20,80 Q10,70 15,60" fill="none" stroke="#FFA500" stroke-width="5" stroke-linecap="round"/>
+  <!-- Left cat legs -->
+  <rect x="28" y="90" width="6" height="12" rx="3" fill="#FFA500"/>
+  <rect x="46" y="90" width="6" height="12" rx="3" fill="#FFA500"/>
+
+  <!-- Right cat body -->
+  <ellipse cx="80" cy="80" rx="20" ry="18" fill="#808080"/>
+  <!-- Right cat head -->
+  <circle cx="80" cy="55" r="14" fill="#808080"/>
+  <!-- Right cat ears -->
+  <polygon points="70,45 68,30 78,42" fill="#808080"/>
+  <polygon points="90,45 92,30 82,42" fill="#808080"/>
+  <!-- Right cat inner ears -->
+  <polygon points="72,44 71,34 77,42" fill="#A9A9A9"/>
+  <polygon points="88,44 89,34 83,42" fill="#A9A9A9"/>
+  <!-- Right cat eyes -->
+  <circle cx="75" cy="53" r="2.5" fill="#333"/>
+  <circle cx="85" cy="53" r="2.5" fill="#333"/>
+  <!-- Right cat nose -->
+  <polygon points="80,57 78,60 82,60" fill="#FF6B6B"/>
+  <!-- Right cat mouth -->
+  <path d="M77,62 Q80,65 83,62" fill="none" stroke="#333" stroke-width="1.2"/>
+  <!-- Right cat whiskers -->
+  <line x1="68" y1="57" x2="56" y2="55" stroke="#333" stroke-width="1"/>
+  <line x1="68" y1="60" x2="56" y2="62" stroke="#333" stroke-width="1"/>
+  <line x1="92" y1="57" x2="104" y2="55" stroke="#333" stroke-width="1"/>
+  <line x1="92" y1="60" x2="104" y2="62" stroke="#333" stroke-width="1"/>
+  <!-- Right cat tail -->
+  <path d="M100,80 Q110,70 105,60" fill="none" stroke="#808080" stroke-width="5" stroke-linecap="round"/>
+  <!-- Right cat legs -->
+  <rect x="68" y="90" width="6" height="12" rx="3" fill="#808080"/>
+  <rect x="86" y="90" width="6" height="12" rx="3" fill="#808080"/>
+</svg>

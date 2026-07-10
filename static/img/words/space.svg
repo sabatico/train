@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Background - dark space -->
+  <rect width="120" height="120" fill="#1a1a2e"/>
+  
+  <!-- Planet -->
+  <circle cx="95" cy="25" r="18" fill="#e94560"/>
+  <ellipse cx="95" cy="25" rx="18" ry="5" fill="none" stroke="#c62a40" stroke-width="2" transform="rotate(-20,95,25)"/>
+  
+  <!-- Stars -->
+  <circle cx="15" cy="15" r="2.5" fill="#ffd700"/>
+  <circle cx="30" cy="40" r="2" fill="#fff"/>
+  <circle cx="10" cy="70" r="1.8" fill="#fff"/>
+  <circle cx="50" cy="10" r="2.2" fill="#ffd700"/>
+  <circle cx="70" cy="50" r="1.5" fill="#fff"/>
+  <circle cx="110" cy="60" r="2" fill="#fff"/>
+  <circle cx="25" cy="95" r="1.8" fill="#ffd700"/>
+  <circle cx="100" cy="100" r="2" fill="#fff"/>
+  
+  <!-- Rocket body -->
+  <rect x="48" y="40" width="24" height="45" rx="4" fill="#4fc3f7"/>
+  
+  <!-- Rocket nose cone -->
+  <polygon points="60,15 48,40 72,40" fill="#ff7043"/>
+  
+  <!-- Rocket window -->
+  <circle cx="60" cy="55" r="8" fill="#81d4fa"/>
+  <circle cx="60" cy="55" r="5" fill="#e1f5fe"/>
+  
+  <!-- Rocket fins -->
+  <polygon points="48,75 38,95 48,85" fill="#ff7043"/>
+  <polygon points="72,75 82,95 72,85" fill="#ff7043"/>
+  
+  <!-- Rocket exhaust flames -->
+  <ellipse cx="60" cy="95" rx="6" ry="10" fill="#ffd700"/>
+  <ellipse cx="60" cy="98" rx="4" ry="8" fill="#ff7043"/>
+  <ellipse cx="60" cy="100" rx="2" ry="5" fill="#fff"/>
+</svg>

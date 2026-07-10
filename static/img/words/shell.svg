@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Sky -->
+  <rect x="0" y="0" width="120" height="80" fill="#87CEEB"/>
+  <!-- Sand -->
+  <rect x="0" y="80" width="120" height="40" fill="#F4D03F"/>
+  <!-- Shell body -->
+  <ellipse cx="60" cy="65" rx="28" ry="22" fill="#E8B4B8" transform="rotate(-10,60,65)"/>
+  <!-- Shell spiral -->
+  <path d="M60 50 Q72 50 72 62 Q72 74 60 74 Q50 74 50 65 Q50 58 58 58 Q63 58 63 63 Q63 67 58 67" fill="none" stroke="#C0392B" stroke-width="3" stroke-linecap="round"/>
+  <!-- Shell lines -->
+  <line x1="40" y1="58" x2="48" y2="55" stroke="#C0392B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="38" y1="65" x2="46" y2="65" stroke="#C0392B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="40" y1="72" x2="48" y2="75" stroke="#C0392B" stroke-width="2" stroke-linecap="round"/>
+  <!-- Shell highlight -->
+  <ellipse cx="55" cy="55" rx="6" ry="4" fill="#F5D6D8" opacity="0.6" transform="rotate(-15,55,55)"/>
+</svg>

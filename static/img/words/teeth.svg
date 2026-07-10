@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Face background -->
+  <circle cx="60" cy="60" r="50" fill="#FFE0B2"/>
+  
+  <!-- Smiling mouth -->
+  <path d="M30 65 Q60 90 90 65" fill="#D32F2F" stroke="#B71C1C" stroke-width="2"/>
+  
+  <!-- Teeth row -->
+  <rect x="40" y="60" width="8" height="10" rx="2" fill="white" stroke="#B0BEC5" stroke-width="0.5"/>
+  <rect x="50" y="58" width="8" height="12" rx="2" fill="white" stroke="#B0BEC5" stroke-width="0.5"/>
+  <rect x="60" y="58" width="8" height="12" rx="2" fill="white" stroke="#B0BEC5" stroke-width="0.5"/>
+  <rect x="70" y="60" width="8" height="10" rx="2" fill="white" stroke="#B0BEC5" stroke-width="0.5"/>
+  
+  <!-- Eyes -->
+  <circle cx="42" cy="48" r="5" fill="#3E2723"/>
+  <circle cx="78" cy="48" r="5" fill="#3E2723"/>
+  
+  <!-- Eye shine -->
+  <circle cx="44" cy="46" r="1.5" fill="white"/>
+  <circle cx="80" cy="46" r="1.5" fill="white"/>
+</svg>

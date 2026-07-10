@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Present body -->
+  <rect x="25" y="50" width="70" height="55" rx="5" fill="#e74c3c"/>
+  <!-- Ribbon vertical -->
+  <rect x="55" y="50" width="10" height="55" fill="#f1c40f"/>
+  <!-- Ribbon horizontal -->
+  <rect x="25" y="72" width="70" height="10" fill="#f1c40f"/>
+  <!-- Lid -->
+  <rect x="22" y="42" width="76" height="14" rx="4" fill="#c0392b"/>
+  <!-- Bow left loop -->
+  <ellipse cx="52" cy="38" rx="14" ry="10" fill="#f1c40f" transform="rotate(-20 52 38)"/>
+  <!-- Bow right loop -->
+  <ellipse cx="68" cy="38" rx="14" ry="10" fill="#f1c40f" transform="rotate(20 68 38)"/>
+  <!-- Bow center knot -->
+  <circle cx="60" cy="40" r="6" fill="#f39c12"/>
+</svg>

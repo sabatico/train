@@ -249,7 +249,8 @@
       "distractors": [
         "t",
         "g"
-      ]
+      ],
+      "image": "words/love.svg"
     },
     {
       "word": "many",
@@ -507,7 +508,8 @@
       "distractors": [
         "t",
         "s"
-      ]
+      ],
+      "image": "words/eye.svg"
     },
     {
       "word": "full",
@@ -711,7 +713,8 @@
       "distractors": [
         "i",
         "u"
-      ]
+      ],
+      "image": "words/talk.svg"
     },
     {
       "word": "there",
@@ -827,7 +830,8 @@
       "distractors": [
         "k",
         "r"
-      ]
+      ],
+      "image": "words/people.svg"
     },
     {
       "word": "where",
@@ -981,7 +985,8 @@
       "distractors": [
         "n",
         "i"
-      ]
+      ],
+      "image": "words/water.svg"
     },
     {
       "word": "would",

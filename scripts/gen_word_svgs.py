@@ -82,7 +82,9 @@ def main() -> None:
 
     # 2) generate for drawable words that need art
     def needs_gen(w: str) -> bool:
-        m = manifest[w]
+        m = manifest.get(w)
+        if not m:  # a classify batch dropped it — leave for the next classify pass
+            return False
         if not m["drawable"]:
             return False
         if m["status"] == "ok" and (IMG_DIR / f"{w}.svg").exists():

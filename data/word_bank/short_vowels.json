@@ -36,7 +36,8 @@
       "distractors": [
         "l",
         "r"
-      ]
+      ],
+      "image": "words/bag.svg"
     },
     {
       "word": "bat",
@@ -54,7 +55,8 @@
       "distractors": [
         "s",
         "k"
-      ]
+      ],
+      "image": "words/bat.svg"
     },
     {
       "word": "bed",
@@ -72,7 +74,8 @@
       "distractors": [
         "d",
         "a"
-      ]
+      ],
+      "image": "words/bed.svg"
     },
     {
       "word": "beg",
@@ -144,7 +147,8 @@
       "distractors": [
         "g",
         "a"
-      ]
+      ],
+      "image": "words/bin.svg"
     },
     {
       "word": "bit",
@@ -198,7 +202,8 @@
       "distractors": [
         "q",
         "i"
-      ]
+      ],
+      "image": "words/box.svg"
     },
     {
       "word": "bug",
@@ -216,7 +221,8 @@
       "distractors": [
         "d",
         "o"
-      ]
+      ],
+      "image": "words/bug.svg"
     },
     {
       "word": "bun",
@@ -234,7 +240,8 @@
       "distractors": [
         "o",
         "q"
-      ]
+      ],
+      "image": "words/bun.svg"
     },
     {
       "word": "bus",
@@ -252,7 +259,8 @@
       "distractors": [
         "o",
         "g"
-      ]
+      ],
+      "image": "words/bus.svg"
     },
     {
       "word": "but",
@@ -288,7 +296,8 @@
       "distractors": [
         "k",
         "i"
-      ]
+      ],
+      "image": "words/cap.svg"
     },
     {
       "word": "cat",
@@ -306,7 +315,8 @@
       "distractors": [
         "k",
         "e"
-      ]
+      ],
+      "image": "words/cat.svg"
     },
     {
       "word": "cob",
@@ -324,7 +334,8 @@
       "distractors": [
         "e",
         "m"
-      ]
+      ],
+      "image": "words/cob.svg"
     },
     {
       "word": "cod",
@@ -342,7 +353,8 @@
       "distractors": [
         "b",
         "m"
-      ]
+      ],
+      "image": "words/cod.svg"
     },
     {
       "word": "cop",
@@ -360,7 +372,8 @@
       "distractors": [
         "d",
         "i"
-      ]
+      ],
+      "image": "words/cop.svg"
     },
     {
       "word": "cot",
@@ -378,7 +391,8 @@
       "distractors": [
         "i",
         "m"
-      ]
+      ],
+      "image": "words/cot.svg"
     },
     {
       "word": "cup",
@@ -396,7 +410,8 @@
       "distractors": [
         "l",
         "m"
-      ]
+      ],
+      "image": "words/cup.svg"
     },
     {
       "word": "cut",
@@ -414,7 +429,8 @@
       "distractors": [
         "g",
         "k"
-      ]
+      ],
+      "image": "words/cut.svg"
     },
     {
       "word": "dad",
@@ -468,7 +484,8 @@
       "distractors": [
         "n",
         "o"
-      ]
+      ],
+      "image": "words/dig.svg"
     },
     {
       "word": "dim",
@@ -522,7 +539,8 @@
       "distractors": [
         "b",
         "u"
-      ]
+      ],
+      "image": "words/dog.svg"
     },
     {
       "word": "dot",
@@ -576,7 +594,8 @@
       "distractors": [
         "d",
         "w"
-      ]
+      ],
+      "image": "words/fan.svg"
     },
     {
       "word": "fat",
@@ -702,7 +721,8 @@
       "distractors": [
         "a",
         "n"
-      ]
+      ],
+      "image": "words/fox.svg"
     },
     {
       "word": "fun",
@@ -900,7 +920,8 @@
       "distractors": [
         "n",
         "a"
-      ]
+      ],
+      "image": "words/hen.svg"
     },
     {
       "word": "hip",
@@ -990,7 +1011,8 @@
       "distractors": [
         "o",
         "s"
-      ]
+      ],
+      "image": "words/hug.svg"
     },
     {
       "word": "hum",
@@ -1026,7 +1048,8 @@
       "distractors": [
         "p",
         "m"
-      ]
+      ],
+      "image": "words/hut.svg"
     },
     {
       "word": "jam",
@@ -1044,7 +1067,8 @@
       "distractors": [
         "u",
         "l"
-      ]
+      ],
+      "image": "words/jam.svg"
     },
     {
       "word": "jet",
@@ -1062,7 +1086,8 @@
       "distractors": [
         "p",
         "u"
-      ]
+      ],
+      "image": "words/jet.svg"
     },
     {
       "word": "job",
@@ -1098,7 +1123,8 @@
       "distractors": [
         "n",
         "m"
-      ]
+      ],
+      "image": "words/jog.svg"
     },
     {
       "word": "jug",
@@ -1116,7 +1142,8 @@
       "distractors": [
         "b",
         "n"
-      ]
+      ],
+      "image": "words/jug.svg"
     },
     {
       "word": "kid",
@@ -1134,7 +1161,8 @@
       "distractors": [
         "a",
         "t"
-      ]
+      ],
+      "image": "words/kid.svg"
     },
     {
       "word": "kit",
@@ -1260,7 +1288,8 @@
       "distractors": [
         "n",
         "u"
-      ]
+      ],
+      "image": "words/lip.svg"
     },
     {
       "word": "lit",
@@ -1296,7 +1325,8 @@
       "distractors": [
         "d",
         "m"
-      ]
+      ],
+      "image": "words/log.svg"
     },
     {
       "word": "lot",
@@ -1332,7 +1362,8 @@
       "distractors": [
         "k",
         "i"
-      ]
+      ],
+      "image": "words/mad.svg"
     },
     {
       "word": "man",
@@ -1350,7 +1381,8 @@
       "distractors": [
         "e",
         "o"
-      ]
+      ],
+      "image": "words/man.svg"
     },
     {
       "word": "map",
@@ -1386,7 +1418,8 @@
       "distractors": [
         "w",
         "a"
-      ]
+      ],
+      "image": "words/men.svg"
     },
     {
       "word": "met",
@@ -1458,7 +1491,8 @@
       "distractors": [
         "w",
         "l"
-      ]
+      ],
+      "image": "words/mop.svg"
     },
     {
       "word": "mud",
@@ -1494,7 +1528,8 @@
       "distractors": [
         "n",
         "t"
-      ]
+      ],
+      "image": "words/mug.svg"
     },
     {
       "word": "nap",
@@ -1530,7 +1565,8 @@
       "distractors": [
         "u",
         "w"
-      ]
+      ],
+      "image": "words/net.svg"
     },
     {
       "word": "nod",
@@ -1584,7 +1620,8 @@
       "distractors": [
         "p",
         "l"
-      ]
+      ],
+      "image": "words/nut.svg"
     },
     {
       "word": "pan",
@@ -1602,7 +1639,8 @@
       "distractors": [
         "m",
         "b"
-      ]
+      ],
+      "image": "words/pan.svg"
     },
     {
       "word": "pat",
@@ -1656,7 +1694,8 @@
       "distractors": [
         "d",
         "t"
-      ]
+      ],
+      "image": "words/pen.svg"
     },
     {
       "word": "pet",
@@ -1692,7 +1731,8 @@
       "distractors": [
         "q",
         "e"
-      ]
+      ],
+      "image": "words/pig.svg"
     },
     {
       "word": "pin",
@@ -1710,7 +1750,8 @@
       "distractors": [
         "a",
         "r"
-      ]
+      ],
+      "image": "words/pin.svg"
     },
     {
       "word": "pit",
@@ -1782,7 +1823,8 @@
       "distractors": [
         "k",
         "w"
-      ]
+      ],
+      "image": "words/pot.svg"
     },
     {
       "word": "pup",
@@ -1800,7 +1842,8 @@
       "distractors": [
         "q",
         "a"
-      ]
+      ],
+      "image": "words/pup.svg"
     },
     {
       "word": "rag",
@@ -1854,7 +1897,8 @@
       "distractors": [
         "m",
         "s"
-      ]
+      ],
+      "image": "words/rat.svg"
     },
     {
       "word": "red",
@@ -1980,7 +2024,8 @@
       "distractors": [
         "w",
         "q"
-      ]
+      ],
+      "image": "words/rug.svg"
     },
     {
       "word": "run",
@@ -2016,7 +2061,8 @@
       "distractors": [
         "m",
         "w"
-      ]
+      ],
+      "image": "words/sad.svg"
     },
     {
       "word": "sat",
@@ -2160,7 +2206,8 @@
       "distractors": [
         "z",
         "o"
-      ]
+      ],
+      "image": "words/sun.svg"
     },
     {
       "word": "tag",
@@ -2286,7 +2333,8 @@
       "distractors": [
         "r",
         "e"
-      ]
+      ],
+      "image": "words/tub.svg"
     },
     {
       "word": "tug",
@@ -2322,7 +2370,8 @@
       "distractors": [
         "g",
         "i"
-      ]
+      ],
+      "image": "words/van.svg"
     },
     {
       "word": "wag",
@@ -2358,7 +2407,8 @@
       "distractors": [
         "d",
         "o"
-      ]
+      ],
+      "image": "words/web.svg"
     },
     {
       "word": "wet",
@@ -2466,7 +2516,8 @@
       "distractors": [
         "k",
         "b"
-      ]
+      ],
+      "image": "words/zap.svg"
     },
     {
       "word": "zip",
@@ -2484,7 +2535,8 @@
       "distractors": [
         "n",
         "l"
-      ]
+      ],
+      "image": "words/zip.svg"
     }
   ]
 }

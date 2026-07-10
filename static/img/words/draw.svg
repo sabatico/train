@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Paper -->
+  <rect x="20" y="30" width="80" height="70" rx="4" fill="#f5f5dc" stroke="#888" stroke-width="2"/>
+  <!-- Lines on paper -->
+  <line x1="30" y1="50" x2="70" y2="50" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+  <line x1="30" y1="62" x2="60" y2="62" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+  <line x1="30" y1="74" x2="65" y2="74" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+  <!-- Hand -->
+  <ellipse cx="80" cy="45" rx="18" ry="22" fill="#f4c29a" stroke="#c88a5a" stroke-width="2"/>
+  <!-- Fingers -->
+  <ellipse cx="72" cy="30" rx="6" ry="10" fill="#f4c29a" stroke="#c88a5a" stroke-width="2" transform="rotate(-20,72,30)"/>
+  <ellipse cx="82" cy="28" rx="6" ry="10" fill="#f4c29a" stroke="#c88a5a" stroke-width="2" transform="rotate(-5,82,28)"/>
+  <ellipse cx="92" cy="32" rx="6" ry="10" fill="#f4c29a" stroke="#c88a5a" stroke-width="2" transform="rotate(15,92,32)"/>
+  <!-- Thumb -->
+  <ellipse cx="68" cy="52" rx="7" ry="9" fill="#f4c29a" stroke="#c88a5a" stroke-width="2" transform="rotate(-30,68,52)"/>
+  <!-- Pencil -->
+  <rect x="74" y="38" width="6" height="50" rx="2" fill="#f4d03f" stroke="#c8a832" stroke-width="1.5"/>
+  <polygon points="74,88 80,88 77,98" fill="#333" stroke="#222" stroke-width="1"/>
+  <rect x="74" y="36" width="6" height="6" rx="1" fill="#e67e22" stroke="#c0601a" stroke-width="1"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Left cup -->
+  <rect x="20" y="45" width="30" height="40" rx="3" fill="#4A90D9"/>
+  <rect x="18" y="40" width="34" height="8" rx="2" fill="#6BB3F0"/>
+  <!-- Left cup handle -->
+  <path d="M50 55 Q65 55 65 65 Q65 75 50 75" fill="none" stroke="#4A90D9" stroke-width="4" stroke-linecap="round"/>
+  <!-- Right cup -->
+  <rect x="70" y="45" width="30" height="40" rx="3" fill="#E85D75"/>
+  <rect x="68" y="40" width="34" height="8" rx="2" fill="#F48B9F"/>
+  <!-- Right cup handle -->
+  <path d="M100 55 Q115 55 115 65 Q115 75 100 75" fill="none" stroke="#E85D75" stroke-width="4" stroke-linecap="round"/>
+</svg>

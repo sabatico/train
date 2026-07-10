@@ -108,7 +108,8 @@
       "distractors": [
         "p",
         "u"
-      ]
+      ],
+      "image": "words/back.svg"
     },
     {
       "word": "bath",
@@ -126,7 +127,8 @@
       "distractors": [
         "q",
         "m"
-      ]
+      ],
+      "image": "words/bath.svg"
     },
     {
       "word": "cash",
@@ -216,7 +218,8 @@
       "distractors": [
         "s",
         "m"
-      ]
+      ],
+      "image": "words/chop.svg"
     },
     {
       "word": "dash",
@@ -270,7 +273,8 @@
       "distractors": [
         "k",
         "o"
-      ]
+      ],
+      "image": "words/duck.svg"
     },
     {
       "word": "fish",
@@ -288,7 +292,8 @@
       "distractors": [
         "r",
         "k"
-      ]
+      ],
+      "image": "words/fish.svg"
     },
     {
       "word": "kick",
@@ -324,7 +329,8 @@
       "distractors": [
         "d",
         "t"
-      ]
+      ],
+      "image": "words/lock.svg"
     },
     {
       "word": "moth",
@@ -342,7 +348,8 @@
       "distractors": [
         "q",
         "a"
-      ]
+      ],
+      "image": "words/moth.svg"
     },
     {
       "word": "much",
@@ -414,7 +421,8 @@
       "distractors": [
         "l",
         "e"
-      ]
+      ],
+      "image": "words/path.svg"
     },
     {
       "word": "pick",
@@ -468,7 +476,8 @@
       "distractors": [
         "p",
         "l"
-      ]
+      ],
+      "image": "words/rock.svg"
     },
     {
       "word": "rush",
@@ -504,7 +513,8 @@
       "distractors": [
         "g",
         "i"
-      ]
+      ],
+      "image": "words/shed.svg"
     },
     {
       "word": "shin",
@@ -540,7 +550,8 @@
       "distractors": [
         "c",
         "e"
-      ]
+      ],
+      "image": "words/ship.svg"
     },
     {
       "word": "shop",
@@ -558,7 +569,8 @@
       "distractors": [
         "c",
         "a"
-      ]
+      ],
+      "image": "words/shop.svg"
     },
     {
       "word": "shut",
@@ -612,7 +624,8 @@
       "distractors": [
         "k",
         "a"
-      ]
+      ],
+      "image": "words/sock.svg"
     },
     {
       "word": "such",
@@ -756,7 +769,8 @@
       "distractors": [
         "b",
         "r"
-      ]
+      ],
+      "image": "words/chick.svg"
     },
     {
       "word": "chill",
@@ -810,7 +824,8 @@
       "distractors": [
         "r",
         "d"
-      ]
+      ],
+      "image": "words/shell.svg"
     },
     {
       "word": "thick",
@@ -865,7 +880,8 @@
       "distractors": [
         "a",
         "g"
-      ]
+      ],
+      "image": "words/bench.svg"
     },
     {
       "word": "black",
@@ -903,7 +919,8 @@
       "distractors": [
         "t",
         "e"
-      ]
+      ],
+      "image": "words/brush.svg"
     },
     {
       "word": "chest",
@@ -922,7 +939,8 @@
       "distractors": [
         "p",
         "g"
-      ]
+      ],
+      "image": "words/chest.svg"
     },
     {
       "word": "clock",
@@ -998,7 +1016,8 @@
       "distractors": [
         "m",
         "g"
-      ]
+      ],
+      "image": "words/lunch.svg"
     },
     {
       "word": "munch",
@@ -1017,7 +1036,8 @@
       "distractors": [
         "b",
         "p"
-      ]
+      ],
+      "image": "words/munch.svg"
     },
     {
       "word": "stick",
@@ -1036,7 +1056,8 @@
       "distractors": [
         "o",
         "u"
-      ]
+      ],
+      "image": "words/stick.svg"
     },
     {
       "word": "thump",
@@ -1074,7 +1095,8 @@
       "distractors": [
         "m",
         "q"
-      ]
+      ],
+      "image": "words/trash.svg"
     },
     {
       "word": "truck",
@@ -1093,7 +1115,8 @@
       "distractors": [
         "s",
         "a"
-      ]
+      ],
+      "image": "words/truck.svg"
     }
   ]
 }

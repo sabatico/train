@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <circle cx="60" cy="60" r="40" fill="#7ec850" stroke="#4a8a2a" stroke-width="3"/>
+  <!-- Spiky bumps -->
+  <polygon points="60,10 63,22 57,22" fill="#7ec850" stroke="#4a8a2a" stroke-width="2"/>
+  <polygon points="60,110 63,98 57,98" fill="#7ec850" stroke="#4a8a2a" stroke-width="2"/>
+  <polygon points="10,60 22,57 22,63" fill="#7ec850" stroke="#4a8a2a" stroke-width="2"/>
+  <polygon points="110,60 98,57 98,63" fill="#7ec850" stroke="#4a8a2a" stroke-width="2"/>
+  <polygon points="20,20 30,28 24,32" fill="#7ec850" stroke="#4a8a2a" stroke-width="2"/>
+  <polygon points="100,100 90,92 96,88" fill="#7ec850" stroke="#4a8a2a" stroke-width="2"/>
+  <polygon points="20,100 30,92 24,88" fill="#7ec850" stroke="#4a8a2a" stroke-width="2"/>
+  <polygon points="100,20 90,28 96,32" fill="#7ec850" stroke="#4a8a2a" stroke-width="2"/>
+  <!-- Face -->
+  <circle cx="48" cy="52" r="5" fill="#2d5a1a"/>
+  <circle cx="72" cy="52" r="5" fill="#2d5a1a"/>
+  <path d="M48 68 Q60 80 72 68" fill="none" stroke="#2d5a1a" stroke-width="3" stroke-linecap="round"/>
+</svg>

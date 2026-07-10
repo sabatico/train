@@ -38,7 +38,8 @@
       "distractors": [
         "k",
         "w"
-      ]
+      ],
+      "image": "words/cats.svg"
     },
     {
       "word": "cups",
@@ -57,7 +58,8 @@
       "distractors": [
         "g",
         "b"
-      ]
+      ],
+      "image": "words/cups.svg"
     },
     {
       "word": "digs",
@@ -95,7 +97,8 @@
       "distractors": [
         "a",
         "l"
-      ]
+      ],
+      "image": "words/dogs.svg"
     },
     {
       "word": "hats",
@@ -152,7 +155,8 @@
       "distractors": [
         "d",
         "t"
-      ]
+      ],
+      "image": "words/pigs.svg"
     },
     {
       "word": "pins",
@@ -171,7 +175,8 @@
       "distractors": [
         "q",
         "o"
-      ]
+      ],
+      "image": "words/pins.svg"
     },
     {
       "word": "runs",
@@ -249,7 +254,8 @@
       "distractors": [
         "a",
         "q"
-      ]
+      ],
+      "image": "words/boxes.svg"
     },
     {
       "word": "buses",
@@ -269,7 +275,8 @@
       "distractors": [
         "k",
         "g"
-      ]
+      ],
+      "image": "words/buses.svg"
     },
     {
       "word": "dishes",
@@ -289,7 +296,8 @@
       "distractors": [
         "o",
         "w"
-      ]
+      ],
+      "image": "words/dishes.svg"
     },
     {
       "word": "eating",
@@ -308,7 +316,8 @@
       "distractors": [
         "w",
         "u"
-      ]
+      ],
+      "image": "words/eating.svg"
     },
     {
       "word": "faster",
@@ -514,7 +523,8 @@
       "distractors": [
         "k",
         "u"
-      ]
+      ],
+      "image": "words/planted.svg"
     },
     {
       "word": "played",
@@ -595,7 +605,8 @@
       "distractors": [
         "t",
         "m"
-      ]
+      ],
+      "image": "words/running.svg"
     },
     {
       "word": "singing",

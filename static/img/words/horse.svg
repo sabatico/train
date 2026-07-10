@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Body -->
+  <ellipse cx="60" cy="70" rx="30" ry="18" fill="#8B4513"/>
+  <!-- Head -->
+  <ellipse cx="90" cy="55" rx="14" ry="10" fill="#8B4513"/>
+  <!-- Neck -->
+  <polygon points="75,60 88,50 88,65 75,72" fill="#8B4513"/>
+  <!-- Mane -->
+  <path d="M75,50 Q70,40 78,38 Q72,45 78,50" fill="#5C2E0A"/>
+  <path d="M78,48 Q73,38 81,35 Q75,42 81,48" fill="#5C2E0A"/>
+  <!-- Tail -->
+  <path d="M30,65 Q20,55 25,45 Q28,55 32,60" fill="#5C2E0A"/>
+  <path d="M30,68 Q18,58 22,48 Q26,58 32,63" fill="#5C2E0A"/>
+  <!-- Legs -->
+  <rect x="42" y="82" width="6" height="20" rx="3" fill="#6B3410"/>
+  <rect x="52" y="82" width="6" height="20" rx="3" fill="#6B3410"/>
+  <rect x="65" y="82" width="6" height="20" rx="3" fill="#6B3410"/>
+  <rect x="75" y="82" width="6" height="20" rx="3" fill="#6B3410"/>
+  <!-- Hooves -->
+  <rect x="42" y="98" width="6" height="4" rx="2" fill="#3E1F08"/>
+  <rect x="52" y="98" width="6" height="4" rx="2" fill="#3E1F08"/>
+  <rect x="65" y="98" width="6" height="4" rx="2" fill="#3E1F08"/>
+  <rect x="75" y="98" width="6" height="4" rx="2" fill="#3E1F08"/>
+  <!-- Eye -->
+  <circle cx="93" cy="53" r="2.5" fill="#1A1A1A"/>
+  <!-- Nostril -->
+  <circle cx="98" cy="58" r="1.5" fill="#3E1F08"/>
+  <!-- Ear -->
+  <path d="M85,45 L88,38 L91,45" fill="#8B4513" stroke="#6B3410" stroke-width="1"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Sky background -->
+  <rect x="0" y="0" width="120" height="60" fill="#87CEEB"/>
+  <!-- Water -->
+  <rect x="0" y="60" width="120" height="60" fill="#4A90D9"/>
+  <!-- Cliff face (steep rock) -->
+  <polygon points="30,20 30,100 70,100 70,60 50,60 50,20" fill="#8B7355"/>
+  <!-- Cliff top (flat top) -->
+  <rect x="30" y="10" width="20" height="10" fill="#6B8E23"/>
+  <!-- Rock texture lines -->
+  <line x1="35" y1="40" x2="35" y2="80" stroke="#6B5B3E" stroke-width="1.5"/>
+  <line x1="45" y1="30" x2="45" y2="90" stroke="#6B5B3E" stroke-width="1.5"/>
+  <line x1="55" y1="50" x2="55" y2="95" stroke="#6B5B3E" stroke-width="1.5"/>
+  <line x1="65" y1="65" x2="65" y2="98" stroke="#6B5B3E" stroke-width="1.5"/>
+  <!-- Small grass tufts on top -->
+  <rect x="32" y="8" width="3" height="4" fill="#556B2F" rx="1"/>
+  <rect x="40" y="7" width="3" height="5" fill="#556B2F" rx="1"/>
+  <rect x="46" y="8" width="3" height="4" fill="#556B2F" rx="1"/>
+  <!-- Water waves -->
+  <path d="M0,75 Q10,72 20,75 Q30,78 40,75 Q50,72 60,75 Q70,78 80,75 Q90,72 100,75 Q110,78 120,75" fill="none" stroke="#3A7BD5" stroke-width="1.5"/>
+  <path d="M0,85 Q10,82 20,85 Q30,88 40,85 Q50,82 60,85 Q70,88 80,85 Q90,82 100,85 Q110,88 120,85" fill="none" stroke="#3A7BD5" stroke-width="1.5"/>
+</svg>

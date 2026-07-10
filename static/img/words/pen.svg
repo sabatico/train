@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Pen body -->
+  <rect x="35" y="20" width="50" height="70" rx="6" fill="#4A90D9"/>
+  <!-- Pen cap -->
+  <rect x="35" y="15" width="50" height="25" rx="6" fill="#E74C3C"/>
+  <!-- Clip -->
+  <rect x="75" y="10" width="8" height="35" rx="4" fill="#F39C12"/>
+  <!-- Pen tip -->
+  <polygon points="35,90 60,105 85,90" fill="#2C3E50"/>
+  <!-- Cap line -->
+  <line x1="35" y1="38" x2="85" y2="38" stroke="#C0392B" stroke-width="2"/>
+  <!-- Ink line on tip -->
+  <line x1="55" y1="98" x2="65" y2="98" stroke="#1A1A2E" stroke-width="2"/>
+</svg>

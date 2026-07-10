@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Oven body -->
+  <rect x="15" y="25" width="90" height="75" rx="6" fill="#555"/>
+  <!-- Oven door (glass) -->
+  <rect x="20" y="30" width="80" height="60" rx="4" fill="#8FC"/>
+  <!-- Oven handle -->
+  <rect x="40" y="92" width="40" height="5" rx="2" fill="#AAA"/>
+  <!-- Oven knobs -->
+  <circle cx="35" cy="105" r="4" fill="#DDD"/>
+  <circle cx="60" cy="105" r="4" fill="#DDD"/>
+  <circle cx="85" cy="105" r="4" fill="#DDD"/>
+  <!-- Baking tray -->
+  <rect x="25" y="55" width="70" height="8" rx="2" fill="#A67B5B"/>
+  <!-- Cookies on tray -->
+  <circle cx="38" cy="59" r="5" fill="#D2A44E"/>
+  <circle cx="55" cy="59" r="5" fill="#D2A44E"/>
+  <circle cx="72" cy="59" r="5" fill="#D2A44E"/>
+  <circle cx="88" cy="59" r="5" fill="#D2A44E"/>
+  <!-- Cookie dots (chocolate chips) -->
+  <circle cx="36" cy="57" r="1.2" fill="#5C3A1E"/>
+  <circle cx="40" cy="60" r="1.2" fill="#5C3A1E"/>
+  <circle cx="53" cy="57" r="1.2" fill="#5C3A1E"/>
+  <circle cx="57" cy="60" r="1.2" fill="#5C3A1E"/>
+  <circle cx="70" cy="57" r="1.2" fill="#5C3A1E"/>
+  <circle cx="74" cy="60" r="1.2" fill="#5C3A1E"/>
+  <circle cx="86" cy="57" r="1.2" fill="#5C3A1E"/>
+  <circle cx="90" cy="60" r="1.2" fill="#5C3A1E"/>
+  <!-- Heat lines above tray -->
+  <line x1="30" y1="48" x2="35" y2="42" stroke="#FF8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="50" y1="48" x2="55" y2="42" stroke="#FF8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="70" y1="48" x2="75" y2="42" stroke="#FF8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="90" y1="48" x2="95" y2="42" stroke="#FF8" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

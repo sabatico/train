@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Face outline -->
+  <ellipse cx="60" cy="55" rx="35" ry="38" fill="#FFE0B2" stroke="#D4A574" stroke-width="2.5"/>
+  <!-- Eyes -->
+  <circle cx="42" cy="42" r="5" fill="#5D4037"/>
+  <circle cx="78" cy="42" r="5" fill="#5D4037"/>
+  <!-- Mask covering nose and mouth -->
+  <rect x="35" y="48" width="50" height="32" rx="8" fill="#4FC3F7" stroke="#0288D1" stroke-width="2.5"/>
+  <!-- Mask pleats -->
+  <line x1="35" y1="56" x2="85" y2="56" stroke="#0288D1" stroke-width="1.5" opacity="0.5"/>
+  <line x1="35" y1="64" x2="85" y2="64" stroke="#0288D1" stroke-width="1.5" opacity="0.5"/>
+  <line x1="35" y1="72" x2="85" y2="72" stroke="#0288D1" stroke-width="1.5" opacity="0.5"/>
+  <!-- Left string -->
+  <path d="M35 52 Q20 40 18 30" fill="none" stroke="#0288D1" stroke-width="2" stroke-linecap="round"/>
+  <!-- Right string -->
+  <path d="M85 52 Q100 40 102 30" fill="none" stroke="#0288D1" stroke-width="2" stroke-linecap="round"/>
+  <!-- Bottom left string -->
+  <path d="M35 78 Q22 85 18 95" fill="none" stroke="#0288D1" stroke-width="2" stroke-linecap="round"/>
+  <!-- Bottom right string -->
+  <path d="M85 78 Q98 85 102 95" fill="none" stroke="#0288D1" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <ellipse cx="60" cy="65" rx="35" ry="25" fill="#e63946"/>
+  <circle cx="60" cy="55" r="4" fill="#fff"/>
+  <circle cx="60" cy="55" r="2" fill="#1d3557"/>
+  <!-- Left claw -->
+  <path d="M30 50 Q15 35 20 25 Q25 20 30 25 Q25 30 28 40" fill="#e63946" stroke="#c1121f" stroke-width="2"/>
+  <path d="M20 25 Q15 20 20 15 Q25 20 20 25" fill="#e63946" stroke="#c1121f" stroke-width="2"/>
+  <!-- Right claw -->
+  <path d="M90 50 Q105 35 100 25 Q95 20 90 25 Q95 30 92 40" fill="#e63946" stroke="#c1121f" stroke-width="2"/>
+  <path d="M100 25 Q105 20 100 15 Q95 20 100 25" fill="#e63946" stroke="#c1121f" stroke-width="2"/>
+  <!-- Legs left -->
+  <line x1="30" y1="70" x2="15" y2="80" stroke="#c1121f" stroke-width="4" stroke-linecap="round"/>
+  <line x1="30" y1="78" x2="18" y2="90" stroke="#c1121f" stroke-width="4" stroke-linecap="round"/>
+  <line x1="30" y1="86" x2="22" y2="100" stroke="#c1121f" stroke-width="4" stroke-linecap="round"/>
+  <!-- Legs right -->
+  <line x1="90" y1="70" x2="105" y2="80" stroke="#c1121f" stroke-width="4" stroke-linecap="round"/>
+  <line x1="90" y1="78" x2="102" y2="90" stroke="#c1121f" stroke-width="4" stroke-linecap="round"/>
+  <line x1="90" y1="86" x2="98" y2="100" stroke="#c1121f" stroke-width="4" stroke-linecap="round"/>
+</svg>

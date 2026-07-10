@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Snow ground -->
+  <rect x="0" y="85" width="120" height="35" fill="#e0f0ff"/>
+  <!-- Snow bumps -->
+  <ellipse cx="30" cy="90" rx="40" ry="10" fill="#d0e8ff"/>
+  <ellipse cx="90" cy="95" rx="35" ry="8" fill="#d0e8ff"/>
+  <!-- Sled board -->
+  <path d="M20 75 Q20 55 35 50 L95 50 Q105 50 105 60 L105 70 Q105 78 95 78 L30 78 Q22 78 20 75Z" fill="#8B4513" stroke="#5a2d0c" stroke-width="2"/>
+  <!-- Sled top surface -->
+  <path d="M25 68 Q25 58 38 54 L92 54 Q100 54 100 62 L100 70 Q100 74 92 74 L32 74 Q26 74 25 68Z" fill="#a0522d"/>
+  <!-- Curved front runner -->
+  <path d="M20 75 Q15 65 18 55 Q22 45 30 48" fill="none" stroke="#5a2d0c" stroke-width="3" stroke-linecap="round"/>
+  <!-- Snow spray dots -->
+  <circle cx="15" cy="82" r="3" fill="#ffffff" opacity="0.8"/>
+  <circle cx="10" cy="78" r="2" fill="#ffffff" opacity="0.7"/>
+  <circle cx="8" cy="85" r="2" fill="#ffffff" opacity="0.6"/>
+  <circle cx="22" cy="84" r="2" fill="#ffffff" opacity="0.5"/>
+</svg>

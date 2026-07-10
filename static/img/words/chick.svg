@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Body -->
+  <ellipse cx="60" cy="75" rx="30" ry="25" fill="#FFD700"/>
+  <!-- Head -->
+  <circle cx="60" cy="45" r="20" fill="#FFD700"/>
+  <!-- Left eye -->
+  <circle cx="52" cy="42" r="3" fill="#000"/>
+  <!-- Right eye -->
+  <circle cx="68" cy="42" r="3" fill="#000"/>
+  <!-- Beak -->
+  <polygon points="60,48 55,55 65,55" fill="#FF8C00"/>
+  <!-- Left wing -->
+  <ellipse cx="35" cy="75" rx="10" ry="15" fill="#FFC107" transform="rotate(-15,35,75)"/>
+  <!-- Right wing -->
+  <ellipse cx="85" cy="75" rx="10" ry="15" fill="#FFC107" transform="rotate(15,85,75)"/>
+  <!-- Feet -->
+  <line x1="50" y1="98" x2="45" y2="110" stroke="#FF8C00" stroke-width="4" stroke-linecap="round"/>
+  <line x1="70" y1="98" x2="75" y2="110" stroke="#FF8C00" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" fill="#f0f8e8"/>
+  <!-- Stem -->
+  <line x1="60" y1="68" x2="60" y2="110" stroke="#2d8a2d" stroke-width="6" stroke-linecap="round"/>
+  <!-- Leaves -->
+  <ellipse cx="50" cy="90" rx="12" ry="6" fill="#3cb043" transform="rotate(-30 50 90)"/>
+  <ellipse cx="72" cy="80" rx="10" ry="5" fill="#3cb043" transform="rotate(25 72 80)"/>
+  <!-- Rose petals -->
+  <circle cx="60" cy="52" r="18" fill="#e63946"/>
+  <circle cx="52" cy="46" r="12" fill="#ff4d6d"/>
+  <circle cx="68" cy="46" r="12" fill="#ff4d6d"/>
+  <circle cx="60" cy="40" r="10" fill="#ff6b7a"/>
+  <circle cx="56" cy="50" r="8" fill="#c1121f"/>
+  <circle cx="64" cy="50" r="8" fill="#c1121f"/>
+  <circle cx="60" cy="48" r="6" fill="#a4133c"/>
+</svg>

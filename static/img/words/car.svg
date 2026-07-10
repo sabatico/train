@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Body -->
+  <rect x="15" y="45" width="90" height="35" rx="8" fill="#e74c3c"/>
+  <!-- Roof -->
+  <rect x="30" y="25" width="50" height="25" rx="6" fill="#c0392b"/>
+  <!-- Windows -->
+  <rect x="35" y="30" width="18" height="15" rx="3" fill="#85c1e9"/>
+  <rect x="58" y="30" width="18" height="15" rx="3" fill="#85c1e9"/>
+  <!-- Left wheel -->
+  <circle cx="35" cy="82" r="14" fill="#2c3e50"/>
+  <circle cx="35" cy="82" r="7" fill="#bdc3c7"/>
+  <!-- Right wheel -->
+  <circle cx="85" cy="82" r="14" fill="#2c3e50"/>
+  <circle cx="85" cy="82" r="7" fill="#bdc3c7"/>
+</svg>

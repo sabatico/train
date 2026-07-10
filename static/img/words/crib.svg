@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Crib back panel -->
+  <rect x="20" y="30" width="80" height="60" rx="5" fill="#D4A574"/>
+  <!-- Crib front rail (lower) -->
+  <rect x="20" y="75" width="80" height="8" rx="3" fill="#B8864E"/>
+  <!-- Crib front rail (upper) -->
+  <rect x="20" y="30" width="80" height="6" rx="3" fill="#B8864E"/>
+  <!-- Vertical bars -->
+  <rect x="25" y="36" width="4" height="39" fill="#C49A6C"/>
+  <rect x="35" y="36" width="4" height="39" fill="#C49A6C"/>
+  <rect x="45" y="36" width="4" height="39" fill="#C49A6C"/>
+  <rect x="55" y="36" width="4" height="39" fill="#C49A6C"/>
+  <rect x="65" y="36" width="4" height="39" fill="#C49A6C"/>
+  <rect x="75" y="36" width="4" height="39" fill="#C49A6C"/>
+  <rect x="85" y="36" width="4" height="39" fill="#C49A6C"/>
+  <!-- Left post -->
+  <rect x="18" y="25" width="6" height="70" rx="2" fill="#A06B3E"/>
+  <!-- Right post -->
+  <rect x="96" y="25" width="6" height="70" rx="2" fill="#A06B3E"/>
+  <!-- Top rail -->
+  <rect x="18" y="25" width="84" height="5" rx="2" fill="#B8864E"/>
+  <!-- Mattress -->
+  <rect x="22" y="65" width="76" height="12" rx="3" fill="#F5E6CC"/>
+  <!-- Mattress top line -->
+  <rect x="22" y="65" width="76" height="3" rx="1" fill="#EDD9B5"/>
+  <!-- Crib legs -->
+  <rect x="20" y="90" width="5" height="10" rx="1" fill="#A06B3E"/>
+  <rect x="95" y="90" width="5" height="10" rx="1" fill="#A06B3E"/>
+</svg>

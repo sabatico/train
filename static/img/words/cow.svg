@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Body -->
+  <ellipse cx="60" cy="75" rx="35" ry="22" fill="#fff" stroke="#333" stroke-width="2"/>
+  <!-- Spots on body -->
+  <ellipse cx="45" cy="70" rx="8" ry="6" fill="#333"/>
+  <ellipse cx="70" cy="80" rx="7" ry="5" fill="#333"/>
+  <ellipse cx="55" cy="85" rx="5" ry="4" fill="#333"/>
+  <!-- Head -->
+  <ellipse cx="60" cy="48" rx="18" ry="16" fill="#fff" stroke="#333" stroke-width="2"/>
+  <!-- Snout -->
+  <ellipse cx="60" cy="55" rx="10" ry="7" fill="#f5c6c6" stroke="#333" stroke-width="1.5"/>
+  <!-- Eyes -->
+  <circle cx="52" cy="44" r="3" fill="#333"/>
+  <circle cx="68" cy="44" r="3" fill="#333"/>
+  <!-- Nostrils -->
+  <circle cx="56" cy="56" r="1.5" fill="#333"/>
+  <circle cx="64" cy="56" r="1.5" fill="#333"/>
+  <!-- Horns -->
+  <path d="M48 36 Q44 28 48 24" fill="none" stroke="#333" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M72 36 Q76 28 72 24" fill="none" stroke="#333" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Ears -->
+  <ellipse cx="44" cy="42" rx="5" ry="3" fill="#fff" stroke="#333" stroke-width="1.5" transform="rotate(-20 44 42)"/>
+  <ellipse cx="76" cy="42" rx="5" ry="3" fill="#fff" stroke="#333" stroke-width="1.5" transform="rotate(20 76 42)"/>
+  <!-- Legs -->
+  <rect x="38" y="92" width="8" height="22" rx="3" fill="#fff" stroke="#333" stroke-width="2"/>
+  <rect x="52" y="92" width="8" height="22" rx="3" fill="#fff" stroke="#333" stroke-width="2"/>
+  <rect x="66" y="92" width="8" height="22" rx="3" fill="#fff" stroke="#333" stroke-width="2"/>
+  <rect x="80" y="92" width="8" height="22" rx="3" fill="#fff" stroke="#333" stroke-width="2"/>
+  <!-- Hooves -->
+  <rect x="38" y="110" width="8" height="4" rx="2" fill="#333"/>
+  <rect x="52" y="110" width="8" height="4" rx="2" fill="#333"/>
+  <rect x="66" y="110" width="8" height="4" rx="2" fill="#333"/>
+  <rect x="80" y="110" width="8" height="4" rx="2" fill="#333"/>
+  <!-- Tail -->
+  <path d="M95 72 Q105 68 108 62" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="108" cy="60" rx="3" ry="4" fill="#333"/>
+</svg>

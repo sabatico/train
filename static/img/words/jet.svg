@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" fill="#87CEEB"/>
+  <ellipse cx="60" cy="60" rx="45" ry="12" fill="#C0C0C0"/>
+  <polygon points="60,48 100,55 100,65 60,72" fill="#A0A0A0"/>
+  <polygon points="60,48 20,55 20,65 60,72" fill="#B0B0B0"/>
+  <polygon points="60,48 60,72 80,60" fill="#D0D0D0"/>
+  <rect x="45" y="50" width="8" height="20" rx="2" fill="#888"/>
+  <rect x="67" y="50" width="8" height="20" rx="2" fill="#888"/>
+  <polygon points="20,55 10,52 10,58" fill="#999"/>
+  <polygon points="100,55 110,52 110,58" fill="#999"/>
+  <ellipse cx="60" cy="48" rx="10" ry="4" fill="#A0D0F0"/>
+  <ellipse cx="60" cy="72" rx="10" ry="4" fill="#A0D0F0"/>
+  <rect x="55" y="44" width="10" height="32" rx="3" fill="#E0E0E0"/>
+  <polygon points="55,44 65,44 60,38" fill="#F0F0F0"/>
+  <polygon points="55,76 65,76 60,82" fill="#F0F0F0"/>
+  <ellipse cx="60" cy="60" rx="4" ry="6" fill="#FF6600"/>
+  <rect x="58" y="58" width="4" height="4" fill="#FFAA00"/>
+  <line x1="20" y1="60" x2="0" y2="55" stroke="#FF6600" stroke-width="3" stroke-linecap="round"/>
+  <line x1="20" y1="60" x2="0" y2="65" stroke="#FF6600" stroke-width="3" stroke-linecap="round"/>
+  <line x1="20" y1="60" x2="2" y2="60" stroke="#FFAA00" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Green husk behind -->
+  <path d="M40 60 Q30 50 25 35 Q28 30 35 35 Q38 40 40 50Z" fill="#2d8a2d"/>
+  <path d="M80 60 Q90 50 95 35 Q92 30 85 35 Q82 40 80 50Z" fill="#2d8a2d"/>
+  <path d="M35 70 Q25 65 20 50 Q23 45 30 50 Q33 55 35 65Z" fill="#3a9e3a"/>
+  <path d="M85 70 Q95 65 100 50 Q97 45 90 50 Q87 55 85 65Z" fill="#3a9e3a"/>
+  <!-- Ear of corn body -->
+  <ellipse cx="60" cy="65" rx="22" ry="35" fill="#f5d442"/>
+  <!-- Corn kernels pattern -->
+  <circle cx="50" cy="45" r="3" fill="#f0c030"/>
+  <circle cx="60" cy="43" r="3" fill="#f0c030"/>
+  <circle cx="70" cy="45" r="3" fill="#f0c030"/>
+  <circle cx="48" cy="55" r="3" fill="#f0c030"/>
+  <circle cx="58" cy="53" r="3" fill="#f0c030"/>
+  <circle cx="68" cy="53" r="3" fill="#f0c030"/>
+  <circle cx="72" cy="55" r="3" fill="#f0c030"/>
+  <circle cx="46" cy="65" r="3" fill="#f0c030"/>
+  <circle cx="56" cy="63" r="3" fill="#f0c030"/>
+  <circle cx="66" cy="63" r="3" fill="#f0c030"/>
+  <circle cx="74" cy="65" r="3" fill="#f0c030"/>
+  <circle cx="48" cy="75" r="3" fill="#f0c030"/>
+  <circle cx="58" cy="73" r="3" fill="#f0c030"/>
+  <circle cx="68" cy="73" r="3" fill="#f0c030"/>
+  <circle cx="72" cy="75" r="3" fill="#f0c030"/>
+  <circle cx="50" cy="85" r="3" fill="#f0c030"/>
+  <circle cx="60" cy="83" r="3" fill="#f0c030"/>
+  <circle cx="70" cy="85" r="3" fill="#f0c030"/>
+  <!-- Top husk leaves -->
+  <path d="M55 30 Q50 20 48 10 Q52 8 55 15 Q57 20 58 28Z" fill="#3a9e3a"/>
+  <path d="M65 30 Q70 20 72 10 Q68 8 65 15 Q63 20 62 28Z" fill="#3a9e3a"/>
+  <path d="M60 28 Q60 18 60 8 Q63 6 62 14 Q61 20 60 28Z" fill="#2d8a2d"/>
+</svg>

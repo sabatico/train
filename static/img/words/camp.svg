@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Tent -->
+  <polygon points="60,15 25,95 95,95" fill="#D2691E" stroke="#8B4513" stroke-width="3"/>
+  <polygon points="60,15 25,95 95,95" fill="#E8A04A" opacity="0.4"/>
+  <!-- Tent opening -->
+  <polygon points="60,50 45,95 75,95" fill="#2F4F4F"/>
+  <!-- Campfire logs -->
+  <rect x="48" y="85" width="24" height="6" rx="2" fill="#8B4513" transform="rotate(-20,60,88)"/>
+  <rect x="48" y="85" width="24" height="6" rx="2" fill="#8B4513" transform="rotate(20,60,88)"/>
+  <!-- Fire -->
+  <ellipse cx="60" cy="78" rx="10" ry="14" fill="#FF4500"/>
+  <ellipse cx="60" cy="75" rx="7" ry="10" fill="#FFA500"/>
+  <ellipse cx="60" cy="72" rx="4" ry="6" fill="#FFD700"/>
+  <!-- Ground -->
+  <rect x="0" y="95" width="120" height="25" fill="#228B22"/>
+</svg>

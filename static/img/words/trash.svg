@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Trash can body -->
+  <rect x="30" y="35" width="60" height="65" rx="4" fill="#7f8c8d"/>
+  <!-- Lid -->
+  <rect x="25" y="28" width="70" height="12" rx="3" fill="#95a5a6"/>
+  <!-- Lid handle -->
+  <rect x="50" y="22" width="20" height="8" rx="4" fill="#bdc3c7"/>
+  <!-- Banana peel inside -->
+  <path d="M45 70 Q50 60 55 65 Q60 70 65 60 Q70 55 72 65" fill="#f1c40f" stroke="#e67e22" stroke-width="2"/>
+  <path d="M40 75 Q45 80 50 78" fill="#f1c40f" stroke="#e67e22" stroke-width="2"/>
+  <!-- Banana tip -->
+  <circle cx="72" cy="65" r="3" fill="#8e44ad"/>
+</svg>

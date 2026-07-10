@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Left pig body -->
+  <ellipse cx="40" cy="75" rx="22" ry="18" fill="#FFB6C1"/>
+  <!-- Left pig head -->
+  <circle cx="40" cy="55" r="14" fill="#FFB6C1"/>
+  <!-- Left pig snout -->
+  <ellipse cx="40" cy="58" rx="6" ry="4" fill="#FF69B4"/>
+  <!-- Left pig nostrils -->
+  <circle cx="38" cy="58" r="1.5" fill="#C71585"/>
+  <circle cx="42" cy="58" r="1.5" fill="#C71585"/>
+  <!-- Left pig eyes -->
+  <circle cx="35" cy="52" r="2.5" fill="#333"/>
+  <circle cx="45" cy="52" r="2.5" fill="#333"/>
+  <!-- Left pig ears -->
+  <ellipse cx="28" cy="42" rx="5" ry="7" fill="#FFB6C1" transform="rotate(-20 28 42)"/>
+  <ellipse cx="52" cy="42" rx="5" ry="7" fill="#FFB6C1" transform="rotate(20 52 42)"/>
+  <!-- Left pig legs -->
+  <rect x="28" y="88" width="6" height="12" rx="3" fill="#FFB6C1"/>
+  <rect x="46" y="88" width="6" height="12" rx="3" fill="#FFB6C1"/>
+  <!-- Left pig tail -->
+  <path d="M18 70 Q10 65 14 58 Q18 52 12 48" fill="none" stroke="#FFB6C1" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Right pig body -->
+  <ellipse cx="80" cy="75" rx="22" ry="18" fill="#FFB6C1"/>
+  <!-- Right pig head -->
+  <circle cx="80" cy="55" r="14" fill="#FFB6C1"/>
+  <!-- Right pig snout -->
+  <ellipse cx="80" cy="58" rx="6" ry="4" fill="#FF69B4"/>
+  <!-- Right pig nostrils -->
+  <circle cx="78" cy="58" r="1.5" fill="#C71585"/>
+  <circle cx="82" cy="58" r="1.5" fill="#C71585"/>
+  <!-- Right pig eyes -->
+  <circle cx="75" cy="52" r="2.5" fill="#333"/>
+  <circle cx="85" cy="52" r="2.5" fill="#333"/>
+  <!-- Right pig ears -->
+  <ellipse cx="68" cy="42" rx="5" ry="7" fill="#FFB6C1" transform="rotate(-20 68 42)"/>
+  <ellipse cx="92" cy="42" rx="5" ry="7" fill="#FFB6C1" transform="rotate(20 92 42)"/>
+  <!-- Right pig legs -->
+  <rect x="68" y="88" width="6" height="12" rx="3" fill="#FFB6C1"/>
+  <rect x="86" y="88" width="6" height="12" rx="3" fill="#FFB6C1"/>
+  <!-- Right pig tail -->
+  <path d="M102 70 Q110 65 106 58 Q102 52 108 48" fill="none" stroke="#FFB6C1" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Nest bowl - brown twig base -->
+  <path d="M20 75 Q30 50 60 45 Q90 50 100 75 Q95 85 60 88 Q25 85 20 75Z" fill="#8B5E3C"/>
+  <!-- Twig texture lines -->
+  <line x1="30" y1="65" x2="90" y2="65" stroke="#6B4226" stroke-width="2" stroke-linecap="round"/>
+  <line x1="25" y1="72" x2="95" y2="72" stroke="#6B4226" stroke-width="2" stroke-linecap="round"/>
+  <line x1="28" y1="79" x2="92" y2="79" stroke="#6B4226" stroke-width="2" stroke-linecap="round"/>
+  <!-- Eggs inside nest -->
+  <ellipse cx="48" cy="62" rx="10" ry="12" fill="#F5F5DC" stroke="#D2B48C" stroke-width="1.5"/>
+  <ellipse cx="72" cy="60" rx="10" ry="12" fill="#F5F5DC" stroke="#D2B48C" stroke-width="1.5"/>
+  <ellipse cx="60" cy="55" rx="9" ry="11" fill="#FFF8DC" stroke="#D2B48C" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Head -->
+  <circle cx="60" cy="25" r="12" fill="#FFD700" stroke="#333" stroke-width="3"/>
+  <!-- Body -->
+  <line x1="60" y1="37" x2="60" y2="70" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+  <!-- Arms -->
+  <line x1="60" y1="45" x2="35" y2="55" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  <line x1="60" y1="45" x2="85" y2="55" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  <!-- Left leg (forward) -->
+  <line x1="60" y1="70" x2="40" y2="100" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+  <!-- Right leg (back, bent) -->
+  <line x1="60" y1="70" x2="80" y2="85" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+  <line x1="80" y1="85" x2="70" y2="105" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+  <!-- Motion lines -->
+  <line x1="90" y1="75" x2="100" y2="75" stroke="#FF6347" stroke-width="2" stroke-linecap="round"/>
+  <line x1="90" y1="85" x2="100" y2="85" stroke="#FF6347" stroke-width="2" stroke-linecap="round"/>
+  <line x1="90" y1="95" x2="100" y2="95" stroke="#FF6347" stroke-width="2" stroke-linecap="round"/>
+</svg>

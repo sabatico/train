@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Head -->
+  <circle cx="60" cy="30" r="12" fill="#FFD700"/>
+  <!-- Body -->
+  <line x1="60" y1="42" x2="60" y2="72" stroke="#FFD700" stroke-width="6" stroke-linecap="round"/>
+  <!-- Left arm up -->
+  <line x1="60" y1="50" x2="35" y2="25" stroke="#FFD700" stroke-width="5" stroke-linecap="round"/>
+  <!-- Right arm up -->
+  <line x1="60" y1="50" x2="85" y2="25" stroke="#FFD700" stroke-width="5" stroke-linecap="round"/>
+  <!-- Left leg apart -->
+  <line x1="60" y1="72" x2="30" y2="105" stroke="#FFD700" stroke-width="6" stroke-linecap="round"/>
+  <!-- Right leg apart -->
+  <line x1="60" y1="72" x2="90" y2="105" stroke="#FFD700" stroke-width="6" stroke-linecap="round"/>
+  <!-- Ground line -->
+  <line x1="15" y1="110" x2="105" y2="110" stroke="#4CAF50" stroke-width="3" stroke-linecap="round"/>
+</svg>

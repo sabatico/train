@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Body -->
+  <ellipse cx="60" cy="70" rx="35" ry="25" fill="#f5f5f5"/>
+  <!-- Fluffy wool bumps on body -->
+  <circle cx="40" cy="55" r="12" fill="#f0f0f0"/>
+  <circle cx="55" cy="48" r="14" fill="#f0f0f0"/>
+  <circle cx="72" cy="50" r="13" fill="#f0f0f0"/>
+  <circle cx="80" cy="62" r="11" fill="#f0f0f0"/>
+  <circle cx="35" cy="65" r="10" fill="#f0f0f0"/>
+  <circle cx="50" cy="60" r="12" fill="#f5f5f5"/>
+  <circle cx="65" cy="55" r="11" fill="#f5f5f5"/>
+  <circle cx="75" cy="70" r="10" fill="#f5f5f5"/>
+  <!-- Legs -->
+  <rect x="38" y="85" width="8" height="20" rx="3" fill="#333"/>
+  <rect x="52" y="85" width="8" height="20" rx="3" fill="#333"/>
+  <rect x="66" y="85" width="8" height="20" rx="3" fill="#333"/>
+  <rect x="80" y="85" width="8" height="20" rx="3" fill="#333"/>
+  <!-- Head -->
+  <ellipse cx="95" cy="55" rx="14" ry="12" fill="#222"/>
+  <!-- Eyes -->
+  <circle cx="90" cy="52" r="2.5" fill="white"/>
+  <circle cx="100" cy="52" r="2.5" fill="white"/>
+  <!-- Ears -->
+  <ellipse cx="82" cy="44" rx="6" ry="4" fill="#222" transform="rotate(-20 82 44)"/>
+  <ellipse cx="108" cy="44" rx="6" ry="4" fill="#222" transform="rotate(20 108 44)"/>
+  <!-- Nose -->
+  <ellipse cx="95" cy="60" rx="3" ry="2" fill="#555"/>
+</svg>

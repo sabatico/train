@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Head -->
+  <ellipse cx="60" cy="75" rx="30" ry="35" fill="#F5C6A0"/>
+  <!-- Cap brim -->
+  <path d="M30 55 Q60 65 90 55 Q95 50 90 48 Q60 58 30 48 Q25 50 30 55Z" fill="#1E3A8A"/>
+  <!-- Cap dome -->
+  <path d="M35 55 Q35 25 60 20 Q85 25 85 55 Z" fill="#2563EB"/>
+  <!-- Cap button on top -->
+  <circle cx="60" cy="22" r="4" fill="#1E3A8A"/>
+  <!-- Cap visor line -->
+  <path d="M30 55 Q60 62 90 55" fill="none" stroke="#1E3A8A" stroke-width="2"/>
+</svg>

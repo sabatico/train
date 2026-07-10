@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Left hand -->
+  <g transform="translate(30, 40)">
+    <!-- Palm -->
+    <rect x="0" y="10" width="28" height="30" rx="8" fill="#F4C07D"/>
+    <!-- Fingers -->
+    <rect x="2" y="0" width="8" height="14" rx="4" fill="#F4C07D"/>
+    <rect x="12" y="0" width="8" height="14" rx="4" fill="#F4C07D"/>
+    <rect x="22" y="0" width="8" height="14" rx="4" fill="#F4C07D"/>
+    <!-- Thumb -->
+    <rect x="-6" y="12" width="8" height="12" rx="4" fill="#F4C07D"/>
+  </g>
+  <!-- Right hand (mirrored) -->
+  <g transform="translate(62, 40)">
+    <rect x="0" y="10" width="28" height="30" rx="8" fill="#F4C07D"/>
+    <rect x="2" y="0" width="8" height="14" rx="4" fill="#F4C07D"/>
+    <rect x="12" y="0" width="8" height="14" rx="4" fill="#F4C07D"/>
+    <rect x="22" y="0" width="8" height="14" rx="4" fill="#F4C07D"/>
+    <rect x="26" y="12" width="8" height="12" rx="4" fill="#F4C07D"/>
+  </g>
+  <!-- Motion lines -->
+  <line x1="20" y1="20" x2="10" y2="10" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+  <line x1="25" y1="15" x2="18" y2="3" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+  <line x1="95" y1="20" x2="105" y2="10" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+  <line x1="90" y1="15" x2="98" y2="3" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+</svg>

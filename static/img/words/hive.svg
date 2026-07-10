@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Background -->
+  <rect width="120" height="120" fill="#87CEEB"/>
+  <!-- Hive body -->
+  <ellipse cx="60" cy="70" rx="30" ry="25" fill="#DAA520"/>
+  <rect x="30" y="45" width="60" height="50" rx="10" fill="#DAA520"/>
+  <!-- Hive stripes -->
+  <rect x="30" y="55" width="60" height="8" fill="#8B4513" rx="2"/>
+  <rect x="30" y="70" width="60" height="8" fill="#8B4513" rx="2"/>
+  <rect x="30" y="85" width="60" height="8" fill="#8B4513" rx="2"/>
+  <!-- Hive entrance -->
+  <ellipse cx="60" cy="95" rx="10" ry="5" fill="#5C4033"/>
+  <!-- Bee 1 -->
+  <ellipse cx="20" cy="30" rx="6" ry="4" fill="#FFD700"/>
+  <line x1="14" y1="30" x2="26" y2="30" stroke="#333" stroke-width="1.5"/>
+  <ellipse cx="20" cy="28" rx="4" ry="2" fill="#FFD700"/>
+  <line x1="16" y1="28" x2="24" y2="28" stroke="#333" stroke-width="1"/>
+  <!-- Bee 1 wings -->
+  <ellipse cx="18" cy="24" rx="3" ry="2" fill="#fff" opacity="0.8"/>
+  <ellipse cx="22" cy="24" rx="3" ry="2" fill="#fff" opacity="0.8"/>
+  <!-- Bee 2 -->
+  <ellipse cx="95" cy="25" rx="6" ry="4" fill="#FFD700"/>
+  <line x1="89" y1="25" x2="101" y2="25" stroke="#333" stroke-width="1.5"/>
+  <ellipse cx="95" cy="23" rx="4" ry="2" fill="#FFD700"/>
+  <line x1="91" y1="23" x2="99" y2="23" stroke="#333" stroke-width="1"/>
+  <!-- Bee 2 wings -->
+  <ellipse cx="93" cy="19" rx="3" ry="2" fill="#fff" opacity="0.8"/>
+  <ellipse cx="97" cy="19" rx="3" ry="2" fill="#fff" opacity="0.8"/>
+  <!-- Bee 3 -->
+  <ellipse cx="60" cy="15" rx="6" ry="4" fill="#FFD700"/>
+  <line x1="54" y1="15" x2="66" y2="15" stroke="#333" stroke-width="1.5"/>
+  <ellipse cx="60" cy="13" rx="4" ry="2" fill="#FFD700"/>
+  <line x1="56" y1="13" x2="64" y2="13" stroke="#333" stroke-width="1"/>
+  <!-- Bee 3 wings -->
+  <ellipse cx="58" cy="9" rx="3" ry="2" fill="#fff" opacity="0.8"/>
+  <ellipse cx="62" cy="9" rx="3" ry="2" fill="#fff" opacity="0.8"/>
+</svg>

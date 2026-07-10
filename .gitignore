@@ -16,3 +16,6 @@ htmlcov/
 # data/word_bank/ IS source (curated content) and stays tracked; per-student data is not.
 data/students/
 data/tts_cache/
+
+# temporary SVG verification galleries (not product)
+static/_review/

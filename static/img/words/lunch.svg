@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Plate -->
+  <ellipse cx="60" cy="85" rx="45" ry="12" fill="#e0e0e0" stroke="#b0b0b0" stroke-width="3"/>
+  <!-- Sandwich bottom bread -->
+  <rect x="30" y="45" width="60" height="12" rx="4" fill="#d4a373"/>
+  <!-- Sandwich filling (cheese, lettuce, ham) -->
+  <rect x="32" y="40" width="56" height="5" rx="2" fill="#f4a261"/>
+  <rect x="32" y="35" width="56" height="5" rx="2" fill="#6b8e23"/>
+  <rect x="32" y="30" width="56" height="5" rx="2" fill="#e76f51"/>
+  <!-- Sandwich top bread -->
+  <rect x="30" y="22" width="60" height="12" rx="4" fill="#d4a373"/>
+  <!-- Apple -->
+  <circle cx="85" cy="70" r="14" fill="#e63946"/>
+  <!-- Apple stem -->
+  <line x1="85" y1="56" x2="85" y2="50" stroke="#5a3e2b" stroke-width="3" stroke-linecap="round"/>
+  <!-- Apple leaf -->
+  <path d="M85 52 Q92 48 90 55" fill="#2a9d8f" stroke="none"/>
+</svg>

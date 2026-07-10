@@ -51,7 +51,8 @@
       "distractors": [
         "d",
         "g"
-      ]
+      ],
+      "image": "words/arm.svg"
     },
     {
       "word": "bar",
@@ -86,7 +87,8 @@
       "distractors": [
         "k",
         "l"
-      ]
+      ],
+      "image": "words/barn.svg"
     },
     {
       "word": "bird",
@@ -104,7 +106,8 @@
       "distractors": [
         "q",
         "k"
-      ]
+      ],
+      "image": "words/bird.svg"
     },
     {
       "word": "blur",
@@ -175,7 +178,8 @@
       "distractors": [
         "d",
         "t"
-      ]
+      ],
+      "image": "words/car.svg"
     },
     {
       "word": "cart",
@@ -193,7 +197,8 @@
       "distractors": [
         "q",
         "g"
-      ]
+      ],
+      "image": "words/cart.svg"
     },
     {
       "word": "corn",
@@ -211,7 +216,8 @@
       "distractors": [
         "m",
         "s"
-      ]
+      ],
+      "image": "words/corn.svg"
     },
     {
       "word": "curb",
@@ -336,7 +342,8 @@
       "distractors": [
         "q",
         "w"
-      ]
+      ],
+      "image": "words/farm.svg"
     },
     {
       "word": "fern",
@@ -354,7 +361,8 @@
       "distractors": [
         "d",
         "g"
-      ]
+      ],
+      "image": "words/fern.svg"
     },
     {
       "word": "firm",
@@ -390,7 +398,8 @@
       "distractors": [
         "s",
         "n"
-      ]
+      ],
+      "image": "words/fork.svg"
     },
     {
       "word": "form",
@@ -443,7 +452,8 @@
       "distractors": [
         "k",
         "u"
-      ]
+      ],
+      "image": "words/germ.svg"
     },
     {
       "word": "girl",
@@ -461,7 +471,8 @@
       "distractors": [
         "o",
         "p"
-      ]
+      ],
+      "image": "words/girl.svg"
     },
     {
       "word": "hard",
@@ -550,7 +561,8 @@
       "distractors": [
         "s",
         "w"
-      ]
+      ],
+      "image": "words/jar.svg"
     },
     {
       "word": "jerk",
@@ -639,7 +651,8 @@
       "distractors": [
         "k",
         "u"
-      ]
+      ],
+      "image": "words/star.svg"
     },
     {
       "word": "stir",
@@ -675,7 +688,8 @@
       "distractors": [
         "o",
         "p"
-      ]
+      ],
+      "image": "words/surf.svg"
     },
     {
       "word": "term",
@@ -840,7 +854,8 @@
       "distractors": [
         "d",
         "a"
-      ]
+      ],
+      "image": "words/butter.svg"
     },
     {
       "word": "chart",
@@ -858,7 +873,8 @@
       "distractors": [
         "w",
         "b"
-      ]
+      ],
+      "image": "words/chart.svg"
     },
     {
       "word": "church",
@@ -876,7 +892,8 @@
       "distractors": [
         "p",
         "e"
-      ]
+      ],
+      "image": "words/church.svg"
     },
     {
       "word": "circle",
@@ -896,7 +913,8 @@
       "distractors": [
         "b",
         "k"
-      ]
+      ],
+      "image": "words/circle.svg"
     },
     {
       "word": "clerk",
@@ -1049,7 +1067,8 @@
       "distractors": [
         "g",
         "q"
-      ]
+      ],
+      "image": "words/horse.svg"
     },
     {
       "word": "morning",
@@ -1125,7 +1144,8 @@
       "distractors": [
         "o",
         "w"
-      ]
+      ],
+      "image": "words/nurse.svg"
     },
     {
       "word": "order",
@@ -1162,7 +1182,8 @@
       "distractors": [
         "d",
         "o"
-      ]
+      ],
+      "image": "words/party.svg"
     },
     {
       "word": "perfect",
@@ -1203,7 +1224,8 @@
       "distractors": [
         "w",
         "a"
-      ]
+      ],
+      "image": "words/person.svg"
     },
     {
       "word": "purple",
@@ -1242,7 +1264,8 @@
       "distractors": [
         "t",
         "k"
-      ]
+      ],
+      "image": "words/purse.svg"
     },
     {
       "word": "return",
@@ -1281,7 +1304,8 @@
       "distractors": [
         "l",
         "e"
-      ]
+      ],
+      "image": "words/scarf.svg"
     },
     {
       "word": "serve",
@@ -1336,7 +1360,8 @@
       "distractors": [
         "o",
         "g"
-      ]
+      ],
+      "image": "words/shirt.svg"
     },
     {
       "word": "short",
@@ -1393,7 +1418,8 @@
       "distractors": [
         "w",
         "b"
-      ]
+      ],
+      "image": "words/skirt.svg"
     },
     {
       "word": "spark",
@@ -1488,7 +1514,8 @@
       "distractors": [
         "b",
         "k"
-      ]
+      ],
+      "image": "words/storm.svg"
     },
     {
       "word": "story",
@@ -1583,7 +1610,8 @@
       "distractors": [
         "d",
         "l"
-      ]
+      ],
+      "image": "words/turkey.svg"
     },
     {
       "word": "turtle",
@@ -1603,7 +1631,8 @@
       "distractors": [
         "p",
         "s"
-      ]
+      ],
+      "image": "words/turtle.svg"
     },
     {
       "word": "twirl",

@@ -57,7 +57,8 @@
       "distractors": [
         "o",
         "m"
-      ]
+      ],
+      "image": "words/belt.svg"
     },
     {
       "word": "bend",
@@ -133,7 +134,8 @@
       "distractors": [
         "n",
         "w"
-      ]
+      ],
+      "image": "words/camp.svg"
     },
     {
       "word": "clam",
@@ -152,7 +154,8 @@
       "distractors": [
         "p",
         "s"
-      ]
+      ],
+      "image": "words/clam.svg"
     },
     {
       "word": "clap",
@@ -171,7 +174,8 @@
       "distractors": [
         "d",
         "i"
-      ]
+      ],
+      "image": "words/clap.svg"
     },
     {
       "word": "clip",
@@ -209,7 +213,8 @@
       "distractors": [
         "i",
         "g"
-      ]
+      ],
+      "image": "words/crab.svg"
     },
     {
       "word": "crib",
@@ -228,7 +233,8 @@
       "distractors": [
         "e",
         "q"
-      ]
+      ],
+      "image": "words/crib.svg"
     },
     {
       "word": "crop",
@@ -266,7 +272,8 @@
       "distractors": [
         "o",
         "t"
-      ]
+      ],
+      "image": "words/desk.svg"
     },
     {
       "word": "drop",
@@ -285,7 +292,8 @@
       "distractors": [
         "l",
         "g"
-      ]
+      ],
+      "image": "words/drop.svg"
     },
     {
       "word": "drum",
@@ -304,7 +312,8 @@
       "distractors": [
         "a",
         "o"
-      ]
+      ],
+      "image": "words/drum.svg"
     },
     {
       "word": "fast",
@@ -342,7 +351,8 @@
       "distractors": [
         "u",
         "p"
-      ]
+      ],
+      "image": "words/flag.svg"
     },
     {
       "word": "flat",
@@ -380,7 +390,8 @@
       "distractors": [
         "i",
         "e"
-      ]
+      ],
+      "image": "words/frog.svg"
     },
     {
       "word": "gift",
@@ -399,7 +410,8 @@
       "distractors": [
         "u",
         "n"
-      ]
+      ],
+      "image": "words/gift.svg"
     },
     {
       "word": "glad",
@@ -456,7 +468,8 @@
       "distractors": [
         "m",
         "t"
-      ]
+      ],
+      "image": "words/grin.svg"
     },
     {
       "word": "hand",
@@ -475,7 +488,8 @@
       "distractors": [
         "w",
         "q"
-      ]
+      ],
+      "image": "words/hand.svg"
     },
     {
       "word": "hunt",
@@ -513,7 +527,8 @@
       "distractors": [
         "k",
         "o"
-      ]
+      ],
+      "image": "words/jump.svg"
     },
     {
       "word": "junk",
@@ -551,7 +566,8 @@
       "distractors": [
         "b",
         "e"
-      ]
+      ],
+      "image": "words/lamp.svg"
     },
     {
       "word": "land",
@@ -570,7 +586,8 @@
       "distractors": [
         "k",
         "r"
-      ]
+      ],
+      "image": "words/land.svg"
     },
     {
       "word": "last",
@@ -627,7 +644,8 @@
       "distractors": [
         "g",
         "i"
-      ]
+      ],
+      "image": "words/mask.svg"
     },
     {
       "word": "melt",
@@ -665,7 +683,8 @@
       "distractors": [
         "p",
         "w"
-      ]
+      ],
+      "image": "words/milk.svg"
     },
     {
       "word": "mint",
@@ -722,7 +741,8 @@
       "distractors": [
         "d",
         "i"
-      ]
+      ],
+      "image": "words/nest.svg"
     },
     {
       "word": "pink",
@@ -779,7 +799,8 @@
       "distractors": [
         "q",
         "i"
-      ]
+      ],
+      "image": "words/plug.svg"
     },
     {
       "word": "pond",
@@ -817,7 +838,8 @@
       "distractors": [
         "e",
         "r"
-      ]
+      ],
+      "image": "words/sand.svg"
     },
     {
       "word": "scan",
@@ -893,7 +915,8 @@
       "distractors": [
         "b",
         "w"
-      ]
+      ],
+      "image": "words/sink.svg"
     },
     {
       "word": "skin",
@@ -950,7 +973,8 @@
       "distractors": [
         "t",
         "w"
-      ]
+      ],
+      "image": "words/sled.svg"
     },
     {
       "word": "slim",
@@ -1121,7 +1145,8 @@
       "distractors": [
         "d",
         "w"
-      ]
+      ],
+      "image": "words/stop.svg"
     },
     {
       "word": "swim",
@@ -1140,7 +1165,8 @@
       "distractors": [
         "u",
         "e"
-      ]
+      ],
+      "image": "words/swim.svg"
     },
     {
       "word": "tent",
@@ -1159,7 +1185,8 @@
       "distractors": [
         "l",
         "a"
-      ]
+      ],
+      "image": "words/tent.svg"
     },
     {
       "word": "trap",
@@ -1216,7 +1243,8 @@
       "distractors": [
         "k",
         "s"
-      ]
+      ],
+      "image": "words/twin.svg"
     },
     {
       "word": "wind",
@@ -1294,7 +1322,8 @@
       "distractors": [
         "r",
         "g"
-      ]
+      ],
+      "image": "words/stamp.svg"
     },
     {
       "word": "stand",
@@ -1333,7 +1362,8 @@
       "distractors": [
         "q",
         "m"
-      ]
+      ],
+      "image": "words/block.svg"
     },
     {
       "word": "brick",
@@ -1352,7 +1382,8 @@
       "distractors": [
         "t",
         "s"
-      ]
+      ],
+      "image": "words/brick.svg"
     },
     {
       "word": "bring",
@@ -1390,7 +1421,8 @@
       "distractors": [
         "l",
         "m"
-      ]
+      ],
+      "image": "words/dress.svg"
     },
     {
       "word": "grass",
@@ -1409,7 +1441,8 @@
       "distractors": [
         "m",
         "w"
-      ]
+      ],
+      "image": "words/grass.svg"
     },
     {
       "word": "press",
@@ -1466,7 +1499,8 @@
       "distractors": [
         "m",
         "g"
-      ]
+      ],
+      "image": "words/snack.svg"
     },
     {
       "word": "spill",

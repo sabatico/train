@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" fill="#f0f8e8"/>
+  <!-- Body -->
+  <ellipse cx="50" cy="80" rx="30" ry="12" fill="#8bc34a"/>
+  <!-- Head -->
+  <circle cx="75" cy="72" r="10" fill="#8bc34a"/>
+  <!-- Eye stalks -->
+  <line x1="80" y1="65" x2="85" y2="50" stroke="#8bc34a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="72" y1="65" x2="68" y2="50" stroke="#8bc34a" stroke-width="3" stroke-linecap="round"/>
+  <!-- Eyes -->
+  <circle cx="85" cy="48" r="3" fill="#333"/>
+  <circle cx="68" cy="48" r="3" fill="#333"/>
+  <!-- Shell -->
+  <circle cx="45" cy="70" r="22" fill="#d4a373"/>
+  <circle cx="45" cy="70" r="16" fill="#e8c9a0"/>
+  <path d="M45 54 Q55 62 50 70 Q45 78 35 70 Q30 62 40 54" fill="#c28b5e" stroke="none"/>
+  <circle cx="45" cy="70" r="8" fill="#d4a373"/>
+  <circle cx="45" cy="70" r="4" fill="#e8c9a0"/>
+</svg>

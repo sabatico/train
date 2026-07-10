@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Sky background -->
+  <rect x="0" y="0" width="120" height="60" fill="#87CEEB"/>
+  <!-- Water -->
+  <rect x="0" y="60" width="120" height="60" fill="#1E90FF"/>
+  <!-- Water ripples -->
+  <path d="M0 65 Q10 60 20 65 Q30 70 40 65 Q50 60 60 65 Q70 70 80 65 Q90 60 100 65 Q110 70 120 65" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M0 75 Q10 70 20 75 Q30 80 40 75 Q50 70 60 75 Q70 80 80 75 Q90 70 100 75 Q110 80 120 75" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.6"/>
+  <!-- Person diving headfirst (upside down, arms extended) -->
+  <g transform="translate(60, 40)">
+    <!-- Head -->
+    <circle cx="0" cy="-15" r="8" fill="#FFDAB9"/>
+    <!-- Body -->
+    <rect x="-4" y="-7" width="8" height="20" rx="3" fill="#FFDAB9"/>
+    <!-- Arms extended forward (upward in dive) -->
+    <line x1="4" y1="-5" x2="18" y2="-18" stroke="#FFDAB9" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-4" y1="-5" x2="-18" y2="-18" stroke="#FFDAB9" stroke-width="4" stroke-linecap="round"/>
+    <!-- Legs together -->
+    <line x1="0" y1="13" x2="0" y2="28" stroke="#FFDAB9" stroke-width="5" stroke-linecap="round"/>
+    <!-- Swimsuit -->
+    <rect x="-4" y="0" width="8" height="10" rx="2" fill="#FF4500"/>
+    <!-- Splash at entry point -->
+    <path d="M50 62 Q55 55 60 62 Q65 55 70 62" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Hair -->
+  <ellipse cx="60" cy="38" rx="18" ry="20" fill="#4a2c1a"/>
+  <!-- Face -->
+  <circle cx="60" cy="40" r="14" fill="#fce4c6"/>
+  <!-- Eyes -->
+  <circle cx="54" cy="38" r="2" fill="#333"/>
+  <circle cx="66" cy="38" r="2" fill="#333"/>
+  <!-- Smile -->
+  <path d="M54 44 Q60 50 66 44" stroke="#333" stroke-width="1.5" fill="none"/>
+  <!-- Veil -->
+  <path d="M30 30 Q60 10 90 30 L92 80 Q60 90 28 80 Z" fill="#f0f0f0" opacity="0.8"/>
+  <path d="M30 30 Q60 10 90 30" stroke="#ccc" stroke-width="1" fill="none"/>
+  <!-- Dress body -->
+  <rect x="44" y="52" width="32" height="20" rx="4" fill="#fff"/>
+  <!-- Dress skirt -->
+  <path d="M40 72 L80 72 L90 110 L30 110 Z" fill="#fff"/>
+  <!-- Dress waist line -->
+  <line x1="44" y1="72" x2="76" y2="72" stroke="#e0e0e0" stroke-width="1"/>
+  <!-- Sleeves -->
+  <rect x="30" y="52" width="14" height="8" rx="4" fill="#fff"/>
+  <rect x="76" y="52" width="14" height="8" rx="4" fill="#fff"/>
+  <!-- Hands -->
+  <circle cx="32" cy="62" r="4" fill="#fce4c6"/>
+  <circle cx="88" cy="62" r="4" fill="#fce4c6"/>
+  <!-- Veil detail -->
+  <path d="M35 35 Q60 20 85 35" stroke="#ddd" stroke-width="0.8" fill="none"/>
+</svg>

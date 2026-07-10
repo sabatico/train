@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <circle cx="60" cy="60" r="50" fill="#2c2c2c"/>
+  <circle cx="60" cy="60" r="40" fill="#1a1a1a"/>
+  <circle cx="60" cy="60" r="30" fill="#333"/>
+  <circle cx="60" cy="60" r="20" fill="#555"/>
+  <circle cx="60" cy="60" r="10" fill="#777"/>
+  <circle cx="60" cy="60" r="4" fill="#999"/>
+  <!-- Tread marks -->
+  <rect x="58" y="8" width="4" height="12" rx="2" fill="#444"/>
+  <rect x="58" y="100" width="4" height="12" rx="2" fill="#444"/>
+  <rect x="8" y="58" width="12" height="4" rx="2" fill="#444"/>
+  <rect x="100" y="58" width="12" height="4" rx="2" fill="#444"/>
+  <rect x="18" y="18" width="4" height="10" rx="2" fill="#444" transform="rotate(-45 20 23)"/>
+  <rect x="98" y="92" width="4" height="10" rx="2" fill="#444" transform="rotate(-45 100 97)"/>
+  <rect x="98" y="18" width="4" height="10" rx="2" fill="#444" transform="rotate(45 100 23)"/>
+  <rect x="18" y="92" width="4" height="10" rx="2" fill="#444" transform="rotate(45 20 97)"/>
+</svg>

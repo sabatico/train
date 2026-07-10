@@ -25,6 +25,12 @@
 3. Retype the word correctly.
 4. ✔ Expect: ✅ + 1 star (not 0), next item. **Invariant check:** the wrong spelling is nowhere on screen or in later screens; no earned star was removed.
 
+### KID-20 — The word picture (verified generated art)
+**As the child, I want a clear little picture of the word so that the meaning is obvious — never a picture that says a different word.**
+1. In a picture-bearing exercise (e.g. `word_builder`/`echo` for a concrete noun like *dog*, *nest*, *queen*), the word's SVG shows beside it (`static/img/words/<word>.svg`, wired via `entry.image`).
+2. ✔ Expect: the picture is unambiguous — a child seeing it alone would say exactly that word. Abstract/action/look-alike words (walk, red, the, ball→wheel) show **no** picture rather than a misleading one.
+3. ✔ Fallback order: SVG → emoji → placeholder (`pictureFor`). Missing SVG never breaks the card.
+
 ## The parent (the owner)
 ### PAR-01 — Check the rose of winds
 **As the parent, I want to see the skill radar so that I know what she's strong and weak in.**

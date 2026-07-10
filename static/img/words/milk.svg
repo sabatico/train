@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Milk carton body -->
+  <rect x="30" y="30" width="60" height="75" rx="3" fill="#f0f4f8" stroke="#c0c8d0" stroke-width="2"/>
+  <!-- Carton top (gable) -->
+  <polygon points="30,30 60,10 90,30" fill="#e8edf2" stroke="#c0c8d0" stroke-width="2"/>
+  <!-- Red cap -->
+  <rect x="52" y="8" width="16" height="12" rx="3" fill="#e63946"/>
+  <!-- Carton front panel lines (subtle) -->
+  <line x1="45" y1="50" x2="75" y2="50" stroke="#d0d8e0" stroke-width="1.5"/>
+  <line x1="45" y1="60" x2="75" y2="60" stroke="#d0d8e0" stroke-width="1.5"/>
+  <line x1="45" y1="70" x2="75" y2="70" stroke="#d0d8e0" stroke-width="1.5"/>
+  <!-- Small highlight on carton -->
+  <rect x="35" y="40" width="6" height="20" rx="2" fill="#ffffff" opacity="0.6"/>
+</svg>

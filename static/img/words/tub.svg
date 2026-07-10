@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Tub body -->
+  <ellipse cx="60" cy="72" rx="44" ry="28" fill="#7ec8e3"/>
+  <!-- Tub rim -->
+  <ellipse cx="60" cy="48" rx="44" ry="18" fill="#b0e0f6"/>
+  <!-- Water inside -->
+  <ellipse cx="60" cy="52" rx="38" ry="14" fill="#4a90d9"/>
+  <!-- Tub front -->
+  <path d="M16 48 Q16 90 60 100 Q104 90 104 48" fill="#7ec8e3" stroke="#5a9ebd" stroke-width="2"/>
+  <!-- Tub rim front -->
+  <path d="M16 48 Q16 60 60 66 Q104 60 104 48" fill="#b0e0f6" stroke="#8ec8e3" stroke-width="1.5"/>
+  <!-- Water surface -->
+  <ellipse cx="60" cy="54" rx="36" ry="12" fill="#4a90d9" opacity="0.8"/>
+  <!-- Water shine -->
+  <ellipse cx="52" cy="50" rx="12" ry="4" fill="#6ab0f0" opacity="0.5"/>
+  <!-- Bubbles -->
+  <circle cx="42" cy="44" r="4" fill="white" opacity="0.7"/>
+  <circle cx="50" cy="40" r="3" fill="white" opacity="0.7"/>
+  <circle cx="36" cy="48" r="2.5" fill="white" opacity="0.6"/>
+  <circle cx="70" cy="42" r="3.5" fill="white" opacity="0.7"/>
+  <circle cx="78" cy="46" r="2.5" fill="white" opacity="0.6"/>
+  <!-- Tub legs -->
+  <rect x="22" y="96" width="6" height="10" rx="2" fill="#d4a574"/>
+  <rect x="92" y="96" width="6" height="10" rx="2" fill="#d4a574"/>
+  <!-- Feet -->
+  <ellipse cx="25" cy="106" rx="5" ry="3" fill="#c49464"/>
+  <ellipse cx="95" cy="106" rx="5" ry="3" fill="#c49464"/>
+</svg>

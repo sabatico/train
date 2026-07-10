@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Mug body -->
+  <rect x="25" y="35" width="60" height="55" rx="8" ry="8" fill="#D4A574"/>
+  <!-- Mug rim -->
+  <rect x="22" y="30" width="66" height="10" rx="5" ry="5" fill="#C48B5A"/>
+  <!-- Handle -->
+  <path d="M85 50 Q105 50 105 65 Q105 80 85 80" fill="none" stroke="#C48B5A" stroke-width="8" stroke-linecap="round"/>
+  <!-- Coffee inside -->
+  <rect x="28" y="45" width="54" height="40" rx="6" ry="6" fill="#5C3A1E"/>
+  <!-- Coffee surface highlight -->
+  <ellipse cx="55" cy="48" rx="22" ry="5" fill="#6B4423"/>
+  <!-- Steam wisps -->
+  <path d="M40 30 Q38 22 42 16" fill="none" stroke="#A0A0A0" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M55 28 Q53 18 57 12" fill="none" stroke="#A0A0A0" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M70 30 Q68 22 72 16" fill="none" stroke="#A0A0A0" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+</svg>
