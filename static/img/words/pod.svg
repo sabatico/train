@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Pod back -->
+  <path d="M25 60 Q30 25 60 20 Q90 25 95 60 Q90 95 60 100 Q30 95 25 60Z" fill="#4a8c2a" stroke="#2d5a1a" stroke-width="2"/>
+  <!-- Pod opening -->
+  <path d="M30 60 Q35 30 60 25 Q85 30 90 60 Q85 90 60 95 Q35 90 30 60Z" fill="#6bbf3a"/>
+  <!-- Inner pod line -->
+  <path d="M35 60 Q40 35 60 30 Q80 35 85 60 Q80 85 60 90 Q40 85 35 60Z" fill="#8fd65a"/>
+  <!-- Peas -->
+  <circle cx="48" cy="55" r="12" fill="#b8e67a" stroke="#4a8c2a" stroke-width="1.5"/>
+  <circle cx="60" cy="45" r="12" fill="#b8e67a" stroke="#4a8c2a" stroke-width="1.5"/>
+  <circle cx="72" cy="55" r="12" fill="#b8e67a" stroke="#4a8c2a" stroke-width="1.5"/>
+  <!-- Pea highlights -->
+  <circle cx="45" cy="52" r="3" fill="#d4f0a0" opacity="0.7"/>
+  <circle cx="57" cy="42" r="3" fill="#d4f0a0" opacity="0.7"/>
+  <circle cx="69" cy="52" r="3" fill="#d4f0a0" opacity="0.7"/>
+</svg>

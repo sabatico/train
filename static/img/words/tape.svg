@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Tape roll body - outer ellipse -->
+  <ellipse cx="60" cy="65" rx="45" ry="35" fill="#e0e8f0" stroke="#b0c0d0" stroke-width="2"/>
+  <!-- Tape roll top face -->
+  <ellipse cx="60" cy="45" rx="45" ry="35" fill="#d0dce8" stroke="#b0c0d0" stroke-width="2"/>
+  <!-- Inner core hole - outer -->
+  <ellipse cx="60" cy="45" rx="18" ry="14" fill="#c8d4e0" stroke="#a0b0c0" stroke-width="1.5"/>
+  <!-- Inner core hole - inner -->
+  <ellipse cx="60" cy="45" rx="12" ry="9" fill="#a0b0c0" stroke="#8898a8" stroke-width="1"/>
+  <!-- Tape layers visible on side -->
+  <ellipse cx="60" cy="65" rx="45" ry="35" fill="none" stroke="#c0d0e0" stroke-width="1.5" stroke-dasharray="3,4"/>
+  <!-- Tape edge highlight -->
+  <ellipse cx="60" cy="45" rx="45" ry="35" fill="none" stroke="#e8f0f8" stroke-width="1" opacity="0.5"/>
+  <!-- Shine on top -->
+  <ellipse cx="50" cy="38" rx="20" ry="10" fill="#f0f8ff" opacity="0.3"/>
+</svg>

@@ -174,7 +174,8 @@
       "distractors": [
         "o",
         "g"
-      ]
+      ],
+      "image": "words/bead.svg"
     },
     {
       "word": "blow",
@@ -668,7 +669,8 @@
       "distractors": [
         "o",
         "i"
-      ]
+      ],
+      "image": "words/hay.svg"
     },
     {
       "word": "high",
@@ -1154,7 +1156,8 @@
       "distractors": [
         "i",
         "w"
-      ]
+      ],
+      "image": "words/pool.svg"
     },
     {
       "word": "rain",
@@ -1282,7 +1285,8 @@
       "distractors": [
         "d",
         "b"
-      ]
+      ],
+      "image": "words/saw.svg"
     },
     {
       "word": "say",
@@ -1732,7 +1736,8 @@
       "distractors": [
         "m",
         "l"
-      ]
+      ],
+      "image": "words/braid.svg"
     },
     {
       "word": "brain",

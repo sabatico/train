@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Red cap (left) -->
+  <rect x="15" y="65" width="40" height="10" rx="3" fill="#cc0000"/>
+  <path d="M20 65 Q35 20 50 65" fill="#e60000"/>
+  <circle cx="35" cy="55" r="4" fill="#ffffff"/>
+  
+  <!-- Blue sun hat (right) -->
+  <ellipse cx="85" cy="70" rx="30" ry="8" fill="#3366cc"/>
+  <path d="M70 70 Q70 40 85 40 Q100 40 100 70" fill="#4477dd"/>
+  <ellipse cx="85" cy="70" rx="15" ry="4" fill="#2255aa"/>
+</svg>

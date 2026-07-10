@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Suitcase body -->
+  <rect x="20" y="40" width="80" height="60" rx="6" ry="6" fill="#4A90D9" stroke="#2C5F8A" stroke-width="3"/>
+  <!-- Handle -->
+  <rect x="45" y="25" width="30" height="15" rx="7" ry="7" fill="none" stroke="#2C5F8A" stroke-width="4"/>
+  <!-- Top latch left -->
+  <rect x="35" y="38" width="10" height="6" rx="2" ry="2" fill="#F5A623" stroke="#D4891A" stroke-width="2"/>
+  <!-- Top latch right -->
+  <rect x="75" y="38" width="10" height="6" rx="2" ry="2" fill="#F5A623" stroke="#D4891A" stroke-width="2"/>
+  <!-- Suitcase line (seam) -->
+  <line x1="20" y1="70" x2="100" y2="70" stroke="#2C5F8A" stroke-width="2" stroke-dasharray="4,3"/>
+</svg>

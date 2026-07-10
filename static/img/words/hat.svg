@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Cap bill/brim -->
+  <path d="M20 70 Q15 75 25 78 L95 78 Q105 78 100 70 L95 65 Q90 60 80 62 L30 62 Q22 62 20 70Z" fill="#cc0000"/>
+  <!-- Cap dome -->
+  <path d="M30 62 Q32 30 60 25 Q88 30 90 62 L30 62Z" fill="#e60000"/>
+  <!-- Cap button on top -->
+  <circle cx="60" cy="26" r="3" fill="#cc0000"/>
+  <!-- Visor/brim front curve -->
+  <path d="M20 70 Q15 75 25 78 L95 78 Q105 78 100 70" fill="none" stroke="#990000" stroke-width="2"/>
+</svg>

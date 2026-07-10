@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Coiled rope - brown color -->
+  <ellipse cx="60" cy="55" rx="35" ry="18" fill="none" stroke="#8B4513" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="60" cy="65" rx="30" ry="15" fill="none" stroke="#A0522D" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="60" cy="75" rx="25" ry="12" fill="none" stroke="#8B4513" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="60" cy="85" rx="20" ry="10" fill="none" stroke="#A0522D" stroke-width="6" stroke-linecap="round"/>
+  <!-- Rope end hanging down -->
+  <path d="M40 55 Q30 70 35 95 Q38 108 45 110" fill="none" stroke="#8B4513" stroke-width="5" stroke-linecap="round"/>
+  <!-- Rope start on top -->
+  <path d="M80 45 Q90 35 85 25" fill="none" stroke="#A0522D" stroke-width="5" stroke-linecap="round"/>
+</svg>

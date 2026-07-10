@@ -24,21 +24,18 @@ WORD_BANK_DIR = ROOT / "data" / "word_bank"
 # Rejected in the lead's visual pass: picture is ambiguous or reads as a
 # different word. An ambiguous picture actively misleads a dyslexic reader,
 # so the bar is "unambiguous or it goes" -> these fall back to no-picture.
+# (Updated after the 2026-07-10 regen pass recovered 23 concrete nouns with
+# sharper briefs; the 138 below are what stayed pictureless.)
 REJECTED = """
-ball bead beds beg bend bill blow bog boil bone
-braid case chin chip
-claw clay clip cloth coach cuff curb curl curve dad
-dash deck den dip dirt dot dug fall
-fat fell fight file fin fur fuzz goal grain gum
-gun ham hat hats hay herd hide hit hole hop hops horn
-junk kick kit lap leg lid line map melt
-mess mint mud neck nine nod oil one pat
-peg pet pink pit pod poke pond pool pop puff pull purple
-rag ran ray red rib rice ride rip rod roll rope run runs sat saw
-shin sip sit sits six skip slip smell smoke snap sniff snow sob soil
-spark spill spin sport spot stand stem step stir stone street sub tag tail tall tap tape
-thirty three tile tin tip toast top toy trap tray tube tug turn twirl two vine wag wait
-wake walk wave wet whip wig wine wink wire wood yam yard zoo
+ball beds beg bend bill blow bog boil chin chip
+claw clay cloth coach cuff curb curl curve
+dad dash deck den dip dirt dot dug fall fat fell fight file fur fuzz goal grain gum gun herd
+hide hit hole hop hops horn junk kick kit lap leg lid line melt mess mint mud neck nine nod
+oil one pat pet pink pit poke pop puff pull purple rag ran ray red rib ride rip run runs sat
+shin sip sit sits six skip slip smell smoke snap sniff snow sob soil spark spill spin sport
+spot stand stem step stir stone street sub tail tall tap thirty three tile tin tip toast top
+toy trap tray tube tug turn twirl two wag wait wake walk wave wet whip wig wine wink wire
+wood yam yard zoo
 """.split()
 
 

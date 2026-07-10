@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Hair braid - three woven strands -->
+  <!-- Main braid body -->
+  <path d="M55 20 Q50 30 58 40 Q66 50 55 60 Q44 70 58 80 Q72 90 55 100" 
+        fill="none" stroke="#8B5E3C" stroke-width="10" stroke-linecap="round"/>
+  
+  <!-- Left strand overlay -->
+  <path d="M50 25 Q42 35 55 45 Q68 55 50 65 Q32 75 55 85 Q78 95 55 105" 
+        fill="none" stroke="#A0704A" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Right strand overlay -->
+  <path d="M60 25 Q68 35 55 45 Q42 55 60 65 Q78 75 55 85 Q32 95 55 105" 
+        fill="none" stroke="#6B4226" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Tie at bottom -->
+  <ellipse cx="55" cy="103" rx="8" ry="4" fill="#D2691E"/>
+  
+  <!-- Small bow/knot -->
+  <path d="M47 103 Q42 98 47 103 Q52 108 47 103" fill="#D2691E"/>
+  <path d="M63 103 Q68 98 63 103 Q58 108 63 103" fill="#D2691E"/>
+  
+  <!-- Top of braid (hair starting point) -->
+  <ellipse cx="55" cy="18" rx="8" ry="5" fill="#8B5E3C"/>
+</svg>

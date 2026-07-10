@@ -101,8 +101,8 @@
   },
   "bead": {
     "drawable": true,
-    "brief": "A single round bead with a hole through it",
-    "status": "rejected"
+    "brief": "a single round blue bead with a hole through the center",
+    "status": "ok"
   },
   "because": {
     "drawable": false,
@@ -241,8 +241,8 @@
   },
   "bone": {
     "drawable": true,
-    "brief": "A dog bone shape with two knobs at each end.",
-    "status": "rejected"
+    "brief": "a classic white dog bone: a bar with two rounded knobs at each end",
+    "status": "ok"
   },
   "book": {
     "drawable": true,
@@ -281,8 +281,8 @@
   },
   "braid": {
     "drawable": true,
-    "brief": "Three wavy lines intertwined like a rope.",
-    "status": "rejected"
+    "brief": "a single long hair braid, three strands woven together, tied at the bottom",
+    "status": "ok"
   },
   "brain": {
     "drawable": true,
@@ -401,8 +401,8 @@
   },
   "clip": {
     "drawable": true,
-    "brief": "A metal paperclip or a hair clip",
-    "status": "rejected"
+    "brief": "a silver metal paperclip",
+    "status": "ok"
   },
   "clock": {
     "drawable": true,
@@ -861,8 +861,8 @@
   },
   "fin": {
     "drawable": true,
-    "brief": "A triangular fish fin attached to a fish body",
-    "status": "rejected"
+    "brief": "a grey shark fin poking up above blue water",
+    "status": "ok"
   },
   "fine": {
     "drawable": false,
@@ -1171,8 +1171,8 @@
   },
   "ham": {
     "drawable": true,
-    "brief": "A pink oval slice of meat with a bone in the middle.",
-    "status": "rejected"
+    "brief": "a pink cooked ham with a small white bone sticking out of one end",
+    "status": "ok"
   },
   "hand": {
     "drawable": true,
@@ -1186,8 +1186,8 @@
   },
   "hat": {
     "drawable": true,
-    "brief": "A simple triangle on a brim, like a party hat.",
-    "status": "rejected"
+    "brief": "a red baseball cap seen from the side",
+    "status": "ok"
   },
   "hate": {
     "drawable": false,
@@ -1196,8 +1196,8 @@
   },
   "hats": {
     "drawable": true,
-    "brief": "Two simple triangles on brims, side by side.",
-    "status": "rejected"
+    "brief": "two hats side by side: a red cap and a blue sun hat",
+    "status": "ok"
   },
   "have": {
     "drawable": false,
@@ -1206,8 +1206,8 @@
   },
   "hay": {
     "drawable": true,
-    "brief": "A bundle of yellow straw tied with a string.",
-    "status": "rejected"
+    "brief": "a golden cylindrical hay bale with two dark binding bands",
+    "status": "ok"
   },
   "helped": {
     "drawable": false,
@@ -1706,8 +1706,8 @@
   },
   "map": {
     "drawable": true,
-    "brief": "A rectangular piece of paper with squiggly lines and an X.",
-    "status": "rejected"
+    "brief": "a folded paper map showing winding roads and a red X mark",
+    "status": "ok"
   },
   "mask": {
     "drawable": true,
@@ -2061,8 +2061,8 @@
   },
   "peg": {
     "drawable": true,
-    "brief": "A small wooden or plastic peg sticking out of a board.",
-    "status": "rejected"
+    "brief": "a single wooden clothes peg (clothespin), standing upright",
+    "status": "ok"
   },
   "pen": {
     "drawable": true,
@@ -2186,8 +2186,8 @@
   },
   "pod": {
     "drawable": true,
-    "brief": "A long green bean-like pod.",
-    "status": "rejected"
+    "brief": "a bright green pea pod split open showing three round peas",
+    "status": "ok"
   },
   "point": {
     "drawable": false,
@@ -2201,13 +2201,13 @@
   },
   "pond": {
     "drawable": true,
-    "brief": "A blue oval with wavy lines for water.",
-    "status": "rejected"
+    "brief": "a small round blue pond with a green lily pad and cattail reeds",
+    "status": "ok"
   },
   "pool": {
     "drawable": true,
-    "brief": "A blue rectangle with a diving board.",
-    "status": "rejected"
+    "brief": "a rectangular swimming pool, blue water, with a white pool ladder",
+    "status": "ok"
   },
   "pop": {
     "drawable": true,
@@ -2341,8 +2341,8 @@
   },
   "rice": {
     "drawable": true,
-    "brief": "A bowl with small white oval grains.",
-    "status": "rejected"
+    "brief": "a white bowl heaped with fluffy white rice",
+    "status": "ok"
   },
   "rich": {
     "drawable": false,
@@ -2376,13 +2376,13 @@
   },
   "rod": {
     "drawable": true,
-    "brief": "A straight thin stick or metal bar",
-    "status": "rejected"
+    "brief": "a fishing rod: a long pole with a line and a hook hanging at the end",
+    "status": "ok"
   },
   "roll": {
     "drawable": true,
-    "brief": "A cylindrical object like a bread roll or a rolling pin",
-    "status": "rejected"
+    "brief": "a single round golden-brown bread roll",
+    "status": "ok"
   },
   "room": {
     "drawable": true,
@@ -2391,8 +2391,8 @@
   },
   "rope": {
     "drawable": true,
-    "brief": "A thick curved line representing a coiled rope",
-    "status": "rejected"
+    "brief": "a neatly coiled brown rope",
+    "status": "ok"
   },
   "rose": {
     "drawable": true,
@@ -2481,8 +2481,8 @@
   },
   "saw": {
     "drawable": true,
-    "brief": "A hand tool with a serrated blade and handle",
-    "status": "rejected"
+    "brief": "a hand saw: a triangular metal blade with teeth and a wooden handle",
+    "status": "ok"
   },
   "say": {
     "drawable": false,
@@ -2961,8 +2961,8 @@
   },
   "tag": {
     "drawable": true,
-    "brief": "A rectangular label with a string attached",
-    "status": "rejected"
+    "brief": "a paper price tag, tilted, with a short string through a hole at the top",
+    "status": "ok"
   },
   "tail": {
     "drawable": true,
@@ -3001,8 +3001,8 @@
   },
   "tape": {
     "drawable": true,
-    "brief": "A roll of adhesive tape with a strip peeling off",
-    "status": "rejected"
+    "brief": "a roll of clear sticky tape on a round core, seen at an angle",
+    "status": "ok"
   },
   "teach": {
     "drawable": false,
@@ -3291,8 +3291,8 @@
   },
   "vine": {
     "drawable": true,
-    "brief": "A curving green line with small leaves along it.",
-    "status": "rejected"
+    "brief": "a curling green vine with leaves and a bunch of purple grapes",
+    "status": "ok"
   },
   "wag": {
     "drawable": true,
@@ -3576,8 +3576,8 @@
   },
   "case": {
     "drawable": true,
-    "brief": "A rectangular suitcase with a handle",
-    "status": "rejected"
+    "brief": "a suitcase: a rectangular case with a handle on top and two latches",
+    "status": "ok"
   },
   "cash": {
     "drawable": true,

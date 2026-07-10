@@ -194,7 +194,8 @@
       "distractors": [
         "w",
         "r"
-      ]
+      ],
+      "image": "words/clip.svg"
     },
     {
       "word": "crab",
@@ -819,7 +820,8 @@
       "distractors": [
         "r",
         "k"
-      ]
+      ],
+      "image": "words/pond.svg"
     },
     {
       "word": "sand",

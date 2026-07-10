@@ -193,7 +193,8 @@
       "distractors": [
         "w",
         "p"
-      ]
+      ],
+      "image": "words/bone.svg"
     },
     {
       "word": "cake",
@@ -271,7 +272,8 @@
       "distractors": [
         "d",
         "n"
-      ]
+      ],
+      "image": "words/case.svg"
     },
     {
       "word": "cave",
@@ -1280,7 +1282,8 @@
       "distractors": [
         "m",
         "n"
-      ]
+      ],
+      "image": "words/rice.svg"
     },
     {
       "word": "ride",
@@ -1318,7 +1321,8 @@
       "distractors": [
         "i",
         "n"
-      ]
+      ],
+      "image": "words/rope.svg"
     },
     {
       "word": "rose",
@@ -1509,7 +1513,8 @@
       "distractors": [
         "l",
         "m"
-      ]
+      ],
+      "image": "words/tape.svg"
     },
     {
       "word": "tile",
@@ -1604,7 +1609,8 @@
       "distractors": [
         "s",
         "r"
-      ]
+      ],
+      "image": "words/vine.svg"
     },
     {
       "word": "wake",

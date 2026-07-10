@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Vine stem -->
+  <path d="M20 100 Q30 80 25 60 Q20 40 35 30 Q50 20 60 25 Q70 30 75 20" 
+        fill="none" stroke="#2d8a2d" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Leaves -->
+  <ellipse cx="30" cy="70" rx="10" ry="6" fill="#3cb043" transform="rotate(-30 30 70)"/>
+  <ellipse cx="50" cy="35" rx="10" ry="6" fill="#3cb043" transform="rotate(20 50 35)"/>
+  <ellipse cx="65" cy="28" rx="8" ry="5" fill="#3cb043" transform="rotate(-15 65 28)"/>
+  
+  <!-- Grape bunch - cluster of purple circles -->
+  <circle cx="60" cy="55" r="7" fill="#6a0dad"/>
+  <circle cx="72" cy="52" r="7" fill="#7b2d8e"/>
+  <circle cx="66" cy="65" r="7" fill="#6a0dad"/>
+  <circle cx="54" cy="63" r="7" fill="#7b2d8e"/>
+  <circle cx="78" cy="60" r="7" fill="#6a0dad"/>
+  <circle cx="70" cy="75" r="7" fill="#7b2d8e"/>
+  <circle cx="60" cy="78" r="6" fill="#6a0dad"/>
+  <circle cx="82" cy="70" r="6" fill="#7b2d8e"/>
+  <circle cx="74" cy="85" r="6" fill="#6a0dad"/>
+  
+  <!-- Grape stem -->
+  <path d="M66 45 Q68 42 70 40" fill="none" stroke="#2d8a2d" stroke-width="2" stroke-linecap="round"/>
+</svg>

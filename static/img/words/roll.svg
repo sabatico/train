@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Shadow -->
+  <ellipse cx="60" cy="100" rx="35" ry="8" fill="#d4a574" opacity="0.4"/>
+  <!-- Main roll body -->
+  <ellipse cx="60" cy="60" rx="40" ry="30" fill="#d4a06a"/>
+  <!-- Top highlight -->
+  <ellipse cx="60" cy="50" rx="30" ry="20" fill="#e8b87a"/>
+  <!-- Crust top -->
+  <ellipse cx="60" cy="42" rx="25" ry="14" fill="#c4884a"/>
+  <!-- Crust highlight -->
+  <ellipse cx="55" cy="38" rx="12" ry="6" fill="#dda05e" opacity="0.6"/>
+  <!-- Score mark -->
+  <line x1="45" y1="48" x2="75" y2="48" stroke="#b0703a" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+</svg>

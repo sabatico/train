@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Handle -->
+  <rect x="10" y="50" width="40" height="20" rx="4" fill="#8B4513"/>
+  <!-- Blade -->
+  <polygon points="50,55 110,55 110,70 50,70" fill="#A0A0A0"/>
+  <!-- Teeth -->
+  <polygon points="110,55 115,50 115,55" fill="#A0A0A0"/>
+  <polygon points="105,55 110,50 110,55" fill="#A0A0A0"/>
+  <polygon points="100,55 105,50 105,55" fill="#A0A0A0"/>
+  <polygon points="95,55 100,50 100,55" fill="#A0A0A0"/>
+  <polygon points="90,55 95,50 95,55" fill="#A0A0A0"/>
+  <polygon points="85,55 90,50 90,55" fill="#A0A0A0"/>
+  <polygon points="80,55 85,50 85,55" fill="#A0A0A0"/>
+  <polygon points="75,55 80,50 80,55" fill="#A0A0A0"/>
+  <polygon points="70,55 75,50 75,55" fill="#A0A0A0"/>
+  <polygon points="65,55 70,50 70,55" fill="#A0A0A0"/>
+  <polygon points="60,55 65,50 65,55" fill="#A0A0A0"/>
+  <polygon points="55,55 60,50 60,55" fill="#A0A0A0"/>
+</svg>
