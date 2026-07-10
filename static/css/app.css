@@ -132,3 +132,7 @@ body { background: var(--sq-color-bg); margin: 0; }
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.15); }
 }
+
+/* generated word-picture SVGs (ADR-015) */
+.sq-pic { line-height: 0; }
+.sq-pic__svg { width: 96px; height: 96px; display: block; }

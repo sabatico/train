@@ -25,6 +25,23 @@ function instruction(text) {
   return el("p", { class: "sq-card__instruction", text });
 }
 
+// Picture cue: a verified SVG (ADR-015) → the audited emoji → a neutral
+// placeholder. SVG loads as an <img>; if it 404s we drop to the emoji/placeholder.
+function pictureFor(prompt) {
+  const emoji = prompt.image_emoji || "🔤";
+  if (prompt.image) {
+    const wrap = el("div", { class: "sq-emoji-prompt sq-pic" });
+    const img = el("img", {
+      class: "sq-pic__svg",
+      attrs: { src: `/static/img/${prompt.image}`, alt: "", "aria-hidden": "true" },
+    });
+    img.addEventListener("error", () => { wrap.textContent = emoji; }, { once: true });
+    wrap.appendChild(img);
+    return wrap;
+  }
+  return el("div", { class: "sq-emoji-prompt", text: emoji });
+}
+
 function doneButton(label, onClick) {
   const btn = el("button", {
     class: "sq-btn sq-btn--primary",
@@ -100,7 +117,7 @@ function renderWordBuilder(item, onSubmit) {
 
   refresh();
   return el("div", { class: "sq-stack" }, [
-    el("div", { class: "sq-emoji-prompt", text: item.prompt.image_emoji || "🔤" }),
+    pictureFor(item.prompt),
     audioButton(word),
     instruction("Build the word"),
     boxRow,
@@ -137,7 +154,7 @@ function renderLetterBoxes(item, onSubmit) {
   function refresh() { done.disabled = inputs.some((x) => !x.value); }
 
   const node = el("div", { class: "sq-stack" }, [
-    el("div", { class: "sq-emoji-prompt", text: item.prompt.image_emoji || "🔤" }),
+    pictureFor(item.prompt),
     audioButton(word),
     instruction("Type the word"),
     row,
@@ -203,7 +220,7 @@ function renderMissingLetters(item, onSubmit) {
   function refresh() { done.disabled = Object.values(inputs).some((x) => !x.value); }
   refresh();
   const node = el("div", { class: "sq-stack" }, [
-    el("div", { class: "sq-emoji-prompt", text: item.prompt.image_emoji || "🔤" }),
+    pictureFor(item.prompt),
     audioButton(item.prompt.audio_word),
     instruction("Fill in the missing letters"),
     row,
@@ -325,7 +342,7 @@ function renderSentenceScribe(item, onSubmit) {
   input.addEventListener("keydown", (e) => { if (e.key === "Enter" && !done.disabled) onSubmit(input.value); });
   setTimeout(() => say(item.prompt.audio_word), 350);
   const node = el("div", { class: "sq-stack" }, [
-    el("div", { class: "sq-emoji-prompt", text: item.prompt.image_emoji || "✏️" }),
+    pictureFor(item.prompt),
     audioButton(item.prompt.audio_word, { hero: true }),
     instruction("Listen, then write the sentence"),
     input,

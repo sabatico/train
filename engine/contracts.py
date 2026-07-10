@@ -268,7 +268,10 @@ def build_item(
         "prompt": {
             "text": prompts[exercise_type],
             "audio_word": word,
-            "image_emoji": word_entry.get("emoji", ""),
+            # picture cue: a verified SVG when we have one, else the (audited) emoji,
+            # else nothing (ADR-015). Never on pure-recall dictation.
+            "image": "" if exercise_type == "echo_dictation" else (word_entry.get("image") or ""),
+            "image_emoji": "" if exercise_type == "echo_dictation" else word_entry.get("emoji", ""),
             "auto_speak": exercise_type in ("echo_dictation", "phrase_dictation", "sentence_scribe"),
         },
         "payload": payload,

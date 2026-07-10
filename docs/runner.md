@@ -47,7 +47,9 @@ ADR-005..012 accepted; build items may proceed against them. ADR-007 got an inli
 | W2-5 | Stars banked at finish (bug: never persisted) + /api/home + gamified home/reward/collection | ✅ | 8-day arc: L4, 7 hatches, streak 8 |
 | W2-6 | Cross-authored redesign tests | ✅ | 66 tests, 669 total green; contracts 100%, session 99%, selector 98%; no bugs found |
 | W2-7 | beat_yesterday opt-in game | ☐ | T-013; the last PLAN §3 type |
-| W2-8 | Answer-flow hardening (anti-trick + typo-cascade responses) | ✅ | act-025; server-derived phase, blank/identical/retype policies, sanitization, bd plausibility, streak guard; browser-verified; **27 cross-authored tests, 696 total green, session.py 99%, no bugs** |
+| W2-8 | Answer-flow hardening (anti-trick + typo-cascade responses) | ✅ | act-025; server-derived phase, blank/identical/retype policies, sanitization, bd plausibility, streak guard; **27 cross-authored tests, no bugs** |
+| W2-9 | Misleading-image audit (emoji back-translation) + stale-content class kill (served fresh) | ✅ | act-026/027; 557 emojis removed, serving rebuilt from current bank; 59 cross-authored tests |
+| W2-10 | Word-picture SVG art: DeepSeek-generated, lead-verified, per depictable word (ADR-015) | ▶ | ~252 drawable; generate→render→visual-verify→apply image fields; wiring done, art generating |
 
 ## D. Review/correction log (append per review or owner-correction round)
 - 2026-07-09 — CR2 (owner): \"present functionality path has no sense — re-review ALL functionality, redo in full.\" → ADR-014 + Wave 2 (section F). Root complaint validated by simulation; redesign shipped same day.

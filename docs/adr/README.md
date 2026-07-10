@@ -18,6 +18,7 @@ The running list of **locked architectural decisions.** Read this before making 
 | [ADR-012](ADR-012-agent-integration-contract.md) | Agent integration contract (tool-use, PII boundary, caching, fallback) | Accepted | 2026-07-07 |
 | [ADR-013](ADR-013-openai-tts-pregenerated-audio.md) | OpenAI TTS as the pre-generated dictation-audio provider | Accepted | 2026-07-08 |
 | [ADR-014](ADR-014-session-experience-redesign.md) | Session-experience redesign: the full learning path, as designed | Accepted | 2026-07-09 |
+| [ADR-015](ADR-015-generated-word-svg-art.md) | Word pictures = verified generated SVG art (not emoji) | Accepted | 2026-07-10 |
 
 > Number monotonically; never reuse. One file per ADR: `ADR-NNN-short-slug.md`.
 
