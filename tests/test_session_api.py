@@ -113,12 +113,19 @@ def test_session_answer_wrong_first_try_returns_reveal(client):
     assert body["reveal"]["target"] == item["target"]
 
 
+def _correct_attempt(item):
+    if item["type"] == "bd_ninja":  # client-scored game (ADR-014)
+        return f"{item['payload']['goal']}/0"
+    return item["target"]
+
+
 def test_session_answer_past_end_of_session_409(client):
     client.post("/api/session/start")
     for _ in range(10):
         item = _current_item()
         client.post(
-            "/api/session/answer", json={"item_id": item["item_id"], "attempt": item["target"]}
+            "/api/session/answer",
+            json={"item_id": item["item_id"], "attempt": _correct_attempt(item)},
         )
     resp = client.post(
         "/api/session/answer", json={"item_id": "whatever", "attempt": "x"}
@@ -162,7 +169,7 @@ def test_full_happy_path_flow_through_the_api(client):
         server_item = _current_item()  # server state carries the target
         answer_resp = client.post(
             "/api/session/answer",
-            json={"item_id": server_item["item_id"], "attempt": server_item["target"]},
+            json={"item_id": server_item["item_id"], "attempt": _correct_attempt(server_item)},
         )
         assert answer_resp.status_code == 200
         assert answer_resp.get_json()["correct"] is True

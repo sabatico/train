@@ -17,6 +17,7 @@ The running list of **locked architectural decisions.** Read this before making 
 | [ADR-011](ADR-011-rewards-gamification-economy.md) | Rewards & gamification economy | Accepted | 2026-07-07 |
 | [ADR-012](ADR-012-agent-integration-contract.md) | Agent integration contract (tool-use, PII boundary, caching, fallback) | Accepted | 2026-07-07 |
 | [ADR-013](ADR-013-openai-tts-pregenerated-audio.md) | OpenAI TTS as the pre-generated dictation-audio provider | Accepted | 2026-07-08 |
+| [ADR-014](ADR-014-session-experience-redesign.md) | Session-experience redesign: the full learning path, as designed | Accepted | 2026-07-09 |
 
 > Number monotonically; never reuse. One file per ADR: `ADR-NNN-short-slug.md`.
 

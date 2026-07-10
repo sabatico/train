@@ -85,6 +85,36 @@ body { background: var(--sq-color-bg); margin: 0; }
   box-shadow: var(--sq-focus-ring);
 }
 
+/* ---- ADR-014 exercise widgets ---- */
+
+/* static (given) letters in missing_letters */
+.sq-letterbox--static {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--sq-color-well);
+  border-style: solid;
+  color: var(--sq-color-ink-muted);
+}
+
+/* per-word phrase inputs sized by word length (dynamic value on a CSS var) */
+.sq-input-word--inline {
+  min-width: 0;
+  width: calc(var(--sq-input-chars, 5) * 1ch + var(--sq-space-7));
+}
+.sq-input-word--wide { min-width: min(90vw, 560px); font-size: var(--sq-text-title); }
+
+/* heart-word cover flap */
+.sq-word--covered { filter: blur(14px); opacity: 0.25; transition: filter var(--sq-dur-base) var(--sq-ease); }
+
+/* b/d ninja */
+.sq-bd-grid { max-width: 560px; gap: var(--sq-space-3); }
+.sq-bubble--popped { opacity: 0.15; transform: scale(0.7); transition: all var(--sq-dur-base) var(--sq-ease); }
+
+/* meter fill driven by a CSS custom property (the allowed dynamic inline form) */
+.sq-meter { width: min(80vw, 420px); }
+.sq-meter__fill { width: var(--sq-meter-pct, 0%); transition: width var(--sq-dur-slow) var(--sq-ease); }
+
 /* reward numbers */
 .sq-reward-stars {
   font-size: var(--sq-text-word-xl);

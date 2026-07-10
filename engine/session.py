@@ -15,7 +15,7 @@ import uuid
 from datetime import date
 
 from agent import teacher
-from . import classifier, config, contracts, rewards, selector, skills as skills_mod, store
+from . import classifier, config, contracts, phonics, rewards, selector, skills as skills_mod, store
 
 
 # --------------------------------------------------------------- helpers
@@ -24,17 +24,38 @@ def _today(today: date | None) -> date:
 
 
 def _normalize(text: str, grading: dict) -> str:
-    if grading.get("trim", True):
-        text = text.strip()
-    if grading.get("case_insensitive", True):
-        text = text.lower()
-    return text
+    return contracts.normalize_answer(text, grading)
 
 
-def _build_teach(focus_skill: str, words_for) -> dict:
+def _grade(item: dict, attempt: str) -> bool:
+    """Server-authoritative grading, per exercise type (ADR-005/014)."""
+    t = item["type"]
+    if t == "word_sort":
+        return _normalize(attempt, item["grading"]) == _normalize(
+            item["payload"]["correct_bucket"], item["grading"]
+        )
+    if t == "bd_ninja":
+        # client-scored game (ADR-014 §4): attempt = "hits/wrong", lenient pass
+        try:
+            hits, wrong = (int(x) for x in attempt.split("/", 1))
+        except (ValueError, AttributeError):
+            return False
+        goal = item["payload"].get("goal", 1)
+        return hits >= max(1, round(goal * config.BD_NINJA_PASS)) and wrong <= 2
+    return _normalize(attempt, item["grading"]) == _normalize(item["target"], item["grading"])
+
+
+def _content(student_id: str, today: date):
+    """The selector's content provider (ADR-014 §3) — the one source of what a
+    skill's practicable material is, including the bankless skills."""
+    skills_doc = store.load(student_id, "skills")
+    return selector.make_content_provider(skills_doc, store.load_word_bank, today)
+
+
+def _build_teach(focus_skill: str, content) -> dict:
     """The one mini-lesson card for the session's focus pattern (PLAN §7 step 3).
-    The rule is generated from the FIRST example word so it sounds out that word."""
-    words = words_for(focus_skill)
+    The rule is generated from the FIRST example so it sounds out real content."""
+    words = content(focus_skill)
     example = words[0] if words else {"word": focus_skill, "phonemes": []}
     rule_id, text = contracts.why_for(focus_skill, example)
     return {
@@ -45,21 +66,27 @@ def _build_teach(focus_skill: str, words_for) -> dict:
     }
 
 
-def _public_state(state: dict) -> dict:
+def _public_state(state: dict, student_id: str) -> dict:
     """The session view sent to the client (no answer keys)."""
     cursor = state["cursor"]
     items = state["items"]
     item_view = contracts.public_item(items[cursor]["item"]) if cursor < len(items) else None
+    slot = items[cursor].get("slot", "focus") if cursor < len(items) else None
     # Compute the teach card FRESH from the focus skill on every read (not from a
     # value baked into current.json at start), so content fixes apply immediately
     # even to a session already in progress.
     focus = state.get("focus_skill")
-    teach = _build_teach(focus, store.load_word_bank) if focus else None
+    teach = (
+        _build_teach(focus, _content(student_id, date.fromisoformat(state["date"])))
+        if focus
+        else None
+    )
     return {
         "session_id": state["session_id"],
         "focus_skill": state["focus_skill"],
         "teach": teach,
         "cursor": cursor,
+        "slot": slot,
         "total_items": len(items),
         "done": cursor >= len(items),
         "item": item_view,
@@ -76,7 +103,7 @@ def start_session(
     day = _today(today)
     existing = store.load_current_session(student_id)
     if existing and existing.get("date") == day.isoformat():
-        return _public_state(existing)  # resume from cursor
+        return _public_state(existing, student_id)  # resume from cursor
 
     skills_doc = store.load(student_id, "skills")
     graph = store.load_skill_graph()
@@ -93,6 +120,7 @@ def start_session(
                 "item": item,
                 "word": word,
                 "skill_id": entry["skill_id"],
+                "slot": entry["slot"],
                 "attempts": [],
                 "stars": 0,
                 "resolved": False,
@@ -100,15 +128,10 @@ def start_session(
             }
         )
 
-    # Focus = the weakest introduced skill THAT HAS CONTENT — must match what the
-    # selector actually built the plan around (else the teach card names a skill
-    # with no items). Skills without a word bank yet can't be a session focus.
-    with_words = {
-        sid: s
-        for sid, s in skills_doc["skills"].items()
-        if s["introduced"] and store.load_word_bank(sid)
-    }
-    focus = skills_mod.weakest_introduced({"skills": with_words}, day) if with_words else None
+    # Focus = what the selector actually built the plan around.
+    focus = next((e["skill_id"] for e in plan if e["slot"] == "focus"), None)
+    if focus is None and plan:
+        focus = plan[0]["skill_id"]
     state = {
         "session_id": str(uuid.uuid4()),
         "date": day.isoformat(),
@@ -119,14 +142,32 @@ def start_session(
         "consecutive_misses": 0,
     }
     store.save_current_session(student_id, state)
-    return _public_state(state)
+    return _public_state(state, student_id)
 
 
 def get_item(student_id: str) -> dict | None:
     state = store.load_current_session(student_id)
     if not state:
         return None
-    return _public_state(state)
+    return _public_state(state, student_id)
+
+
+def skip_item(student_id: str) -> dict:
+    """Skip the CURRENT item without penalty — only allowed for the challenge slot
+    (PLAN §7 step 5: 'skippable without penalty'). No mastery change, no stars
+    lost, session just moves on."""
+    state = store.load_current_session(student_id)
+    if not state:
+        return {"error": "no_active_session"}
+    cursor = state["cursor"]
+    if cursor >= len(state["items"]):
+        return {"error": "session_complete"}
+    if state["items"][cursor].get("slot") != "challenge":
+        return {"error": "not_skippable"}
+    state["items"][cursor]["resolved"] = True
+    state["cursor"] += 1
+    store.save_current_session(student_id, state)
+    return {"skipped": True, "done": state["cursor"] >= len(state["items"])}
 
 
 # --------------------------------------------------------------- answer
@@ -157,12 +198,19 @@ def submit_answer(
         return {"error": "item_mismatch", "expected": item["item_id"]}
 
     target = item["target"]
-    grading = item["grading"]
-    correct = _normalize(attempt, grading) == _normalize(target, grading)
-    is_heart = entry["skill_id"] == "heart_words"
-    result = classifier.classify(
-        attempt, target, is_heart_word=is_heart, target_phonemes=entry["word"].get("phonemes")
-    )
+    correct = _grade(item, attempt)
+    is_text = item["type"] in contracts.TEXT_TYPES
+    if is_text or item["type"] == "bd_ninja":
+        # multi-word / game answers aren't letter-aligned — tag coarsely
+        result = {"tags": ["correct"] if correct else ["pattern_violation"], "primary": None}
+        result["primary"] = result["tags"][0]
+    else:
+        result = classifier.classify(
+            attempt,
+            target,
+            is_heart_word=entry["skill_id"] == "heart_words",
+            target_phonemes=entry["word"].get("phonemes"),
+        )
     entry["attempts"].append(
         {"attempt": attempt, "phase": phase, "correct": correct, "tags": result["tags"]}
     )
@@ -179,10 +227,16 @@ def submit_answer(
         store.save_current_session(student_id, state)
         # kid-voice explanation from the agent, or the canned line on any failure
         # (ADR-012 / invariant #2: only word + tag + rule id go to the prompt).
-        # Generated FRESH from THIS word's sounds (contracts.why_for) — e.g.
-        # "Sound out each letter: /p/ /u/ /p/ → pup" — not a static baked template.
-        rule_id, canned = contracts.why_for(entry["skill_id"], entry["word"])
-        why = teacher.feedback_for(target, result["primary"], rule_id, canned)
+        if is_text:
+            # phrase/sentence writing gets a REVIEW: praise-first, ≤2 corrections,
+            # each with a why (the owner's core ask) — agent, or deterministic diff.
+            why = teacher.review_writing(
+                target, attempt, _review_fallback(target, attempt),
+                memory_tail=store.read_memory(student_id)[-600:],
+            )
+        else:
+            rule_id, canned = contracts.why_for(entry["skill_id"], entry["word"])
+            why = teacher.feedback_for(target, result["primary"], rule_id, canned)
         return {
             "correct": False,
             "stars": 0,
@@ -217,6 +271,26 @@ def submit_answer(
     }
 
 
+def _review_fallback(target: str, attempt: str) -> str:
+    """Deterministic writing review (ADR-014 §5): praise first, then at most TWO
+    corrections, each with a sound-out why — never a wall of red ink (PLAN §1)."""
+    grading = {"case_insensitive": True, "trim": True, "ignore_punctuation": True, "collapse_spaces": True}
+    t_words = contracts.normalize_answer(target, grading).split()
+    a_words = contracts.normalize_answer(attempt, grading).split()
+    fixes: list[str] = []
+    for i, tw in enumerate(t_words):
+        aw = a_words[i] if i < len(a_words) else None
+        if aw != tw:
+            sounds = " ".join(f"/{g}/" for g in phonics.segment_graphemes(tw))
+            fixes.append(f"“{tw}” — sound it out: {sounds}")
+            if len(fixes) == 2:
+                break
+    if not fixes:
+        return f"So close! Listen once more and write it word by word: {target}"
+    n = "one word" if len(fixes) == 1 else "two words"
+    return f"Great writing! Let's polish {n}: " + "; ".join(fixes) + "."
+
+
 def _apply_mastery(student_id: str, skill_id: str, score: float, day: date) -> None:
     skills_doc = store.load(student_id, "skills")
     skill = skills_doc["skills"].get(skill_id)
@@ -238,8 +312,10 @@ def _maybe_step_down(state: dict) -> None:
     nxt = state["cursor"] + 1
     if nxt < len(state["items"]):
         entry = state["items"][nxt]
-        easiest = config.SCAFFOLD_TYPES[0]
-        entry["item"] = contracts.build_item(easiest, entry["skill_id"], entry["word"], 1)
+        # only real word items step down (a phrase/sentence/game can't become tiles)
+        if not entry["word"].get("kind"):
+            easiest = config.SCAFFOLD_TYPES[0]
+            entry["item"] = contracts.build_item(easiest, entry["skill_id"], entry["word"], 1)
     state["consecutive_misses"] = 0
 
 
@@ -263,6 +339,8 @@ def finish_session(student_id: str, today: date | None = None) -> dict:
     previous = _previous_end_masteries(student_id)
 
     rewards_doc = store.load(student_id, "rewards")
+    # bank the session's earned stars (drives xp/levels — invariant #3 add-only)
+    rewards.add_stars(rewards_doc, state["totals"]["stars"])
     hatched = rewards.hatch_creatures(rewards_doc, skills_doc, previous, day)
     rewards.apply_session_end(rewards_doc, skills_doc, previous, day)
     store.save(student_id, "rewards", rewards_doc)

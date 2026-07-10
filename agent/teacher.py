@@ -55,3 +55,35 @@ def feedback_for(
         return text if _valid_feedback(text) else canned
     except client.AgentError:
         return canned
+
+
+def _review_prompt(target: str, attempt: str, memory_tail: str) -> list[dict]:
+    """PII-safe (invariant #2): the sentence, her attempt (task content), and the
+    anonymous teacher-notebook tail for context. No name/age/profile."""
+    system = (
+        "You are a warm spelling coach for a 7-year-old with dyslexia reviewing "
+        "the student's writing. PRAISE FIRST, then gently point out AT MOST TWO "
+        "words to fix, each with a very short why (sound it out, or name the "
+        "pattern). 2-3 short sentences total, cheerful, never scolding. Do not "
+        "repeat the wrong spellings. Refer to the learner as 'the student'."
+    )
+    if memory_tail:
+        system += f" Recent teacher notes for context: {memory_tail}"
+    user = f"The correct text is: '{target}'. The student wrote: '{attempt}'."
+    return [{"role": "system", "content": system}, {"role": "user", "content": user}]
+
+
+def review_writing(
+    target: str, attempt: str, canned: str, *, memory_tail: str = "", timeout: float = 6.0
+) -> str:
+    """Praise-first review of phrase/sentence writing with ≤2 explained fixes
+    (ADR-014 §5 — the product's 'review and explain why'). Falls back to the
+    deterministic `canned` review on any failure. Never raises."""
+    if not is_available():
+        return canned
+    try:
+        resp = client.chat(_review_prompt(target, attempt, memory_tail), timeout=timeout, max_tokens=140)
+        text = (client.first_message(resp).get("content") or "").strip()
+        return text if text and len(text) <= 400 else canned
+    except client.AgentError:
+        return canned

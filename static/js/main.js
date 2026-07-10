@@ -49,18 +49,63 @@ function installSpeakButton() {
   document.body.appendChild(fab);
 }
 
-// ---------------- home ----------------
-function renderHome() {
-  const start = el("button", {
+// ---------------- home (streak, level, mission — ADR-014 §6) ----------------
+async function renderHome() {
+  let home = null;
+  try { home = await (await fetch("/api/home")).json(); } catch { /* offline-safe */ }
+  const name = home && home.display_name && home.display_name !== "friend" ? ` ${home.display_name}` : "";
+  const kids = [
+    el("div", { class: "sq-mascot sq-mascot--bob", text: "🐼" }),
+    el("h1", { class: "sq-greeting", text: `Hi${name}! Ready for today's quest?` }),
+  ];
+  if (home) {
+    const chips = el("div", { class: "sq-row" }, [
+      el("span", { class: "sq-chip sq-chip--star", text: `🔥 ${home.streak.count}-day streak` }),
+      el("span", { class: "sq-chip sq-chip--badge", text: `⭐ Lv ${home.level} · ${home.level_name}` }),
+    ]);
+    kids.push(chips);
+    if (home.mission) {
+      kids.push(el("span", { class: "sq-chip sq-chip--pink", text: `Today: ${home.mission.label} ✨` }));
+    }
+  }
+  kids.push(el("button", {
     class: "sq-btn sq-btn--primary sq-btn--hero",
     text: "Start!",
     attrs: { type: "button" },
     on: { click: beginSession },
+  }));
+  kids.push(el("button", {
+    class: "sq-btn sq-btn--quiet",
+    text: "🥚 My Collection",
+    attrs: { type: "button" },
+    on: { click: renderCollection },
+  }));
+  mount(root, el("div", { class: "sq-screen" }, kids));
+}
+
+// ---------------- collection shelf ----------------
+async function renderCollection() {
+  let home = null;
+  try { home = await (await fetch("/api/home")).json(); } catch { /* ignore */ }
+  const rows = el("div", { class: "sq-row" });
+  (home ? home.collection : []).forEach((c) => {
+    rows.appendChild(
+      el("div", { class: "sq-stack sq-creature" }, [
+        el("div", { class: "sq-emoji-prompt", text: c.hatched ? "🐣" : "🥚" }),
+        el("div", { class: "sq-creature__label", text: c.hatched ? c.label : "?" }),
+      ])
+    );
   });
   mount(root, el("div", { class: "sq-screen" }, [
-    el("div", { class: "sq-mascot sq-mascot--bob", text: "🐼" }),
-    el("h1", { class: "sq-greeting", text: "Hi! Ready for today's quest?" }),
-    start,
+    el("h1", { class: "sq-greeting", text: "My Collection" }),
+    el("p", { class: "sq-explain", text: "Master a pattern to hatch its friend!" }),
+    rows,
+    el("button", {
+      class: "sq-btn sq-btn--primary",
+      text: "Back",
+      attrs: { type: "button" },
+      on: { click: renderHome },
+    }),
   ]));
 }
 
@@ -100,11 +145,21 @@ function renderItem(view) {
     handleAnswer(view.item.item_id, attempt)
   );
   card.appendChild(exercise);
-  mount(root, el("div", { class: "sq-screen" }, [
-    progressDots(view.total_items, view.cursor),
-    card,
-    el("div", { class: "sq-mascot", text: "🐼" }),
-  ]));
+  const screen = [progressDots(view.total_items, view.cursor), card];
+  if (view.slot === "challenge") {
+    // the challenge caps the session and is skippable without penalty (PLAN §7)
+    card.prepend(el("span", { class: "sq-chip sq-chip--star", text: "⭐ Challenge!" }));
+    screen.push(el("button", {
+      class: "sq-btn sq-btn--ghost",
+      text: "skip for today",
+      attrs: { type: "button" },
+      on: {
+        click: async () => { await fetch("/api/session/skip", { method: "POST" }); advance(); },
+      },
+    }));
+  }
+  screen.push(el("div", { class: "sq-mascot", text: "🐼" }));
+  mount(root, el("div", { class: "sq-screen" }, screen));
   if (exercise.focusFirst) setTimeout(exercise.focusFirst, 50);
 }
 
@@ -135,17 +190,29 @@ async function beginSession() {
   else renderItem(view);
 }
 
-// ---------------- reward ----------------
+// ---------------- reward (level progress, hatch, streak — ADR-014 §6) ----------------
 async function finishSession() {
   const r = await api.finish();
+  let home = null;
+  try { home = await (await fetch("/api/home")).json(); } catch { /* ignore */ }
   const bits = [
     el("div", { class: "sq-mascot", text: "🎉" }),
     el("div", { class: "sq-reward-stars", text: `⭐ ${r.stars || 0}` }),
     el("p", { class: "sq-reward-note", text: `${r.correct_first_try}/${r.total_items} on the first try!` }),
-    el("p", { class: "sq-explain", text: `Level ${r.level} · ${r.level_name}` }),
   ];
+  if (home) {
+    const pct = Math.min(100, Math.round((home.xp / Math.max(1, home.xp_next_level)) * 100));
+    const fill = el("div", { class: "sq-meter__fill" });
+    fill.style.setProperty("--sq-meter-pct", `${pct}%`);
+    bits.push(el("p", { class: "sq-explain", text: `Level ${home.level} · ${home.level_name} — ${home.xp_next_level - home.xp} ⭐ to the next level!` }));
+    bits.push(el("div", { class: "sq-meter" }, [fill]));
+    bits.push(el("span", { class: "sq-chip sq-chip--star", text: `🔥 ${home.streak.count}-day streak` }));
+  }
   if (r.hatched && r.hatched.length) {
-    bits.push(el("p", { class: "sq-reward-note", text: "Something hatched! 🥚→🐣" }));
+    bits.push(el("p", { class: "sq-reward-note", text: `Something hatched! 🥚→🐣 (${r.hatched.join(", ")})` }));
+  }
+  if (r.newly_introduced && r.newly_introduced.length) {
+    bits.push(el("span", { class: "sq-chip sq-chip--pink", text: "✨ New pattern unlocked!" }));
   }
   bits.push(el("button", {
     class: "sq-btn sq-btn--primary",

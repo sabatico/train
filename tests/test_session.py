@@ -25,6 +25,13 @@ def _server_item(student_id, cursor=None):
     return state["items"][c]["item"]
 
 
+def _correct_attempt(item):
+    """A correct answer for any item type (ADR-014: bd_ninja is client-scored)."""
+    if item["type"] == "bd_ninja":
+        return f"{item['payload']['goal']}/0"
+    return item["target"]
+
+
 # --------------------------------------------------------------- start_session
 def test_start_session_builds_full_item_count(bootstrapped_student):
     view = session.start_session(bootstrapped_student, today=DAY, rng=random.Random(SEED))
@@ -37,18 +44,24 @@ def test_start_session_focus_skill_has_word_bank_content(bootstrapped_student):
     assert focus is not None
     skills_doc = store.load(bootstrapped_student, "skills")
     assert skills_doc["skills"][focus]["introduced"] is True
-    # regression guard: focus must have actual content, never a wordless skill
-    assert store.load_word_bank(focus) != []
+    # regression guard: focus must have actual content, never an empty skill
+    # (ADR-014: bankless skills draw from the content provider, not their own bank)
+    from engine import selector as sel
+    content = sel.make_content_provider(skills_doc, store.load_word_bank, DAY)
+    assert content(focus) != []
 
 
 def test_start_session_teach_examples_are_words_from_focus_skill(bootstrapped_student):
     view = session.start_session(bootstrapped_student, today=DAY, rng=random.Random(SEED))
     focus = view["focus_skill"]
-    bank_words = {w["word"] for w in store.load_word_bank(focus)}
+    from engine import selector as sel
+    skills_doc = store.load(bootstrapped_student, "skills")
+    content = sel.make_content_provider(skills_doc, store.load_word_bank, DAY)
+    provider_words = {w["word"] for w in content(focus)}
     assert view["teach"]["skill_id"] == focus
     assert len(view["teach"]["examples"]) > 0
     for ex in view["teach"]["examples"]:
-        assert ex in bank_words
+        assert ex in provider_words
 
 
 def test_start_session_writes_current_session_file(bootstrapped_student):
@@ -234,7 +247,7 @@ def test_submit_answer_past_end_of_session(bootstrapped_student):
     for _ in range(config.ITEMS_PER_SESSION):
         item = _server_item(bootstrapped_student)
         session.submit_answer(
-            bootstrapped_student, item["item_id"], item["target"], phase="first", today=DAY
+            bootstrapped_student, item["item_id"], _correct_attempt(item), phase="first", today=DAY
         )
     state = store.load_current_session(bootstrapped_student)
     assert state["cursor"] == config.ITEMS_PER_SESSION

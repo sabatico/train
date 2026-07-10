@@ -140,7 +140,9 @@ def test_build_plan_only_introduced_skills_with_words_appear():
     skill_ids_used = {p["skill_id"] for p in plan}
     assert "heart_words" not in skill_ids_used  # introduced but no words
     assert "magic_e" not in skill_ids_used  # has words but not introduced
-    assert skill_ids_used <= {"short_vowels"}
+    # ADR-014: bankless skills (segmentation, b/d game, sequencing, phrase/sentence)
+    # legitimately source content FROM the real banks, so they may appear too.
+    assert skill_ids_used <= {"short_vowels"} | set(config.CONTENT_FROM_OTHER_BANKS)
 
 
 def test_build_plan_first_warmup_items_are_slot_warmup():

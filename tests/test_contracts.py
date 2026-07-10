@@ -128,10 +128,11 @@ def test_echo_dictation_payload_is_empty_dict():
     assert item["payload"] == {}
 
 
-def test_auto_speak_true_only_for_echo_dictation():
+def test_auto_speak_true_only_for_dictation_types():
+    # ADR-014: all dictation types (word, phrase, sentence) auto-speak on show
     for ex_type in contracts.EXERCISE_TYPES:
         item = contracts.build_item(ex_type, "short_vowels", CAT, 1)
-        expected = ex_type == "echo_dictation"
+        expected = ex_type in ("echo_dictation", "phrase_dictation", "sentence_scribe")
         assert item["prompt"]["auto_speak"] is expected
 
 

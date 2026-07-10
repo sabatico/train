@@ -51,13 +51,55 @@ MIX_STRETCH = 0.1
 WARMUP_ITEMS = 2              # first N items are guaranteed early wins
 
 # ---- Scaffold ladder (ADR-007 rule 5 / ADR-005 scaffold_level) ----
-# Exercise types ordered MOST-scaffold → LEAST. Phase-1 ships these three; more
-# slot in later without changing the mapping shape. Index+1 = scaffold_level.
+# Kept for scaffold_level numbering + step-down: MOST-scaffold → LEAST.
 SCAFFOLD_TYPES = ("word_builder", "letter_boxes", "echo_dictation")
-# effective-mastery cutoffs between the ladder rungs (len = len(SCAFFOLD_TYPES)-1):
-# <45 → most scaffold (word_builder); 45–75 → letter_boxes; ≥75 → echo_dictation.
-# Targets ~80% success — a shakier skill gets a more forgiving exercise.
+# effective-mastery band cutoffs: <45 low · 45–75 mid · ≥75 high (~80% success).
 SCAFFOLD_CUTOFFS = (45, 75)
+
+# ---- Exercise-type policy (ADR-014) ----
+# Per mastery band, the ROTATION of allowed exercise types (variety within a
+# session instead of one type repeated). Skill-specific overrides below.
+TYPE_BANDS = {
+    "low": ("word_builder", "letter_boxes"),
+    "mid": ("letter_boxes", "missing_letters", "word_sort"),
+    "high": ("echo_dictation", "missing_letters"),
+}
+TYPE_OVERRIDES = {
+    # skill_id -> {band: rotation}. Omitted bands fall back to TYPE_BANDS.
+    "heart_words": {
+        "low": ("word_builder", "heart_word_spotlight"),
+        "mid": ("heart_word_spotlight", "letter_boxes"),
+        "high": ("heart_word_spotlight", "echo_dictation"),
+    },
+    "letter_orientation": {  # her b/d reversal → the discrimination game
+        "low": ("bd_ninja",), "mid": ("bd_ninja",), "high": ("bd_ninja",),
+    },
+    "phoneme_segmentation": {  # sound boxes ARE segmentation practice
+        "low": ("word_builder", "letter_boxes"), "mid": ("word_builder", "letter_boxes"),
+        "high": ("letter_boxes", "missing_letters"),
+    },
+    "word_sequencing": {  # long words; holding the sequence is the point
+        "low": ("letter_boxes", "word_builder"), "mid": ("letter_boxes", "echo_dictation"),
+        "high": ("echo_dictation", "letter_boxes"),
+    },
+    "phrase_dictation": {
+        "low": ("phrase_dictation",), "mid": ("phrase_dictation",), "high": ("phrase_dictation",),
+    },
+    "sentence_writing": {
+        "low": ("sentence_scribe",), "mid": ("sentence_scribe",), "high": ("sentence_scribe",),
+    },
+}
+# Strand-D & no-bank skills source their content from OTHER banks (ADR-014 §3):
+CONTENT_FROM_OTHER_BANKS = (
+    "letter_orientation", "phoneme_segmentation", "word_sequencing",
+    "phrase_dictation", "sentence_writing",
+)
+LONG_WORD_MIN_DIFFICULTY = 4   # word_sequencing draws these
+CHALLENGE_ITEMS = 1            # PLAN §7 step 5 (skippable, only when unlocked)
+FOCUS_EXCLUDED = ("letter_orientation",)  # a mini-game can't be the lesson focus
+GAME_ITEMS_MAX = 1             # at most one bd_ninja round per session (variety)
+BD_NINJA_LETTERS = 16          # letters per b/d round
+BD_NINJA_PASS = 0.8            # lenient game threshold (ADR-014 §4)
 
 # ---- Reward economy (ADR-011) — ONLY ever added to (invariant #3) ----
 STARS_FIRST_TRY = 2

@@ -16,20 +16,20 @@
 | KID-03 | Teach card (focus-pattern mini-lesson) | ✅ | Session screen | canned (agent enrich later) | 🖥️ | browser-verified; PLAN §7 step 3 |
 | KID-04 | `word_builder` exercise (tap letter tiles into sound boxes) | ✅ | Session screen | `exercises.js` registry | 🖥️ | browser-verified tile→box interaction |
 | KID-05 | `letter_boxes` exercise (one input per letter, phoneme-grouped) | ✅ | Session screen | `exercises.js` registry | 🖥️ | renderer verified; auto-advance typing |
-| KID-06 | `missing_letters` exercise (pattern cloze) | ⬜ | Session screen | component registry | — | PLAN §3 #3 |
-| KID-07 | `bd_ninja` game (b/d discrimination, the only timed exercise) | ⬜ | Session screen | component registry | — | PLAN §3 #4 |
-| KID-08 | `word_sort` exercise (drag into pattern buckets) | ⬜ | Session screen | component registry | — | PLAN §3 #5 |
-| KID-09 | `heart_word_spotlight` (look-cover-write-check with ❤️ letters) | ⬜ | Session screen | component registry | — | PLAN §3 #6 |
+| KID-06 | `missing_letters` exercise (pattern cloze) | ✅ | Session screen | registry | 🖥️ | ADR-014; browser-verified |
+| KID-07 | `bd_ninja` game (b/d discrimination) | ✅ | Session screen | registry | 🖥️ | ADR-014; her signature skill now practicable; capped 1/session |
+| KID-08 | `word_sort` exercise (tap the pattern bucket) | ✅ | Session screen | registry | 🖥️ | ADR-014; correct_bucket server-side |
+| KID-09 | `heart_word_spotlight` (look-cover-write with ❤️ letters) | ✅ | Session screen | registry | 🖥️ | ADR-014; heart words now taught by heart |
 | KID-10 | `echo_dictation` (TTS word → free input, unlimited 🔊 replay) | ✅ | Session screen | `speech.js` + registry | 🖥️ | renderer verified; auto-speak + replay |
 | KID-18 | Natural dictation voice (pre-generated `sage` audio, browser-TTS fallback) | ✅ | `speech.js` + `static/audio/` | ADR-013 | 🖥️ | 733 clips generated (`gpt-4o-mini-tts`, voice `sage`, kid instructions); `/static/audio/cat.mp3`→200 verified; browser TTS fallback for any gaps |
 | KID-19 | Read-aloud speak button on every screen (reads page text + her inputs) | ✅ | `.sq-speak-fab` + `/api/tts` | `agent/voice.py` (cached) | 🖥️ | browser-verified: reads screen text in `sage` voice via cached `/api/tts`; browser-TTS fallback when unkeyed |
-| KID-11 | `phrase_dictation` (TTS phrase → per-word inputs) | ⬜ | Session screen | component registry | — | PLAN §3 #8 |
-| KID-12 | `sentence_scribe` (free writing + gentle AI review, max 2 corrections) | ⬜ | Session screen | agent review call | — | PLAN §3 #9 |
+| KID-11 | `phrase_dictation` (TTS phrase → per-word inputs) | ✅ | Session screen | registry + live TTS | 🖥️ | ADR-014; content = AI-enriched phrases |
+| KID-12 | `sentence_scribe` (sentence writing + review ≤2 whys) | ✅ | Session screen | teacher.review_writing + fallback | 🖥️ | ADR-014; the words→phrases→sentences path |
 | KID-13 | `beat_yesterday` sprint (mastered words, beat own record) | ⬜ | Session screen | component registry | — | PLAN §3 #10 |
 | KID-14 | Correction routine (attempt vanishes → correct form + why → retype right) | ✅ | `correction.js` overlay | classifier + agent/canned why | 🖥️ | browser-verified: shows correct word w/ hot letters, retype advances; invariant #3 |
 | KID-15 | Reward screen (stars, level progress, hatch tease) | ✅ | End-of-session screen | `engine/rewards.py` | 🖥️ | browser-verified ⭐ count + level; confetti/chest polish later |
-| KID-16 | Creature/sticker collection shelf (one per mastered pattern) | ⬜ | Collection screen | rewards + skills | — | PLAN §6 |
-| KID-17 | Streak flame with freeze token | ⬜ | Home screen | rewards | — | PLAN §6 |
+| KID-16 | Creature collection shelf (one per mastered pattern) | ✅ | Collection screen | GET /api/home | 🖥️ | ADR-014 §6 |
+| KID-17 | Streak flame + level badge + mission on home | ✅ | Home screen | GET /api/home | 🖥️ | ADR-014 §6 |
 
 ### The parent (the owner)
 | ID | Feature | Status | Surface | Key endpoints / entrypoints | Tests | Notes |

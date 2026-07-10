@@ -111,6 +111,50 @@ def create_app() -> Flask:
         result = session_engine.finish_session(DEFAULT_STUDENT)
         return jsonify(result), (404 if result.get("error") else 200)
 
+    @app.post("/api/session/skip")
+    def api_session_skip():
+        """Skip the current CHALLENGE item without penalty (PLAN §7 step 5)."""
+        result = session_engine.skip_item(DEFAULT_STUDENT)
+        status = 404 if result.get("error") == "no_active_session" else (
+            409 if result.get("error") else 200
+        )
+        return jsonify(result), status
+
+    @app.get("/api/home")
+    def api_home():
+        """Everything the home/reward/collection screens show (ADR-014 §6):
+        streak, level, stars, today's mission, and the creature collection."""
+        today = date.today()
+        rewards_doc = store.load(DEFAULT_STUDENT, "rewards")
+        skills_doc = store.load(DEFAULT_STUDENT, "skills")
+        summary = report.skill_summary(skills_doc, today)
+        weakest = report.weakest_introduced(summary, 1)
+        from engine import config as engine_config
+
+        level = rewards_doc["level"]
+        xp, nxt = rewards_doc["xp"], engine_config.xp_for_level(level + 1)
+        hatched = {c["skill_id"] for c in rewards_doc["collection"]}
+        return jsonify(
+            display_name=store.load(DEFAULT_STUDENT, "profile")["display_name"],
+            streak=rewards_doc["streak"],
+            level=level,
+            level_name=rewards_doc["level_name"],
+            stars_total=rewards_doc["stars_total"],
+            xp=xp,
+            xp_next_level=nxt,
+            mission=weakest[0] if weakest else None,
+            collection=[
+                {
+                    "skill_id": s["id"],
+                    "label": s["label"],
+                    "hatched": s["id"] in hatched,
+                    "mastery": s["mastery"],
+                }
+                for s in summary
+                if s["introduced"] or s["id"] in hatched
+            ],
+        )
+
     @app.get("/api/skills")
     def api_skills():
         return jsonify(store.load(DEFAULT_STUDENT, "skills"))

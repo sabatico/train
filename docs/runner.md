@@ -37,7 +37,19 @@ ADR-005..012 accepted; build items may proceed against them. ADR-007 got an inli
 |----|------|--------|-------|
 | PD1 | Parent dashboard: rose-of-winds SVG radar + weakest-three + error log + settings (`/parent`, `engine/report.py`) | ✅ | done act-013; browser-verified; T-003 satisfied for v1. Cross-authored report tests in progress |
 
+## F. Wave 2 — ADR-014 experience redesign (owner mandate 2026-07-09)
+| ID | Item | Status | Notes |
+|----|------|--------|-------|
+| W2-1 | Needed-vs-exists audit + ADR-014 | ✅ | simulation exposed monotone sessions + 6 unreachable/mistaught capabilities |
+| W2-2 | Type rotation + content provider (all 14 skills practicable) | ✅ | selector/config; games capped, phrases/sentences from enriched corpus |
+| W2-3 | 6 new exercise types end-to-end (contracts+renderers) | ✅ | missing_letters, word_sort, heart_word_spotlight, phrase_dictation, sentence_scribe, bd_ninja |
+| W2-4 | Challenge slot + skip; writing review with whys; memory tail in prompts | ✅ | PLAN §7 shape restored; teacher.review_writing |
+| W2-5 | Stars banked at finish (bug: never persisted) + /api/home + gamified home/reward/collection | ✅ | 8-day arc: L4, 7 hatches, streak 8 |
+| W2-6 | Cross-authored redesign tests | ▶ | Sonnet agent running |
+| W2-7 | beat_yesterday opt-in game | ☐ | T-013; the last PLAN §3 type |
+
 ## D. Review/correction log (append per review or owner-correction round)
+- 2026-07-09 — CR2 (owner): \"present functionality path has no sense — re-review ALL functionality, redo in full.\" → ADR-014 + Wave 2 (section F). Root complaint validated by simulation; redesign shipped same day.
 - 2026-07-07 — CR1 (owner): plan is ONE phase, AI from the start, DeepSeek APIs (not Claude API); UI+backend first, connect the key after. PLAN.md updated accordingly.
 
 > Sources: `F#` = findings (from a walkthrough/review); `IN-x` = owner input; `CR#` = correction round. Link items to their ADRs/commits.
