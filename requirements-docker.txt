@@ -1,5 +1,5 @@
 # Runtime-only deps for the container (no pytest / imageio-ffmpeg content tooling).
 Flask==3.0.3
-python-dotenv==1.0.1
+python-dotenv==1.2.2
 certifi==2024.7.4
 gunicorn==22.0.0
